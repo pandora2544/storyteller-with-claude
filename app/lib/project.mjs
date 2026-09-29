@@ -3,9 +3,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import {fileURLToPath} from 'node:url';
 import {loadSettings, settingsFingerprint, resolve as resolveSettings} from '../../scripts/lib/settings.mjs';
 
-export const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..', '..');
+export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 export const P = (...xs) => path.join(ROOT, ...xs);
 
 export const STAGES = [

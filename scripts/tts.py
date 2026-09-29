@@ -24,6 +24,13 @@ Output ต่อ scene (ใน public/<slug>/vo/):
 """
 from __future__ import annotations  # Python 3.9 (macOS) รองรับ "str | None"
 import argparse, hashlib, json, os, re, struct, sys, time, urllib.error, urllib.request, wave
+
+# Windows (โลแคลไทย = cp874): บังคับ stdout/stderr เป็น UTF-8 กัน UnicodeEncodeError ตอนพิมพ์ ✓ ⚠ ¶ ฯลฯ
+for _s in (sys.stdout, sys.stderr):
+    try:
+        _s.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
 from pathlib import Path
 
 API_URL = "https://openrouter.ai/api/v1/audio/speech"  # override ได้ด้วย OPENROUTER_TTS_URL
@@ -60,7 +67,7 @@ def load_project_settings(repo: Path, slug: str | None, preset: str | None = Non
     import subprocess
     args = ["node", str(repo / "scripts" / "lib" / "settings.mjs")] + ([slug] if slug else []) + (["--voice", preset] if preset else []) + ["--json"]
     try:
-        out = subprocess.run(args, cwd=repo, capture_output=True, text=True, timeout=30)
+        out = subprocess.run(args, cwd=repo, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=30)
     except FileNotFoundError:
         print("⚠ ไม่พบ node — ใช้ค่า TTS จาก .env/ค่าเริ่มต้น")
         return None

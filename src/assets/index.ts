@@ -5,6 +5,7 @@ import * as world from './world';
 import * as origins from './origins';
 import * as feed from './feed';
 import * as nakhon from './nakhon';
+import * as tumpang from './tumpang';
 
 export const ASSETS: Record<string, AssetDef> = {
   sky: common.sky,
@@ -112,4 +113,25 @@ export const ASSETS: Record<string, AssetDef> = {
   'junk-ship': nakhon.junkShip,
   'vote-hands': nakhon.voteHands,
   'giant-pin': nakhon.giantPin,
+  // projects/tumpang
+  'tp-forest-far': tumpang.tpForestFar,
+  'tp-forest-mid': tumpang.tpForestMid,
+  'tp-leaves-fg': tumpang.tpLeavesFg,
+  'tp-campus': tumpang.tpCampus,
+  'tp-brick-ruin': tumpang.tpBrickRuin,
+  'tp-brick-edge': tumpang.tpBrickEdge,
+  'tp-cobra': tumpang.tpCobra,
+  'tp-cobra-tail': tumpang.tpCobraTail,
+  'tp-statue-half': tumpang.tpStatueHalf,
+  'tp-elephant': tumpang.tpElephant,
+  'tp-sign': tumpang.tpSign,
+  'tp-forest-top': tumpang.tpForestTop,
+  'tp-thief': tumpang.tpThief,
+  'tp-soil-top': tumpang.tpSoilTop,
+  'tp-site-plan': tumpang.tpSitePlan,
+  'tp-brick-hall': tumpang.tpBrickHall,
+  'tp-brick': tumpang.tpBrick,
+  'tp-offering': tumpang.tpOffering,
+  'tp-old-house': tumpang.tpOldHouse,
+  'tp-timeline': tumpang.tpTimeline,
 };

@@ -11,7 +11,7 @@ const TARGET = 'I=-14:TP=-1.5:LRA=11';
 const hasSys = spawnSync('ffmpeg', ['-version']).status === 0;
 const ff = (args) => hasSys
   ? spawnSync('ffmpeg', args, {encoding: 'utf8', maxBuffer: 1 << 26})
-  : spawnSync('npx', ['remotion', 'ffmpeg', ...args], {encoding: 'utf8', maxBuffer: 1 << 26});
+  : spawnSync('npx', ['remotion', 'ffmpeg', ...args], {encoding: 'utf8', maxBuffer: 1 << 26, shell: process.platform === 'win32'});
 
 if (!fs.existsSync(inp)) { console.error(`ไม่พบ ${inp}`); process.exit(1); }
 const p1 = ff(['-hide_banner', '-i', inp, '-vn', '-af', `loudnorm=${TARGET}:print_format=json`, '-f', 'null', '-']);

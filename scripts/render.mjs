@@ -29,11 +29,13 @@ export const buildProps = (s) => {
 const propsFile = `out/.props-${slug}.json`;
 fs.mkdirSync('out', {recursive: true});
 fs.writeFileSync(propsFile, JSON.stringify(buildProps(slug)));
-const bin = fs.existsSync(path.join('node_modules', '.bin', 'remotion')) ? path.join('node_modules', '.bin', 'remotion') : 'npx';
+const WIN = process.platform === 'win32';
+const localBin = path.join('node_modules', '.bin', WIN ? 'remotion.cmd' : 'remotion');
+const bin = fs.existsSync(localBin) ? localBin : 'npx';
 const pre = bin === 'npx' ? ['remotion'] : [];
 const run = (b, args) => {
   console.log(`$ ${[b, ...args].join(' ')}`);
-  const r = spawnSync(b, args, {stdio: 'inherit'});
+  const r = spawnSync(b, args, {stdio: 'inherit', shell: WIN});
   if (r.status !== 0) process.exit(r.status ?? 1);
 };
 run(bin, [...pre, 'render', 'src/index.ts', 'project', `out/${slug}.mp4`, '--codec', 'h264', '--crf', '18', `--props=${propsFile}`]);

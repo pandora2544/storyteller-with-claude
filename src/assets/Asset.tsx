@@ -7,7 +7,7 @@ import {palFor} from './palette';
 import {FONT} from '../theme/tokens';
 
 // asset ที่เป็นฉากเต็ม/เอฟเฟกต์ ไม่ต้องตัดขอบกระดาษ
-export const NO_CUT = new Set(['sky', 'bg-color', 'paper-bg', 'dust', 'leaves-fg', 'window-frame', 'marker-circle', 'arrow', 'stamp', 'sea', 'mountains', 'city', 'plantation']);
+export const NO_CUT = new Set(['sky', 'bg-color', 'paper-bg', 'dust', 'leaves-fg', 'window-frame', 'marker-circle', 'arrow', 'stamp', 'sea', 'mountains', 'city', 'plantation', 'tp-forest-far', 'tp-leaves-fg', 'tp-forest-top', 'tp-soil-top']);
 
 /** "img:<id>" หรือ "img:<id>|<vector-fallback>" — fallback ใช้จนกว่าจะเลือกรูป AI (ไม่มีกล่องเหลืองระหว่างรอ) */
 export const parseImg = (name: string) => {

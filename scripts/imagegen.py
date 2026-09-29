@@ -17,6 +17,13 @@ images.json:
 """
 from __future__ import annotations
 import argparse, base64, hashlib, json, os, re, shutil, subprocess, sys, time, urllib.error, urllib.request
+
+# Windows (โลแคลไทย = cp874): บังคับ stdout/stderr เป็น UTF-8 กัน UnicodeEncodeError ตอนพิมพ์ ✓ ⚠ ¶ ฯลฯ
+for _s in (sys.stdout, sys.stderr):
+    try:
+        _s.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -47,7 +54,7 @@ def load_env():
 
 
 def settings_of(slug: str) -> dict:
-    out = subprocess.run(["node", str(REPO / "scripts/lib/settings.mjs"), slug, "--json"], cwd=REPO, capture_output=True, text=True, timeout=30)
+    out = subprocess.run(["node", str(REPO / "scripts/lib/settings.mjs"), slug, "--json"], cwd=REPO, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=30)
     if out.returncode != 0:
         sys.exit(f"settings ผิดพลาด: {out.stderr.strip() or out.stdout.strip()}")
     return json.loads(out.stdout)

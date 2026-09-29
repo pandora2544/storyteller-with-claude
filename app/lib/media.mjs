@@ -19,7 +19,7 @@ const findBin = (name) => {
   const base = P('node_modules', '@remotion');
   if (fs.existsSync(base)) {
     for (const d of fs.readdirSync(base).filter((x) => x.startsWith('compositor-'))) {
-      const f = path.join(base, d, name);
+      const f = path.join(base, d, process.platform === 'win32' ? `${name}.exe` : name);
       if (fs.existsSync(f)) return f;
     }
   }

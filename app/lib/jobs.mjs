@@ -5,7 +5,7 @@ import {P, loadShots, validSlug, writeAtomic} from './project.mjs';
 import {imagesSpec} from '../../scripts/lib/images.mjs';
 
 const remotionBin = () => (fs.existsSync(P('node_modules', '.bin', 'remotion')) ? [P('node_modules', '.bin', 'remotion')] : ['npx', 'remotion']);
-const python = () => process.env.HT_PYTHON || 'python3';
+const python = () => process.env.HT_PYTHON || (process.platform === 'win32' ? 'python' : 'python3');
 
 /** แต่ละ job = ลำดับของคำสั่ง [bin, args, env?] (ไม่ผ่าน shell) */
 export const JOBS = {
@@ -75,7 +75,7 @@ export const startJob = (slug, name, opts = {}) => {
       for (const [bin, args, env] of def.steps(slug, opts)) {
         append(job, `$ ${[bin.replace(P() + '/', ''), ...args].join(' ')}\n`);
         const code = await new Promise((resolve) => {
-          const p = spawn(bin, args, {cwd: P(), env: {...process.env, FORCE_COLOR: '0', ...(env ?? {})}});
+          const p = spawn(bin, args, {cwd: P(), env: {...process.env, FORCE_COLOR: '0', PYTHONUTF8: '1', PYTHONIOENCODING: 'utf-8', ...(env ?? {})}});
           job.proc = p;
           p.stdout.on('data', (d) => append(job, d.toString()));
           p.stderr.on('data', (d) => append(job, d.toString()));

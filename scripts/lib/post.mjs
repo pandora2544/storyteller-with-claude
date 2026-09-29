@@ -3,9 +3,10 @@
 // แล้วนับตัวอักษรเทียบ presets/platforms.json · ใช้ทั้งใน scripts/post.mjs และหน้า HistoryTeller
 import fs from 'node:fs';
 import path from 'node:path';
+import {fileURLToPath} from 'node:url';
 import {loadSettings, resolve, budget} from './settings.mjs';
 
-const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..', '..');
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const P = (...xs) => path.join(ROOT, ...xs);
 const readJson = (f, d = null) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch { return d; } };
 const CUE = /\[#([A-Za-z0-9_-]+)\]/g;
@@ -40,9 +41,10 @@ export const sourcesFrom = (slug) => {
   if (!fs.existsSync(f)) return [];
   const seen = new Set(), out = [];
   for (const line of fs.readFileSync(f, 'utf8').split('\n')) {
-    if (!/^\|\s*[FC]\d+/.test(line)) continue;
+    if (!/^\|\s*[FC]-?\d+/.test(line)) continue; // รับทั้ง F01 และ F-01 (templates ใช้ F-01)
     const cells = line.split('|').map((x) => x.trim()).filter(Boolean);
-    const src = cells[cells.length - 1];
+    // คอลัมน์ที่มา = คอลัมน์ขวาสุดที่มีลิงก์ (ไม่งั้นใช้คอลัมน์สุดท้ายเหมือนเดิม)
+    const src = [...cells].reverse().find((c) => /https?:\/\//.test(c)) ?? cells[cells.length - 1];
     if (!src) continue;
     for (const part of src.split(/\s+·\s+/)) {
       const url = part.match(/https?:\/\/\S+/)?.[0]?.replace(/[)\].,]+$/, '');

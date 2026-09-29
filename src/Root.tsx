@@ -14,9 +14,11 @@ import type {Project} from './types';
 import {ShotRenderer} from './shots/ShotRenderer';
 import {CoverStill} from './cover/Cover';
 import {FormatContext, formatOf, ImagesContext} from './format';
-import coffee from '../projects/coffee-world/shots.json';
+// ตัวอย่างจาก templates/ (projects/ ไม่อยู่ใน repo) — โปรเจกต์จริงส่งเข้ามาผ่าน --props
+import sample from '../templates/shots.example.json';
 
-const PROJECTS: Record<string, Project> = {'coffee-world': coffee as unknown as Project};
+const SAMPLE = sample as unknown as Project;
+const PROJECTS: Record<string, Project> = {};
 
 const calc: CalculateMetadataFunction<MainProps> = async ({props}) => {
   const p = props.project;
@@ -58,10 +60,10 @@ const ShotPreview: React.FC<{shotId: string; project: Project}> = ({shotId, proj
 export const RemotionRoot: React.FC = () => (
   <>
     <Composition id="shot" component={ShotPreview as any} fps={30} width={1920} height={1080} durationInFrames={120}
-      defaultProps={{shotId: 'S01-01', project: PROJECTS['coffee-world']}} calculateMetadata={dims as any} />
+      defaultProps={{shotId: 'S01-01', project: SAMPLE}} calculateMetadata={dims as any} />
     {/* ปก YouTube (rule 12): --props='{"coverId":"B"}' */}
     <Still id="cover" component={CoverStill as any} width={1920} height={1080}
-      defaultProps={{coverId: 'A', project: PROJECTS['coffee-world']}} calculateMetadata={dims as any} />
+      defaultProps={{coverId: 'A', project: SAMPLE}} calculateMetadata={dims as any} />
     {/* โปรเจกต์ใดก็ได้ผ่าน props (HistoryTeller: --props=out/.props-<slug>.json) */}
     <Composition
       id="project"
@@ -70,7 +72,7 @@ export const RemotionRoot: React.FC = () => (
       width={1920}
       height={1080}
       durationInFrames={180 * 30}
-      defaultProps={{project: PROJECTS['coffee-world'], timeline: null, showSubs: true, withAudio: false}}
+      defaultProps={{project: SAMPLE, timeline: null, showSubs: true, withAudio: false}}
       calculateMetadata={calc}
     />
     {Object.entries(PROJECTS).map(([slug, project]) => (
