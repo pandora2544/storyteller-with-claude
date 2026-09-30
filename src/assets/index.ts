@@ -6,6 +6,7 @@ import * as origins from './origins';
 import * as feed from './feed';
 import * as nakhon from './nakhon';
 import * as tumpang from './tumpang';
+import * as khaohmen from './khaohmen';
 
 export const ASSETS: Record<string, AssetDef> = {
   sky: common.sky,
@@ -134,4 +135,20 @@ export const ASSETS: Record<string, AssetDef> = {
   'tp-offering': tumpang.tpOffering,
   'tp-old-house': tumpang.tpOldHouse,
   'tp-timeline': tumpang.tpTimeline,
+  // projects/khaohmen
+  'km-stairs': khaohmen.kmStairs,
+  'km-mountain': khaohmen.kmMountain,
+  'km-map-south': khaohmen.kmMapSouth,
+  'km-names': khaohmen.kmNames,
+  'km-trail-map': khaohmen.kmTrailMap,
+  'km-profile': khaohmen.kmProfile,
+  'km-hiker': khaohmen.kmHiker,
+  'km-tapir': khaohmen.kmTapir,
+  'km-leech-x': khaohmen.kmLeechX,
+  'km-flowers': khaohmen.kmFlowers,
+  'km-hammock': khaohmen.kmHammock,
+  'km-no-icons': khaohmen.kmNoIcons,
+  'km-mist-sea': khaohmen.kmMistSea,
+  'km-clouds-fg': khaohmen.kmCloudsFg,
+  'km-checklist': khaohmen.kmChecklist,
 };
