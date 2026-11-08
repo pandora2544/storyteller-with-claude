@@ -23,6 +23,9 @@ Output ของระบบมี 2 ส่วน:
 ทุกครั้งที่ทำงานในโปรเจกต์: **อ่าน `projects/<slug>/status.json` + feedback ที่ค้างใน `feedback.jsonl` ก่อน** แล้วทำตาม @rules/13-ui-protocol.md
 (ห้ามอนุมัติ stage เอง · ปิด feedback ด้วยการ append บรรทัดใหม่ · คำสั่งลัด `/ht-new` `/ht-next` `/ht-feedback`)
 
+## ระบบอัตโนมัติ (คลิปเทรนด์วันละ 2 รอบ)
+งานตามเวลา (scheduled task) ทำตาม **@auto/RUNBOOK.md** — ไม่มี checkpoint ระหว่าง stage · โปรเจกต์ชื่อ `projects/d-YYYYMMDD-am|pm` · เรนเดอร์บน GitHub Actions (`.github/workflows/auto-render.yml`) · ภาพรวม `auto/README.md`
+
 ## ไฟล์ RULE
 - @rules/01-spec-and-timing.md — settings 3 แกน, สูตรงบเวลา/งบคำ/ช็อต
 - @rules/02-story-structure.md — โครงเรื่องตามความยาว (Shorts / 7 beat / chapter)

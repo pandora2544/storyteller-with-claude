@@ -1,0 +1,40 @@
+{
+  "_note": "ค่าตั้งของช่องสำหรับระบบอัตโนมัติ — scripts/auto/new-slot.mjs คัดลอก settings ไปใส่ทุกคลิปใหม่ · แก้ได้",
+  "settings": {
+    "format": "portrait-9x16",
+    "style": "shorts-punch",
+    "voice": "doc-narrator-female",
+    "targetSec": 60,
+    "subtitles": "th",
+    "overrides": {
+      "voice": {"charsPerSec": 7.6, "calibrated": "วัดจากคลิปเขาเหมน 2026-09-30: บท 563 ตัวอักษร → คลิปจริง 1:18"}
+    }
+  },
+  "platforms": ["tiktok", "facebook", "instagram"],
+  "imageMaxCostUsd": 0.8,
+  "slots": {
+    "am": {
+      "label": "เช้า",
+      "produceBy": "06:00",
+      "post": {
+        "weekday": {"time": "11:45", "why": "ช่วงพักเที่ยง 12:00–13:00 คนไทยเปิด TikTok มากขึ้น (~+25%) และยังอยู่ในช่วงดีของ Facebook/IG (07:00–12:00)"},
+        "weekend": {"time": "09:30", "why": "วันหยุด Facebook/IG/TikTok คนเข้าเยอะช่วงสาย 09:00–11:00"},
+        "alt": "07:30 ถ้าเน้น Facebook/IG (คนเลื่อนฟีดก่อนเข้างาน)"
+      }
+    },
+    "pm": {
+      "label": "เย็น",
+      "produceBy": "15:30",
+      "post": {
+        "weekday": {"time": "19:00", "why": "18:00–20:00 หลังเลิกงาน คนดูมากที่สุดของวัน (~+35%) · IG ช่วง 18:00 ดีที่สุดของวัน"},
+        "weekend": {"time": "20:00", "why": "คืนวันอาทิตย์ 20:00 เป็นช่วงพีกของ TikTok ทั้งสัปดาห์"},
+        "alt": "21:00–22:00 ถ้าคลิปเป็นเรื่องชวนคุย/ชวนคิด (คนดูก่อนนอน)"
+      }
+    }
+  },
+  "postTimeSources": [
+    "https://krevio.co/en/blog/tiktok-posting-time-thailand",
+    "https://contentshifu.com/blog/best-time-to-post-social-media/"
+  ],
+  "postTimeNote": "เป็นค่าเฉลี่ยจากข้อมูลตลาด ไม่ใช่ข้อมูลช่องคุณเอง — ลงครบ 2 สัปดาห์แล้วดู Analytics ของ TikTok/Meta แล้วปรับเวลาในไฟล์นี้"
+}

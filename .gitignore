@@ -30,3 +30,6 @@ projects/*
 public/*
 !public/audio/
 !public/textures/
+
+# คลิปอัตโนมัติ (auto/RUNBOOK.md) — เก็บใน repo เพื่อให้ GitHub Actions เรนเดอร์
+!projects/d-*
