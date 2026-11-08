@@ -66,7 +66,7 @@ const readme = [
   check || '- ไม่มีข้อที่ต้องเช็กเป็นพิเศษ',
   '',
   'แหล่งอ้างอิง',
-  ...(r.sources ?? []).map((s) => `- ${s.name}${s.url ? ` — ${s.url}` : ''}`),
+  ...(r.sources ?? []).map((s) => `- ${String(s.name).replace(/^\[|\]\(?$/g, '').trim()}${s.url ? ` — ${s.url}` : ''}`),
   '',
   lock.cost ? `ค่าภาพ AI รอบนี้: $${Number(lock.cost).toFixed(3)}` : '',
   pub.note ? `หมายเหตุเวลาโพสต์: ${pub.note}` : '',

@@ -61,6 +61,7 @@ jobs:
           sudo apt-get install -y -qq ffmpeg zip fonts-thai-tlwg \
             libnss3 libdbus-1-3 libatk1.0-0 libgbm-dev libasound2t64 libxrandr2 libxkbcommon-dev \
             libxfixes3 libxcomposite1 libxdamage1 libatk-bridge2.0-0 libpango-1.0-0 libcairo2 libcups2
+          python3 -m pip install -q pillow
           npm ci --no-audit --no-fund
           npx remotion browser ensure
 
@@ -76,6 +77,7 @@ jobs:
             if [ -f "projects/$S/images.json" ]; then
               python3 scripts/imagegen.py "$S" --variants 1 --max-cost "$IMAGE_MAX_COST" || echo "::warning::$S สร้างภาพ AI ไม่ครบ — ใช้ vector สำรอง"
               node scripts/auto/autoselect.mjs "$S" || true
+              python3 scripts/auto/fix-cutouts.py "$S" || echo "::warning::$S ลบพื้นหลังรูป cutout ไม่สำเร็จ"
             fi
             echo "::endgroup::"
 
