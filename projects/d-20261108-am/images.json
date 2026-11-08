@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "id": "airport-plate",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Bright modern airport arrival hall interior seen from passenger eye level, baggage carousel and a few suitcases, large windows with airplane tails outside, no people, no signs, no logos"
+    },
+    {
+      "id": "customs-lanes",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Airport customs exit area with two side-by-side corridors, the left corridor marked only by a plain glowing green overhead panel, the right corridor by a plain glowing red overhead panel, empty, no people, no lettering on panels"
+    },
+    {
+      "id": "tea-field",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Japanese green tea plantation with neat rounded rows of tea bushes on gentle hills, a soft mountain in the far distance, morning light, no people, no buildings with signs"
+    },
+    {
+      "id": "matcha-tin",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A single cute cylindrical tea tin with a cream white body and a red lid, plain with no label text, slightly tilted, friendly rounded shapes"
+    },
+    {
+      "id": "suitcase-stack",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A tall messy stack of seven colorful hard-shell travel suitcases in orange, yellow, navy and purple, one on top slightly open showing small cream-colored tins inside, no logos, no tags with text"
+    },
+    {
+      "id": "tea-bowl",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A handmade beige ceramic tea bowl seen from a slight top angle with a bamboo tea whisk leaning beside it, simple and cozy"
+    }
+  ]
+}

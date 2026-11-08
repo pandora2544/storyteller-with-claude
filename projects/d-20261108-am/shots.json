@@ -1,0 +1,1349 @@
+{
+  "meta": {
+    "slug": "d-20261108-am",
+    "title": "หิ้วมัทฉะจากญี่ปุ่น ผิดตรงไหน",
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "targetSec": 60
+  },
+  "sources": {
+    "F-01": "กรมศุลกากร ผ่าน มติชน/แนวหน้า 8 พ.ย. 2569",
+    "F-02": "กรมศุลกากร ผ่าน The Thaiger 21 ต.ค. 2569",
+    "F-03": "Thailand.go.th · AIP กพท.",
+    "F-04": "AIP กพท. GEN 1.3",
+    "F-05": "กรมศุลกากร ผ่าน มติชน/แนวหน้า",
+    "F-06": "กรมศุลกากร (ข้อผูกพัน WTO) ผ่าน มติชน"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "era": "present",
+      "vo": "หิ้วมัทฉะ… ผิดตรงไหน [#S01-02] ใคร ๆ ก็ซื้อ",
+      "voTTS": "หิ้วมัทฉะ… ผิดตรงไหน [#S01-02] ใคร ๆ ก็ซื้อ",
+      "voFile": "vo/S01.wav",
+      "shots": [
+        {
+          "id": "S01-01",
+          "kind": "parallax",
+          "description": "โถงขาเข้าสนามบินการ์ตูน กระเป๋าเดินทางกองโต กระป๋องมัทฉะลอยเด่น กล้องดันเข้าเร็วตั้งแต่เฟรมแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:airport-plate|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:suitcase-stack|sacks",
+              "style": "vector",
+              "z": 1600,
+              "y": 250,
+              "w": 900
+            },
+            {
+              "id": "subject",
+              "asset": "img:matcha-tin|cup",
+              "style": "vector",
+              "z": 1000,
+              "y": 80,
+              "w": 520,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 260
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "หิ้วมัทฉะ ผิดตรงไหน?",
+              "role": "title",
+              "x": 540,
+              "y": 380
+            }
+          ]
+        },
+        {
+          "id": "S01-02",
+          "kind": "vector",
+          "description": "ไอคอนแยกทาง ถาม \"ผิด/ไม่ผิด\" — คนทั่วไปก็ซื้อกลับมา",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1000,
+              "w": 760,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ใคร ๆ ก็ซื้อ",
+              "role": "kicker",
+              "x": 540,
+              "y": 360
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "beat": "setup",
+      "era": "present",
+      "vo": "ที่สุวรรณภูมิ [#S02-02] เปิดเจ็ดกระเป๋า [#S02-03] เจอมัทฉะ 1,200 ชิ้น [#S02-04] มูลค่ากว่า 8.5 แสนบาท",
+      "voTTS": "ที่สุวรรณภูมิ [#S02-02] เปิดเจ็ดกระเป๋า [#S02-03] เจอมัทฉะ พันสองร้อยชิ้น [#S02-04] มูลค่ากว่า แปดแสนห้าหมื่นบาท",
+      "voFile": "vo/S02.wav",
+      "shots": [
+        {
+          "id": "S02-01",
+          "kind": "data",
+          "description": "แผนที่ เส้นบินโตเกียว → สุวรรณภูมิ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                122,
+                25
+              ],
+              "scale": 900
+            },
+            "to": {
+              "center": [
+                110,
+                18
+              ],
+              "scale": 1300
+            },
+            "routes": [
+              {
+                "path": [
+                  [
+                    139.78,
+                    35.55
+                  ],
+                  [
+                    100.75,
+                    13.69
+                  ]
+                ]
+              }
+            ],
+            "pins": [
+              {
+                "at": [
+                  139.78,
+                  35.55
+                ],
+                "label": "โตเกียว"
+              },
+              {
+                "at": [
+                  100.75,
+                  13.69
+                ],
+                "label": "สุวรรณภูมิ",
+                "delay": 0.6
+              }
+            ],
+            "sourceRef": "F-01"
+          },
+          "text": [
+            {
+              "content": "6 พ.ย. 2569",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S02-02",
+          "kind": "parallax",
+          "description": "กระเป๋าเดินทาง 7 ใบเปิดออกบนสายพาน เห็นกระป๋องมัทฉะล้น กล้องแพนข้าง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:airport-plate|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:suitcase-stack|sacks",
+              "style": "vector",
+              "z": 1000,
+              "w": 860,
+              "anim": "drop"
+            },
+            {
+              "id": "fg",
+              "asset": "img:matcha-tin|cup",
+              "style": "vector",
+              "z": 550,
+              "x": -300,
+              "y": 380,
+              "w": 320,
+              "rot": -8
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -220,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 220,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "7 กระเป๋า",
+              "role": "title",
+              "x": 540,
+              "y": 360,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S02-03",
+          "kind": "data",
+          "description": "ตัวนับขึ้นถึง 1,200 ชิ้น",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 1200,
+            "suffix": " ชิ้น",
+            "label": "ผงมัทฉะ",
+            "sourceRef": "F-01"
+          }
+        },
+        {
+          "id": "S02-04",
+          "kind": "data",
+          "description": "ตัวนับมูลค่าขึ้นถึง 850,000 บาท (จริง ~853,400)",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 850000,
+            "suffix": " บาท",
+            "label": "มูลค่ากว่า",
+            "sourceRef": "F-01"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "beat": "act1",
+      "era": "present",
+      "vo": "กฎของคนเดินทาง [#S03-02] ของใช้เอง พอสมควร [#S03-03] รวมไม่เกิน 20,000 บาท [#S03-04] ผ่านช่องเขียวได้ [#S03-05] แต่เจ็ดกระเป๋า ไม่ใช่ใช้เอง",
+      "voTTS": "กฎของคนเดินทาง [#S03-02] ของใช้เอง พอสมควร [#S03-03] รวมไม่เกิน สองหมื่นบาท [#S03-04] ผ่านช่องเขียวได้ [#S03-05] แต่เจ็ดกระเป๋า ไม่ใช่ใช้เอง",
+      "voFile": "vo/S03.wav",
+      "shots": [
+        {
+          "id": "S03-01",
+          "kind": "parallax",
+          "description": "ทางเดินศุลกากรสองช่อง ช่องเขียว/ช่องแดง กล้องเครนลงมาเผยทั้งสองช่อง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:customs-lanes|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "signal-icon",
+              "style": "vector",
+              "z": 1000,
+              "y": -120,
+              "w": 300,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "crane",
+            "from": {
+              "x": 0,
+              "y": -250,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 120
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "กฎคนเดินทาง",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S03-02",
+          "kind": "vector",
+          "description": "กระป๋องมัทฉะ 1–2 กระป๋องในถุงช้อปปิ้ง = ใช้เอง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:matcha-tin|cup",
+              "style": "vector",
+              "z": 1000,
+              "w": 480,
+              "anim": "bob"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ใช้เอง พอสมควร",
+              "role": "label",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-03"
+            }
+          ]
+        },
+        {
+          "id": "S03-03",
+          "kind": "data",
+          "description": "ตัวนับ 20,000 บาท มูลค่ารวม",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 20000,
+            "suffix": " บาท",
+            "label": "มูลค่ารวมไม่เกิน",
+            "sourceRef": "F-03"
+          }
+        },
+        {
+          "id": "S03-04",
+          "kind": "vector",
+          "description": "ป้ายช่องเขียว ลูกศรผ่านโล่ง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "arrow",
+              "style": "vector",
+              "z": 1000,
+              "w": 620,
+              "anim": "slide-right",
+              "props": {
+                "color": "#3FD6C6"
+              }
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ช่องเขียว",
+              "role": "title",
+              "x": 540,
+              "y": 360,
+              "sourceRef": "F-04"
+            },
+            {
+              "content": "ไม่มีของต้องสำแดง",
+              "role": "note",
+              "x": 540,
+              "y": 1050,
+              "delay": 0.3,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S03-05",
+          "kind": "vector",
+          "description": "กองกระเป๋า 7 ใบ ตาชั่งเอียง — เกินใช้เอง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:suitcase-stack|sacks",
+              "style": "vector",
+              "z": 1500,
+              "w": 900
+            },
+            {
+              "id": "subject",
+              "asset": "balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "y": 120,
+              "w": 520,
+              "anim": "sway"
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 160
+            }
+          },
+          "text": [
+            {
+              "content": "7 กระเป๋า ≠ ใช้เอง",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "beat": "act2",
+      "era": "present",
+      "vo": "ทว่ามีอีกชั้น [#S04-02] มัทฉะเป็นอาหาร และพืช [#S04-03] นำเข้าต้องผ่าน อย. [#S04-04] และด่านตรวจพืช [#S04-05] หิ้วมาขายต่อทันทีไม่ได้",
+      "voTTS": "ทว่า มีอีกชั้น [#S04-02] มัทฉะเป็นอาหาร และพืช [#S04-03] นำเข้าต้องผ่าน ออ-ยอ [#S04-04] และด่านตรวจพืช [#S04-05] หิ้วมาขายต่อทันทีไม่ได้",
+      "voFile": "vo/S04.wav",
+      "shots": [
+        {
+          "id": "S04-01",
+          "kind": "title",
+          "description": "ป้ายใหญ่ \"อีกชั้น\" เด้งขึ้น",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ทว่ามีอีกชั้น",
+              "role": "title",
+              "x": 540,
+              "y": 700
+            }
+          ]
+        },
+        {
+          "id": "S04-02",
+          "kind": "vector",
+          "description": "ถ้วยชากับแปรงชงชา ข้างไอคอนใบไม้ — อาหาร + พืช",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:tea-bowl|cup",
+              "style": "vector",
+              "z": 1000,
+              "w": 560,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "seedling",
+              "style": "vector",
+              "z": 1300,
+              "x": 280,
+              "y": -260,
+              "w": 300,
+              "anim": "sway"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "อาหาร + พืช",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S04-03",
+          "kind": "collage",
+          "description": "เอกสารนำเข้าบนกระดาษ ตรายางประทับ \"อย.\"",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "document",
+              "style": "collage",
+              "z": 1000,
+              "w": 620,
+              "anim": "stop-motion",
+              "rot": -3
+            },
+            {
+              "id": "stamp",
+              "asset": "stamp",
+              "style": "collage",
+              "z": 900,
+              "x": 150,
+              "y": 200,
+              "w": 300,
+              "anim": "drop",
+              "props": {
+                "at": 0.5
+              }
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "อย.",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S04-04",
+          "kind": "collage",
+          "description": "ใบรับรองด่านตรวจพืช แผ่นที่สองวางซ้อน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "document",
+              "style": "collage",
+              "z": 1000,
+              "w": 620,
+              "anim": "slide-left",
+              "rot": 4
+            },
+            {
+              "id": "fg",
+              "asset": "seedling",
+              "style": "collage",
+              "z": 850,
+              "x": -260,
+              "y": 300,
+              "w": 260
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ด่านตรวจพืช",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S04-05",
+          "kind": "vector",
+          "description": "มือถือฟีดพรีออเดอร์ มีกากบาทแดง — หิ้วมาส่งต่อทันทีไม่ได้",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "w": 520,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "marker-circle",
+              "style": "vector",
+              "z": 900,
+              "w": 620,
+              "delay": 0.5
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "หิ้วมาขายต่อทันที ✗",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-05"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "beat": "act3",
+      "era": "present",
+      "vo": "ชายังติดโควตา WTO [#S05-02] ในโควตา ภาษี 30% [#S05-03] นอกโควตา… 90% [#S05-04] ไม่สำแดง ภาษีก้อนนี้ก็หายไป",
+      "voTTS": "ชายังติดโควตา ดับเบิลยูทีโอ [#S05-02] ในโควตา ภาษีสามสิบเปอร์เซ็นต์ [#S05-03] นอกโควตา… เก้าสิบ [#S05-04] ไม่สำแดง ภาษีก้อนนี้ก็หายไป",
+      "voFile": "vo/S05.wav",
+      "shots": [
+        {
+          "id": "S05-01",
+          "kind": "parallax",
+          "description": "ไร่ชาเป็นขั้นบันได ลูกโลกลอย สินค้าข้ามพรมแดน กล้องถอยออกให้เห็นสเกลโลก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:tea-field|mountains",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "earth-globe",
+              "style": "vector",
+              "z": 1000,
+              "w": 520,
+              "anim": "spin"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 150
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -300
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ชา = สินค้าโควตา WTO",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S05-02",
+          "kind": "data",
+          "description": "ตัวนับ 30% ภาษีในโควตา",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 30,
+            "suffix": "%",
+            "label": "ภาษีในโควตา",
+            "sourceRef": "F-06"
+          }
+        },
+        {
+          "id": "S05-03",
+          "kind": "data",
+          "description": "แท่งเทียบ 30% vs 90% แท่งนอกโควตาพุ่ง (data moment)",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "bar",
+            "items": [
+              {
+                "label": "ในโควตา",
+                "value": 30
+              },
+              {
+                "label": "นอกโควตา",
+                "value": 90,
+                "highlight": true
+              }
+            ],
+            "unit": "%",
+            "title": "อากรนำเข้าชา",
+            "sourceRef": "F-06"
+          }
+        },
+        {
+          "id": "S05-04",
+          "kind": "vector",
+          "description": "กองเหรียญที่ควรจ่าย จางหายไป — ไม่สำแดง = ของยังไม่เสียภาษี",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "w": 520,
+              "anim": "drop"
+            },
+            {
+              "id": "mg",
+              "asset": "img:suitcase-stack|sacks",
+              "style": "vector",
+              "z": 1500,
+              "x": -200,
+              "y": -150,
+              "w": 600,
+              "opacity": 0.6
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 150
+            }
+          },
+          "text": [
+            {
+              "content": "ไม่สำแดง = ไม่เสียภาษี",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-02"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "beat": "payoff",
+      "era": "present",
+      "vo": "สรุป มัทฉะไม่ผิด [#S06-02] ผิดที่หิ้วขาย แต่เดินช่องเขียว [#S06-03] ซื้อเยอะ [#S06-04] เดินช่องแดงสำแดง",
+      "voTTS": "สรุป มัทฉะไม่ผิด [#S06-02] ผิดที่หิ้วขาย แต่เดินช่องเขียว [#S06-03] ซื้อเยอะ [#S06-04] เดินช่องแดง แล้วสำแดง",
+      "voFile": "vo/S06.wav",
+      "shots": [
+        {
+          "id": "S06-01",
+          "kind": "vector",
+          "description": "กระป๋องมัทฉะยิ้มสบาย ติ๊กถูก — มัทฉะไม่ผิด",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:matcha-tin|cup",
+              "style": "vector",
+              "z": 1000,
+              "w": 520,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "มัทฉะไม่ผิด",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S06-02",
+          "kind": "parallax",
+          "description": "ทางช่องเขียว กองกระเป๋าเชิงการค้าถูกกั้น กล้องดันเข้า",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:customs-lanes|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:suitcase-stack|sacks",
+              "style": "vector",
+              "z": 1000,
+              "w": 760,
+              "anim": "slide-left"
+            },
+            {
+              "id": "fg",
+              "asset": "marker-circle",
+              "style": "vector",
+              "z": 600,
+              "w": 800,
+              "delay": 0.4
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 60,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 220
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ปริมาณขาย + ช่องเขียว",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-02"
+            }
+          ]
+        },
+        {
+          "id": "S06-03",
+          "kind": "vector",
+          "description": "กระป๋องมัทฉะหลายใบกองในตะกร้า เด้งเพิ่มทีละใบ — ซื้อมาเยอะ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:matcha-tin|cup",
+              "style": "vector",
+              "z": 1300,
+              "x": -200,
+              "w": 380,
+              "anim": "drop"
+            },
+            {
+              "id": "subject",
+              "asset": "img:matcha-tin|cup",
+              "style": "vector",
+              "z": 1000,
+              "x": 150,
+              "y": 80,
+              "w": 440,
+              "anim": "drop",
+              "delay": 0.2
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ซื้อเยอะ?",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S06-04",
+          "kind": "vector",
+          "description": "ลูกศรชี้ไปช่องแดง ป้ายสำแดง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "arrow",
+              "style": "vector",
+              "z": 1000,
+              "w": 620,
+              "anim": "slide-left",
+              "props": {
+                "color": "#FF6B4A"
+              }
+            },
+            {
+              "id": "mg",
+              "asset": "document",
+              "style": "vector",
+              "z": 1400,
+              "x": 220,
+              "y": -200,
+              "w": 300,
+              "rot": 6
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ช่องแดง = สำแดง",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-04"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "beat": "outro",
+      "era": "present",
+      "vo": "ก่อนถึงช่องเขียว ลองถามว่า…",
+      "voTTS": "ก่อนถึงช่องเขียว ลองถามว่า…",
+      "voFile": "vo/S07.wav",
+      "holdAfter": 0.3,
+      "shots": [
+        {
+          "id": "S07-01",
+          "kind": "parallax",
+          "description": "กลับมาที่โถงขาเข้า มองไปยังช่องเขียว กระป๋องมัทฉะลอย กล้องดันเข้าช้า วนกลับไปช็อตแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:customs-lanes|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:matcha-tin|cup",
+              "style": "vector",
+              "z": 1000,
+              "w": 440,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 240
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ก่อนถึงช่องเขียว…",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "covers": [
+    {
+      "id": "A",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "7 กระเป๋า\n*โดนยึด*",
+      "kicker": "หิ้วมัทฉะ",
+      "sourceRef": "F-01",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:airport-plate|bg-color",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "mg",
+          "asset": "img:suitcase-stack|sacks",
+          "style": "vector",
+          "z": 1600,
+          "y": 520,
+          "w": 900
+        },
+        {
+          "id": "subject",
+          "asset": "img:matcha-tin|cup",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 520
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "ภาษีชา\n*90%*",
+      "kicker": "นอกโควตา",
+      "sourceRef": "F-06",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:tea-field|mountains",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "img:tea-bowl|cup",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 560
+        },
+        {
+          "id": "fg",
+          "asset": "dust",
+          "style": "vector",
+          "z": 500,
+          "cover": true,
+          "opacity": 0.3
+        }
+      ]
+    }
+  ]
+}
