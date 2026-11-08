@@ -22,9 +22,15 @@ try {
 $slotName = @{ 'am' = 'เช้า'; 'pm' = 'เย็น' }
 $new = 0
 foreach ($r in $releases) {
-  if ($r.tag_name -notmatch '^d-(\d{4})(\d{2})(\d{2})-(am|pm)$') { continue }
-  $label = "{0}-{1}-{2} {3}" -f $Matches[1], $Matches[2], $Matches[3], $slotName[$Matches[4]]
-  $folder = Join-Path $Dest $label
+  if ($r.tag_name -match '^d-(\d{4})(\d{2})(\d{2})-(am|pm)$') {
+    $label = "{0}-{1}-{2} {3}" -f $Matches[1], $Matches[2], $Matches[3], $slotName[$Matches[4]]
+    $folder = Join-Path $Dest $label
+  } elseif ($r.tag_name -match '^e-(\d{2})$') {
+    $title = ($r.name -replace '[\\/:*?"<>|]', '').Trim()
+    if ($title.Length -gt 60) { $title = $title.Substring(0, 60) }
+    $label = "คลัง {0} {1}" -f $Matches[1], $title
+    $folder = Join-Path (Join-Path $Dest 'คลัง') ("{0} {1}" -f $Matches[1], $title)
+  } else { continue }
   $stamp = Join-Path $folder '.synced'
   $asset = $r.assets | Where-Object { $_.name -like '*.zip' } | Select-Object -First 1
   if (-not $asset) { continue }
@@ -39,6 +45,7 @@ foreach ($r in $releases) {
       Invoke-WebRequest -Uri $asset.browser_download_url -Headers @{ 'User-Agent' = 'trend-clips-sync' } -OutFile $zip -UseBasicParsing
     }
     if (Test-Path $folder) { Get-ChildItem $folder -Force | Remove-Item -Recurse -Force }
+    New-Item -ItemType Directory -Force -Path $folder | Out-Null
     Expand-Archive -Path $zip -DestinationPath $folder -Force
     Remove-Item $zip -Force
     Set-Content -Path $stamp -Value ([string]$asset.updated_at) -Encoding ASCII

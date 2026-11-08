@@ -5,7 +5,7 @@ name: auto-render
 on:
   push:
     branches: [main]
-    paths: ['projects/d-*/shots.json']
+    paths: ['projects/d-*/shots.json', 'projects/e-*/shots.json']
   workflow_dispatch:
     inputs:
       slug:
@@ -22,7 +22,7 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-24.04
-    timeout-minutes: 75
+    timeout-minutes: 240
     env:
       OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
       IMAGE_MAX_COST: '0.8'
@@ -41,7 +41,7 @@ jobs:
           else
             BEFORE="${{ github.event.before }}"
             if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then BEFORE="HEAD~1"; fi
-            S=$(git diff --name-only "$BEFORE" "${{ github.sha }}" -- 'projects/d-*/shots.json' | cut -d/ -f2 | sort -u | tr '\n' ' ')
+            S=$(git diff --name-only "$BEFORE" "${{ github.sha }}" -- 'projects/d-*/shots.json' 'projects/e-*/shots.json' | cut -d/ -f2 | sort -u | tr '\n' ' ')
           fi
           echo "slugs=$S" >> "$GITHUB_OUTPUT"
           echo "จะทำ: $S"
@@ -68,9 +68,10 @@ jobs:
       - name: สร้างคลิป
         run: |
           set -o pipefail
-          for S in ${{ steps.slugs.outputs.slugs }}; do
+          one() {
+            local S="$1"
             echo "::group::$S — ตรวจ"
-            node scripts/validate.mjs "projects/$S"
+            node scripts/validate.mjs "projects/$S" || return 1
             echo "::endgroup::"
 
             echo "::group::$S — ภาพ AI"
@@ -82,24 +83,35 @@ jobs:
             echo "::endgroup::"
 
             echo "::group::$S — เสียงพากย์"
-            python3 scripts/tts.py "projects/$S/shots.json"
+            python3 scripts/tts.py "projects/$S/shots.json" || return 1
             echo "::endgroup::"
 
             echo "::group::$S — เรนเดอร์"
-            node scripts/render.mjs "$S"
+            node scripts/render.mjs "$S" || return 1
             node scripts/cover.mjs "$S" || echo "::warning::$S ทำปกไม่สำเร็จ"
             node scripts/post.mjs "$S" || echo "::warning::$S post.json มีจุดต้องแก้"
-            node scripts/auto/package.mjs "$S"
+            node scripts/auto/package.mjs "$S" || return 1
             echo "::endgroup::"
 
-            TITLE=$(node -e "const m=require('./out/package/$S/meta.json');console.log((m.title||'$S')+' · โพสต์ '+(m.postAt||''))")
+            TITLE=$(node -e "const m=require('./out/package/$S/meta.json');console.log(m.title||'$S')")
             if gh release view "$S" >/dev/null 2>&1; then
               gh release upload "$S" "out/package/$S.zip" --clobber
             else
               gh release create "$S" "out/package/$S.zip" --title "$TITLE" --notes-file "out/package/$S/README.txt" --target "${{ github.sha }}"
             fi
-            echo "### ✓ $S — $TITLE" >> "$GITHUB_STEP_SUMMARY"
+          }
+          FAILED=""
+          for S in ${{ steps.slugs.outputs.slugs }}; do
+            if one "$S"; then
+              echo "### ✓ $S" >> "$GITHUB_STEP_SUMMARY"
+            else
+              echo "::endgroup::"; echo "::error::$S ทำไม่สำเร็จ"
+              echo "### ✗ $S" >> "$GITHUB_STEP_SUMMARY"
+              FAILED="$FAILED $S"
+            fi
+            rm -rf out/*.mp4 "public/$S/vo/.cache"
           done
+          [ -z "$FAILED" ] || { echo "ไม่สำเร็จ:$FAILED"; exit 1; }
 
       - name: เก็บไฟล์ไว้ดูกรณีพัง
         if: always()
