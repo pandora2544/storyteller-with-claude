@@ -1,0 +1,39 @@
+{
+  "images": [
+    {
+      "id": "bills-desk",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Cozy home desk seen from a high angle, a small stack of blank paper bills and envelopes, a simple calculator, a smartphone face down, a coffee mug and a desk lamp glow, evening mood, no people, no readable text, no logos"
+    },
+    {
+      "id": "shop-street",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Colorful city shopping street at dusk with glowing shop windows full of clothes, sneakers and gadgets, string lights overhead, empty sidewalk, no people, no signs with lettering, no brand logos"
+    },
+    {
+      "id": "credit-card",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A single generic credit card floating at a slight tilt, glossy teal and yellow gradient, a small gold chip, completely blank with no numbers, no name, no bank or network logo, on a plain flat light-gray background"
+    },
+    {
+      "id": "hourglass",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A friendly wooden hourglass with small gold coins slowly falling through it instead of sand, rounded cartoon shapes, on a plain flat light-gray background"
+    },
+    {
+      "id": "chain-weight",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A heavy dark iron ball weight attached to a short chain with an open cuff, simple rounded cartoon shapes, no lettering on the weight, on a plain flat light-gray background"
+    }
+  ]
+}

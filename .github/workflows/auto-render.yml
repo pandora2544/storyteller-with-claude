@@ -15,10 +15,6 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: auto-render
-  cancel-in-progress: false
-
 jobs:
   render:
     runs-on: ubuntu-24.04

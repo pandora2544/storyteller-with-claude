@@ -1,0 +1,1400 @@
+{
+  "meta": {
+    "slug": "e-01",
+    "title": "จ่ายบัตรเครดิตขั้นต่ำ ทำไมหนี้ไม่ลด",
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "targetSec": 60
+  },
+  "sources": {
+    "F-01": "ธปท. (เพดาน 16% ตั้งแต่ 1 ส.ค. 2563) · ไทยรัฐ มี.ค. 2569",
+    "F-02": "ธปท. ผ่าน กรุงเทพธุรกิจ/โพสต์ทูเดย์ 4 ธ.ค. 2568 (8% ถึงสิ้นปี 2569)",
+    "F-03": "ไทยรัฐ มี.ค. 2569 · ตารางค่าธรรมเนียมธนาคาร",
+    "F-04": "ตัวอย่างคำนวณจากเกณฑ์ 8% / 16% (รอบ 30 วัน)",
+    "F-05": "ธปท. · ไทยรัฐ มี.ค. 2569",
+    "F-06": "บสส. (คลินิกแก้หนี้) · ธปท."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "era": "present",
+      "vo": "จ่ายบัตรทุกเดือน… [#S01-02] ทำไมหนี้ไม่ลด",
+      "voTTS": "จ่ายบัตรทุกเดือน… [#S01-02] ทำไมหนี้ไม่ลด",
+      "voFile": "vo/S01.wav",
+      "shots": [
+        {
+          "id": "S01-01",
+          "kind": "parallax",
+          "description": "โต๊ะทำงานมีกองบิล บัตรเครดิตเด้งขึ้นกลางจอ นาฬิกาทรายด้านหลัง กล้องดันเข้าเร็วตั้งแต่เฟรมแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:bills-desk|paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:hourglass|clock",
+              "style": "vector",
+              "z": 1600,
+              "x": 280,
+              "y": -360,
+              "w": 300
+            },
+            {
+              "id": "subject",
+              "asset": "img:credit-card|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 580,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 260
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "หนี้ไม่ลด?",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S01-02",
+          "kind": "vector",
+          "description": "ลูกตุ้มเหล็กโซ่ล่าม — หนี้ที่ถ่วงอยู่ แม้จ่ายทุกเดือน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:chain-weight|balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "drop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "จ่ายตรงทุกรอบ",
+              "role": "kicker",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "beat": "setup",
+      "era": "present",
+      "vo": "ขั้นต่ำ 8% ของยอด [#S02-02] ดอกเบี้ยสูงสุด 16% ต่อปี [#S02-03] ตามเกณฑ์ปี 2569",
+      "voTTS": "ขั้นต่ำ แปดเปอร์เซ็นต์ของยอด [#S02-02] ดอกเบี้ยสูงสุด สิบหกเปอร์เซ็นต์ต่อปี [#S02-03] ตามเกณฑ์ปี สองพันห้าร้อยหกสิบเก้า",
+      "voFile": "vo/S02.wav",
+      "shots": [
+        {
+          "id": "S02-01",
+          "kind": "data",
+          "description": "ตัวนับขึ้นถึง 8% — อัตราผ่อนชำระขั้นต่ำ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 8,
+            "suffix": "%",
+            "label": "จ่ายขั้นต่ำ",
+            "sourceRef": "F-02"
+          }
+        },
+        {
+          "id": "S02-02",
+          "kind": "data",
+          "description": "ตัวนับขึ้นถึง 16% ต่อปี — เพดานดอกเบี้ยบัตร",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 16,
+            "suffix": "% ต่อปี",
+            "label": "เพดานดอกเบี้ย",
+            "sourceRef": "F-01"
+          }
+        },
+        {
+          "id": "S02-03",
+          "kind": "parallax",
+          "description": "ปฏิทินลอยหน้าโต๊ะทำงาน บัตรเครดิตกลางจอ — กฎเป็นของปี 2569",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:bills-desk|paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "calendar-year",
+              "style": "vector",
+              "z": 1500,
+              "x": -240,
+              "y": -320,
+              "w": 340,
+              "anim": "sway"
+            },
+            {
+              "id": "subject",
+              "asset": "img:credit-card|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -20,
+              "w": 520,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -200,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 200,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "เกณฑ์ ธปท. · 2569",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-02"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "beat": "act1",
+      "era": "present",
+      "vo": "จ่ายเต็ม ไม่เสียดอก [#S03-02] แต่ถ้าจ่ายไม่เต็ม [#S03-03] ดอกเบี้ยนับย้อน [#S03-04] ถึงวันที่รูด [#S03-05] คิดรายวัน บนยอดค้าง",
+      "voTTS": "จ่ายเต็ม… ไม่เสียดอก [#S03-02] แต่ถ้าจ่ายไม่เต็ม [#S03-03] ดอกเบี้ย นับย้อน [#S03-04] ถึงวันที่รูด [#S03-05] คิดรายวัน บนยอดค้าง",
+      "voFile": "vo/S03.wav",
+      "shots": [
+        {
+          "id": "S03-01",
+          "kind": "vector",
+          "description": "บัตรเครดิตเด้งขึ้น ป้ายศูนย์ดอกเบี้ย — จ่ายเต็มภายในกำหนด",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:credit-card|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "จ่ายครบ = ดอกเบี้ย 0",
+              "role": "label",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S03-02",
+          "kind": "parallax",
+          "description": "กองบิลบนโต๊ะ บัตรเลื่อนเข้ามา — จ่ายแค่บางส่วน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:bills-desk|paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "document",
+              "style": "vector",
+              "z": 1500,
+              "x": 240,
+              "y": -260,
+              "w": 340,
+              "rot": 6
+            },
+            {
+              "id": "subject",
+              "asset": "img:credit-card|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "x": -40,
+              "y": -20,
+              "w": 500,
+              "anim": "slide-left"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "crane",
+            "from": {
+              "x": 0,
+              "y": -200,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 120
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "จ่ายบางส่วน",
+              "role": "title",
+              "x": 540,
+              "y": 320
+            }
+          ]
+        },
+        {
+          "id": "S03-03",
+          "kind": "vector",
+          "description": "นาฬิกา + ลูกศรชี้ย้อนกลับ — ดอกเบี้ยย้อนหลัง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "clock",
+              "style": "vector",
+              "z": 1100,
+              "y": -160,
+              "w": 400,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "arrow",
+              "style": "vector",
+              "z": 1000,
+              "y": 100,
+              "w": 520,
+              "flip": true,
+              "anim": "slide-left"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ย้อนหลัง",
+              "role": "kicker",
+              "x": 540,
+              "y": 300
+            }
+          ]
+        },
+        {
+          "id": "S03-04",
+          "kind": "collage",
+          "description": "ปฏิทินกระดาษ วงปากกาแดงที่วันรูดบัตร",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "calendar-year",
+              "style": "collage",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "stop-motion",
+              "rot": -3
+            },
+            {
+              "id": "mark",
+              "asset": "marker-circle",
+              "style": "collage",
+              "z": 900,
+              "y": -40,
+              "w": 600
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เริ่มนับ: วันรูดบัตร",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-03"
+            }
+          ]
+        },
+        {
+          "id": "S03-05",
+          "kind": "vector",
+          "description": "นาฬิกาทรายไหลทีละวัน — ดอกเบี้ยเดินทุกวัน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:hourglass|clock",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "bob"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ทุกวัน",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-03"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "beat": "act2",
+      "era": "present",
+      "vo": "หนี้หมื่นบาท [#S04-02] จ่ายขั้นต่ำ 800 [#S04-03] ที่เหลือโดนดอกอีกราว 120 [#S04-04] หนี้ลดจริง [#S04-05] แค่ราว 680",
+      "voTTS": "หนี้หนึ่งหมื่นบาท [#S04-02] จ่ายขั้นต่ำ แปดร้อย [#S04-03] ที่เหลือ โดนดอกอีกราว ร้อยยี่สิบ [#S04-04] หนี้ลดจริง… [#S04-05] แค่ราว หกร้อยแปดสิบ",
+      "voFile": "vo/S04.wav",
+      "shots": [
+        {
+          "id": "S04-01",
+          "kind": "data",
+          "description": "ตัวนับหนี้ตัวอย่าง 10,000 บาท",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 10000,
+            "suffix": " บาท",
+            "label": "ตัวอย่าง",
+            "sourceRef": "F-04"
+          }
+        },
+        {
+          "id": "S04-02",
+          "kind": "parallax",
+          "description": "กองเหรียญบนโต๊ะ บัตรเอียงด้านหลัง — จ่ายขั้นต่ำ 800",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:bills-desk|paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:credit-card|price-tag",
+              "style": "vector",
+              "z": 1500,
+              "x": -260,
+              "y": -340,
+              "w": 360,
+              "rot": -10
+            },
+            {
+              "id": "subject",
+              "asset": "coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 480,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 180
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "800 บาท",
+              "role": "number",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S04-03",
+          "kind": "data",
+          "description": "ตัวนับดอกเบี้ย 30 วันบนยอด 9,200 ≈ 120 บาท",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 120,
+            "suffix": " บาท",
+            "label": "ดอกเบี้ย 30 วัน",
+            "sourceRef": "F-04"
+          }
+        },
+        {
+          "id": "S04-04",
+          "kind": "vector",
+          "description": "ลูกตุ้มแกว่ง — แล้วหนี้ลดเท่าไหร่กันแน่",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:chain-weight|balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 480,
+              "anim": "sway"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ลดจริงเท่าไหร่?",
+              "role": "kicker",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S04-05",
+          "kind": "data",
+          "description": "แท่งเทียบ จ่าย 800 vs หนี้ลดจริง 680",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "bar",
+            "items": [
+              {
+                "label": "จ่ายไป",
+                "value": 800
+              },
+              {
+                "label": "หนี้ลดจริง",
+                "value": 680,
+                "highlight": true
+              }
+            ],
+            "unit": "บาท",
+            "sourceRef": "F-04"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "beat": "act3",
+      "era": "present",
+      "vo": "ขั้นต่ำลดตามหนี้ [#S05-02] จ่ายน้อยลงทุกเดือน [#S05-03] รูดเพิ่มเดือนละ 680 [#S05-04] หนี้ค้างหมื่นเดิม [#S05-05] เสียดอกปีละกว่า 1,400",
+      "voTTS": "ขั้นต่ำ ลดตามหนี้ [#S05-02] จ่ายน้อยลงทุกเดือน [#S05-03] รูดเพิ่ม เดือนละหกร้อยแปดสิบ [#S05-04] หนี้ค้าง หมื่นเดิม [#S05-05] เสียดอก ปีละกว่า พันสี่ร้อย",
+      "voFile": "vo/S05.wav",
+      "shots": [
+        {
+          "id": "S05-01",
+          "kind": "vector",
+          "description": "เหรียญสามกองเล็กลงเรื่อย ๆ — ขั้นต่ำแต่ละเดือนหดตามยอดหนี้",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "a",
+              "asset": "coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "x": -280,
+              "y": -20,
+              "w": 300,
+              "anim": "pop"
+            },
+            {
+              "id": "b",
+              "asset": "coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": 10,
+              "w": 230,
+              "anim": "pop",
+              "delay": 0.2
+            },
+            {
+              "id": "c",
+              "asset": "coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "x": 260,
+              "y": 40,
+              "w": 170,
+              "anim": "pop",
+              "delay": 0.4
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เดือน 1 → 2 → 3",
+              "role": "label",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S05-02",
+          "kind": "vector",
+          "description": "นาฬิกาทรายหมุนกลับ — หนี้ลากยาวขึ้น",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:hourglass|clock",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "spin"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ลากยาว",
+              "role": "title",
+              "x": 540,
+              "y": 320
+            }
+          ]
+        },
+        {
+          "id": "S05-03",
+          "kind": "parallax",
+          "description": "ถนนช้อปปิ้ง บัตรเครดิตพุ่งเข้ามา ป้ายราคาลอย — รูดเพิ่ม",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:shop-street|city",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "price-tag",
+              "style": "vector",
+              "z": 1500,
+              "x": 260,
+              "y": -320,
+              "w": 300,
+              "anim": "sway"
+            },
+            {
+              "id": "subject",
+              "asset": "img:credit-card|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 500,
+              "anim": "slide-left"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": 220,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": -220,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "+680 / เดือน",
+              "role": "number",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S05-04",
+          "kind": "vector",
+          "description": "ลูกตุ้มเหล็กตกลงที่เดิม — หนี้ไม่ขยับ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:chain-weight|balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 500,
+              "anim": "drop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ยังเหลือ 10,000",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S05-05",
+          "kind": "data",
+          "description": "ตัวนับดอกเบี้ยต่อปี กว่า 1,400 บาท",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 1400,
+            "suffix": "+ บาท/ปี",
+            "label": "ดอกเบี้ยที่เสีย",
+            "sourceRef": "F-04"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "beat": "payoff",
+      "era": "present",
+      "vo": "ดอกเบี้ยกับการรูดเพิ่ม ทำให้หนี้ไม่ลด [#S06-02] จ่ายเกินขั้นต่ำ [#S06-03] หยุดรูดเพิ่ม [#S06-04] ไม่ไหว ลองคุยธนาคารหรือคลินิกแก้หนี้",
+      "voTTS": "ดอกเบี้ย กับการรูดเพิ่ม… ทำให้หนี้ไม่ลด [#S06-02] จ่ายเกินขั้นต่ำ [#S06-03] หยุดรูดเพิ่ม [#S06-04] ไม่ไหว… ลองคุยธนาคาร หรือคลินิกแก้หนี้",
+      "voFile": "vo/S06.wav",
+      "shots": [
+        {
+          "id": "S06-01",
+          "kind": "vector",
+          "description": "ตาชั่ง: ดอกเบี้ย + รูดเพิ่ม ถ่วงหนี้ไว้",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 540,
+              "anim": "sway"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ดอก + รูดใหม่",
+              "role": "title",
+              "x": 540,
+              "y": 320
+            }
+          ]
+        },
+        {
+          "id": "S06-02",
+          "kind": "vector",
+          "description": "ลูกศรพุ่งขึ้นข้างกองเหรียญ — จ่ายมากกว่าขั้นต่ำ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "coin-stack",
+              "style": "vector",
+              "z": 1200,
+              "x": -200,
+              "y": 0,
+              "w": 320
+            },
+            {
+              "id": "subject",
+              "asset": "arrow",
+              "style": "vector",
+              "z": 1000,
+              "x": 120,
+              "y": -60,
+              "w": 480,
+              "rot": -35,
+              "anim": "slide-up"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "จ่าย > ขั้นต่ำ",
+              "role": "title",
+              "x": 540,
+              "y": 320
+            }
+          ]
+        },
+        {
+          "id": "S06-03",
+          "kind": "parallax",
+          "description": "ถนนช้อปปิ้ง บัตรโดนตราประทับ — พักการรูด",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:shop-street|city",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:credit-card|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 500,
+              "anim": "float"
+            },
+            {
+              "id": "mg",
+              "asset": "stamp",
+              "style": "vector",
+              "z": 900,
+              "y": -60,
+              "w": 320,
+              "anim": "pop",
+              "delay": 0.3
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 160
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "พักบัตรไว้ก่อน",
+              "role": "kicker",
+              "x": 540,
+              "y": 300
+            }
+          ]
+        },
+        {
+          "id": "S06-04",
+          "kind": "collage",
+          "description": "เอกสารปรับโครงสร้างหนี้บนกระดาษ + มือถือ — มีทางปรึกษา",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "document",
+              "style": "collage",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "stop-motion",
+              "rot": -3
+            },
+            {
+              "id": "mg",
+              "asset": "phone-feed",
+              "style": "collage",
+              "z": 1300,
+              "x": 260,
+              "y": -300,
+              "w": 260,
+              "rot": 6
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "มีทางปรึกษา",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-06"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "beat": "outro",
+      "era": "present",
+      "vo": "จ่ายแค่ขั้นต่ำ… [#S07-02] ก็ได้แค่",
+      "voTTS": "จ่ายแค่ขั้นต่ำ… [#S07-02] ก็ได้แค่…",
+      "voFile": "vo/S07.wav",
+      "shots": [
+        {
+          "id": "S07-01",
+          "kind": "parallax",
+          "description": "กลับมาที่โต๊ะทำงาน บัตรลอยนิ่ง นาฬิกาทรายไหล — โยงกลับฉากเปิด",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:bills-desk|paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:hourglass|clock",
+              "style": "vector",
+              "z": 1600,
+              "x": 260,
+              "y": -340,
+              "w": 300
+            },
+            {
+              "id": "subject",
+              "asset": "img:credit-card|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 540,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 120
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -200
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ขั้นต่ำ ≠ พอ",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S07-02",
+          "kind": "vector",
+          "description": "ไอคอนแยกทาง ถามซ้ำ — วนกลับประโยคแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 620,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "วนกลับไปที่เดิม?",
+              "role": "kicker",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "covers": [
+    {
+      "id": "A",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "จ่ายตรง\n*หนี้ไม่ลด*",
+      "kicker": "บัตรเครดิต",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:bills-desk|paper-bg",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "mg",
+          "asset": "img:hourglass|clock",
+          "style": "vector",
+          "z": 1600,
+          "x": 260,
+          "y": 420,
+          "w": 320
+        },
+        {
+          "id": "subject",
+          "asset": "img:credit-card|price-tag",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 560
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "จ่าย 800\n*ลด 680*",
+      "kicker": "หนี้หมื่นบาท",
+      "sourceRef": "F-04",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:bills-desk|paper-bg",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "coin-stack",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 520
+        },
+        {
+          "id": "fg",
+          "asset": "dust",
+          "style": "vector",
+          "z": 500,
+          "cover": true,
+          "opacity": 0.3
+        }
+      ]
+    }
+  ]
+}
