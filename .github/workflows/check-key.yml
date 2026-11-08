@@ -1,0 +1,28 @@
+name: check-key
+
+# ทดสอบว่า OPENROUTER_API_KEY ใช้ได้และมีเครดิต (ไม่เสียเงิน — อ่านข้อมูลบัญชีอย่างเดียว)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/check-key.yml']
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: ตรวจ key + เครดิต
+        env:
+          KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          if [ -z "$KEY" ]; then echo "::error::ไม่มี secret OPENROUTER_API_KEY"; exit 1; fi
+          echo "key ลงท้ายด้วย: ...${KEY: -3}"
+          echo "--- /api/v1/key"
+          curl -sS https://openrouter.ai/api/v1/key -H "Authorization: Bearer $KEY" | python3 -c "import json,sys;d=json.load(sys.stdin).get('data',{});print({k:d.get(k) for k in ('label','usage','limit','limit_remaining','is_free_tier')})"
+          echo "--- /api/v1/credits"
+          R=$(curl -sS https://openrouter.ai/api/v1/credits -H "Authorization: Bearer $KEY")
+          echo "$R" | python3 -c "import json,sys;d=json.load(sys.stdin);x=d.get('data') or {};print('total_credits',x.get('total_credits'),'total_usage',x.get('total_usage')) if x else print(d)"
+          LEFT=$(echo "$R" | python3 -c "import json,sys;x=json.load(sys.stdin).get('data') or {};print(round((x.get('total_credits') or 0)-(x.get('total_usage') or 0),3))")
+          echo "### เครดิตคงเหลือ: \$$LEFT (key ...${KEY: -3})" >> "$GITHUB_STEP_SUMMARY"
+          python3 -c "import sys;sys.exit(0 if float('$LEFT')>0.05 else 1)" || { echo "::error::เครดิตไม่พอ (\$$LEFT) — เติมที่ openrouter.ai/settings/credits หรือ key นี้เป็นของบัญชีอื่น"; exit 1; }
+          echo "✓ key ใช้ได้ เครดิตคงเหลือ \$$LEFT"
