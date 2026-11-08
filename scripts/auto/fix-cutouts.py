@@ -25,36 +25,60 @@ def border_pixels(w, h, step=4):
         yield w - 1, y
 
 
-def fix(path: Path) -> str:
-    im = Image.open(path).convert("RGBA")
+def flood(im, box):
+    """ลบพื้นสีเรียบที่ติดขอบของกรอบ box=(x0,y0,x1,y1) — คืนชื่อสีที่ลบ หรือ None"""
+    x0, y0, x1, y1 = box
     w, h = im.size
     px = im.load()
-    edge = [px[x, y] for x, y in border_pixels(w, h)]
-    if sum(1 for p in edge if p[3] < 20) > len(edge) * 0.5:
-        return "โปร่งใสอยู่แล้ว"
-    # สีพื้น = ค่ากลางของขอบ
-    bg = tuple(sorted(p[i] for p in edge)[len(edge) // 2] for i in range(3))
-    near = lambda p: ((p[0] - bg[0]) ** 2 + (p[1] - bg[1]) ** 2 + (p[2] - bg[2]) ** 2) ** 0.5 <= TOL
-    if sum(1 for p in edge if near(p)) < len(edge) * 0.6:
-        return "ขอบไม่ใช่สีเรียบ — ข้าม"
-    mask = Image.new("L", (w, h), 255)
-    m = mask.load()
+    edge = [(x, y) for x, y in border_pixels(x1 - x0, y1 - y0, 2)]
+    edge = [(x + x0, y + y0) for x, y in edge]
+    cols = [px[x, y] for x, y in edge if px[x, y][3] > 200]
+    if len(cols) < len(edge) * 0.5:
+        return None
+    bg = tuple(sorted(c[i] for c in cols)[len(cols) // 2] for i in range(3))
+    near = lambda p: p[3] > 0 and ((p[0] - bg[0]) ** 2 + (p[1] - bg[1]) ** 2 + (p[2] - bg[2]) ** 2) ** 0.5 <= TOL
+    if sum(1 for c in cols if near(c)) < len(cols) * 0.6:
+        return None
+    alpha = im.getchannel("A")
+    a = alpha.load()
     seen = bytearray(w * h)
-    q = deque((x, y) for x, y in border_pixels(w, h, 1) if near(px[x, y]))
-    for x, y in q:
-        seen[y * w + x] = 1
+    q = deque()
+    for x, y in border_pixels(x1 - x0, y1 - y0, 1):
+        x, y = x + x0, y + y0
+        if near(px[x, y]) and not seen[y * w + x]:
+            seen[y * w + x] = 1
+            q.append((x, y))
     while q:
         x, y = q.popleft()
-        m[x, y] = 0
+        a[x, y] = 0
         for nx, ny in ((x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)):
-            if 0 <= nx < w and 0 <= ny < h and not seen[ny * w + nx]:
+            if x0 <= nx < x1 and y0 <= ny < y1 and not seen[ny * w + nx]:
                 seen[ny * w + nx] = 1
                 if near(px[nx, ny]):
                     q.append((nx, ny))
-    mask = mask.filter(ImageFilter.MinFilter(3)).filter(ImageFilter.GaussianBlur(1.2))
-    im.putalpha(mask)
+    im.putalpha(alpha)
+    return bg
+
+
+def fix(path: Path) -> str:
+    im = Image.open(path).convert("RGBA")
+    done = []
+    box = (0, 0) + im.size
+    for _ in range(3):  # รูปบางรูปมี "แผ่นพื้น" ซ้อนอยู่ในกรอบสีพื้นอีกชั้น → ลบซ้ำในกรอบที่เหลือ
+        bg = flood(im, box)
+        if bg is None:
+            break
+        done.append(bg)
+        bb = im.getchannel("A").point(lambda v: 255 if v > 0 else 0).getbbox()
+        if not bb or (bb[2] - bb[0]) < 16 or (bb[3] - bb[1]) < 16:
+            break
+        box = bb
+    if not done:
+        return "ไม่มีพื้นสีเรียบ/โปร่งใสอยู่แล้ว — ข้าม"
+    alpha = im.getchannel("A").filter(ImageFilter.MinFilter(3)).filter(ImageFilter.GaussianBlur(1.2))
+    im.putalpha(alpha)
     im.save(path)
-    return f"ลบพื้น {bg}"
+    return "ลบพื้น " + " → ".join(map(str, done))
 
 
 def main():
