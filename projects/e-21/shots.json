@@ -1,0 +1,1592 @@
+{
+  "meta": {
+    "slug": "e-21",
+    "title": "ลอยกระทงมาจากไหน",
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "targetSec": 60
+  },
+  "sources": {
+    "F-01": "Thailand Foundation · Wikipedia",
+    "F-02": "Thai PBS · Thailand Foundation",
+    "F-03": "The Standard · Wikipedia (อ้าง ร.4 พ.ศ. 2406) · Thailand Foundation",
+    "F-04": "Thailand Foundation · The Standard",
+    "F-05": "Thai PBS · Thailand Foundation",
+    "F-06": "ศิลปวัฒนธรรม/The Standard (วินิจฉัยของ สมเด็จฯ กรมพระยาดำรงฯ) · Thailand Foundation",
+    "F-07": "The Standard (สุจิตต์ วงษ์เทศ) · แนวหน้า",
+    "F-08": "Wikipedia · The Standard"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "era": "present",
+      "vo": "ลอยกระทง มาจากไหน [#S01-02] สุโขทัยจริงไหม",
+      "voEn": "Where does Loy Krathong come from? [#S01-02] Really Sukhothai?",
+      "voTTS": "ลอยกระทง… มาจากไหน [#S01-02] สุโขทัย… จริงไหม",
+      "voFile": "vo/S01.wav",
+      "shots": [
+        {
+          "id": "S01-01",
+          "kind": "parallax",
+          "description": "แม่น้ำยามคืนเพ็ญ กระทงใบตองลอยเด่นกลางจอ กล้องดันเข้าเร็วตั้งแต่เฟรมแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:river-night|sea",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "moon",
+              "style": "vector",
+              "z": 1800,
+              "y": -520,
+              "w": 420
+            },
+            {
+              "id": "subject",
+              "asset": "img:krathong|lantern",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 560,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 260
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "มาจากไหน?",
+              "role": "title",
+              "x": 540,
+              "y": 380
+            }
+          ]
+        },
+        {
+          "id": "S01-02",
+          "kind": "vector",
+          "description": "ป้ายคำถามแยกทาง ตำนาน vs หลักฐาน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 620,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "สุโขทัย จริงไหม?",
+              "role": "kicker",
+              "x": 540,
+              "y": 340
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "beat": "setup",
+      "era": "present",
+      "vo": "ทุกคืนเพ็ญเดือนสิบสอง [#S02-02] เราลอยกระทง [#S02-03] ที่เรียนมา [#S02-04] คือสุโขทัย",
+      "voEn": "Every full moon of the twelfth lunar month [#S02-02] we float krathong. [#S02-03] We were taught [#S02-04] it was Sukhothai.",
+      "voTTS": "ทุกคืนเพ็ญ เดือนสิบสอง [#S02-02] เราลอยกระทง [#S02-03] ที่เรียนมา [#S02-04] คือสุโขทัย",
+      "voFile": "vo/S02.wav",
+      "shots": [
+        {
+          "id": "S02-01",
+          "kind": "vector",
+          "description": "ดวงจันทร์เต็มดวงลอยขึ้น ปฏิทินเดือนสิบสอง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "moon",
+              "style": "vector",
+              "z": 1000,
+              "y": -120,
+              "w": 480,
+              "anim": "float"
+            },
+            {
+              "id": "mg",
+              "asset": "calendar-year",
+              "style": "vector",
+              "z": 1600,
+              "x": -260,
+              "y": 60,
+              "w": 360
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เพ็ญเดือน 12",
+              "role": "kicker",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S02-02",
+          "kind": "data",
+          "description": "แผนที่ไทย มีหมุดลอยกระทงหลายเมือง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                101,
+                14
+              ],
+              "scale": 2200
+            },
+            "to": {
+              "center": [
+                100.6,
+                15
+              ],
+              "scale": 2600
+            },
+            "pins": [
+              {
+                "at": [
+                  100.5,
+                  13.75
+                ],
+                "label": "กรุงเทพฯ"
+              },
+              {
+                "at": [
+                  98.98,
+                  18.79
+                ],
+                "label": "เชียงใหม่",
+                "delay": 0.3
+              },
+              {
+                "at": [
+                  99.7,
+                  17.02
+                ],
+                "label": "สุโขทัย",
+                "delay": 0.6
+              }
+            ],
+            "sourceRef": "F-01"
+          }
+        },
+        {
+          "id": "S02-03",
+          "kind": "collage",
+          "description": "สมุดบันทึกนักเรียน ปากกาวงคำว่าตำนาน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "notebook",
+              "style": "collage",
+              "z": 1000,
+              "y": -80,
+              "w": 560,
+              "anim": "stop-motion"
+            },
+            {
+              "id": "fg",
+              "asset": "marker-circle",
+              "style": "vector",
+              "z": 700,
+              "y": -80,
+              "w": 600
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": 0,
+              "y": 20,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 40
+            }
+          },
+          "text": [
+            {
+              "content": "ที่เรียนมา",
+              "role": "kicker",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S02-04",
+          "kind": "parallax",
+          "description": "ซากโบราณสถานอิฐริมสระบัว ลมเย็น กล้องแพนข้าง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:old-ruins|tp-brick-ruin",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:krathong|lantern",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 440,
+              "anim": "bob"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -200,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 200,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "สุโขทัย?",
+              "role": "title",
+              "x": 540,
+              "y": 360
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "beat": "act1",
+      "era": "medieval",
+      "vo": "ตำนานเล่าว่า [#S03-02] นางนพมาศคิดกระทง [#S03-03] แต่หนังสือต้นเรื่อง [#S03-04] น่าจะแต่งยุครัตนโกสินทร์ [#S03-05] ราวสองร้อยปีก่อน",
+      "voEn": "Legend says [#S03-02] Nang Noppamas invented the krathong. [#S03-03] But the book behind the story [#S03-04] was likely written in the Rattanakosin era, [#S03-05] about 200 years ago.",
+      "voTTS": "ตำนานเล่าว่า [#S03-02] นางนพมาศ คิดกระทง [#S03-03] ทว่า… หนังสือต้นเรื่อง [#S03-04] น่าจะแต่ง ยุครัตนโกสินทร์ [#S03-05] ราว สองร้อยปีก่อน",
+      "voFile": "vo/S03.wav",
+      "shots": [
+        {
+          "id": "S03-01",
+          "kind": "collage",
+          "description": "ม้วนกระดาษตำนานคลี่ออก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "scroll",
+              "style": "collage",
+              "z": 1000,
+              "y": -80,
+              "w": 600,
+              "anim": "stop-motion"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -20,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 20,
+              "y": -10,
+              "z": 40
+            }
+          },
+          "text": [
+            {
+              "content": "ตำนาน",
+              "role": "kicker",
+              "x": 540,
+              "y": 320
+            }
+          ]
+        },
+        {
+          "id": "S03-02",
+          "kind": "vector",
+          "description": "กระทงรูปดอกบัวลอยขึ้นกลางจอ (ไม่มีภาพบุคคล)",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:krathong|lantern",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 580,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "light-rays",
+              "style": "vector",
+              "z": 1600,
+              "y": -200,
+              "w": 900,
+              "opacity": 0.5
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "กระทงดอกบัว",
+              "role": "kicker",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S03-03",
+          "kind": "parallax",
+          "description": "สมุดไทยเก่าวางบนโต๊ะไม้ แสงเทียน กล้องดันเข้า",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:stone-relief|paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:old-book|book",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 580,
+              "anim": "drop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -10,
+              "z": 200
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "มาจากหนังสือ",
+              "role": "kicker",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S03-04",
+          "kind": "collage",
+          "description": "สมุดไทยกับแว่นขยาย นักประวัติศาสตร์ตรวจสอบ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:old-book|book",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 520
+            },
+            {
+              "id": "fg",
+              "asset": "magnifier",
+              "style": "vector",
+              "z": 700,
+              "x": 160,
+              "y": -120,
+              "w": 340,
+              "anim": "slide-left"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": 20,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": -20,
+              "y": -10,
+              "z": 40
+            }
+          },
+          "text": [
+            {
+              "content": "แต่งยุครัตนโกสินทร์",
+              "role": "kicker",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S03-05",
+          "kind": "data",
+          "description": "ตัวนับย้อนหลัง ราว 200 ปี",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "clock",
+              "style": "vector",
+              "z": 1000,
+              "y": -380,
+              "w": 240,
+              "anim": "spin"
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 200,
+            "suffix": " ปี",
+            "label": "แต่งเมื่อราว",
+            "sourceRef": "F-06"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "beat": "act2",
+      "era": "medieval",
+      "vo": "จารึกสุโขทัย [#S04-02] พูดถึงเผาเทียนเล่นไฟ [#S04-03] ไม่มีคำว่ากระทง [#S04-04] ภาพคล้ายพิธีนี้ [#S04-05] อยู่ที่ปราสาทบายน [#S04-06] เก่าราวแปดร้อยปี",
+      "voEn": "The Sukhothai inscription [#S04-02] mentions burning candles and playing with fire, [#S04-03] not the word krathong. [#S04-04] A carving resembling this rite [#S04-05] is at the Bayon temple, [#S04-06] about 800 years old.",
+      "voTTS": "จารึกสุโขทัย [#S04-02] พูดถึง เผาเทียนเล่นไฟ [#S04-03] ไม่มีคำว่า กระทง [#S04-04] ภาพคล้ายพิธีนี้ [#S04-05] อยู่ที่ปราสาทบายน [#S04-06] เก่าราว แปดร้อยปี",
+      "voFile": "vo/S04.wav",
+      "shots": [
+        {
+          "id": "S04-01",
+          "kind": "parallax",
+          "description": "ซากโบราณสถานริมสระ ศิลาจารึกตั้งเด่น กล้อง crane ขึ้น",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:old-ruins|tp-brick-ruin",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "stone-inscription",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 420,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "crane",
+            "from": {
+              "x": 0,
+              "y": 150,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -100,
+              "z": 80
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ศิลาจารึก",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-07"
+            }
+          ]
+        },
+        {
+          "id": "S04-02",
+          "kind": "vector",
+          "description": "เทียนและแสงไฟ — เผาเทียนเล่นไฟ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "lantern",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 420,
+              "anim": "sway"
+            },
+            {
+              "id": "mg",
+              "asset": "star-burst",
+              "style": "vector",
+              "z": 1600,
+              "y": -160,
+              "w": 800,
+              "opacity": 0.6
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เผาเทียนเล่นไฟ",
+              "role": "kicker",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-07"
+            }
+          ]
+        },
+        {
+          "id": "S04-03",
+          "kind": "collage",
+          "description": "ศิลาจารึกถูกวงด้วยปากกาแดง เครื่องหมายไม่พบคำว่ากระทง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "stone-inscription",
+              "style": "collage",
+              "z": 1000,
+              "y": -80,
+              "w": 480
+            },
+            {
+              "id": "fg",
+              "asset": "marker-circle",
+              "style": "vector",
+              "z": 700,
+              "y": -80,
+              "w": 620
+            },
+            {
+              "id": "stamp",
+              "asset": "stamp",
+              "style": "vector",
+              "z": 800,
+              "x": 200,
+              "y": 0,
+              "w": 260,
+              "props": {
+                "at": 0.5
+              }
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -15,
+              "z": 40
+            }
+          },
+          "text": [
+            {
+              "content": "ไม่มีคำว่า \"กระทง\"",
+              "role": "kicker",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-07"
+            }
+          ]
+        },
+        {
+          "id": "S04-04",
+          "kind": "data",
+          "description": "แผนที่ เลื่อนจากสุโขทัยไปกัมพูชา",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                99.7,
+                17.02
+              ],
+              "scale": 3000
+            },
+            "to": {
+              "center": [
+                102.2,
+                15.0
+              ],
+              "scale": 2400
+            },
+            "routes": [
+              {
+                "path": [
+                  [
+                    99.7,
+                    17.02
+                  ],
+                  [
+                    103.86,
+                    13.44
+                  ]
+                ],
+                "delay": 0.3
+              }
+            ],
+            "pins": [
+              {
+                "at": [
+                  99.7,
+                  17.02
+                ],
+                "label": "สุโขทัย"
+              },
+              {
+                "at": [
+                  103.86,
+                  13.44
+                ],
+                "label": "บายน",
+                "delay": 0.6
+              }
+            ],
+            "sourceRef": "F-08"
+          }
+        },
+        {
+          "id": "S04-05",
+          "kind": "parallax",
+          "description": "ภาพสลักหินเรือบนสายน้ำ กล้องแพนช้า ๆ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:stone-relief|paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:krathong|lantern",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 380,
+              "anim": "float",
+              "opacity": 0.9
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -220,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 220,
+              "y": 0,
+              "z": 40
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ปราสาทบายน",
+              "role": "title",
+              "x": 540,
+              "y": 340,
+              "sourceRef": "F-08"
+            }
+          ]
+        },
+        {
+          "id": "S04-06",
+          "kind": "data",
+          "description": "กราฟแท่ง อายุหลักฐาน บายน ~800 ปี vs เรื่องนางนพมาศ ~200 ปี",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "bar",
+            "items": [
+              {
+                "label": "เรื่องนางนพมาศ",
+                "value": 200
+              },
+              {
+                "label": "ภาพสลักบายน",
+                "value": 800,
+                "highlight": true
+              }
+            ],
+            "unit": " ปี",
+            "title": "อายุโดยประมาณ",
+            "sourceRef": "F-08"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "beat": "act3",
+      "era": "medieval",
+      "vo": "เชื่อกันว่ารากคือน้ำ [#S05-02] ขอขมาพระแม่คงคา [#S05-03] ผสมพิธีประทีปอินเดีย [#S05-04] แล้วพุทธรับมา [#S05-05] บูชาพระพุทธเจ้า",
+      "voEn": "The root is believed to be water: [#S05-02] asking forgiveness of the water goddess Ganga, [#S05-03] mixed with Indian lamp rituals. [#S05-04] Then Buddhism adopted it [#S05-05] to honour the Buddha.",
+      "voTTS": "เชื่อกันว่า… รากคือน้ำ [#S05-02] ขอขมา พระแม่คงคา [#S05-03] ผสมพิธีประทีป อินเดีย [#S05-04] แล้วพุทธรับมา [#S05-05] บูชาพระพุทธเจ้า",
+      "voFile": "vo/S05.wav",
+      "shots": [
+        {
+          "id": "S05-01",
+          "kind": "parallax",
+          "description": "แม่น้ำยามค่ำ กระทงลอยหลายใบ กล้องถอยออกให้เห็นสายน้ำกว้าง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:river-night|sea",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:krathong|lantern",
+              "style": "vector",
+              "z": 1600,
+              "x": -300,
+              "y": -60,
+              "w": 380
+            },
+            {
+              "id": "subject",
+              "asset": "img:krathong|lantern",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 500,
+              "anim": "bob"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 200
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -200
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ความเชื่อเรื่องน้ำ",
+              "role": "title",
+              "x": 540,
+              "y": 340,
+              "sourceRef": "F-02"
+            }
+          ]
+        },
+        {
+          "id": "S05-02",
+          "kind": "vector",
+          "description": "หยดน้ำและมือประนม — ขอบคุณ/ขอขมาสายน้ำ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "water-cup",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 440,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "light-rays",
+              "style": "vector",
+              "z": 1600,
+              "y": -200,
+              "w": 900,
+              "opacity": 0.5
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ขอขมาพระแม่คงคา",
+              "role": "kicker",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-02"
+            }
+          ]
+        },
+        {
+          "id": "S05-03",
+          "kind": "data",
+          "description": "แผนที่ เส้นจากอินเดียเข้ามาอุษาคเนย์",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                90,
+                20
+              ],
+              "scale": 900
+            },
+            "to": {
+              "center": [
+                95,
+                18
+              ],
+              "scale": 1100
+            },
+            "routes": [
+              {
+                "path": [
+                  [
+                    83.0,
+                    25.3
+                  ],
+                  [
+                    100.5,
+                    13.75
+                  ]
+                ],
+                "delay": 0.3
+              }
+            ],
+            "pins": [
+              {
+                "at": [
+                  83.0,
+                  25.3
+                ],
+                "label": "อินเดีย"
+              },
+              {
+                "at": [
+                  100.5,
+                  13.75
+                ],
+                "label": "ไทย",
+                "delay": 0.7
+              }
+            ],
+            "sourceRef": "F-03"
+          }
+        },
+        {
+          "id": "S05-04",
+          "kind": "vector",
+          "description": "ตะเกียงดินเผา (ประทีป) วางคู่กับกระทง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:clay-lamp|lantern",
+              "style": "vector",
+              "z": 1000,
+              "x": -150,
+              "y": -60,
+              "w": 380,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "img:krathong|lantern",
+              "style": "vector",
+              "z": 1400,
+              "x": 200,
+              "y": -80,
+              "w": 420
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ประทีป + พุทธ",
+              "role": "kicker",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-03"
+            }
+          ]
+        },
+        {
+          "id": "S05-05",
+          "kind": "collage",
+          "description": "ม้วนคัมภีร์ใบลานและดอกบัว — บูชาพระพุทธเจ้า (ไม่มีภาพพระพุทธรูป)",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "scroll",
+              "style": "collage",
+              "z": 1000,
+              "y": -80,
+              "w": 560
+            },
+            {
+              "id": "fg",
+              "asset": "img:krathong|lantern",
+              "style": "vector",
+              "z": 700,
+              "x": 220,
+              "y": 40,
+              "w": 300,
+              "anim": "slide-left"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -15,
+              "z": 40
+            }
+          },
+          "text": [
+            {
+              "content": "บูชาพระพุทธเจ้า",
+              "role": "kicker",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-04"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "beat": "payoff",
+      "era": "present",
+      "vo": "ลอยกระทงไม่มีจุดเริ่มเดียว [#S06-02] คือคำขอบคุณสายน้ำ [#S06-03] ที่หลายวัฒนธรรม [#S06-04] ส่งต่อ",
+      "voEn": "Loy Krathong has no single starting point. [#S06-02] It's a thank-you to the water [#S06-03] that many cultures [#S06-04] passed along.",
+      "voTTS": "ลอยกระทง… ไม่มีจุดเริ่มเดียว [#S06-02] คือคำขอบคุณสายน้ำ [#S06-03] ที่หลายวัฒนธรรม [#S06-04] ส่งต่อ",
+      "voFile": "vo/S06.wav",
+      "shots": [
+        {
+          "id": "S06-01",
+          "kind": "vector",
+          "description": "ไอคอนแยกทาง กลายเป็นหลายเส้นมาบรรจบ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 600,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ไม่ได้เริ่มที่เดียว",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S06-02",
+          "kind": "parallax",
+          "description": "กระทงลอยบนแม่น้ำ แสงจันทร์สะท้อน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:river-night|sea",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "moon",
+              "style": "vector",
+              "z": 1800,
+              "y": -520,
+              "w": 380
+            },
+            {
+              "id": "subject",
+              "asset": "img:krathong|lantern",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -10,
+              "z": 160
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ขอบคุณสายน้ำ",
+              "role": "kicker",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-02"
+            }
+          ]
+        },
+        {
+          "id": "S06-03",
+          "kind": "vector",
+          "description": "ลูกโลกหมุน เชื่อมหลายวัฒนธรรม",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "earth-globe",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 480,
+              "anim": "spin"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "หลายวัฒนธรรม",
+              "role": "kicker",
+              "x": 540,
+              "y": 320
+            }
+          ]
+        },
+        {
+          "id": "S06-04",
+          "kind": "data",
+          "description": "ตัวนับ 3 ราก: ผีน้ำ · พราหมณ์ · พุทธ (แบบไอคอนหน่วย)",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "unit",
+            "count": 3,
+            "perIcon": "1 ราก",
+            "label": "น้ำ · ประทีป · พุทธ",
+            "sourceRef": "F-03"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "beat": "outro",
+      "era": "present",
+      "vo": "กระทงในมือเรา… มาไกลกว่าที่คิด",
+      "voEn": "The krathong in our hands… has come further than we think.",
+      "voTTS": "กระทงในมือเรา… มาไกลกว่าที่คิด",
+      "voFile": "vo/S07.wav",
+      "shots": [
+        {
+          "id": "S07-01",
+          "kind": "parallax",
+          "description": "กระทงลอยห่างออกไปบนสายน้ำใต้จันทร์เต็มดวง กล้องถอยช้า ๆ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:river-night|sea",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "moon",
+              "style": "vector",
+              "z": 1800,
+              "y": -520,
+              "w": 420
+            },
+            {
+              "id": "subject",
+              "asset": "img:krathong|lantern",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 500,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 120
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -160
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "มาไกลกว่าที่คิด",
+              "role": "title",
+              "x": 540,
+              "y": 360
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "covers": [
+    {
+      "id": "A",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "ไม่ใช่\n*สุโขทัย?*",
+      "kicker": "ลอยกระทง",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:river-night|sea",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "mg",
+          "asset": "moon",
+          "style": "vector",
+          "z": 1800,
+          "y": -620,
+          "w": 420
+        },
+        {
+          "id": "subject",
+          "asset": "img:krathong|lantern",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 560
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "era": "medieval",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "นางนพมาศ\n*แต่งทีหลัง?*",
+      "kicker": "ตำนานลอยกระทง",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:stone-relief|paper-bg",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "img:old-book|book",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 560
+        },
+        {
+          "id": "fg",
+          "asset": "dust",
+          "style": "vector",
+          "z": 500,
+          "cover": true,
+          "opacity": 0.35
+        }
+      ]
+    }
+  ]
+}

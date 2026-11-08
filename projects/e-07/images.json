@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "id": "living-room-night",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Cozy Thai home living room at night seen at table height, a low wooden coffee table in the foreground with a smartphone lying on it, sofa and a warm lamp in the soft background, blue night outside the window, no people, no screens with text, no logos"
+    },
+    {
+      "id": "city-night",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Dense Asian city apartment blocks at night with many small lit windows, thin glowing signal waves arcing across the dark blue sky between rooftops, moody but not scary, no people, no signs, no lettering"
+    },
+    {
+      "id": "morning-desk",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Calm bright morning home desk by a window, a potted plant, a cup of tea and a notebook, soft sunlight and pastel colors, peaceful mood, no people, no screens with text, no logos"
+    },
+    {
+      "id": "ringing-phone",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A single cute generic smartphone standing upright, screen glowing with a plain incoming call circle icon and small vibration lines around it, no text, no brand logo, on a plain flat light-gray background"
+    },
+    {
+      "id": "fake-badge",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A generic shiny golden shield-shaped badge with a simple star in the middle and a small floating question mark beside it, not any real police or government emblem, no text, no flags, on a plain flat light-gray background"
+    },
+    {
+      "id": "parcel-box",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A brown cardboard parcel box sealed with tape, a plain red warning triangle sticker on the side, slightly tilted, friendly rounded shapes, no text, no logos, on a plain flat light-gray background"
+    }
+  ]
+}

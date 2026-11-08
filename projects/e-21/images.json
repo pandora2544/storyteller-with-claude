@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "id": "river-night",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Calm wide river at night under a big glowing full moon, gentle ripples reflecting moonlight, a few small floating lotus-shaped banana-leaf offerings with tiny candle flames drifting on the water, silhouettes of palm trees on the far bank, no people, no buildings with signs"
+    },
+    {
+      "id": "old-ruins",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Ancient weathered red-brick temple ruins with a bell-shaped stupa and old columns beside a still lotus pond, warm late-afternoon light, dry grass, no people, no statues with faces, no signs"
+    },
+    {
+      "id": "stone-relief",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Close view of an old sandstone wall carved in shallow relief showing simple wavy water lines, small boats and lotus flowers, softly lit by warm candle light, worn texture, abstract stylized shapes, no human figures, no faces"
+    },
+    {
+      "id": "krathong",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A single traditional Thai krathong float: round base of banana trunk, sides of neatly folded green banana leaves shaped like lotus petals, decorated with marigold and orchid flowers, one lit candle and three incense sticks in the middle, on a plain flat light-gray background"
+    },
+    {
+      "id": "old-book",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "An old Thai folding manuscript book made of cream mulberry paper, partly unfolded accordion-style, with faint illegible ink scribbles and no readable letters, slightly worn edges, on a plain flat light-gray background"
+    },
+    {
+      "id": "clay-lamp",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A small terracotta oil lamp shaped like a shallow leaf-shaped bowl with a single warm flame on a cotton wick, simple and cozy, on a plain flat light-gray background"
+    }
+  ]
+}

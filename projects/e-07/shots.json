@@ -1,0 +1,1490 @@
+{
+  "meta": {
+    "slug": "e-07",
+    "title": "แก๊งคอลเซ็นเตอร์ใช้มุกอะไรบ่อยสุด จับสังเกตยังไง",
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "targetSec": 60
+  },
+  "sources": {
+    "F-01": "ธปท. ผ่าน Thai PBS (ม.ค. 2567) · ศกค. ผ่านฐานเศรษฐกิจ (ก.ย. 2568)",
+    "F-02": "บช.สอท. ผ่าน Thai PBS · ตร. ผ่าน อินโฟเควสท์",
+    "F-03": "ตร. ผ่าน อินโฟเควสท์/เดลินิวส์ (ข้อมูล มี.ค. 2565–เม.ย. 2566)",
+    "F-04": "สำนักงานตำรวจแห่งชาติ ผ่าน Thai PBS (ธ.ค. 2567)",
+    "F-05": "ธปท. และสมาคมธนาคารไทย ผ่าน Thai PBS (ม.ค. 2566)",
+    "F-06": "ธปท. มาตรการจัดการภัยทุจริต (มี.ค. 2566)",
+    "F-07": "กระทรวงดีอี ศูนย์ AOC 1441 · ตร."
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "era": "present",
+      "vo": "แก๊งคอลเซ็นเตอร์… [#S01-02] ใช้มุกไหนบ่อยสุด",
+      "voTTS": "แก๊งคอลเซ็นเตอร์… [#S01-02] ใช้มุกไหนบ่อยสุด",
+      "voFile": "vo/S01.wav",
+      "shots": [
+        {
+          "id": "S01-01",
+          "kind": "parallax",
+          "description": "ห้องนั่งเล่นยามค่ำ มือถือบนโต๊ะสั่น เบอร์แปลกโทรเข้า กล้องดันเข้าเร็วตั้งแต่เฟรมแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:living-room-night|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:ringing-phone|phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 480,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 240
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "สายแปลกเข้า…",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S01-02",
+          "kind": "vector",
+          "description": "ไอคอนทางแยกเครื่องหมายคำถาม — มุกไหนกันแน่",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 600,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "มุกไหนบ่อยสุด?",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "beat": "setup",
+      "era": "present",
+      "vo": "ปี 2565–66 [#S02-02] แอบอ้างรัฐกว่า 2 หมื่นคดี [#S02-03] เสียหายราว 3,300 ล้าน",
+      "voTTS": "ปี สองห้าหกห้า ถึง หกหก [#S02-02] แอบอ้างรัฐ กว่าสองหมื่นคดี [#S02-03] เสียหายราว สามพันสามร้อยล้าน",
+      "voFile": "vo/S02.wav",
+      "shots": [
+        {
+          "id": "S02-01",
+          "kind": "vector",
+          "description": "ปฏิทินพลิกไปช่วง มี.ค. 2565 – เม.ย. 2566 ช่วงเก็บข้อมูล",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "calendar-year",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "มี.ค. 65 – เม.ย. 66",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-03"
+            }
+          ]
+        },
+        {
+          "id": "S02-02",
+          "kind": "data",
+          "description": "ตัวนับขึ้นถึง 20,000 คดี (จริง 20,937)",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 20000,
+            "suffix": " คดี",
+            "label": "แอบอ้างรัฐ กว่า",
+            "sourceRef": "F-03"
+          }
+        },
+        {
+          "id": "S02-03",
+          "kind": "data",
+          "description": "ตัวนับความเสียหายขึ้นถึง 3,300 ล้านบาท (จริง ~3,328 ล้าน)",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 3300,
+            "suffix": " ล้านบาท",
+            "label": "เสียหายราว",
+            "sourceRef": "F-03"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "beat": "act1",
+      "era": "present",
+      "vo": "ขั้นแรก อ้างคนมีอำนาจ [#S03-02] ตำรวจ DSI [#S03-03] สรรพากร ไปรษณีย์ [#S03-04] ธนาคาร [#S03-05] ตำรวจติดอันดับต้น ๆ",
+      "voTTS": "ขั้นแรก… อ้างคนมีอำนาจ [#S03-02] ตำรวจ… ดีเอสไอ [#S03-03] สรรพากร… ไปรษณีย์ [#S03-04] ธนาคาร [#S03-05] ตำรวจ ติดอันดับต้น ๆ",
+      "voFile": "vo/S03.wav",
+      "shots": [
+        {
+          "id": "S03-01",
+          "kind": "parallax",
+          "description": "เมืองยามค่ำ ตึกเปิดไฟ ตราโล่ทองไม่มีสัญลักษณ์ลอยเด่น — เสียงปลายสายอ้างตัวเป็นเจ้าหน้าที่",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:city-night|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:fake-badge|heritage-badge",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 440,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "crane",
+            "from": {
+              "x": 0,
+              "y": -220,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 120
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ขั้น 1 · อ้างอำนาจ",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S03-02",
+          "kind": "vector",
+          "description": "ตราโล่ทองทั่วไป (ไม่ใช่ตราจริง) มีเครื่องหมายคำถามเล็ก ๆ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:fake-badge|heritage-badge",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1500,
+              "x": 260,
+              "y": -300,
+              "w": 260,
+              "opacity": 0.6
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "“เจ้าหน้าที่” โทรมา",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-02"
+            }
+          ]
+        },
+        {
+          "id": "S03-03",
+          "kind": "collage",
+          "description": "เอกสารราชการปลอมบนกระดาษ กล่องพัสดุวางซ้อน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "document",
+              "style": "collage",
+              "z": 1000,
+              "y": -40,
+              "w": 480,
+              "anim": "stop-motion",
+              "rot": -3
+            },
+            {
+              "id": "mg",
+              "asset": "img:parcel-box|document",
+              "style": "vector",
+              "z": 1300,
+              "x": 230,
+              "y": -260,
+              "w": 320,
+              "rot": 5
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ภาษี · พัสดุ",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-02"
+            }
+          ]
+        },
+        {
+          "id": "S03-04",
+          "kind": "vector",
+          "description": "มือถือแสดงหน้าแอปธนาคารทั่วไป (ไม่มีโลโก้) กับเหรียญซ้อน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 420,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "coin-stack",
+              "style": "vector",
+              "z": 1400,
+              "x": -250,
+              "y": -250,
+              "w": 280
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "บัญชีมีปัญหา?",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S03-05",
+          "kind": "vector",
+          "description": "ตราโล่ทองยืนบนเวที สปอตไลต์ส่อง — ถูกแอบอ้างบ่อยติดอันดับต้น",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "spotlight-stage",
+              "style": "vector",
+              "z": 1400,
+              "y": -20,
+              "w": 700
+            },
+            {
+              "id": "subject",
+              "asset": "img:fake-badge|heritage-badge",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 380,
+              "anim": "drop"
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 160
+            }
+          },
+          "text": [
+            {
+              "content": "อันดับต้น ๆ",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-02"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "beat": "act2",
+      "era": "present",
+      "vo": "ขั้นสอง ขู่ให้ตกใจ [#S04-02] บัญชีพัวพันฟอกเงิน [#S04-03] พัสดุผิดกฎหมาย [#S04-04] หรือภาษีรอคืน [#S04-05] แล้วเร่งให้รีบ",
+      "voTTS": "ขั้นสอง… ขู่ให้ตกใจ [#S04-02] บัญชี พัวพันฟอกเงิน [#S04-03] พัสดุ ผิดกฎหมาย [#S04-04] หรือภาษี รอคืน [#S04-05] แล้วเร่งให้รีบ",
+      "voFile": "vo/S04.wav",
+      "shots": [
+        {
+          "id": "S04-01",
+          "kind": "parallax",
+          "description": "มือถือดังอยู่บนโต๊ะห้องนั่งเล่น สั่นแรงขึ้น กล้องแพนข้าง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:living-room-night|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:ringing-phone|phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 440,
+              "anim": "bob"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -200,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 200,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ขั้น 2 · ขู่ให้ตกใจ",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S04-02",
+          "kind": "collage",
+          "description": "เอกสารคดีปลอม ตรายางประทับลงมา",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "document",
+              "style": "collage",
+              "z": 1000,
+              "y": -40,
+              "w": 480,
+              "anim": "stop-motion",
+              "rot": 3
+            },
+            {
+              "id": "stamp",
+              "asset": "stamp",
+              "style": "collage",
+              "z": 900,
+              "x": 140,
+              "y": -200,
+              "w": 260,
+              "anim": "drop",
+              "props": {
+                "at": 0.5
+              }
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "“คดีฟอกเงิน”",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S04-03",
+          "kind": "vector",
+          "description": "กล่องพัสดุมีป้ายเตือนสีแดง ปากกาวงรอบ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:parcel-box|document",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "marker-circle",
+              "style": "vector",
+              "z": 900,
+              "y": -40,
+              "w": 560,
+              "delay": 0.4
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "พัสดุอ้างชื่อเรา",
+              "role": "label",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S04-04",
+          "kind": "vector",
+          "description": "กองเหรียญเด้งขึ้น — เหยื่อล่อว่าได้เงินคืน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "drop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เงินคืน (ปลอม)",
+              "role": "label",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S04-05",
+          "kind": "vector",
+          "description": "นาฬิกาเดินเร็ว — ความเร่งรีบคือสัญญาณเตือน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "clock",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 180
+            }
+          },
+          "text": [
+            {
+              "content": "ด่วน!",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "beat": "act3",
+      "era": "present",
+      "vo": "ขั้นสาม เอาเงินเรา [#S05-02] ให้โอนเข้าบัญชีปลอดภัย [#S05-03] อ้างว่าตรวจสอบ [#S05-04] หรือกดลิงก์ลงแอป [#S05-05] คุมมือถือเรา",
+      "voTTS": "ขั้นสาม… เอาเงินเรา [#S05-02] ให้โอนเข้า บัญชีปลอดภัย [#S05-03] อ้างว่า ตรวจสอบ [#S05-04] หรือกดลิงก์ ลงแอป [#S05-05] คุมมือถือเรา",
+      "voFile": "vo/S05.wav",
+      "shots": [
+        {
+          "id": "S05-01",
+          "kind": "parallax",
+          "description": "เมืองยามค่ำ กองเหรียญลอยกลางจอ กล้องถอยออก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:city-night|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 440,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 150
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -250
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ขั้น 3 · ปลายทาง",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S05-02",
+          "kind": "vector",
+          "description": "ลูกศรพาเหรียญไหลออกไปบัญชีปริศนา",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "coin-stack",
+              "style": "vector",
+              "z": 1400,
+              "x": -240,
+              "y": -220,
+              "w": 300
+            },
+            {
+              "id": "subject",
+              "asset": "arrow",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 560,
+              "anim": "slide-right",
+              "props": {
+                "color": "#FF6B4A"
+              }
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "บัญชี “ปลอดภัย”?",
+              "role": "label",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S05-03",
+          "kind": "vector",
+          "description": "แว่นขยายส่องเอกสาร — ตำรวจจริงไม่มีขั้นตอนให้โอนตรวจ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "document",
+              "style": "vector",
+              "z": 1400,
+              "x": 200,
+              "y": -220,
+              "w": 300,
+              "rot": 6
+            },
+            {
+              "id": "subject",
+              "asset": "magnifier",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ไม่มีขั้นตอนนี้จริง",
+              "role": "label",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S05-04",
+          "kind": "vector",
+          "description": "มือถือมีไอคอนแอปแปลก ๆ เด้งขึ้นพร้อมวงแดง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 420,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "app-icon",
+              "style": "vector",
+              "z": 1300,
+              "x": 240,
+              "y": -260,
+              "w": 220,
+              "anim": "pop",
+              "delay": 0.3
+            },
+            {
+              "id": "fg",
+              "asset": "marker-circle",
+              "style": "vector",
+              "z": 900,
+              "x": 200,
+              "y": -230,
+              "w": 300,
+              "delay": 0.6
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ลิงก์ → แอปแปลก",
+              "role": "label",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S05-05",
+          "kind": "parallax",
+          "description": "มือถือในห้องมืด หน้าจอขยับเองเหมือนมีคนควบคุมจากที่อื่น",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:living-room-night|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:ringing-phone|phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 440,
+              "anim": "sway"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 240
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "คุมเครื่องระยะไกล",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-05"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "beat": "payoff",
+      "era": "present",
+      "vo": "มุกหลักคือ อ้าง ขู่ เร่งโอน [#S06-02] ตำรวจจริงไม่ให้โอน [#S06-03] ธนาคารไม่ส่งลิงก์ทาง SMS [#S06-04] วางสาย โทรเบอร์จริง หรือ 1441",
+      "voTTS": "มุกหลักคือ… อ้าง ขู่ เร่งโอน [#S06-02] ตำรวจจริง ไม่ให้โอน [#S06-03] ธนาคาร ไม่ส่งลิงก์ ทางเอสเอ็มเอส [#S06-04] วางสาย โทรเบอร์จริง… หรือ หนึ่ง สี่ สี่ หนึ่ง",
+      "voFile": "vo/S06.wav",
+      "shots": [
+        {
+          "id": "S06-01",
+          "kind": "vector",
+          "description": "สมุดโน้ต 3 ขั้น ติ๊กทีละข้อ อ้าง → ขู่ → เร่งโอน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "notebook",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 500,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "3 ขั้น เดิมเสมอ",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S06-02",
+          "kind": "vector",
+          "description": "ตราโล่ทองโดนวงแดง — ตำรวจจริงไม่มีนโยบายให้โอน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:fake-badge|heritage-badge",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 420,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "marker-circle",
+              "style": "vector",
+              "z": 900,
+              "y": -40,
+              "w": 560,
+              "delay": 0.4
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ไม่มีนโยบายนี้",
+              "role": "label",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S06-03",
+          "kind": "vector",
+          "description": "มือถือมีกล่องข้อความ SMS แนบลิงก์ ขีดฆ่า",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 420,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "marker-circle",
+              "style": "vector",
+              "z": 900,
+              "y": -40,
+              "w": 520,
+              "delay": 0.4
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "SMS แนบลิงก์ = ปลอม",
+              "role": "label",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S06-04",
+          "kind": "parallax",
+          "description": "โต๊ะทำงานยามเช้าสว่างสบาย มือถือวางสงบ — ตั้งสติแล้วโทรเช็กเอง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:morning-desk|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:ringing-phone|phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 420,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "crane",
+            "from": {
+              "x": 0,
+              "y": -220,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 120
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "1441",
+              "role": "number",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-07"
+            },
+            {
+              "content": "หรือเบอร์หลังบัตร/เว็บธนาคาร",
+              "role": "note",
+              "x": 540,
+              "y": 1080,
+              "sourceRef": "F-07",
+              "delay": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "beat": "outro",
+      "era": "present",
+      "vo": "สายหน้าที่อ้างว่ามีคดี… [#S07-02] รู้แล้วว่ามุกไหน",
+      "voTTS": "สายหน้า ที่อ้างว่ามีคดี… [#S07-02] รู้แล้ว ว่ามุกไหน",
+      "voFile": "vo/S07.wav",
+      "shots": [
+        {
+          "id": "S07-01",
+          "kind": "parallax",
+          "description": "กลับมาที่ห้องนั่งเล่น มือถือดังอีกครั้ง วนกลับช็อตแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:living-room-night|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:ringing-phone|phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 440,
+              "anim": "bob"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 240
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "สายต่อไป…",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S07-02",
+          "kind": "vector",
+          "description": "ไอคอนทางแยกคำถามเดิม ตอนนี้มีเครื่องหมายถูก — รู้ทันแล้ว",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 560,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "รู้ทันแล้ว",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "covers": [
+    {
+      "id": "A",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "อ้างตำรวจ\n*ให้โอน*",
+      "kicker": "มุกแก๊งคอล",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:living-room-night|bg-color",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "img:ringing-phone|phone-feed",
+          "style": "vector",
+          "z": 1000,
+          "y": 520,
+          "w": 560
+        },
+        {
+          "id": "mg",
+          "asset": "img:fake-badge|heritage-badge",
+          "style": "vector",
+          "z": 1500,
+          "x": 260,
+          "y": 380,
+          "w": 380
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "สงสัย?\n*วางสาย*",
+      "kicker": "แจ้ง 1441",
+      "sourceRef": "F-07",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:morning-desk|bg-color",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "img:ringing-phone|phone-feed",
+          "style": "vector",
+          "z": 1000,
+          "y": 540,
+          "w": 560
+        },
+        {
+          "id": "fg",
+          "asset": "dust",
+          "style": "vector",
+          "z": 500,
+          "cover": true,
+          "opacity": 0.3
+        }
+      ]
+    }
+  ]
+}
