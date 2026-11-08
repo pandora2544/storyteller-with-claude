@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "id": "cold-north-plate",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Layered misty mountain ridges of northern Thailand at cool early morning, pale blue sky, soft fog between green hills, a few pine trees in the foreground, no people, no buildings with signs"
+    },
+    {
+      "id": "rain-coast-plate",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Tropical coastline with coconut palms bending in strong wind, heavy dark rain clouds over a choppy gray-blue sea, slanted rain streaks, big waves near the shore, no people, no boats with text"
+    },
+    {
+      "id": "open-sea-plate",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Wide open sea under a bright sky, wind streaks across the water surface, soft wisps of vapor rising from the waves and gathering into fluffy clouds on the horizon, no land, no ships"
+    },
+    {
+      "id": "rain-cloud",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A single big puffy dark blue-gray rain cloud with thick rounded shapes, many rain drops falling from its bottom, friendly cartoon style, on a plain flat light-gray background"
+    },
+    {
+      "id": "wind-gust",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A stylized gust of cold wind drawn as three flowing light-blue swirling ribbons with a few small snowflake-like sparkles, on a plain flat light-gray background"
+    },
+    {
+      "id": "scarf",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A cozy knitted winter scarf in warm orange and cream stripes, loosely curled, soft rounded shapes, no logos, on a plain flat light-gray background"
+    }
+  ]
+}

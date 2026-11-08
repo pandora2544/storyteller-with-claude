@@ -1,0 +1,1504 @@
+{
+  "meta": {
+    "slug": "d-20261109-am",
+    "title": "หนาวมาแล้ว ทำไมใต้ฝนถล่ม",
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "targetSec": 60
+  },
+  "sources": {
+    "F-01": "กรมอุตุฯ ประกาศฉบับ 1 ผ่าน มติชน/ไทยรัฐ 8 พ.ย. 69",
+    "F-02": "กรมอุตุฯ ประกาศฉบับ 1 ผ่าน มติชน/ไทยรัฐ",
+    "F-03": "กรมอุตุฯ ผ่าน ไทยรัฐ/สยามรัฐ 8 พ.ย. 69",
+    "F-04": "กรมอุตุฯ ผ่าน สยามรัฐ/The Thaiger",
+    "F-05": "กรมอุตุนิยมวิทยา คาดหมาย 3 เดือน",
+    "F-06": "กรมอุตุฯ ค่าปกติ 1991–2020",
+    "F-07": "สรุปจากกรมอุตุนิยมวิทยา"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "era": "present",
+      "vo": "หนาวมาแล้ว… [#S01-02] ทำไมใต้ฝนถล่ม",
+      "voTTS": "หนาวมาแล้ว… [#S01-02] ทำไมใต้ฝนถล่ม",
+      "voFile": "vo/S01.wav",
+      "shots": [
+        {
+          "id": "S01-01",
+          "kind": "parallax",
+          "description": "ภูเขาไทยตอนบนมีหมอกเย็นยามเช้า ผ้าพันคอลอยเด่น กล้องดันเข้าตั้งแต่เฟรมแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:cold-north-plate|mountains",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:scarf|cup",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -40,
+              "w": 480,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 260
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "หนาวมาแล้ว…",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S01-02",
+          "kind": "parallax",
+          "description": "ตัดไปชายฝั่งภาคใต้ เมฆฝนก้อนใหญ่ถล่ม คลื่นแรง — คำถามของคลิป",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:rain-coast-plate|sea",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:rain-cloud|sky",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -120,
+              "w": 600,
+              "anim": "drop"
+            },
+            {
+              "id": "fg",
+              "asset": "km-clouds-fg",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.4
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -30,
+              "z": 220
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ทำไมใต้ฝนถล่ม?",
+              "role": "title",
+              "x": 540,
+              "y": 300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "beat": "setup",
+      "era": "present",
+      "vo": "กรมอุตุฯ เตือน [#S02-02] อีสานเย็นลง 3–5 องศา [#S02-03] แต่ใต้ฝนหนัก [#S02-04] 9–13 พ.ย.",
+      "voTTS": "กรมอุตุฯ เตือน [#S02-02] อีสาน เย็นลง สามถึงห้าองศา [#S02-03] แต่ใต้ ฝนหนัก [#S02-04] เก้าถึงสิบสาม พฤศจิกา",
+      "voFile": "vo/S02.wav",
+      "shots": [
+        {
+          "id": "S02-01",
+          "kind": "collage",
+          "description": "ประกาศเตือนบนกระดาษ ตรายางประทับ ฉบับที่ 1",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "document",
+              "style": "collage",
+              "z": 1000,
+              "x": 0,
+              "y": -40,
+              "w": 560,
+              "anim": "drop"
+            },
+            {
+              "id": "stamp",
+              "asset": "stamp",
+              "style": "collage",
+              "z": 900,
+              "x": 170,
+              "y": -160,
+              "w": 260,
+              "anim": "pop",
+              "props": {
+                "at": 0.5
+              }
+            }
+          ],
+          "text": [
+            {
+              "content": "ประกาศเตือน ฉบับ 1",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S02-02",
+          "kind": "data",
+          "description": "ตัวเลขอุณหภูมิอีสานลดลง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 5,
+            "suffix": " °C",
+            "label": "อีสานลดลง 3 ถึง",
+            "sourceRef": "F-01"
+          }
+        },
+        {
+          "id": "S02-03",
+          "kind": "data",
+          "description": "แผนที่ไทย หมุดเย็นที่อีสาน หมุดฝนที่ภาคใต้",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "text": [
+            {
+              "content": "ใต้ ฝนหนัก",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-02"
+            }
+          ],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                101,
+                13
+              ],
+              "scale": 2600
+            },
+            "to": {
+              "center": [
+                100.5,
+                9.5
+              ],
+              "scale": 3600
+            },
+            "pins": [
+              {
+                "at": [
+                  102.1,
+                  15.0
+                ],
+                "label": "เย็นลง"
+              },
+              {
+                "at": [
+                  99.96,
+                  8.43
+                ],
+                "label": "ฝนหนักมาก",
+                "delay": 0.6
+              }
+            ]
+          }
+        },
+        {
+          "id": "S02-04",
+          "kind": "vector",
+          "description": "ปฏิทิน 9–13 พ.ย. กับเมฆฝน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "calendar-year",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -60,
+              "w": 480,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "img:rain-cloud|sky",
+              "style": "vector",
+              "z": 1300,
+              "x": 200,
+              "y": -260,
+              "w": 300,
+              "anim": "float"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "9–13 พ.ย.",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-02"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "beat": "act1",
+      "era": "present",
+      "vo": "ต้นเหตุคือลมเย็นจากจีน [#S03-02] แผ่ลงมาถึงไทย [#S03-03] เหนือกับอีสานจึงหนาวแห้ง [#S03-04] ทว่าลมชุดเดียวกัน [#S03-05] ไหลลงทะเลจีนใต้",
+      "voTTS": "ต้นเหตุ คือลมเย็นจากจีน [#S03-02] แผ่ลงมาถึงไทย [#S03-03] เหนือกับอีสาน จึงหนาวแห้ง [#S03-04] ทว่า… ลมชุดเดียวกัน [#S03-05] ไหลลงทะเลจีนใต้",
+      "voFile": "vo/S03.wav",
+      "shots": [
+        {
+          "id": "S03-01",
+          "kind": "data",
+          "description": "แผนที่ซูมออกเห็นจีน หมุดต้นทางลม",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "text": [
+            {
+              "content": "ลมเย็นจากจีน",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-03"
+            }
+          ],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                106,
+                22
+              ],
+              "scale": 1100
+            },
+            "to": {
+              "center": [
+                106,
+                24
+              ],
+              "scale": 1300
+            },
+            "pins": [
+              {
+                "at": [
+                  112.0,
+                  30.0
+                ],
+                "label": "จีน"
+              }
+            ]
+          }
+        },
+        {
+          "id": "S03-02",
+          "kind": "parallax",
+          "description": "ก้อนลมเย็นสีฟ้าไหลลงมาจากเหนือ ข้ามภูเขา",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:cold-north-plate|mountains",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:wind-gust|signal-icon",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 560,
+              "anim": "slide-up"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.25
+            }
+          ],
+          "camera": {
+            "move": "crane",
+            "from": {
+              "x": 0,
+              "y": -200,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 100,
+              "z": 120
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "แผ่ลงมาถึงไทย",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-03"
+            }
+          ]
+        },
+        {
+          "id": "S03-03",
+          "kind": "data",
+          "description": "เส้นทางลมจากจีนลงไทยตอนบน ผ่านแผ่นดิน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "text": [
+            {
+              "content": "ผ่านแผ่นดิน = แห้ง",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-07"
+            }
+          ],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                106,
+                22
+              ],
+              "scale": 1300
+            },
+            "to": {
+              "center": [
+                103,
+                18
+              ],
+              "scale": 1700
+            },
+            "routes": [
+              {
+                "path": [
+                  [
+                    112.0,
+                    30.0
+                  ],
+                  [
+                    106,
+                    22
+                  ],
+                  [
+                    102.1,
+                    15.0
+                  ]
+                ]
+              }
+            ],
+            "pins": [
+              {
+                "at": [
+                  102.1,
+                  15.0
+                ],
+                "label": "หนาว แห้ง",
+                "delay": 0.8
+              }
+            ]
+          }
+        },
+        {
+          "id": "S03-04",
+          "kind": "title",
+          "description": "คำเชื่อม ทว่า… บนพื้นเข้ม ลมหมุนเบา ๆ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:wind-gust|signal-icon",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -60,
+              "w": 420,
+              "anim": "float"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ทว่า…",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S03-05",
+          "kind": "data",
+          "description": "เส้นทางลมแยกอีกสายลงทะเลจีนใต้",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "text": [
+            {
+              "content": "ลมชุดเดียวกัน",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-03"
+            }
+          ],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                108,
+                20
+              ],
+              "scale": 1300
+            },
+            "to": {
+              "center": [
+                107,
+                15
+              ],
+              "scale": 1400
+            },
+            "routes": [
+              {
+                "path": [
+                  [
+                    112.0,
+                    30.0
+                  ],
+                  [
+                    113,
+                    22
+                  ],
+                  [
+                    113.5,
+                    15.0
+                  ]
+                ]
+              }
+            ],
+            "pins": [
+              {
+                "at": [
+                  113.5,
+                  15.0
+                ],
+                "label": "ทะเลจีนใต้",
+                "delay": 0.8
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "beat": "act2",
+      "era": "present",
+      "vo": "ระหว่างทาง ลมอุ้มไอน้ำ [#S04-02] ข้ามอ่าวไทย [#S04-03] ปะทะใต้ฝั่งตะวันออก [#S04-04] นครศรีฯ สงขลา ปัตตานี [#S04-05] กลายเป็นฝนหนัก",
+      "voTTS": "ระหว่างทาง… ลมอุ้มไอน้ำ [#S04-02] ข้ามอ่าวไทย [#S04-03] ปะทะ ใต้ฝั่งตะวันออก [#S04-04] นครศรีธรรมราช… สงขลา… ปัตตานี [#S04-05] กลายเป็นฝนหนัก",
+      "voFile": "vo/S04.wav",
+      "shots": [
+        {
+          "id": "S04-01",
+          "kind": "parallax",
+          "description": "ทะเลเปิด ลมพัดผิวน้ำ ไอน้ำลอยขึ้นรวมเป็นเมฆ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:open-sea-plate|sea",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "water-cup",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -40,
+              "w": 300,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -250,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 250,
+              "y": -20,
+              "z": 80
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ลมอุ้มไอน้ำ",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-07"
+            }
+          ]
+        },
+        {
+          "id": "S04-02",
+          "kind": "data",
+          "description": "เส้นทางลมต่อจากทะเลจีนใต้ ข้ามอ่าวไทย",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "text": [
+            {
+              "content": "ข้ามอ่าวไทย",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-03"
+            }
+          ],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                107,
+                13
+              ],
+              "scale": 1500
+            },
+            "to": {
+              "center": [
+                103,
+                10
+              ],
+              "scale": 2200
+            },
+            "routes": [
+              {
+                "path": [
+                  [
+                    113.5,
+                    15.0
+                  ],
+                  [
+                    106,
+                    11
+                  ],
+                  [
+                    101.5,
+                    9.5
+                  ]
+                ]
+              }
+            ],
+            "pins": [
+              {
+                "at": [
+                  101.5,
+                  9.5
+                ],
+                "label": "อ่าวไทย",
+                "delay": 0.6
+              }
+            ]
+          }
+        },
+        {
+          "id": "S04-03",
+          "kind": "parallax",
+          "description": "เมฆฝนก้อนใหญ่ลอยเข้าชายฝั่งที่มีต้นมะพร้าว",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:rain-coast-plate|sea",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:rain-cloud|sky",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -140,
+              "w": 600,
+              "anim": "slide-left"
+            },
+            {
+              "id": "fg",
+              "asset": "km-clouds-fg",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -350
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ปะทะใต้ฝั่งตะวันออก",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S04-04",
+          "kind": "data",
+          "description": "แผนที่ภาคใต้ หมุด 3 จังหวัดฝนหนักมาก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "text": [
+            {
+              "content": "ฝนหนักมาก",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-04"
+            }
+          ],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                100.3,
+                8.5
+              ],
+              "scale": 5200
+            },
+            "to": {
+              "center": [
+                100.5,
+                7.8
+              ],
+              "scale": 6200
+            },
+            "pins": [
+              {
+                "at": [
+                  99.96,
+                  8.43
+                ],
+                "label": "นครศรีฯ"
+              },
+              {
+                "at": [
+                  100.6,
+                  7.2
+                ],
+                "label": "สงขลา",
+                "delay": 0.4
+              },
+              {
+                "at": [
+                  101.25,
+                  6.87
+                ],
+                "label": "ปัตตานี",
+                "delay": 0.8
+              }
+            ]
+          }
+        },
+        {
+          "id": "S04-05",
+          "kind": "vector",
+          "description": "เมฆฝนเทน้ำลงมาหนัก ๆ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:rain-cloud|sky",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 600,
+              "anim": "bob"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "กลายเป็นฝนหนัก",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-07"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "beat": "act3",
+      "era": "present",
+      "vo": "นี่คือช่วงฝนชุกของใต้ฝั่งตะวันออก [#S05-02] ฝนพฤศจิกาปกติ อีสานราว 18 มม. [#S05-03] ใต้ฝั่งตะวันออก… กว่า 360 [#S05-04] ราว 20 เท่า",
+      "voTTS": "นี่คือ ช่วงฝนชุกของใต้ฝั่งตะวันออก [#S05-02] ฝนพฤศจิกาปกติ… อีสานราว สิบแปดมิลลิเมตร [#S05-03] ใต้ฝั่งตะวันออก… กว่าสามร้อยหกสิบ [#S05-04] ราว ยี่สิบเท่า",
+      "voFile": "vo/S05.wav",
+      "shots": [
+        {
+          "id": "S05-01",
+          "kind": "parallax",
+          "description": "ชายฝั่งใต้ฝนพรำ ปฏิทินพฤศจิกาลอยหน้าเมฆ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:rain-coast-plate|sea",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "calendar-year",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 420,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 200
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ฝนชุกเดือนพ.ย.",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S05-02",
+          "kind": "data",
+          "description": "ตัวนับฝนอีสาน 18 มม.",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 18,
+            "suffix": " มม.",
+            "label": "ฝน พ.ย. ปกติ · อีสาน",
+            "sourceRef": "F-06"
+          }
+        },
+        {
+          "id": "S05-03",
+          "kind": "data",
+          "description": "แท่งเทียบฝน อีสาน vs ใต้ฝั่งตะวันออก — data moment ใหญ่",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "bar",
+            "items": [
+              {
+                "label": "อีสาน",
+                "value": 18
+              },
+              {
+                "label": "ใต้ฝั่งตะวันออก",
+                "value": 361.4,
+                "highlight": true
+              }
+            ],
+            "unit": "มม.",
+            "title": "ฝนเฉลี่ยเดือน พ.ย.",
+            "sourceRef": "F-06"
+          }
+        },
+        {
+          "id": "S05-04",
+          "kind": "vector",
+          "description": "ถ้วยน้ำเล็ก 1 ใบ เทียบเมฆใหญ่ — ราว 20 เท่า",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "water-cup",
+              "style": "vector",
+              "z": 1000,
+              "x": -230,
+              "y": -20,
+              "w": 200,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "img:rain-cloud|sky",
+              "style": "vector",
+              "z": 1000,
+              "x": 110,
+              "y": -100,
+              "w": 520,
+              "anim": "pop",
+              "delay": 0.3
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ราว 20 เท่า",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-06"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "beat": "payoff",
+      "era": "present",
+      "vo": "สรุป ลมหนาวกับฝนใต้ [#S06-02] คือลมชุดเดียวกัน [#S06-03] ต่างแค่… [#S06-04] ผ่านทะเลมาหรือเปล่า",
+      "voTTS": "สรุป… ลมหนาว กับฝนใต้ [#S06-02] คือลมชุดเดียวกัน [#S06-03] ต่างแค่… [#S06-04] ผ่านทะเลมาหรือเปล่า",
+      "voFile": "vo/S06.wav",
+      "shots": [
+        {
+          "id": "S06-01",
+          "kind": "vector",
+          "description": "ผ้าพันคอกับเมฆฝนวางคู่กัน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:scarf|cup",
+              "style": "vector",
+              "z": 1000,
+              "x": -200,
+              "y": -40,
+              "w": 360,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "img:rain-cloud|sky",
+              "style": "vector",
+              "z": 1000,
+              "x": 180,
+              "y": -80,
+              "w": 400,
+              "anim": "pop",
+              "delay": 0.3
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ลมหนาว + ฝนใต้",
+              "role": "title",
+              "x": 540,
+              "y": 300
+            }
+          ]
+        },
+        {
+          "id": "S06-02",
+          "kind": "data",
+          "description": "แผนที่เส้นทางลมสองสายจากจุดเดียว",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "text": [
+            {
+              "content": "ลมชุดเดียวกัน",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-03"
+            }
+          ],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                106,
+                20
+              ],
+              "scale": 1000
+            },
+            "to": {
+              "center": [
+                105,
+                17
+              ],
+              "scale": 1150
+            },
+            "routes": [
+              {
+                "path": [
+                  [
+                    112.0,
+                    30.0
+                  ],
+                  [
+                    106,
+                    22
+                  ],
+                  [
+                    102.1,
+                    15.0
+                  ]
+                ]
+              },
+              {
+                "path": [
+                  [
+                    112.0,
+                    30.0
+                  ],
+                  [
+                    113,
+                    22
+                  ],
+                  [
+                    113.5,
+                    15.0
+                  ],
+                  [
+                    106,
+                    11
+                  ],
+                  [
+                    99.96,
+                    8.43
+                  ]
+                ],
+                "delay": 0.4
+              }
+            ],
+            "pins": [
+              {
+                "at": [
+                  112.0,
+                  30.0
+                ],
+                "label": "จีน"
+              }
+            ]
+          }
+        },
+        {
+          "id": "S06-03",
+          "kind": "vector",
+          "description": "ตาชั่งสองฝั่ง แผ่นดิน vs ทะเล — ต่างกันแค่อะไร",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -60,
+              "w": 520,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ต่างแค่…",
+              "role": "title",
+              "x": 540,
+              "y": 300
+            }
+          ]
+        },
+        {
+          "id": "S06-04",
+          "kind": "parallax",
+          "description": "ลมพัดผ่านผิวทะเล ตัวเฉลย",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:open-sea-plate|sea",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:wind-gust|signal-icon",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 520,
+              "anim": "slide-right"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": 250,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": -250,
+              "y": -20,
+              "z": 100
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ผ่านทะเล = ฝน",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-07"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "beat": "outro",
+      "era": "present",
+      "vo": "ครั้งหน้าที่รู้สึกว่า หนาวมาแล้ว…",
+      "voTTS": "ครั้งหน้า… ที่รู้สึกว่า หนาวมาแล้ว…",
+      "voFile": "vo/S07.wav",
+      "shots": [
+        {
+          "id": "S07-01",
+          "kind": "parallax",
+          "description": "ภูเขาหมอกเย็นอีกครั้ง ผ้าพันคอ — วนกลับประโยคแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:cold-north-plate|mountains",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:scarf|cup",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -40,
+              "w": 440,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": -20,
+              "z": 200
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -100
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ครั้งหน้าที่หนาว…",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "covers": [
+    {
+      "id": "A",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "หนาวเหนือ\n*ฝนใต้*",
+      "kicker": "ลมชุดเดียวกัน",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:rain-coast-plate|sea",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "img:rain-cloud|sky",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 600
+        },
+        {
+          "id": "fg",
+          "asset": "dust",
+          "style": "vector",
+          "z": 500,
+          "cover": true,
+          "opacity": 0.3
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "ฝนมากกว่า\n*20 เท่า*",
+      "kicker": "ใต้ vs อีสาน",
+      "sourceRef": "F-06",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:rain-coast-plate|sea",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "img:rain-cloud|sky",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 560
+        }
+      ]
+    }
+  ]
+}
