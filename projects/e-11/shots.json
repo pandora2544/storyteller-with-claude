@@ -1,0 +1,1596 @@
+{
+  "meta": {
+    "slug": "e-11",
+    "title": "ฝุ่น PM2.5 เล็กแค่ไหน ทำไมหน้าหนาวหนักกว่า",
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "targetSec": 60
+  },
+  "sources": {
+    "F-01": "US EPA · Greenpeace Thailand",
+    "F-02": "US EPA · Greenpeace Thailand",
+    "F-03": "US EPA · Greenpeace Thailand",
+    "F-04": "ค่ามาตรฐาน PM2.5 (1 มิ.ย. 2566) ผ่าน Thai PBS",
+    "F-05": "กรมควบคุมมลพิษ · ศกพ. ผ่าน มติชน",
+    "F-06": "กรมควบคุมมลพิษ",
+    "F-07": "กรมอนามัย · กระทรวงสาธารณสุข"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "era": "present",
+      "vo": "ทำไมหน้าหนาว [#S01-02] ฝุ่นหนักกว่า",
+      "voTTS": "ทำไมหน้าหนาว… [#S01-02] ฝุ่นหนักกว่า",
+      "voFile": "vo/S01.wav",
+      "shots": [
+        {
+          "id": "S01-01",
+          "kind": "parallax",
+          "description": "เมืองการ์ตูนจมหมอกควันสีเทาส้ม ฝุ่นลอยหน้ากล้อง กล้องดันเข้าเร็วตั้งแต่เฟรมแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:hazy-city|city",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 1800,
+              "cover": true,
+              "opacity": 0.45
+            },
+            {
+              "id": "subject",
+              "asset": "dust",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 600,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.4
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 260
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "หน้าหนาว = ฝุ่น?",
+              "role": "title",
+              "x": 540,
+              "y": 360
+            }
+          ]
+        },
+        {
+          "id": "S01-02",
+          "kind": "vector",
+          "description": "ไอคอนทางแยกคำถาม — ทำไมฤดูนี้ต่างจากฤดูอื่น",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 620,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ทำไม?",
+              "role": "kicker",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "beat": "setup",
+      "era": "present",
+      "vo": "ตัวการคือ PM2.5 [#S02-02] ฝุ่นไม่เกิน 2.5 ไมครอน [#S02-03] ตาเปล่ามองไม่เห็น",
+      "voTTS": "ตัวการคือ พีเอ็มสองจุดห้า [#S02-02] ฝุ่นไม่เกิน สองจุดห้าไมครอน [#S02-03] ตาเปล่ามองไม่เห็น",
+      "voFile": "vo/S02.wav",
+      "shots": [
+        {
+          "id": "S02-01",
+          "kind": "parallax",
+          "description": "ซูมเข้าไปในหมอกควันของเมือง เม็ดฝุ่นเล็ก ๆ เริ่มเห็นเป็นจุด",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:hazy-city|city",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 1600,
+              "cover": true,
+              "opacity": 0.5
+            },
+            {
+              "id": "subject",
+              "asset": "magnifier",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 480,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 220
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "PM2.5",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S02-02",
+          "kind": "vector",
+          "description": "แว่นขยายส่องเม็ดฝุ่นเดี่ยว ไม้บรรทัดจิ๋วบอกขนาด",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:micro-bg|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "stretch-ruler",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 600,
+              "anim": "slide-right"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "≤ 2.5 ไมครอน",
+              "role": "number",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S02-03",
+          "kind": "vector",
+          "description": "ดวงตา/ภาพคนเงา มองไปที่อากาศโล่ง แต่ฝุ่นจาง ๆ อยู่รอบตัว",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "breath-light-figure",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "bob"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 700,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ล่องหน",
+              "role": "label",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "beat": "act1",
+      "era": "present",
+      "vo": "เทียบกับเส้นผม [#S03-02] ผมกว้างราว 70 ไมครอน [#S03-03] PM2.5 เล็กกว่าราว 30 เท่า [#S03-04] ลอดขนจมูกได้ [#S03-05] ลึกถึงปอด [#S03-06] บางส่วนเข้ากระแสเลือด",
+      "voTTS": "เทียบกับเส้นผม [#S03-02] ผมกว้างราว เจ็ดสิบไมครอน [#S03-03] พีเอ็มสองจุดห้า เล็กกว่าราว สามสิบเท่า [#S03-04] ลอดขนจมูกได้ [#S03-05] ลึกถึงปอด [#S03-06] บางส่วน… เข้ากระแสเลือด",
+      "voFile": "vo/S03.wav",
+      "shots": [
+        {
+          "id": "S03-01",
+          "kind": "parallax",
+          "description": "มุมกล้องจุลทรรศน์ เส้นผมเส้นเดียวพาดกลางจอเหมือนท่อนซุง เม็ดฝุ่นจิ๋วลอยข้าง ๆ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:micro-bg|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:hair-strand|ruler",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 620,
+              "rot": -12,
+              "anim": "slide-left"
+            },
+            {
+              "id": "mg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 1500,
+              "cover": true,
+              "opacity": 0.45
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 200
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -200
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ผม 1 เส้น",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S03-02",
+          "kind": "data",
+          "description": "ตัวนับความกว้างเส้นผมขึ้นถึง 70 ไมครอน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 70,
+            "suffix": " ไมครอน",
+            "label": "ความกว้างเส้นผม",
+            "sourceRef": "F-02"
+          }
+        },
+        {
+          "id": "S03-03",
+          "kind": "data",
+          "description": "ไอคอนเม็ดฝุ่น 30 เม็ดเรียงกันเท่าความกว้างเส้นผม 1 เส้น (scale comparison)",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "unit",
+            "count": 30,
+            "perIcon": "PM2.5 1 เม็ด",
+            "label": "เรียงเต็มความกว้างเส้นผม",
+            "sourceRef": "F-02"
+          }
+        },
+        {
+          "id": "S03-04",
+          "kind": "vector",
+          "description": "คนเงามีลมหายใจเรืองแสง เม็ดฝุ่นไหลเข้าทางจมูก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "breath-light-figure",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 540,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 700,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ผ่านจมูก →",
+              "role": "label",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-03"
+            }
+          ]
+        },
+        {
+          "id": "S03-05",
+          "kind": "vector",
+          "description": "กล้องดันลงไปที่อก ฝุ่นเรืองแสงไหลลงลึก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "breath-light-figure",
+              "style": "vector",
+              "z": 1000,
+              "y": -20,
+              "w": 620
+            },
+            {
+              "id": "mg",
+              "asset": "arrow",
+              "style": "vector",
+              "z": 1200,
+              "x": 260,
+              "y": -120,
+              "w": 260,
+              "rot": 90,
+              "anim": "slide-up",
+              "props": {
+                "color": "#FF6B4A"
+              }
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": -40,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 40,
+              "z": 280
+            },
+            "ease": "inOutCubic"
+          },
+          "text": [
+            {
+              "content": "ปอด",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-03"
+            }
+          ]
+        },
+        {
+          "id": "S03-06",
+          "kind": "vector",
+          "description": "หยดเลือดสีแดงเด้งขึ้น จุดฝุ่นเล็ก ๆ อยู่ข้างใน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "red-drop-symbol",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 420,
+              "anim": "drop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เข้าเลือด",
+              "role": "label",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-03"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "beat": "act2",
+      "era": "present",
+      "vo": "ปกติอากาศอุ่นลอยขึ้น [#S04-02] พาฝุ่นไปกระจาย [#S04-03] หน้าหนาว ลมเย็นแผ่ลงมา [#S04-04] ชั้นบนกลับอุ่นกว่า [#S04-05] เหมือนฝาชีครอบเมือง [#S04-06] ลมสงบ ฝุ่นค้าง",
+      "voTTS": "ปกติ… อากาศอุ่นลอยขึ้น [#S04-02] พาฝุ่นไปกระจาย [#S04-03] หน้าหนาว ลมเย็นแผ่ลงมา [#S04-04] ชั้นบน กลับอุ่นกว่า [#S04-05] เหมือนฝาชี ครอบเมือง [#S04-06] ลมสงบ… ฝุ่นค้าง",
+      "voFile": "vo/S04.wav",
+      "shots": [
+        {
+          "id": "S04-01",
+          "kind": "vector",
+          "description": "ลูกศรอากาศอุ่นสีส้มลอยขึ้นจากพื้นเมือง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:hazy-city|city",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "arrow",
+              "style": "vector",
+              "z": 1000,
+              "y": -100,
+              "w": 420,
+              "rot": -90,
+              "anim": "slide-up",
+              "props": {
+                "color": "#FF6B4A"
+              }
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "อุ่น = ลอย ↑",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S04-02",
+          "kind": "parallax",
+          "description": "ฝุ่นถูกพาขึ้นฟ้าแล้วจางหายไปด้านบน กล้องเครนขึ้นตาม",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:hazy-city|city",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "sun",
+              "style": "vector",
+              "z": 2000,
+              "y": -500,
+              "w": 360,
+              "opacity": 0.7
+            },
+            {
+              "id": "subject",
+              "asset": "dust",
+              "style": "vector",
+              "z": 1000,
+              "y": -120,
+              "w": 600,
+              "anim": "slide-up"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.25
+            }
+          ],
+          "camera": {
+            "move": "crane",
+            "from": {
+              "x": 0,
+              "y": 150,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -200,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ระบายขึ้นฟ้า",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S04-03",
+          "kind": "data",
+          "description": "แผนที่: ลูกศรมวลอากาศเย็นจากจีนแผ่ลงมาปกคลุมไทย",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                108,
+                26
+              ],
+              "scale": 900
+            },
+            "to": {
+              "center": [
+                102,
+                18
+              ],
+              "scale": 1300
+            },
+            "routes": [
+              {
+                "path": [
+                  [
+                    113,
+                    34
+                  ],
+                  [
+                    106,
+                    25
+                  ],
+                  [
+                    100.5,
+                    15
+                  ]
+                ],
+                "color": "#3FD6C6"
+              }
+            ],
+            "pins": [
+              {
+                "at": [
+                  113,
+                  34
+                ],
+                "label": "มวลอากาศเย็น"
+              },
+              {
+                "at": [
+                  100.5,
+                  13.75
+                ],
+                "label": "ไทย",
+                "delay": 0.6
+              }
+            ],
+            "sourceRef": "F-05"
+          },
+          "text": [
+            {
+              "content": "ลมหนาวมาเยือน",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S04-04",
+          "kind": "collage",
+          "description": "แผ่นภาพตัดกระดาษ ชั้นอากาศสองชั้น อุ่นทับเย็น ปากกาวงคำว่า \"กลับด้าน\"",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "document",
+              "style": "collage",
+              "z": 1000,
+              "y": -60,
+              "w": 600,
+              "rot": -3,
+              "anim": "stop-motion"
+            },
+            {
+              "id": "fg",
+              "asset": "marker-circle",
+              "style": "collage",
+              "z": 900,
+              "y": -60,
+              "w": 620,
+              "delay": 0.5
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "บนอุ่น · ล่างเย็น",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-05"
+            },
+            {
+              "content": "อุณหภูมิผกผัน",
+              "role": "note",
+              "x": 540,
+              "y": 1050,
+              "sourceRef": "F-05",
+              "delay": 0.4
+            }
+          ]
+        },
+        {
+          "id": "S04-05",
+          "kind": "parallax",
+          "description": "ฝาชีขนาดยักษ์ครอบลงบนเมืองที่หมอกควันหนาขึ้น กล้องถอยให้เห็นทั้งฝา (metaphor หลัก)",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:hazy-city|city",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:food-cover-lid|bubble",
+              "style": "vector",
+              "z": 1000,
+              "y": -180,
+              "w": 620,
+              "anim": "drop"
+            },
+            {
+              "id": "mg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 1500,
+              "cover": true,
+              "opacity": 0.5
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 150
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -250
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ฝาชีอากาศ",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S04-06",
+          "kind": "vector",
+          "description": "ฝาชีปิดสนิท ฝุ่นวนอยู่ข้างใน ใบไม้นิ่งไม่ไหว — ลมสงบ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:food-cover-lid|bubble",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 600,
+              "anim": "bob"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 800,
+              "y": 0,
+              "w": 520,
+              "opacity": 0.6
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ฝุ่นติดใต้ฝา",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-05"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "beat": "act3",
+      "era": "present",
+      "vo": "ควันรถ โรงงาน [#S05-02] การเผาในที่โล่ง [#S05-03] สะสมใต้ฝา [#S05-04] เกณฑ์ใหม่ปี 2566 [#S05-05] เฉลี่ย 24 ชั่วโมง ไม่เกิน 37.5 ไมโครกรัม",
+      "voTTS": "ควันรถ โรงงาน [#S05-02] การเผาในที่โล่ง [#S05-03] สะสมใต้ฝา [#S05-04] เกณฑ์ใหม่ ปีสองพันห้าร้อยหกสิบหก [#S05-05] เฉลี่ยยี่สิบสี่ชั่วโมง… ไม่เกิน สามสิบเจ็ดจุดห้า ไมโครกรัม",
+      "voFile": "vo/S05.wav",
+      "shots": [
+        {
+          "id": "S05-01",
+          "kind": "parallax",
+          "description": "ใต้ฝาชี ถนนรถติดและปล่องโรงงานพ่นควัน กล้องแพนข้าง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:hazy-city|city",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 1600,
+              "cover": true,
+              "opacity": 0.55
+            },
+            {
+              "id": "subject",
+              "asset": "img:food-cover-lid|bubble",
+              "style": "vector",
+              "z": 1000,
+              "y": -260,
+              "w": 620
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.4
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -200,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 200,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "รถ + โรงงาน",
+              "role": "title",
+              "x": 540,
+              "y": 360,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S05-02",
+          "kind": "collage",
+          "description": "ภาพตัดกระดาษ ทุ่งนาที่มีควันลอยจากการเผาเศษพืช",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:burning-field|plantation",
+              "style": "collage",
+              "z": 1000,
+              "y": -60,
+              "w": 620,
+              "rot": 3,
+              "anim": "stop-motion"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 700,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ควันเผาเศษพืช",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S05-03",
+          "kind": "data",
+          "description": "แผนที่ไทย ปักหมุดพื้นที่ที่มีการเผาเศษวัสดุเกษตร/ไฟป่ามาก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                101,
+                15
+              ],
+              "scale": 2200
+            },
+            "to": {
+              "center": [
+                100.5,
+                16
+              ],
+              "scale": 2800
+            },
+            "pins": [
+              {
+                "at": [
+                  100.52,
+                  13.75
+                ],
+                "label": "กทม. · รถ/โรงงาน"
+              },
+              {
+                "at": [
+                  98.99,
+                  18.79
+                ],
+                "label": "ภาคเหนือ · ไฟป่า",
+                "delay": 0.4
+              },
+              {
+                "at": [
+                  103,
+                  16.2
+                ],
+                "label": "อีสาน · เผาเศษพืช",
+                "delay": 0.8
+              }
+            ],
+            "sourceRef": "F-06"
+          },
+          "text": [
+            {
+              "content": "ฝุ่นสะสม",
+              "role": "kicker",
+              "x": 540,
+              "y": 290,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S05-04",
+          "kind": "collage",
+          "description": "ปฏิทินปี 2566 แปะบนกระดาษ ตรายางประทับ \"เกณฑ์ใหม่\"",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "calendar-year",
+              "style": "collage",
+              "z": 1000,
+              "y": -60,
+              "w": 520,
+              "rot": -4,
+              "anim": "stop-motion"
+            },
+            {
+              "id": "stamp",
+              "asset": "stamp",
+              "style": "collage",
+              "z": 900,
+              "x": 160,
+              "y": 60,
+              "w": 260,
+              "anim": "drop",
+              "props": {
+                "at": 0.5
+              }
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เกณฑ์ไทย 2566",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S05-05",
+          "kind": "vector",
+          "description": "ไม้บรรทัดวัดยืดออก เส้นเกณฑ์ 37.5 สว่างขึ้น (data moment)",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "stretch-ruler",
+              "style": "vector",
+              "z": 1000,
+              "y": 20,
+              "w": 620,
+              "anim": "slide-right"
+            },
+            {
+              "id": "mg",
+              "asset": "star-burst",
+              "style": "vector",
+              "z": 1400,
+              "y": -260,
+              "w": 520,
+              "opacity": 0.5
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 150
+            },
+            "ease": "inOutCubic"
+          },
+          "text": [
+            {
+              "content": "37.5",
+              "role": "number",
+              "x": 540,
+              "y": 420,
+              "sourceRef": "F-04",
+              "size": 200
+            },
+            {
+              "content": "มคก./ลบ.ม. · เฉลี่ย 24 ชม.",
+              "role": "label",
+              "x": 540,
+              "y": 640,
+              "sourceRef": "F-04",
+              "delay": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "beat": "payoff",
+      "era": "present",
+      "vo": "ฝาปิด ลมนิ่ง บวกการเผา [#S06-02] ค่าสูง เช็ก Air4Thai [#S06-03] ใส่ N95 ให้แนบหน้า",
+      "voTTS": "ฝาปิด… ลมนิ่ง… บวกการเผา [#S06-02] ค่าสูง เช็กแอร์ฟอร์ไทย [#S06-03] ใส่ เอ็นเก้าสิบห้า ให้แนบหน้า",
+      "voFile": "vo/S06.wav",
+      "shots": [
+        {
+          "id": "S06-01",
+          "kind": "parallax",
+          "description": "ภาพรวม: ฝาชีครอบเมือง ฝุ่นนิ่ง กล้องดันเข้า — คำตอบของ hook",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:hazy-city|city",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:food-cover-lid|bubble",
+              "style": "vector",
+              "z": 1000,
+              "y": -160,
+              "w": 600,
+              "anim": "float"
+            },
+            {
+              "id": "mg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 1500,
+              "cover": true,
+              "opacity": 0.45
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 220
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "3 ตัวการ",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S06-02",
+          "kind": "vector",
+          "description": "มือถือแสดงหน้าจอค่าคุณภาพอากาศ (ไม่มีโลโก้)",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 480,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เช็กค่าฝุ่นก่อนออก",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-07"
+            }
+          ]
+        },
+        {
+          "id": "S06-03",
+          "kind": "vector",
+          "description": "หน้ากาก N95 การ์ตูนเด้งขึ้น แนบรูปหน้า",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:n95-mask|heart-star",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 560,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "N95 แนบกระชับ",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-07"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "beat": "outro",
+      "era": "present",
+      "vo": "ฝาชีใบนี้ คือคำตอบว่า…",
+      "voTTS": "ฝาชีใบนี้… คือคำตอบว่า…",
+      "voFile": "vo/S07.wav",
+      "holdAfter": 0.3,
+      "shots": [
+        {
+          "id": "S07-01",
+          "kind": "parallax",
+          "description": "กลับไปที่เมืองในหมอกควันเหมือนช็อตแรก ฝาชีลอยอยู่เหนือเมือง กล้องดันเข้าช้า วนกลับไปคำถามแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:hazy-city|city",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:food-cover-lid|bubble",
+              "style": "vector",
+              "z": 1000,
+              "y": -200,
+              "w": 560,
+              "anim": "float"
+            },
+            {
+              "id": "mg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 1500,
+              "cover": true,
+              "opacity": 0.4
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 240
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "หน้าหนาว…?",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "covers": [
+    {
+      "id": "A",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "เล็กกว่าผม\n*30 เท่า*",
+      "kicker": "ฝุ่น PM2.5",
+      "sourceRef": "F-02",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:micro-bg|bg-color",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "img:hair-strand|ruler",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 620,
+          "rot": -12
+        },
+        {
+          "id": "fg",
+          "asset": "dust",
+          "style": "vector",
+          "z": 500,
+          "cover": true,
+          "opacity": 0.35
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "ฝาชี\n*ครอบเมือง*",
+      "kicker": "ทำไมหน้าหนาวฝุ่นหนัก",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:hazy-city|city",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "img:food-cover-lid|bubble",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 620
+        },
+        {
+          "id": "fg",
+          "asset": "dust",
+          "style": "vector",
+          "z": 500,
+          "cover": true,
+          "opacity": 0.4
+        }
+      ]
+    }
+  ]
+}

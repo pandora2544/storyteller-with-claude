@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "id": "hazy-city",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Generic tropical Asian city skyline of simple rounded tower blocks and a highway with tiny cars, the whole city wrapped in thick grey-orange smog haze, pale hidden sun in the sky, winter morning mood, no people, no signs, no landmarks, no logos"
+    },
+    {
+      "id": "micro-bg",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Abstract microscope view background, soft circular vignette, scattered tiny glowing dust specks of different sizes floating in deep navy space, clean and scientific, no text, no scale bars"
+    },
+    {
+      "id": "burning-field",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Harvested rice field after harvest with rows of dry straw stubble, a few small fires and thick grey smoke columns rising and drifting toward distant hills, hazy sky, no people, no buildings with signs"
+    },
+    {
+      "id": "hair-strand",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A single magnified human hair strand drawn as a thick smooth cylindrical log with subtle cuticle scale texture, lying diagonally, with a few tiny round dust particles floating next to it for scale, on a plain flat light-gray background"
+    },
+    {
+      "id": "food-cover-lid",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A big traditional Southeast Asian woven food cover dome (cloche shaped like a bell) seen from the side, warm orange tones with a small knob on top, friendly rounded shapes, on a plain flat light-gray background"
+    },
+    {
+      "id": "n95-mask",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A white cup-shaped respirator face mask with two elastic head straps and a soft metal nose clip, front three-quarter view, no brand marks, no printed text, no face, on a plain flat light-gray background"
+    }
+  ]
+}
