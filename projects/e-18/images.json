@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "id": "calendar-desk",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Cozy modern desk seen from above at a slight angle: a tear-off wall calendar, a paper form with blank boxes, a pencil, a smartphone with a blank screen and a cup of tea, soft warm morning light, tidy and calm, no people, no readable text or numbers, no logos"
+    },
+    {
+      "id": "temple-dawn",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Silhouette of a simple bell-shaped stupa on a low hill at dawn, soft orange and pink sky, a calm lotus pond in the foreground with a few pink lotus flowers, gentle mist, peaceful and minimal, no people, no statues, no faces, no signs"
+    },
+    {
+      "id": "old-office",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "An early twentieth century government office interior in Southeast Asia: wooden desk with stacks of old paper documents, an inkwell and dip pen, a vintage typewriter, a wall calendar with blank pages, tall shuttered window with warm afternoon light, no people, no portraits on the walls, no emblems, no readable text"
+    },
+    {
+      "id": "calendar-page",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A single tear-off calendar page with a red top binding strip and two ring holes, the page is blank cream paper with no numbers or letters, slightly curled corner"
+    },
+    {
+      "id": "lotus",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A single pink lotus flower in full bloom with a round green lotus leaf beside it, soft gentle shading"
+    },
+    {
+      "id": "old-document",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "An old official paper document, cream aged paper slightly yellowed at the edges, faint illegible ink lines with no readable letters, a plain round red wax seal with no emblem at the bottom"
+    }
+  ]
+}
