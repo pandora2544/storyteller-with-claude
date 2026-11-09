@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "id": "street-stall",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Thai street food stall table seen from a slightly high angle, a clay mortar with papaya salad, small bowls of chopped red and green bird's eye chilies, chili flakes and fish sauce jars, warm evening string lights, empty stall with no people, no signs with lettering, no brand logos"
+    },
+    {
+      "id": "nerve-glow",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Abstract view inside the tongue: a network of glowing nerve cells and branching nerve fibers in deep navy blue, a few warm orange-red sparks traveling along the fibers, soft depth and glow, no people, no text"
+    },
+    {
+      "id": "bird-chili",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A small bunch of Thai bird's eye chilies, slim pointed glossy red and a few green chilies with little green stems, rounded cartoon shapes, no lettering"
+    },
+    {
+      "id": "jalapeno",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A single plump green jalapeño pepper with a short stem, smooth glossy skin, rounded cartoon shapes, no lettering"
+    },
+    {
+      "id": "fire-alarm",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A round red fire alarm bell ringing, small cartoon flames and motion lines around it, simple rounded shapes, no lettering, no logos"
+    },
+    {
+      "id": "roller-coaster",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A small colorful roller coaster track with one loop and a single empty cart at the top of the drop, rounded cartoon shapes, no people, no lettering, no logos"
+    }
+  ]
+}

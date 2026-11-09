@@ -1,0 +1,1601 @@
+{
+  "meta": {
+    "slug": "e-13",
+    "title": "ทำไมกินเผ็ดแล้วติด",
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "targetSec": 60
+  },
+  "sources": {
+    "F-01": "Nobel Prize 2021 (TRPV1) · Frontiers for Young Minds 2024",
+    "F-02": "Live Science 2023 · The Star 2026",
+    "F-03": "Rozin et al. 2013 · Business Insider",
+    "F-04": "The Star 2026 · Business Insider (ยังไม่ยืนยันด้วยภาพสมอง)",
+    "F-05": "Rozin et al. 2013, Judgment and Decision Making",
+    "F-06": "Nolden et al. 2024, Physiology & Behavior · Live Science 2023",
+    "F-07": "UF/IFAS · กรุงเทพธุรกิจ 2566 (ค่าสโกวิลล์ช่วงสูง)"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "era": "present",
+      "vo": "เผ็ดจนน้ำตาไหล… [#S01-02] ทำไมยังอยากกิน",
+      "voEn": "So hot your eyes water… [#S01-02] so why do we want more?",
+      "voTTS": "เผ็ดจนน้ำตาไหล… [#S01-02] ทำไม… ยังอยากกิน",
+      "voFile": "vo/S01.wav",
+      "shots": [
+        {
+          "id": "S01-01",
+          "kind": "parallax",
+          "description": "แผงอาหารริมทาง ชามพริกขี้หนูเด้งขึ้นกลางจอ กริ่งไฟไหม้อยู่ด้านหลัง กล้องดันเข้าตั้งแต่เฟรมแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:street-stall|restaurant",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:fire-alarm|signal-icon",
+              "style": "vector",
+              "z": 1600,
+              "x": 260,
+              "y": -360,
+              "w": 280,
+              "anim": "sway"
+            },
+            {
+              "id": "subject",
+              "asset": "img:bird-chili|cherry-branch",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 560,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 260
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "เผ็ดแต่หยุดไม่ได้",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S01-02",
+          "kind": "vector",
+          "description": "พริกขี้หนูส่ายไปมา + ป้ายแยกทาง — คำถามว่าทำไมยังอยากกิน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1300,
+              "x": 0,
+              "y": -380,
+              "w": 300,
+              "anim": "pop"
+            },
+            {
+              "id": "subject",
+              "asset": "img:bird-chili|cherry-branch",
+              "style": "vector",
+              "z": 1000,
+              "y": -20,
+              "w": 500,
+              "anim": "sway"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ทำไม?",
+              "role": "kicker",
+              "x": 540,
+              "y": 300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "beat": "setup",
+      "era": "present",
+      "vo": "พริกขี้หนู [#S02-02] เผ็ดได้ราวแสนสโกวิลล์ [#S02-03] ฮาลาเปโญ [#S02-04] แค่ราวแปดพัน",
+      "voEn": "Thai bird's eye chili [#S02-02] can hit around 100,000 Scoville units. [#S02-03] A jalapeño? [#S02-04] Only about 8,000.",
+      "voTTS": "พริกขี้หนู [#S02-02] เผ็ดได้ราว… หนึ่งแสนสโกวิลล์ [#S02-03] ฮาลาเปโญ [#S02-04] แค่ราว แปดพัน",
+      "voFile": "vo/S02.wav",
+      "shots": [
+        {
+          "id": "S02-01",
+          "kind": "vector",
+          "description": "พริกขี้หนูกำเล็กเด้งขึ้น — ตัวเอกของเรื่อง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:bird-chili|cherry-branch",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 540,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "พริกขี้หนู",
+              "role": "title",
+              "x": 540,
+              "y": 320
+            }
+          ]
+        },
+        {
+          "id": "S02-02",
+          "kind": "data",
+          "description": "ตัวนับความเผ็ดพริกขี้หนูขึ้นถึง 100,000 SHU (ค่าบน)",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 100000,
+            "suffix": " SHU",
+            "label": "พริกขี้หนู · สูงสุดราว",
+            "sourceRef": "F-07"
+          }
+        },
+        {
+          "id": "S02-03",
+          "kind": "vector",
+          "description": "ฮาลาเปโญสีเขียวเด้งเข้ามาเทียบ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:jalapeno|seedling",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 480,
+              "anim": "slide-left"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ฮาลาเปโญ",
+              "role": "title",
+              "x": 540,
+              "y": 320
+            }
+          ]
+        },
+        {
+          "id": "S02-04",
+          "kind": "data",
+          "description": "แท่งเทียบ ฮาลาเปโญ 8,000 vs พริกขี้หนู 100,000 SHU (ค่าบนทั้งคู่)",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "bar",
+            "items": [
+              {
+                "label": "ฮาลาเปโญ",
+                "value": 8000
+              },
+              {
+                "label": "พริกขี้หนู",
+                "value": 100000,
+                "highlight": true
+              }
+            ],
+            "unit": "SHU",
+            "title": "สเกลสโกวิลล์ (ค่าสูง)",
+            "sourceRef": "F-07"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "beat": "act1",
+      "era": "present",
+      "vo": "แต่เผ็ดไม่ใช่รสชาติ [#S03-02] แคปไซซินในพริก [#S03-03] ไปกดตัวรับ TRPV1 [#S03-04] ที่จับความร้อนราว 43 องศา [#S03-05] สมองเลยนึกว่าปากไหม้",
+      "voEn": "But spiciness isn't a taste. [#S03-02] Capsaicin in chili [#S03-03] triggers a receptor called TRPV1, [#S03-04] the one that senses heat around 43°C, [#S03-05] so the brain thinks your mouth is burning.",
+      "voTTS": "แต่เผ็ด… ไม่ใช่รสชาติ [#S03-02] แคปไซซิน ในพริก [#S03-03] ไปกดตัวรับ ทีอาร์พีวีวัน [#S03-04] ที่จับความร้อน ราวสี่สิบสามองศา [#S03-05] สมองเลยนึกว่า… ปากไหม้",
+      "voFile": "vo/S03.wav",
+      "shots": [
+        {
+          "id": "S03-01",
+          "kind": "collage",
+          "description": "กระดาษ collage แว่นขยายส่องลิ้น วงปากกาแดง — เผ็ดไม่ใช่รส",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "magnifier",
+              "style": "collage",
+              "z": 1000,
+              "y": -40,
+              "w": 480,
+              "anim": "stop-motion",
+              "rot": -4
+            },
+            {
+              "id": "mark",
+              "asset": "marker-circle",
+              "style": "collage",
+              "z": 900,
+              "y": -40,
+              "w": 580
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ไม่ใช่รสชาติ",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S03-02",
+          "kind": "parallax",
+          "description": "โลกเส้นประสาทเรืองแสง พริกลอยกลางจอ ประกายแตกตัวด้านหลัง — แคปไซซิน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:nerve-glow|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "star-burst",
+              "style": "vector",
+              "z": 1600,
+              "x": -220,
+              "y": -360,
+              "w": 320,
+              "anim": "spin"
+            },
+            {
+              "id": "subject",
+              "asset": "img:bird-chili|cherry-branch",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 480,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -200,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 200,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "แคปไซซิน",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S03-03",
+          "kind": "vector",
+          "description": "สัญลักษณ์ตัวรับสัญญาณกะพริบ — ตัวรับ TRPV1",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "signal-icon",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ตัวรับ TRPV1",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S03-04",
+          "kind": "data",
+          "description": "ตัวนับอุณหภูมิขึ้นถึง 43°C — ความร้อนระดับเจ็บที่ TRPV1 จับ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 43,
+            "suffix": "°C",
+            "label": "ความร้อนที่ TRPV1 จับ",
+            "sourceRef": "F-01"
+          }
+        },
+        {
+          "id": "S03-05",
+          "kind": "parallax",
+          "description": "เส้นประสาทเรืองแดง กริ่งไฟไหม้ดังกลางจอ — สมองคิดว่าปากไหม้",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:nerve-glow|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "light-rays",
+              "style": "vector",
+              "z": 1700,
+              "y": -200,
+              "w": 600,
+              "opacity": 0.6
+            },
+            {
+              "id": "subject",
+              "asset": "img:fire-alarm|signal-icon",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 480,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 200
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ไฟไหม้! (ปลอม)",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-02"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "beat": "act2",
+      "era": "present",
+      "vo": "ร่างกายสู้เหมือนเจ็บจริง [#S04-02] เหงื่อออก น้ำตาไหล [#S04-03] เชื่อกันว่าสมองหลั่งเอนดอร์ฟิน [#S04-04] สารแก้ปวดในตัว [#S04-05] เลยรู้สึกฟิน",
+      "voEn": "The body fights back as if it's really hurt: [#S04-02] sweating, tears. [#S04-03] The brain is thought to release endorphins, [#S04-04] its built-in painkillers, [#S04-05] so we feel good.",
+      "voTTS": "ร่างกาย สู้เหมือนเจ็บจริง [#S04-02] เหงื่อออก… น้ำตาไหล [#S04-03] เชื่อกันว่า สมองหลั่ง เอนดอร์ฟิน [#S04-04] สารแก้ปวดในตัว [#S04-05] เลยรู้สึกฟิน",
+      "voFile": "vo/S04.wav",
+      "shots": [
+        {
+          "id": "S04-01",
+          "kind": "parallax",
+          "description": "แผงอาหารริมทาง พริกกองหน้า กริ่งไฟไหม้ด้านหลัง — ร่างกายเข้าโหมดสู้",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:street-stall|restaurant",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:fire-alarm|signal-icon",
+              "style": "vector",
+              "z": 1600,
+              "x": -260,
+              "y": -360,
+              "w": 280,
+              "anim": "sway"
+            },
+            {
+              "id": "subject",
+              "asset": "img:bird-chili|cherry-branch",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "bob"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": 220,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": -220,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "โหมดเจ็บจริง",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-03"
+            }
+          ]
+        },
+        {
+          "id": "S04-02",
+          "kind": "collage",
+          "description": "แก้วน้ำกระดาษ หยดน้ำ วงปากกาแดง — เหงื่อ น้ำตา",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "water-cup",
+              "style": "collage",
+              "z": 1000,
+              "y": -40,
+              "w": 440,
+              "anim": "stop-motion",
+              "rot": 3
+            },
+            {
+              "id": "mark",
+              "asset": "marker-circle",
+              "style": "collage",
+              "z": 900,
+              "y": -40,
+              "w": 560
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เหงื่อ · น้ำตา",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-03"
+            }
+          ]
+        },
+        {
+          "id": "S04-03",
+          "kind": "vector",
+          "description": "หัวใจดาวเด้งขึ้น — สารเคมีความสุข",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "heart-star",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เอนดอร์ฟิน",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S04-04",
+          "kind": "parallax",
+          "description": "เส้นประสาทเรืองแสง แสงอุ่นทาบลงมา หัวใจดาวลอย — สารแก้ปวดในตัว",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:nerve-glow|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "light-rays",
+              "style": "vector",
+              "z": 1700,
+              "y": -220,
+              "w": 620,
+              "opacity": 0.7
+            },
+            {
+              "id": "subject",
+              "asset": "heart-star",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 420,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "crane",
+            "from": {
+              "x": 0,
+              "y": -200,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 120
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "แก้ปวดในตัว",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S04-05",
+          "kind": "vector",
+          "description": "พริกกับหัวใจดาวคู่กัน — ฟินหลังเผ็ด",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "heart-star",
+              "style": "vector",
+              "z": 1200,
+              "x": 220,
+              "y": -320,
+              "w": 260,
+              "anim": "pop",
+              "delay": 0.2
+            },
+            {
+              "id": "subject",
+              "asset": "img:bird-chili|cherry-branch",
+              "style": "vector",
+              "z": 1000,
+              "x": -60,
+              "y": -20,
+              "w": 480,
+              "anim": "bob"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ฟิน",
+              "role": "title",
+              "x": 540,
+              "y": 320
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "beat": "act3",
+      "era": "present",
+      "vo": "นี่คือเจ็บแบบปลอดภัย [#S05-02] ตัวตกใจ [#S05-03] แต่ใจรู้ว่าไม่มีภัย [#S05-04] เหมือนรถไฟเหาะ [#S05-05] กินบ่อย ลิ้นก็ชิน [#S05-06] ต้องเผ็ดขึ้นอีก",
+      "voEn": "This is 'benign masochism'. [#S05-02] The body panics, [#S05-03] but the mind knows there's no danger, [#S05-04] like a roller coaster. [#S05-05] Eat it often and the tongue gets used to it, [#S05-06] so we need it hotter.",
+      "voTTS": "นี่คือ… เจ็บแบบปลอดภัย [#S05-02] ตัวตกใจ [#S05-03] แต่ใจรู้ว่า ไม่มีภัย [#S05-04] เหมือนรถไฟเหาะ [#S05-05] กินบ่อย… ลิ้นก็ชิน [#S05-06] ต้องเผ็ดขึ้นอีก",
+      "voFile": "vo/S05.wav",
+      "shots": [
+        {
+          "id": "S05-01",
+          "kind": "vector",
+          "description": "ตาชั่ง: เจ็บ vs ปลอดภัย — benign masochism",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 540,
+              "anim": "sway"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "benign masochism",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S05-02",
+          "kind": "vector",
+          "description": "กริ่งไฟไหม้สั่นแรง — ร่างกายตกใจ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:fire-alarm|signal-icon",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 480,
+              "anim": "sway"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ร่างกาย: อันตราย!",
+              "role": "label",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S05-03",
+          "kind": "collage",
+          "description": "กระดาษ collage หัวใจดาว + ตราประทับ — ใจรู้ว่าปลอดภัย",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "heart-star",
+              "style": "collage",
+              "z": 1000,
+              "y": -40,
+              "w": 420,
+              "anim": "stop-motion"
+            },
+            {
+              "id": "mg",
+              "asset": "stamp",
+              "style": "collage",
+              "z": 900,
+              "x": 180,
+              "y": -280,
+              "w": 280,
+              "anim": "pop",
+              "delay": 0.3,
+              "rot": -8
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ใจ: ปลอดภัย",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S05-04",
+          "kind": "parallax",
+          "description": "ท้องฟ้า เมืองไกล รถไฟเหาะวนลูปกลางจอ — กลัวแต่สนุก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "sky",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "city",
+              "style": "vector",
+              "z": 1800,
+              "y": -80,
+              "w": 900,
+              "opacity": 0.8
+            },
+            {
+              "id": "subject",
+              "asset": "img:roller-coaster|spotlight-stage",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 600,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 120
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -250
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "กลัวแต่สนุก",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S05-05",
+          "kind": "vector",
+          "description": "พริกเม็ดเดียวกับลูกศรชี้ลง — ลิ้นชิน ความแสบลด",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:bird-chili|cherry-branch",
+              "style": "vector",
+              "z": 1000,
+              "x": -80,
+              "y": -20,
+              "w": 440,
+              "anim": "float"
+            },
+            {
+              "id": "mg",
+              "asset": "arrow",
+              "style": "vector",
+              "z": 1100,
+              "x": 220,
+              "y": -260,
+              "w": 300,
+              "rot": 90,
+              "anim": "slide-up"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ลิ้นชิน",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S05-06",
+          "kind": "vector",
+          "description": "พริกสามกองใหญ่ขึ้นเรื่อย ๆ — ต้องเผ็ดขึ้น",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "a",
+              "asset": "img:bird-chili|cherry-branch",
+              "style": "vector",
+              "z": 1000,
+              "x": -280,
+              "y": 20,
+              "w": 200,
+              "anim": "pop"
+            },
+            {
+              "id": "b",
+              "asset": "img:bird-chili|cherry-branch",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -10,
+              "w": 280,
+              "anim": "pop",
+              "delay": 0.2
+            },
+            {
+              "id": "c",
+              "asset": "img:bird-chili|cherry-branch",
+              "style": "vector",
+              "z": 1000,
+              "x": 280,
+              "y": -40,
+              "w": 360,
+              "anim": "pop",
+              "delay": 0.4
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เผ็ดขึ้นอีก",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-06"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "beat": "payoff",
+      "era": "present",
+      "vo": "เราติดเผ็ด [#S06-02] เพราะไฟไหม้ปลอม [#S06-03] กับความฟินที่สมองแถมให้",
+      "voEn": "We get hooked on spice [#S06-02] because of a fake fire alarm [#S06-03] plus the bonus high from the brain.",
+      "voTTS": "เราติดเผ็ด [#S06-02] เพราะไฟไหม้ปลอม [#S06-03] กับความฟิน ที่สมองแถมให้",
+      "voFile": "vo/S06.wav",
+      "shots": [
+        {
+          "id": "S06-01",
+          "kind": "parallax",
+          "description": "กลับมาที่แผงอาหาร พริกกลางจอ หัวใจดาวลอย — คำตอบ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:street-stall|restaurant",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "heart-star",
+              "style": "vector",
+              "z": 1600,
+              "x": 240,
+              "y": -360,
+              "w": 260,
+              "anim": "float"
+            },
+            {
+              "id": "subject",
+              "asset": "img:bird-chili|cherry-branch",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 540,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 160
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ติดเผ็ด เพราะ…",
+              "role": "kicker",
+              "x": 540,
+              "y": 300
+            }
+          ]
+        },
+        {
+          "id": "S06-02",
+          "kind": "vector",
+          "description": "กริ่งไฟไหม้ถูกประทับตรา — สัญญาณปลอม",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:fire-alarm|signal-icon",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "sway"
+            },
+            {
+              "id": "mg",
+              "asset": "stamp",
+              "style": "vector",
+              "z": 900,
+              "y": -60,
+              "w": 320,
+              "anim": "pop",
+              "delay": 0.3
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ไฟไหม้ปลอม",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-02"
+            }
+          ]
+        },
+        {
+          "id": "S06-03",
+          "kind": "vector",
+          "description": "หัวใจดาวกับแสงอุ่น — ความฟินที่แถมมา",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "light-rays",
+              "style": "vector",
+              "z": 1500,
+              "y": -200,
+              "w": 600,
+              "opacity": 0.6
+            },
+            {
+              "id": "subject",
+              "asset": "heart-star",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "+ ความฟิน",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-04"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "beat": "outro",
+      "era": "present",
+      "vo": "แล้วก็เติมพริกอีกเม็ด… [#S07-02] จนกว่าจะ",
+      "voEn": "So we add one more chili… [#S07-02] until it's",
+      "voTTS": "แล้วก็เติมพริก อีกเม็ด… [#S07-02] จนกว่าจะ…",
+      "voFile": "vo/S07.wav",
+      "shots": [
+        {
+          "id": "S07-01",
+          "kind": "parallax",
+          "description": "แผงอาหารริมทาง พริกเพิ่มอีกเม็ดหล่นลงชาม กล้องถอยออก — วนกลับฉากเปิด",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:street-stall|restaurant",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:fire-alarm|signal-icon",
+              "style": "vector",
+              "z": 1600,
+              "x": 260,
+              "y": -360,
+              "w": 280
+            },
+            {
+              "id": "subject",
+              "asset": "img:bird-chili|cherry-branch",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 560,
+              "anim": "drop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 120
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -200
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "+1 เม็ด",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S07-02",
+          "kind": "vector",
+          "description": "พริกเด้งขึ้น ป้ายแยกทาง — วนกลับประโยคแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:bird-chili|cherry-branch",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1300,
+              "y": -380,
+              "w": 280,
+              "anim": "pop",
+              "delay": 0.2
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "จนกว่าจะ…",
+              "role": "kicker",
+              "x": 540,
+              "y": 320
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "covers": [
+    {
+      "id": "A",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "เจ็บแต่\n*ติดใจ*",
+      "kicker": "กินเผ็ด",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:street-stall|restaurant",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "mg",
+          "asset": "img:fire-alarm|signal-icon",
+          "style": "vector",
+          "z": 1600,
+          "x": 260,
+          "y": 420,
+          "w": 320
+        },
+        {
+          "id": "subject",
+          "asset": "img:bird-chili|cherry-branch",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 580
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "ขี้หนู\n*แสน SHU*",
+      "kicker": "ไฟไหม้ปลอม",
+      "sourceRef": "F-07",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:nerve-glow|bg-color",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "img:bird-chili|cherry-branch",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 560
+        },
+        {
+          "id": "fg",
+          "asset": "dust",
+          "style": "vector",
+          "z": 500,
+          "cover": true,
+          "opacity": 0.3
+        }
+      ]
+    }
+  ]
+}
