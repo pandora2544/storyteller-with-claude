@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "id": "night-room",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Cozy bedroom at night seen from the side of a bed, a glowing smartphone lying on a soft blanket casting blue light, a few cardboard parcels and paper shopping bags stacked on the floor, warm lamp in the corner, no people, no readable text, no logos"
+    },
+    {
+      "id": "parcel-door",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Apartment front door with a tall pile of plain brown cardboard delivery boxes stacked high on the doormat, soft morning light in the hallway, potted plant beside the door, no people, no labels with lettering, no logos"
+    },
+    {
+      "id": "cart",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A small shopping cart overflowing with colorful boxes, a sneaker, a teddy bear, a lamp and gift bags piled high, rounded cartoon shapes, no lettering, no logos"
+    },
+    {
+      "id": "price-tag-big",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A large blank paper price tag on a string with a bold diagonal red slash mark across it, rounded cartoon shapes, no numbers, no lettering"
+    },
+    {
+      "id": "alarm-clock",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A bright red twin-bell alarm clock ringing and shaking with motion lines, a lightning bolt beside it, rounded cartoon shapes, no numbers on the clock face, no lettering"
+    },
+    {
+      "id": "coins-voucher",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A small pile of shiny gold game-style coins with a star emblem next to a blank ticket-shaped discount voucher with a perforated edge and a small hourglass, rounded cartoon shapes, no numbers, no lettering, no logos"
+    }
+  ]
+}

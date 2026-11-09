@@ -1,0 +1,1435 @@
+{
+  "meta": {
+    "slug": "e-05",
+    "title": "ทำไม 11.11 / 12.12 ทำให้เราซื้อเกิน",
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "targetSec": 60
+  },
+  "sources": {
+    "F-01": "WEF 2018 · SCMP (วันคนโสด → วันช้อปในจีน 2009)",
+    "F-02": "CMA (สหราชอาณาจักร) 2022 · Tversky & Kahneman 1974",
+    "F-04": "CMA (สหราชอาณาจักร) 30 พ.ย. 2022",
+    "F-05": "Mathur et al. 2019 (Princeton/UChicago)",
+    "F-06": "Shampanier, Mazar & Ariely 2007 (Marketing Science)",
+    "F-07": "Lewis, Singh & Fay 2006 (Marketing Science)",
+    "F-08": "CMA 2022 · Kahneman & Tversky 1979"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "era": "present",
+      "vo": "ซื้อชิ้นเดียว… [#S01-02] ทำไมตะกร้าเต็ม",
+      "voEn": "Bought one thing… [#S01-02] so why is the cart full?",
+      "voTTS": "ซื้อชิ้นเดียว… [#S01-02] ทำไมตะกร้าเต็ม",
+      "voFile": "vo/S01.wav",
+      "shots": [
+        {
+          "id": "S01-01",
+          "kind": "parallax",
+          "description": "ห้องนอนกลางคืน มือถือเรืองแสง ตะกร้าช้อปปิ้งเด้งขึ้นกลางจอ กล้องดันเข้าตั้งแต่เฟรมแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:night-room|bedroom",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "phone-feed",
+              "style": "vector",
+              "z": 1600,
+              "x": -280,
+              "y": -380,
+              "w": 260,
+              "anim": "float"
+            },
+            {
+              "id": "subject",
+              "asset": "img:cart|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 560,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 260
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ชิ้นเดียว?",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S01-02",
+          "kind": "vector",
+          "description": "ตะกร้าล้นหล่นลงมา — ของเกินที่ตั้งใจ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:cart|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 600,
+              "anim": "drop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ตะกร้าเต็ม",
+              "role": "kicker",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "beat": "setup",
+      "era": "present",
+      "vo": "11.11 [#S02-02] เริ่มเป็นวันช้อปในจีนปี 2009 [#S02-03] เบื้องหลังคือจิตวิทยา",
+      "voEn": "11.11… [#S02-02] became a shopping day in China in 2009. [#S02-03] Behind it: psychology.",
+      "voTTS": "สิบเอ็ด สิบเอ็ด… [#S02-02] เริ่มเป็นวันช้อป ในจีน ปีสองพันเก้า [#S02-03] เบื้องหลัง… คือจิตวิทยา",
+      "voFile": "vo/S02.wav",
+      "shots": [
+        {
+          "id": "S02-01",
+          "kind": "vector",
+          "description": "ปฏิทินเด้งขึ้น วันที่เลขเบิ้ล",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "calendar-year",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 540,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "11.11",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S02-02",
+          "kind": "data",
+          "description": "ตัวนับปี 2009 — ปีที่ 11.11 กลายเป็นวันลดราคาออนไลน์ในจีน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 2009,
+            "label": "เริ่มเป็นวันช้อปในจีน",
+            "sourceRef": "F-01"
+          }
+        },
+        {
+          "id": "S02-03",
+          "kind": "vector",
+          "description": "สปอตไลต์บนเวที — เบื้องหลังเทศกาล",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "spotlight-stage",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 600,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "จิตวิทยาการซื้อ",
+              "role": "kicker",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "beat": "act1",
+      "era": "present",
+      "vo": "หนึ่ง ราคาขีดฆ่า [#S03-02] เลขแรกกลายเป็นหลักยึด [#S03-03] ราคาจริงดูถูก [#S03-04] สอง นับถอยหลัง [#S03-05] เวลาบีบให้รีบ",
+      "voEn": "One: the slashed price. [#S03-02] The first number becomes the anchor. [#S03-03] So the real price looks cheap. [#S03-04] Two: the countdown. [#S03-05] Time pressure makes us rush.",
+      "voTTS": "หนึ่ง… ราคาขีดฆ่า [#S03-02] เลขแรก กลายเป็นหลักยึด [#S03-03] ราคาจริง… ดูถูก [#S03-04] สอง… นับถอยหลัง [#S03-05] เวลาบีบให้รีบ",
+      "voFile": "vo/S03.wav",
+      "shots": [
+        {
+          "id": "S03-01",
+          "kind": "parallax",
+          "description": "ป้ายราคาใหญ่มีขีดแดงฆ่า ลอยหน้าห้องกลางคืน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:night-room|bedroom",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:price-tag-big|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 560,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -200,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 200,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "① ราคาขีดฆ่า",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S03-02",
+          "kind": "collage",
+          "description": "ป้ายราคาบนกระดาษ ปากกาแดงวง — เลขแรกที่เห็นคือสมอ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "price-tag",
+              "style": "collage",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "stop-motion",
+              "rot": -3
+            },
+            {
+              "id": "mark",
+              "asset": "marker-circle",
+              "style": "collage",
+              "z": 900,
+              "y": -40,
+              "w": 600
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "หลักยึด = เลขแรก",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-02"
+            }
+          ]
+        },
+        {
+          "id": "S03-03",
+          "kind": "vector",
+          "description": "ตาชั่งเอียง — ราคาจริงดูเบาลงเมื่อเทียบกับเลขแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 540,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ดูถูกลง",
+              "role": "kicker",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-02"
+            }
+          ]
+        },
+        {
+          "id": "S03-04",
+          "kind": "parallax",
+          "description": "นาฬิกาปลุกสั่นอยู่หน้าห้องกลางคืน มือถือเรืองแสง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:night-room|bedroom",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "phone-feed",
+              "style": "vector",
+              "z": 1600,
+              "x": 260,
+              "y": -380,
+              "w": 240
+            },
+            {
+              "id": "subject",
+              "asset": "img:alarm-clock|clock",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 480,
+              "anim": "sway"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 260
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "② นับถอยหลัง",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S03-05",
+          "kind": "vector",
+          "description": "นาฬิกาปลุกหมุน — เวลาบีบให้ตัดสินใจเร็ว",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:alarm-clock|clock",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "spin"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ตัดสินใจเร็ว",
+              "role": "kicker",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-04"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "beat": "act2",
+      "era": "present",
+      "vo": "งานวิจัยส่อง 11,000 เว็บ [#S04-02] บางตัวนับเริ่มใหม่ [#S04-03] เมื่อรีเฟรช [#S04-04] สาม ส่งฟรีเมื่อครบยอด [#S04-05] เลยเติมของให้ถึง",
+      "voEn": "A study scanned 11,000 shopping sites. [#S04-02] Some timers restarted [#S04-03] whenever the page was refreshed. [#S04-04] Three: free shipping over a minimum. [#S04-05] So we add items to reach it.",
+      "voTTS": "งานวิจัย ส่องเว็บ หนึ่งหมื่นหนึ่งพันเว็บ [#S04-02] บางตัวนับ… เริ่มใหม่ [#S04-03] เมื่อรีเฟรช [#S04-04] สาม… ส่งฟรีเมื่อครบยอด [#S04-05] เลยเติมของให้ถึง",
+      "voFile": "vo/S04.wav",
+      "shots": [
+        {
+          "id": "S04-01",
+          "kind": "data",
+          "description": "ตัวนับ 11,000 เว็บช้อปปิ้งที่งานวิจัยปี 2019 ตรวจ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 11000,
+            "suffix": " เว็บ",
+            "label": "งานวิจัยปี 2019",
+            "sourceRef": "F-05"
+          }
+        },
+        {
+          "id": "S04-02",
+          "kind": "vector",
+          "description": "นาฬิกาปลุกเด้งกลับเหมือนเริ่มนับใหม่ + ลูกศรวน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:alarm-clock|clock",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 440,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "arrow",
+              "style": "vector",
+              "z": 1300,
+              "x": 260,
+              "y": -300,
+              "w": 220,
+              "rot": 160
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "นับใหม่?",
+              "role": "kicker",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S04-03",
+          "kind": "vector",
+          "description": "มือถือหน้าฟีด — กดรีเฟรชแล้วตัวนับกลับไปเริ่ม",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 420,
+              "anim": "slide-up"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "รีเฟรช = เริ่มใหม่",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S04-04",
+          "kind": "parallax",
+          "description": "กองกล่องพัสดุหน้าประตู ตะกร้าช้อปปิ้งลอยหน้า",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:parcel-door|paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:cart|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "crane",
+            "from": {
+              "x": 0,
+              "y": 150,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -150,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "③ ส่งฟรีเมื่อครบ",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-07"
+            }
+          ]
+        },
+        {
+          "id": "S04-05",
+          "kind": "vector",
+          "description": "เหรียญซ้อนสูงขึ้นจนถึงเส้น — เติมของให้ถึงยอด",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 480,
+              "anim": "slide-up"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เติมให้ถึงยอด",
+              "role": "kicker",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-07"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "beat": "act3",
+      "era": "present",
+      "vo": "ฟรีแรงกว่าที่คิด [#S05-02] ในการทดลอง [#S05-03] คนเลือกของฟรีพุ่งจาก 27 เป็น 69% [#S05-04] สี่ เหรียญกับโค้ดใกล้หมดอายุ [#S05-05] ไม่ใช้เหมือนเสีย",
+      "voEn": "\"Free\" pulls harder than we think. [#S05-02] In one experiment, [#S05-03] picks for the free item jumped from 27% to 69%. [#S05-04] Four: coins and codes about to expire. [#S05-05] Not using them feels like losing.",
+      "voTTS": "ฟรี… แรงกว่าที่คิด [#S05-02] ในการทดลอง [#S05-03] คนเลือกของฟรี พุ่งจาก ยี่สิบเจ็ด เป็น หกสิบเก้าเปอร์เซ็นต์ [#S05-04] สี่… เหรียญกับโค้ด ใกล้หมดอายุ [#S05-05] ไม่ใช้… เหมือนเสีย",
+      "voFile": "vo/S05.wav",
+      "shots": [
+        {
+          "id": "S05-01",
+          "kind": "vector",
+          "description": "ป้ายราคาเด้ง คำว่าฟรีตัวใหญ่",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ฟรี!",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S05-02",
+          "kind": "collage",
+          "description": "กระดาษบันทึกการทดลอง ช็อกโกแลตสองชิ้น ปากกาวง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "notebook",
+              "style": "collage",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "stop-motion",
+              "rot": -3
+            },
+            {
+              "id": "mark",
+              "asset": "marker-circle",
+              "style": "collage",
+              "z": 900,
+              "y": -40,
+              "w": 600
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "การทดลองช็อกโกแลต",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S05-03",
+          "kind": "data",
+          "description": "แท่งเทียบ สัดส่วนคนเลือกช็อกโกแลตชิ้นถูก ก่อน vs เมื่อกลายเป็นฟรี",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "bar",
+            "items": [
+              {
+                "label": "ราคา 1 เซนต์",
+                "value": 27
+              },
+              {
+                "label": "เมื่อฟรี",
+                "value": 69,
+                "highlight": true
+              }
+            ],
+            "unit": "%",
+            "title": "คนเลือกชิ้นนี้",
+            "sourceRef": "F-06"
+          }
+        },
+        {
+          "id": "S05-04",
+          "kind": "parallax",
+          "description": "เหรียญทองกับคูปองลอยหน้าห้องกลางคืน นาฬิกาทรายด้านหลัง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:night-room|bedroom",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "clock",
+              "style": "vector",
+              "z": 1600,
+              "x": 280,
+              "y": -380,
+              "w": 240
+            },
+            {
+              "id": "subject",
+              "asset": "img:coins-voucher|coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 540,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -200,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 200,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "④ เหรียญ · โค้ด",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S05-05",
+          "kind": "vector",
+          "description": "เหรียญหล่นจากคูปองที่หมดเวลา — กลัวเสีย",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:coins-voucher|coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "drop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "กลัวเสีย",
+              "role": "kicker",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-08"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "beat": "payoff",
+      "era": "present",
+      "vo": "เราไม่ได้ใจง่าย [#S06-02] หน้าจอออกแบบให้รีบ [#S06-03] ก่อนจ่าย [#S06-04] ถามว่าไม่ลดยังซื้อไหม",
+      "voEn": "We're not weak-willed. [#S06-02] The screen is designed to rush us. [#S06-03] Before paying, [#S06-04] ask: would I still buy it at full price?",
+      "voTTS": "เราไม่ได้ใจง่าย [#S06-02] หน้าจอ… ออกแบบให้รีบ [#S06-03] ก่อนจ่าย… [#S06-04] ถามว่า ไม่ลด… ยังซื้อไหม",
+      "voFile": "vo/S06.wav",
+      "shots": [
+        {
+          "id": "S06-01",
+          "kind": "parallax",
+          "description": "ห้องกลางคืน ตะกร้าลอยนิ่ง กล้องเลื่อนช้า",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:night-room|bedroom",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:cart|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -200,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 200,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ไม่ใช่ใจง่าย",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S06-02",
+          "kind": "vector",
+          "description": "มือถือกับนาฬิกาปลุก — หน้าจอออกแบบให้เรารีบ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 440,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "img:alarm-clock|clock",
+              "style": "vector",
+              "z": 1300,
+              "x": 250,
+              "y": -320,
+              "w": 220,
+              "anim": "sway"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ดีไซน์ให้รีบ",
+              "role": "kicker",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S06-03",
+          "kind": "collage",
+          "description": "สมุดจดรายการของที่ตั้งใจไว้ ปากกาแดงวง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "notebook",
+              "style": "collage",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "stop-motion",
+              "rot": -3
+            },
+            {
+              "id": "mark",
+              "asset": "marker-circle",
+              "style": "collage",
+              "z": 900,
+              "y": -40,
+              "w": 600
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ก่อนกดจ่าย",
+              "role": "label",
+              "x": 540,
+              "y": 300
+            }
+          ]
+        },
+        {
+          "id": "S06-04",
+          "kind": "vector",
+          "description": "ไอคอนทางแยก — ถามตัวเองก่อนซื้อ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 600,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ไม่ลด ยังซื้อ?",
+              "role": "kicker",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "beat": "outro",
+      "era": "present",
+      "vo": "ครั้งหน้าที่ซื้อชิ้นเดียว… [#S07-02] ลองนับตะกร้า",
+      "voEn": "Next time you buy just one thing… [#S07-02] count your cart.",
+      "voTTS": "ครั้งหน้าที่ซื้อชิ้นเดียว… [#S07-02] ลองนับตะกร้า…",
+      "voFile": "vo/S07.wav",
+      "shots": [
+        {
+          "id": "S07-01",
+          "kind": "parallax",
+          "description": "กลับมาที่ห้องกลางคืนฉากเปิด ตะกร้าเต็ม กล้องถอยออก — โยงกลับประโยคแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:night-room|bedroom",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "phone-feed",
+              "style": "vector",
+              "z": 1600,
+              "x": -280,
+              "y": -380,
+              "w": 260,
+              "anim": "float"
+            },
+            {
+              "id": "subject",
+              "asset": "img:cart|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 560,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 120
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -200
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ชิ้นเดียวจริงไหม",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S07-02",
+          "kind": "vector",
+          "description": "ตะกร้าเด้งกลับ — วนไปคำถามแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:cart|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 560,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "นับดู",
+              "role": "kicker",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "covers": [
+    {
+      "id": "A",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "ซื้อเกิน\n*เพราะใคร*",
+      "kicker": "เทศกาลลดราคา",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:night-room|bedroom",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "mg",
+          "asset": "img:alarm-clock|clock",
+          "style": "vector",
+          "z": 1600,
+          "x": 260,
+          "y": 420,
+          "w": 300
+        },
+        {
+          "id": "subject",
+          "asset": "img:cart|price-tag",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 560,
+          "anim": "none"
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "คำว่าฟรี\n*ดึงใจ*",
+      "kicker": "27% → 69%",
+      "sourceRef": "F-06",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:parcel-door|paper-bg",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "img:price-tag-big|price-tag",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 520,
+          "anim": "none"
+        },
+        {
+          "id": "fg",
+          "asset": "dust",
+          "style": "vector",
+          "z": 500,
+          "cover": true,
+          "opacity": 0.3
+        }
+      ]
+    }
+  ]
+}
