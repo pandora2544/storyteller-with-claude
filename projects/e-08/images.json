@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "id": "desk-night",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Cozy home desk at night seen at table height, an open generic laptop whose screen shows only a row of dot symbols in an input box, a desk lamp glowing warm, a mug and a small plant, dark blue room in the soft background, no people, no readable text, no logos"
+    },
+    {
+      "id": "server-hall",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Friendly cartoon computer server room with tall rows of server racks covered in tiny blinking blue and orange lights, cool dark blue atmosphere, a soft glow at the end of the aisle, no people, no lettering, no logos"
+    },
+    {
+      "id": "morning-desk",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Calm bright morning home desk by a window with a closed generic laptop, a cup of tea and a notebook, soft sunlight and pastel colors, peaceful safe mood, no people, no readable text, no logos"
+    },
+    {
+      "id": "padlock",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A single big shiny golden padlock, closed, chunky rounded shapes with a soft highlight, slightly tilted, cute flat illustration, no text, no logo"
+    },
+    {
+      "id": "number-wheels",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A chunky mechanical counter machine with a row of rotating combination wheels marked only with small tick lines, motion lines as if the wheels are spinning fast, friendly rounded metal shapes, no digits, no text, no logo"
+    },
+    {
+      "id": "shield-phone",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A generic smartphone standing upright with a big green shield and check mark on its screen and a small glowing key floating beside it, friendly rounded shapes, no text, no brand logo"
+    }
+  ]
+}

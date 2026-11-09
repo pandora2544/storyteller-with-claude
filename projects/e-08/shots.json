@@ -1,0 +1,1400 @@
+{
+  "meta": {
+    "slug": "e-08",
+    "title": "รหัสผ่านแบบไหนแฮกได้ในไม่กี่วินาที",
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "targetSec": 60
+  },
+  "sources": {
+    "F-01": "Hive Systems Password Table 2025 (bcrypt · RTX 5090 ×12)",
+    "F-02": "NordPass รหัสยอดฮิต 2024 ผ่าน Thai PBS",
+    "F-03": "ThaiCERT ผ่านฐานเศรษฐกิจ (ม.ค. 2569)",
+    "F-04": "NCSC (สหราชอาณาจักร) · ThaiCERT",
+    "F-05": "Hive Systems 2025 ผ่าน heise / Euronews",
+    "F-06": "คำนวณจากจำนวนตัวอักษร (ดู facts.md)",
+    "F-07": "NCSC · ThaiCERT",
+    "F-08": "NCSC · Thai PBS",
+    "F-09": "NCSC · ThaiCERT"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "era": "present",
+      "vo": "รหัสผ่านแบบไหน… [#S01-02] โดนเดาได้ในไม่กี่วิ",
+      "voTTS": "รหัสผ่านแบบไหน… [#S01-02] โดนเดาได้ ในไม่กี่วิ",
+      "voFile": "vo/S01.wav",
+      "shots": [
+        {
+          "id": "S01-01",
+          "kind": "parallax",
+          "description": "โต๊ะทำงานยามค่ำ แม่กุญแจทองเด้งขึ้นกลางจอ กล้องดันเข้าเร็วตั้งแต่เฟรมแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:desk-night|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:padlock|heritage-badge",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 440,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "text": [
+            {
+              "content": "รหัสผ่าน…",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 240
+            },
+            "ease": "outExpo"
+          }
+        },
+        {
+          "id": "S01-02",
+          "kind": "vector",
+          "description": "เครื่องหมุนรหัสหมุนรัว ข้างนาฬิกา — คำถามว่าเดาได้เร็วแค่ไหน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:number-wheels|clock",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 460,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "clock",
+              "style": "vector",
+              "z": 1400,
+              "x": 250,
+              "y": -300,
+              "w": 220,
+              "opacity": 0.7
+            }
+          ],
+          "text": [
+            {
+              "content": "ไม่กี่วินาที?",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "beat": "setup",
+      "era": "present",
+      "vo": "123456 [#S02-02] ยอดฮิตอันดับหนึ่งของโลก [#S02-03] ในไทยก็ติดอันดับ",
+      "voTTS": "หนึ่ง สอง สาม สี่ ห้า หก… [#S02-02] ยอดฮิตอันดับหนึ่งของโลก [#S02-03] ในไทย ก็ติดอันดับ",
+      "voFile": "vo/S02.wav",
+      "shots": [
+        {
+          "id": "S02-01",
+          "kind": "vector",
+          "description": "ตัวเลข 123456 ตัวใหญ่ เหนือแม่กุญแจที่ดูอ่อนแอ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:padlock|heritage-badge",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 400,
+              "anim": "drop"
+            }
+          ],
+          "text": [
+            {
+              "content": "123456",
+              "role": "number",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-02"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          }
+        },
+        {
+          "id": "S02-02",
+          "kind": "vector",
+          "description": "ลูกโลกหมุน ป้ายอันดับ 1",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "earth-globe",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 480,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "trophy",
+              "style": "vector",
+              "z": 1400,
+              "x": 250,
+              "y": -300,
+              "w": 200,
+              "anim": "pop",
+              "delay": 0.3
+            }
+          ],
+          "text": [
+            {
+              "content": "อันดับ 1 ของโลก",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-02"
+            },
+            {
+              "content": "NordPass 2024",
+              "role": "note",
+              "x": 540,
+              "y": 1080,
+              "sourceRef": "F-02",
+              "delay": 0.4
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          }
+        },
+        {
+          "id": "S02-03",
+          "kind": "data",
+          "description": "แผนที่ซูมจากโลกเข้าหาไทย ปักหมุด",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                100,
+                15
+              ],
+              "scale": 260
+            },
+            "to": {
+              "center": [
+                101,
+                13.5
+              ],
+              "scale": 1800
+            },
+            "pins": [
+              {
+                "at": [
+                  100.5,
+                  13.75
+                ],
+                "label": "ไทยก็ติดอันดับ",
+                "delay": 0.6
+              }
+            ],
+            "sourceRef": "F-03"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "beat": "act1",
+      "era": "present",
+      "vo": "โปรแกรมเดารหัส [#S03-02] ลองจากลิสต์รหัสยอดนิยมก่อน [#S03-03] รหัสในลิสต์ [#S03-04] หลุดไม่ถึงวินาที",
+      "voTTS": "โปรแกรมเดารหัส… [#S03-02] ลองจากลิสต์ รหัสยอดนิยมก่อน [#S03-03] รหัสในลิสต์… [#S03-04] หลุด ไม่ถึงวินาที",
+      "voFile": "vo/S03.wav",
+      "shots": [
+        {
+          "id": "S03-01",
+          "kind": "parallax",
+          "description": "ห้องเซิร์ฟเวอร์ไฟกะพริบ เครื่องหมุนรหัสลอยกลางห้อง กล้องเครนลง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:server-hall|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:number-wheels|clock",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 440,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "text": [
+            {
+              "content": "โปรแกรมเดารหัส",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ],
+          "camera": {
+            "move": "crane",
+            "from": {
+              "x": 0,
+              "y": -220,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 120
+            },
+            "ease": "inOutCubic"
+          }
+        },
+        {
+          "id": "S03-02",
+          "kind": "collage",
+          "description": "กระดาษลิสต์ยาวเหยียดแบบคอลลาจ ปากกาแดงวง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "document",
+              "style": "collage",
+              "z": 1000,
+              "y": -60,
+              "w": 440,
+              "anim": "stop-motion",
+              "rot": -3
+            },
+            {
+              "id": "fg",
+              "asset": "marker-circle",
+              "style": "collage",
+              "z": 900,
+              "y": -120,
+              "w": 360,
+              "delay": 0.5
+            }
+          ],
+          "text": [
+            {
+              "content": "ลิสต์ยอดนิยม",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-04"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          }
+        },
+        {
+          "id": "S03-03",
+          "kind": "vector",
+          "description": "สมุดลิสต์รหัส แว่นขยายส่องหา",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "notebook",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 440,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "magnifier",
+              "style": "vector",
+              "z": 1400,
+              "x": 230,
+              "y": -280,
+              "w": 240,
+              "anim": "pop",
+              "delay": 0.3
+            }
+          ],
+          "text": [
+            {
+              "content": "123456 · password",
+              "role": "label",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-02"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          }
+        },
+        {
+          "id": "S03-04",
+          "kind": "data",
+          "description": "ตัวนับขึ้น: ไม่ถึง 1 วินาที — reveal แรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 1,
+            "suffix": " วินาที",
+            "label": "ในลิสต์ = ไม่ถึง",
+            "sourceRef": "F-02"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "beat": "act2",
+      "era": "present",
+      "vo": "นอกลิสต์ [#S04-02] ต้องไล่เดาทีละแบบ [#S04-03] ตาราง Hive Systems ปี 2025 [#S04-04] เลขล้วนแปดหลัก ไม่ถึงชั่วโมง [#S04-05] ตัวเล็กล้วน ราวสามสัปดาห์",
+      "voTTS": "นอกลิสต์… [#S04-02] ต้องไล่เดา ทีละแบบ [#S04-03] ตาราง ไฮฟ์ ซิสเต็มส์ ปี สองพันยี่สิบห้า [#S04-04] เลขล้วนแปดหลัก… ไม่ถึงชั่วโมง [#S04-05] ตัวเล็กล้วน… ราวสามสัปดาห์",
+      "voFile": "vo/S04.wav",
+      "shots": [
+        {
+          "id": "S04-01",
+          "kind": "vector",
+          "description": "แม่กุญแจที่ไม่อยู่ในลิสต์ ยกออกมาวางกลางสปอตไลต์",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "spotlight-stage",
+              "style": "vector",
+              "z": 1400,
+              "x": 0,
+              "y": -20,
+              "w": 700
+            },
+            {
+              "id": "subject",
+              "asset": "img:padlock|heritage-badge",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 400,
+              "anim": "drop"
+            }
+          ],
+          "text": [
+            {
+              "content": "นอกลิสต์",
+              "role": "kicker",
+              "x": 540,
+              "y": 300
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          }
+        },
+        {
+          "id": "S04-02",
+          "kind": "parallax",
+          "description": "ห้องเซิร์ฟเวอร์ แพนข้าง เครื่องหมุนรหัสหมุนไม่หยุด",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:server-hall|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:number-wheels|clock",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 440,
+              "anim": "bob"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "text": [
+            {
+              "content": "ไล่เดาทีละแบบ",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-01"
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -200,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 200,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          }
+        },
+        {
+          "id": "S04-03",
+          "kind": "vector",
+          "description": "ปฏิทินปี 2025 + ป้ายชื่อตาราง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "calendar-year",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 440,
+              "anim": "pop"
+            }
+          ],
+          "text": [
+            {
+              "content": "Hive Systems 2025",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-01"
+            },
+            {
+              "content": "bcrypt · การ์ดจอ 12 ใบ",
+              "role": "note",
+              "x": 540,
+              "y": 1080,
+              "sourceRef": "F-01",
+              "delay": 0.4
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          }
+        },
+        {
+          "id": "S04-04",
+          "kind": "data",
+          "description": "ตัวนับ: เลขล้วน 8 หลัก ไม่ถึง 1 ชั่วโมง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 1,
+            "suffix": " ชั่วโมง",
+            "label": "เลขล้วน 8 หลัก · ไม่ถึง",
+            "sourceRef": "F-05"
+          }
+        },
+        {
+          "id": "S04-05",
+          "kind": "data",
+          "description": "ตัวนับ: ตัวพิมพ์เล็กล้วน 8 ตัว ราว 3 สัปดาห์",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 3,
+            "suffix": " สัปดาห์",
+            "label": "ตัวเล็กล้วน 8 ตัว · ราว",
+            "sourceRef": "F-05"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "beat": "act3",
+      "era": "present",
+      "vo": "ผสมครบทุกแบบ [#S05-02] ราว 160 ปี [#S05-03] ยิ่งยาว [#S05-04] ยิ่งคูณเวลาขึ้นหลายเท่า",
+      "voTTS": "ผสมครบทุกแบบ… [#S05-02] ราว ร้อยหกสิบปี [#S05-03] ยิ่งยาว… [#S05-04] ยิ่งคูณเวลา ขึ้นหลายเท่า",
+      "voFile": "vo/S05.wav",
+      "shots": [
+        {
+          "id": "S05-01",
+          "kind": "vector",
+          "description": "แม่กุญแจ + ดาวระเบิด ป้ายตัวอย่างชนิดตัวอักษร",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "star-burst",
+              "style": "vector",
+              "z": 1400,
+              "x": 0,
+              "y": -80,
+              "w": 600,
+              "opacity": 0.6
+            },
+            {
+              "id": "subject",
+              "asset": "img:padlock|heritage-badge",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 420,
+              "anim": "pop"
+            }
+          ],
+          "text": [
+            {
+              "content": "Aa · 1 · @ (8 ตัว)",
+              "role": "label",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-05"
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 160
+            }
+          }
+        },
+        {
+          "id": "S05-02",
+          "kind": "data",
+          "description": "ตัวนับขึ้นถึง 160 ปี — reveal ใหญ่",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 160,
+            "suffix": " ปี",
+            "label": "ผสมครบ 8 ตัว · ราว",
+            "sourceRef": "F-05"
+          }
+        },
+        {
+          "id": "S05-03",
+          "kind": "parallax",
+          "description": "ไม้บรรทัดยืดยาวลอยในห้องเซิร์ฟเวอร์ กล้องถอยออกเห็นความยาว",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:server-hall|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "stretch-ruler",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 560,
+              "anim": "slide-right"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "text": [
+            {
+              "content": "ยิ่งยาว",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-06"
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 150
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -250
+            },
+            "ease": "outExpo"
+          }
+        },
+        {
+          "id": "S05-04",
+          "kind": "data",
+          "description": "กราฟแท่ง: เพิ่มทีละตัว จำนวนแบบที่ต้องเดาคูณขึ้น 1 → 26 → 676 เท่า",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "bar",
+            "items": [
+              {
+                "label": "8 ตัว",
+                "value": 1
+              },
+              {
+                "label": "9 ตัว",
+                "value": 26
+              },
+              {
+                "label": "10 ตัว",
+                "value": 676,
+                "highlight": true
+              }
+            ],
+            "unit": "เท่า",
+            "title": "ตัวเล็กล้วน: เพิ่มทีละตัว",
+            "sourceRef": "F-06"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "beat": "payoff",
+      "era": "present",
+      "vo": "รหัสที่หลุดเร็ว [#S06-02] คือรหัสยอดฮิตและสั้น [#S06-03] ใช้คำสุ่มหลายคำ [#S06-04] ต่อกันให้ยาว [#S06-05] ให้ตัวจัดการรหัสจำแทน [#S06-06] และเปิดยืนยันสองขั้น",
+      "voTTS": "รหัสที่หลุดเร็ว… [#S06-02] คือรหัสยอดฮิต และสั้น [#S06-03] ใช้คำสุ่มหลายคำ [#S06-04] ต่อกันให้ยาว [#S06-05] ให้ตัวจัดการรหัส จำแทน [#S06-06] และเปิด ยืนยันสองขั้น",
+      "voFile": "vo/S06.wav",
+      "shots": [
+        {
+          "id": "S06-01",
+          "kind": "vector",
+          "description": "นาฬิกาจับเวลาเด้งขึ้น — รหัสแบบไหนหลุดเร็ว",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "clock",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 420,
+              "anim": "pop"
+            }
+          ],
+          "text": [
+            {
+              "content": "หลุดเร็ว =",
+              "role": "kicker",
+              "x": 540,
+              "y": 300
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          }
+        },
+        {
+          "id": "S06-02",
+          "kind": "vector",
+          "description": "แม่กุญแจรหัสสั้นถูกปากกาแดงวง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:padlock|heritage-badge",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 400,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "marker-circle",
+              "style": "vector",
+              "z": 900,
+              "y": -60,
+              "w": 540,
+              "delay": 0.4
+            }
+          ],
+          "text": [
+            {
+              "content": "ยอดฮิต + สั้น",
+              "role": "label",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-04"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          }
+        },
+        {
+          "id": "S06-03",
+          "kind": "collage",
+          "description": "กระดาษคำสุ่มหลายแผ่นวางต่อกันแบบคอลลาจ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "notebook",
+              "style": "collage",
+              "z": 1000,
+              "y": -60,
+              "w": 440,
+              "anim": "stop-motion",
+              "rot": 3
+            },
+            {
+              "id": "mg",
+              "asset": "book",
+              "style": "collage",
+              "z": 1300,
+              "x": -230,
+              "y": -280,
+              "w": 240,
+              "rot": -6
+            }
+          ],
+          "text": [
+            {
+              "content": "คำสุ่มหลายคำ",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-07"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          }
+        },
+        {
+          "id": "S06-04",
+          "kind": "vector",
+          "description": "ไม้บรรทัดยืดยาวขึ้นเรื่อย ๆ ข้างแม่กุญแจ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "stretch-ruler",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 560,
+              "anim": "slide-right"
+            },
+            {
+              "id": "mg",
+              "asset": "img:padlock|heritage-badge",
+              "style": "vector",
+              "z": 1400,
+              "x": 230,
+              "y": -300,
+              "w": 220,
+              "anim": "pop",
+              "delay": 0.4
+            }
+          ],
+          "text": [
+            {
+              "content": "ยาว = เดายาก",
+              "role": "label",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-07"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          }
+        },
+        {
+          "id": "S06-05",
+          "kind": "parallax",
+          "description": "โต๊ะยามเช้า แม่กุญแจลอยนิ่ง ไอคอนแอปเก็บรหัส",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:morning-desk|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:padlock|heritage-badge",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 440,
+              "anim": "float"
+            },
+            {
+              "id": "mg",
+              "asset": "app-icon",
+              "style": "vector",
+              "z": 1400,
+              "x": 240,
+              "y": -300,
+              "w": 200,
+              "anim": "pop",
+              "delay": 0.3
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "text": [
+            {
+              "content": "ตัวจัดการรหัสผ่าน",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-08"
+            }
+          ],
+          "camera": {
+            "move": "crane",
+            "from": {
+              "x": 0,
+              "y": -220,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 120
+            },
+            "ease": "inOutCubic"
+          }
+        },
+        {
+          "id": "S06-06",
+          "kind": "vector",
+          "description": "มือถือมีโล่เช็กถูก — ด่านที่สอง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:shield-phone|phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 440,
+              "anim": "pop"
+            }
+          ],
+          "text": [
+            {
+              "content": "ยืนยัน 2 ขั้น",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-09"
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 160
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "beat": "outro",
+      "era": "present",
+      "vo": "แล้วรหัสของเรา… [#S07-02] อยู่ในลิสต์นั้นไหม",
+      "voTTS": "แล้วรหัสของเรา… [#S07-02] อยู่ในลิสต์นั้นไหม",
+      "voFile": "vo/S07.wav",
+      "shots": [
+        {
+          "id": "S07-01",
+          "kind": "parallax",
+          "description": "กลับมาที่โต๊ะยามค่ำ แม่กุญแจแกว่งเบา ๆ กล้องดันเข้า",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:desk-night|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:padlock|heritage-badge",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 440,
+              "anim": "sway"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "text": [
+            {
+              "content": "รหัสของเรา…",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 240
+            },
+            "ease": "outExpo"
+          }
+        },
+        {
+          "id": "S07-02",
+          "kind": "vector",
+          "description": "สมุดลิสต์ + เครื่องหมายคำถาม ค้างไว้ให้คิด",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 520,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "notebook",
+              "style": "vector",
+              "z": 1400,
+              "x": -240,
+              "y": -300,
+              "w": 220,
+              "opacity": 0.7
+            }
+          ],
+          "text": [
+            {
+              "content": "อยู่ในลิสต์ไหม?",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "covers": [
+    {
+      "id": "A",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "123456\n*ไม่ถึงวิ*",
+      "kicker": "รหัสยอดฮิต",
+      "sourceRef": "F-02",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:desk-night|bg-color",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "img:padlock|heritage-badge",
+          "style": "vector",
+          "z": 1000,
+          "y": 520,
+          "w": 560
+        },
+        {
+          "id": "mg",
+          "asset": "img:number-wheels|clock",
+          "style": "vector",
+          "z": 1500,
+          "x": 260,
+          "y": 380,
+          "w": 380
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "รหัสยาว\n*เดายาก*",
+      "kicker": "ไม่ใช่แค่ซับซ้อน",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:morning-desk|bg-color",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "img:padlock|heritage-badge",
+          "style": "vector",
+          "z": 1000,
+          "y": 540,
+          "w": 560
+        },
+        {
+          "id": "fg",
+          "asset": "dust",
+          "style": "vector",
+          "z": 500,
+          "cover": true,
+          "opacity": 0.3
+        }
+      ]
+    }
+  ]
+}
