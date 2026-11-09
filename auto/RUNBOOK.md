@@ -61,7 +61,7 @@
 
 ## 4. ภาพ → `images.json` (ภาพ AI) + คลัง vector เดิม
 ทุกหัวข้อใหม่ไม่มี vector วาดไว้ → **ใช้ภาพ AI เป็นหลักของภาพประกอบ** + ของในโค้ดสำหรับข้อมูล
-- `images.json` 4–6 รูป (cutout: ขอให้ "on a plain flat light-gray background" — ระบบลบพื้นให้เอง): `plate` ฉากหลัง 9:16 2–3 รูป + `cutout` สิ่งของ/สัญลักษณ์ 2–3 รูป · `"variants": 1` (ระบบเลือกรูปแรกอัตโนมัติ)
+- `images.json` 4–6 รูป (cutout: **ห้ามระบุพื้นหลังใน prompt** — ระบบสั่งพื้นเขียวแล้วลบให้เอง): `plate` ฉากหลัง 9:16 2–3 รูป + `cutout` สิ่งของ/สัญลักษณ์ 2–3 รูป · `"variants": 1` (ระบบเลือกรูปแรกอัตโนมัติ)
 - prompt ภาษาอังกฤษ บรรยายสิ่งของ/ฉาก **สไตล์ภาพประกอบแบน การ์ตูน** (style preset เติมสไตล์ให้เอง) · ห้ามใบหน้าบุคคลจริง ห้ามโลโก้แบรนด์ ห้ามภาพสมจริงของเหตุการณ์จริง ห้ามธงชาติที่ผิดแบบ (ถ้าไม่แน่ใจ อย่าใส่ธง)
 - ใน shots.json: `"asset": "img:<id>|<vector สำรอง>"` — vector สำรองต้องอยู่ในทะเบียน `src/assets/index.ts` (เช่น `bg-color`, `paper-bg`, `earth-globe`, `phone-feed`, `coin-stack`, `price-tag`, `calendar-year`, `signal-icon`, `balance-scale`, `question-split`, `spotlight-stage`, `giant-pin`, `vote-hands`) — ถ้าสร้างภาพไม่สำเร็จ คลิปยังออกได้
 - **ข้อมูลใช้ของในโค้ดเสมอ** (`data`): `map` (ภูมิศาสตร์/เส้นทาง/จุดเกิดเหตุ — พิกัด [lon, lat]), `bar`, `counter`, `unit` · ข้อความบนจอใช้ `text`

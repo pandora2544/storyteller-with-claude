@@ -174,7 +174,12 @@ def main():
         model = im.get("model") or (img_cfg.get("cutoutModel") if cutout else None) or spec.get("model") or img_cfg.get("model", "google/gemini-2.5-flash-image")
         aspect = im.get("aspect") or ("9:16" if portrait and not cutout else "16:9" if not cutout else "1:1")
         era = im.get("era") or era_of.get(iid, "")
-        parts = [style_prompt, ERA_HINT.get(era, ""), im["prompt"], PLATE if kind == "plate" else "", CHROMA if cutout and method == "chroma" else "", NO_TEXT]
+        style_p, item_p = style_prompt, im["prompt"]
+        if cutout and method == "chroma":
+            # พื้นหลังต้องเป็นเขียวล้วนเท่านั้น — ตัดคำว่า "on <สี/พื้น>" ใน style/prompt ที่ขัดกับ chroma ออก
+            style_p = re.sub(r"\s*on (?:a |an )?[^,.;]*?\(#[0-9A-Fa-f]{6}\)", "", style_p or "")
+            item_p = re.sub(r",?\s*(?:on|against|over) (?:a |an |the )?[^,.;]*?background", "", item_p, flags=re.I)
+        parts = [CHROMA if cutout and method == "chroma" else "", style_p, ERA_HINT.get(era, ""), item_p, PLATE if kind == "plate" else "", CHROMA if cutout and method == "chroma" else "", NO_TEXT]
         prompt = " ".join(p.strip().rstrip(".") + "." for p in parts if p and p.strip())
         refs = []
         for rid in im.get("refs", []):

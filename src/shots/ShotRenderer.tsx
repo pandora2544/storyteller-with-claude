@@ -16,10 +16,12 @@ export const ShotRenderer: React.FC<{shot: Shot; era: Era; dur: number; subtitle
   const d = dur / fps;
   const ref = (shot.data as any)?.sourceRef ?? shot.text?.find((x) => x.sourceRef)?.sourceRef;
   const isMap = shot.data?.chart === 'map';
+  // แผนที่วาดเป็นพื้นหลัง → ตัดเลเยอร์พื้นทึบ (bg-color / ฉากเต็มเฟรม) ที่จะบังแผนที่ออก
+  const stageShot = isMap ? {...shot, layers: shot.layers.filter((l) => !(l.cover || l.asset === 'bg-color' || l.asset === 'paper-bg'))} : shot;
   return (
     <AbsoluteFill style={{background: shot.bg ?? C.bgDeep, overflow: 'hidden'}}>
       {isMap && <DataLayer d={shot.data!} t={t} dur={d} fps={fps} era={era} />}
-      <Stage shot={shot} t={t} dur={d} fps={fps} era={era} />
+      <Stage shot={stageShot} t={t} dur={d} fps={fps} era={era} />
       <EraTexture era={era} />
       {shot.data && !isMap && <DataLayer d={shot.data} t={t} dur={d} fps={fps} era={era} />}
       <TextLayer items={shot.text} t={t} fps={fps} vintage={ERAS[era].vintage} />
