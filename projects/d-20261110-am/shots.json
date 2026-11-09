@@ -1,0 +1,1402 @@
+{
+  "meta": {
+    "slug": "d-20261110-am",
+    "title": "ทำไมทองเปลี่ยนราคาวันละ 23 ครั้ง",
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "targetSec": 60
+  },
+  "sources": {
+    "F-01": "ไทยรัฐ 9 พ.ย. 69 (สมาคมค้าทองคำ)",
+    "F-02": "กรุงเทพธุรกิจ 29 ต.ค. 69",
+    "F-03": "สมาคมค้าทองคำ",
+    "F-04": "สมาคมค้าทองคำ / Chiang Rai Times",
+    "F-05": "หน่วยทองคำไทย 15.244 กรัม",
+    "F-06": "ไทยรัฐ / อินโฟเควสท์",
+    "F-07": "สมาคมค้าทองคำ / เดลินิวส์"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "era": "present",
+      "vo": "ทำไมทองเปลี่ยนราคา… [#S01-02] วันละ 23 ครั้ง",
+      "voTTS": "ทำไม… ทองเปลี่ยนราคา [#S01-02] วันละ ยี่สิบสามครั้ง",
+      "voFile": "vo/S01.wav",
+      "shots": [
+        {
+          "id": "S01-01",
+          "kind": "parallax",
+          "description": "หน้าร้านทองการ์ตูน ทองแท่งเด้งขึ้นกลางจอ กล้องดันเข้าตั้งแต่เฟรมแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:gold-shop-plate|paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:gold-bar|coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -40,
+              "w": 520,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 240
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ทองเปลี่ยนราคา?",
+              "role": "title",
+              "x": 540,
+              "y": 300
+            }
+          ]
+        },
+        {
+          "id": "S01-02",
+          "kind": "data",
+          "description": "ตัวเลขนับขึ้น 23 ครั้งในวันเดียว",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 23,
+            "suffix": " ครั้ง",
+            "label": "ในวันเดียว",
+            "sourceRef": "F-01"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "beat": "setup",
+      "era": "present",
+      "vo": "เมื่อวาน 9 พ.ย. [#S02-02] ทองขยับ 23 ครั้ง [#S02-03] ปิดที่บาทละ 65,100",
+      "voTTS": "เมื่อวาน… เก้าพฤศจิกา [#S02-02] ทองขยับ ยี่สิบสามครั้ง [#S02-03] ปิดที่ บาทละ หกหมื่นห้าพันหนึ่งร้อย",
+      "voFile": "vo/S02.wav",
+      "shots": [
+        {
+          "id": "S02-01",
+          "kind": "vector",
+          "description": "ปฏิทินพลิกไปวันที่ 9 พ.ย.",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "calendar-year",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -60,
+              "w": 520,
+              "anim": "drop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "9 พ.ย. 69",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S02-02",
+          "kind": "vector",
+          "description": "ป้ายราคาแกว่งขึ้นลง ทองแท่งอยู่ข้าง ๆ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "price-tag",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -60,
+              "w": 520,
+              "anim": "sway"
+            },
+            {
+              "id": "mg",
+              "asset": "img:gold-bar|coin-stack",
+              "style": "vector",
+              "z": 1100,
+              "x": 160,
+              "y": 40,
+              "w": 300,
+              "anim": "bob"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ขึ้นลง 23 ครั้ง",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S02-03",
+          "kind": "data",
+          "description": "ราคาปิดทองแท่งนับขึ้น",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 65100,
+            "suffix": " บาท",
+            "label": "ทองแท่ง ขายออก",
+            "sourceRef": "F-01"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "beat": "act1",
+      "era": "present",
+      "vo": "สมาคมค้าทองคำประกาศราคา [#S03-02] แต่ต้นทางคือตลาดโลก [#S03-03] ซื้อขายเป็นดอลลาร์ต่อออนซ์ [#S03-04] ทองหนึ่งบาทหนัก 15.2 กรัม [#S03-05] ราวครึ่งออนซ์",
+      "voTTS": "สมาคมค้าทองคำ ประกาศราคา [#S03-02] แต่ต้นทาง… คือตลาดโลก [#S03-03] ซื้อขายเป็นดอลลาร์ ต่อออนซ์ [#S03-04] ทองหนึ่งบาท หนักสิบห้าจุดสองกรัม [#S03-05] ราวครึ่งออนซ์",
+      "voFile": "vo/S03.wav",
+      "shots": [
+        {
+          "id": "S03-01",
+          "kind": "collage",
+          "description": "ประกาศราคากลางบนกระดาษ ตรายางประทับ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "document",
+              "style": "collage",
+              "z": 1000,
+              "x": 0,
+              "y": -40,
+              "w": 560,
+              "anim": "drop"
+            },
+            {
+              "id": "stamp",
+              "asset": "stamp",
+              "style": "collage",
+              "z": 900,
+              "x": 170,
+              "y": -160,
+              "w": 260,
+              "anim": "pop",
+              "props": {
+                "at": 0.5
+              }
+            }
+          ],
+          "text": [
+            {
+              "content": "สมาคมค้าทองคำ",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-03"
+            }
+          ]
+        },
+        {
+          "id": "S03-02",
+          "kind": "data",
+          "description": "แผนที่โลก เส้นจากลอนดอนและนิวยอร์กวิ่งมากรุงเทพฯ แล้วซูมเข้าไทย",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                15,
+                30
+              ],
+              "scale": 200
+            },
+            "to": {
+              "center": [
+                60,
+                25
+              ],
+              "scale": 260
+            },
+            "routes": [
+              {
+                "path": [
+                  [
+                    -0.12,
+                    51.5
+                  ],
+                  [
+                    100.5,
+                    13.75
+                  ]
+                ]
+              },
+              {
+                "path": [
+                  [
+                    -74,
+                    40.7
+                  ],
+                  [
+                    100.5,
+                    13.75
+                  ]
+                ],
+                "delay": 0.3
+              }
+            ],
+            "pins": [
+              {
+                "at": [
+                  -0.12,
+                  51.5
+                ],
+                "label": "ลอนดอน"
+              },
+              {
+                "at": [
+                  -74,
+                  40.7
+                ],
+                "label": "นิวยอร์ก"
+              },
+              {
+                "at": [
+                  100.5,
+                  13.75
+                ],
+                "label": "ไทย"
+              }
+            ]
+          },
+          "text": [
+            {
+              "content": "ตลาดโลก",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S03-03",
+          "kind": "parallax",
+          "description": "จอกราฟตลาดโลกเรืองแสง ทองแท่งลอยด้านหน้า",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:market-screens-plate|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:gold-bar|coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -40,
+              "w": 520,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 240
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ดอลลาร์ / ออนซ์",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S03-04",
+          "kind": "vector",
+          "description": "ทองแท่งหนึ่งบาทบนตาชั่ง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -60,
+              "w": 520,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "img:gold-bar|coin-stack",
+              "style": "vector",
+              "z": 1100,
+              "x": 0,
+              "y": -220,
+              "w": 260,
+              "anim": "drop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "15.2 กรัม",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S03-05",
+          "kind": "data",
+          "description": "แท่งเทียบน้ำหนัก ทอง 1 บาท vs 1 ออนซ์",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "bar",
+            "items": [
+              {
+                "label": "ทอง 1 บาท",
+                "value": 15.2,
+                "highlight": true
+              },
+              {
+                "label": "1 ออนซ์",
+                "value": 31.1
+              }
+            ],
+            "unit": "กรัม",
+            "title": "ราวครึ่งออนซ์",
+            "sourceRef": "F-05"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "beat": "act2",
+      "era": "present",
+      "vo": "แล้วแปลงดอลลาร์เป็นบาท [#S04-02] ตัวแปรที่สองคือค่าเงิน [#S04-03] บาทแข็ง ทองถูกลง [#S04-04] บาทอ่อน ทองแพงขึ้น [#S04-05] แม้ทองโลก [#S04-06] ไม่ขยับเลย",
+      "voTTS": "แล้วแปลงดอลลาร์ เป็นบาท [#S04-02] ตัวแปรที่สอง คือค่าเงิน [#S04-03] บาทแข็ง… ทองถูกลง [#S04-04] บาทอ่อน… ทองแพงขึ้น [#S04-05] แม้ทองโลก [#S04-06] ไม่ขยับเลย",
+      "voFile": "vo/S04.wav",
+      "shots": [
+        {
+          "id": "S04-01",
+          "kind": "vector",
+          "description": "กองเหรียญถูกแปลงสกุลเงิน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -60,
+              "w": 520,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ดอลลาร์ → บาท",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S04-02",
+          "kind": "vector",
+          "description": "ตาชั่งค่าเงินโยกไปมา",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -60,
+              "w": 520,
+              "anim": "sway"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ตัวแปรที่ 2",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S04-03",
+          "kind": "parallax",
+          "description": "หน้าร้านทอง ป้ายราคาเลื่อนลง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:gold-shop-plate|paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "price-tag",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -40,
+              "w": 520,
+              "anim": "drop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 240
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "บาทแข็ง = ทองถูกลง",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S04-04",
+          "kind": "vector",
+          "description": "สร้อยทองลอยขึ้น ราคาสูงขึ้น",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:gold-necklace|coin",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -60,
+              "w": 520,
+              "anim": "slide-up"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "บาทอ่อน = ทองแพงขึ้น",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S04-05",
+          "kind": "vector",
+          "description": "ลูกโลกหมุนช้า ๆ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "earth-globe",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -60,
+              "w": 520,
+              "anim": "float"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "แม้ทองโลก…",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S04-06",
+          "kind": "vector",
+          "description": "ลูกโลกนิ่ง ทองแท่งนิ่ง เครื่องหมายคำถาม",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -60,
+              "w": 520,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ไม่ขยับเลย",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-06"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "beat": "act3",
+      "era": "present",
+      "vo": "ทว่าทองโลกขยับทั้งวัน [#S05-02] ค่าเงินก็เช่นกัน [#S05-03] พอขยับมากพอ [#S05-04] ป้ายราคาก็เปลี่ยน [#S05-05] อีกครั้ง",
+      "voTTS": "ทว่า… ทองโลก ขยับทั้งวัน [#S05-02] ค่าเงิน ก็เช่นกัน [#S05-03] พอขยับมากพอ [#S05-04] ป้ายราคา ก็เปลี่ยน [#S05-05] อีกครั้ง",
+      "voFile": "vo/S05.wav",
+      "shots": [
+        {
+          "id": "S05-01",
+          "kind": "parallax",
+          "description": "จอกราฟตลาดโลก ลูกโลกลอยหมุน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:market-screens-plate|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "earth-globe",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -40,
+              "w": 520,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 240
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ทองโลกขยับ",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-07"
+            }
+          ]
+        },
+        {
+          "id": "S05-02",
+          "kind": "vector",
+          "description": "ตาชั่งค่าเงินโยกเร็วขึ้น",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -60,
+              "w": 520,
+              "anim": "sway"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ค่าเงินขยับ",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-07"
+            }
+          ]
+        },
+        {
+          "id": "S05-03",
+          "kind": "data",
+          "description": "แท่งเทียบจำนวนครั้งที่ปรับราคาต่อวัน — data moment",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "bar",
+            "items": [
+              {
+                "label": "29 ต.ค.",
+                "value": 15
+              },
+              {
+                "label": "9 พ.ย.",
+                "value": 23,
+                "highlight": true
+              }
+            ],
+            "unit": "ครั้ง",
+            "title": "ปรับราคาต่อวัน",
+            "sourceRef": "F-02"
+          }
+        },
+        {
+          "id": "S05-04",
+          "kind": "vector",
+          "description": "ป้ายราคาพลิกเปลี่ยน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "price-tag",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -60,
+              "w": 520,
+              "anim": "spin"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เปลี่ยนป้าย",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-07"
+            }
+          ]
+        },
+        {
+          "id": "S05-05",
+          "kind": "vector",
+          "description": "ทองแท่งเด้ง ป้ายเปลี่ยนอีกรอบ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:gold-bar|coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -60,
+              "w": 520,
+              "anim": "bob"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "อีกครั้ง",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-07"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "beat": "payoff",
+      "era": "present",
+      "vo": "สรุป ทองไม่ได้เปลี่ยนราคาเอง [#S06-02] มันวิ่งตามสองอย่าง [#S06-03] ทองโลก [#S06-04] กับค่าเงินบาท",
+      "voTTS": "สรุป… ทองไม่ได้เปลี่ยนราคาเอง [#S06-02] มันวิ่งตาม สองอย่าง [#S06-03] ทองโลก [#S06-04] กับ ค่าเงินบาท",
+      "voFile": "vo/S06.wav",
+      "shots": [
+        {
+          "id": "S06-01",
+          "kind": "parallax",
+          "description": "หน้าร้านทอง ทองแท่งเด่นกลางจอ กล้องดันเข้า",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:gold-shop-plate|paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:gold-bar|coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -40,
+              "w": 520,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 240
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ไม่ได้เปลี่ยนเอง",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S06-02",
+          "kind": "vector",
+          "description": "ทางแยกสองฝั่ง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -60,
+              "w": 520,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ตาม 2 อย่าง",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S06-03",
+          "kind": "vector",
+          "description": "ลูกโลก = ทองโลก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "earth-globe",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -60,
+              "w": 520,
+              "anim": "float"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ทองโลก",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S06-04",
+          "kind": "vector",
+          "description": "กองเหรียญ = ค่าเงินบาท",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -60,
+              "w": 520,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ค่าเงินบาท",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-06"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "beat": "outro",
+      "era": "present",
+      "vo": "ครั้งหน้าที่เห็นทองเปลี่ยนราคา…",
+      "voTTS": "ครั้งหน้า… ที่เห็นทอง เปลี่ยนราคา…",
+      "voFile": "vo/S07.wav",
+      "shots": [
+        {
+          "id": "S07-01",
+          "kind": "parallax",
+          "description": "หน้าร้านทอง สร้อยทองลอย กล้องดึงออกช้า ๆ วนกลับไปช็อตแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:gold-shop-plate|paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:gold-necklace|coin",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -40,
+              "w": 520,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 200
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -200
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ครั้งหน้า…",
+              "role": "title",
+              "x": 540,
+              "y": 300
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "covers": [
+    {
+      "id": "A",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "ทองเปลี่ยน\n*23 ครั้ง*",
+      "kicker": "ในวันเดียว",
+      "sourceRef": "F-01",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:gold-shop-plate|paper-bg",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "img:gold-bar|coin-stack",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 560
+        },
+        {
+          "id": "fg",
+          "asset": "dust",
+          "style": "vector",
+          "z": 500,
+          "cover": true,
+          "opacity": 0.3
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "ใครเปลี่ยน\n*ราคาทอง*",
+      "kicker": "ทองโลก + ค่าเงิน",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:market-screens-plate|bg-color",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "img:gold-necklace|coin",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 560
+        }
+      ]
+    }
+  ]
+}

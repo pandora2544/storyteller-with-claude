@@ -1,0 +1,32 @@
+{
+  "images": [
+    {
+      "id": "gold-shop-plate",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Interior of a cozy traditional Thai gold shop, bright red walls, glass display counters glowing with rows of gold necklaces and bracelets, warm golden light, a blank dark price board on the wall with no writing, no people, no logos, no signs"
+    },
+    {
+      "id": "market-screens-plate",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Dark blue night room filled with several glowing screens showing abstract wavy line charts in gold and teal, a faint world map pattern in the background, soft glow, no numbers, no letters, no people"
+    },
+    {
+      "id": "gold-bar",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A single shiny gold bullion bar with rounded edges and soft highlights, a few small sparkles around it, plain surface with no engraving, no marks"
+    },
+    {
+      "id": "gold-necklace",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A thick shiny gold chain necklace laid in a loose loop, Thai style heavy gold links, warm highlights, no pendant, no text"
+    }
+  ]
+}
