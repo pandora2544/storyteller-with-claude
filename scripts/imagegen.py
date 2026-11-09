@@ -70,8 +70,9 @@ def http(method: str, url: str, key: str, body: dict | None = None, timeout=300)
                 return json.loads(r.read())
         except urllib.error.HTTPError as e:
             msg = e.read()[:600].decode("utf-8", "replace")
-            if e.code in (429, 502, 503) and attempt < 3:
-                time.sleep(2 ** attempt * 3)
+            busy = e.code == 402 and "in_flight" in msg
+            if (e.code in (429, 502, 503) or busy) and attempt < 3:
+                time.sleep(15 * (attempt + 1) if busy else 2 ** attempt * 3)
                 continue
             raise RuntimeError(f"HTTP {e.code} {({401: 'API key ผิด', 402: 'เครดิต OpenRouter ไม่พอ', 404: 'ไม่พบโมเดล (ดู --models)'}).get(e.code, '')}: {msg}") from None
     raise RuntimeError("เรียก API ไม่สำเร็จ")

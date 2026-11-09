@@ -26,3 +26,4 @@ jobs:
           echo "### เครดิตคงเหลือ: \$$LEFT (key ...${KEY: -3})" >> "$GITHUB_STEP_SUMMARY"
           python3 -c "import sys;sys.exit(0 if float('$LEFT')>0.05 else 1)" || { echo "::error::เครดิตไม่พอ (\$$LEFT) — เติมที่ openrouter.ai/settings/credits หรือ key นี้เป็นของบัญชีอื่น"; exit 1; }
           echo "✓ key ใช้ได้ เครดิตคงเหลือ \$$LEFT"
+# run 2026-11-09T02:44:12

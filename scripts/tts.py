@@ -126,8 +126,9 @@ def synth_pcm(text: str, key: str, model: str, voice: str, style: str) -> tuple[
                 return data, rate
         except urllib.error.HTTPError as e:
             msg = e.read()[:400].decode("utf-8", "replace")
-            if e.code in (429, 502, 503) and attempt < 4:
-                wait = 2 ** attempt * 2
+            busy = e.code == 402 and "in_flight" in msg  # เครดิตถูกจองโดยคำขออื่นที่กำลังวิ่ง (เรนเดอร์หลายคลิปพร้อมกัน)
+            if (e.code in (429, 502, 503) or busy) and attempt < 4:
+                wait = 15 * (attempt + 1) if busy else 2 ** attempt * 2
                 print(f"   … {e.code} รอ {wait}s แล้วลองใหม่")
                 time.sleep(wait)
                 continue
