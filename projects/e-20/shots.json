@@ -1,0 +1,1571 @@
+{
+  "meta": {
+    "slug": "e-20",
+    "title": "ทำไมไทยขับรถชิดซ้าย",
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "targetSec": 60
+  },
+  "sources": {
+    "F-01": "Wikipedia · Compare the Market · WorldAtlas",
+    "F-02": "Compare the Market · Wikipedia",
+    "F-03": "History.com · Wikipedia · WorldAtlas",
+    "F-04": "Wikipedia (British Malaya) · seasia.co",
+    "F-05": "กรุงเทพธุรกิจ · BrandCase (ข้อสันนิษฐาน)",
+    "F-06": "ทรูปลูกปัญญา · Wikipedia · History.com",
+    "F-07": "พ.ร.บ.จราจรทางบก พ.ศ. 2522 · Legardy",
+    "F-08": "Wikipedia · History.com · seasia.co",
+    "F-09": "Wikipedia · Coconuts Yangon · Lost Footsteps",
+    "F-10": "Wikipedia (Thai–Lao Friendship Bridge) · กรุงเทพธุรกิจ"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "era": "present",
+      "vo": "ไทยไม่เคยเป็นอาณานิคม [#S01-02] ทำไมชิดซ้าย",
+      "voEn": "Thailand was never a colony. [#S01-02] So why drive on the left?",
+      "voTTS": "ไทย… ไม่เคยเป็นอาณานิคม [#S01-02] ทำไม… ชิดซ้าย",
+      "voFile": "vo/S01.wav",
+      "shots": [
+        {
+          "id": "S01-01",
+          "kind": "parallax",
+          "description": "ถนนไทยเลนซ้าย ป้ายชิดซ้ายเด้งขึ้นกลางจอ กล้องดันเข้าเร็วตั้งแต่เฟรมแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:road-left|city",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "sun",
+              "style": "vector",
+              "z": 1800,
+              "y": -560,
+              "w": 300
+            },
+            {
+              "id": "subject",
+              "asset": "img:keep-left-sign|arrow",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 460,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 260
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ไม่เคยถูกยึด",
+              "role": "title",
+              "x": 540,
+              "y": 360
+            }
+          ]
+        },
+        {
+          "id": "S01-02",
+          "kind": "vector",
+          "description": "ป้ายคำถามแยกทาง ซ้ายหรือขวา",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 600,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ซ้าย หรือ ขวา?",
+              "role": "kicker",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "beat": "setup",
+      "era": "present",
+      "vo": "ชิดซ้ายราว 75 ประเทศ [#S02-02] ราวหนึ่งในสาม [#S02-03] หลายแห่งเคยเป็นของอังกฤษ [#S02-04] แต่ไทยไม่เคย",
+      "voEn": "About 75 countries drive on the left, [#S02-02] roughly one in three. [#S02-03] Many were once under British rule. [#S02-04] Thailand never was.",
+      "voTTS": "ชิดซ้าย ราว เจ็ดสิบห้าประเทศ [#S02-02] ราว… หนึ่งในสาม [#S02-03] หลายแห่ง เคยเป็นของอังกฤษ [#S02-04] แต่ไทย… ไม่เคย",
+      "voFile": "vo/S02.wav",
+      "shots": [
+        {
+          "id": "S02-01",
+          "kind": "data",
+          "description": "ลูกโลกหมุนด้านบน ตัวนับขึ้นถึง 75 ประเทศ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "earth-globe",
+              "style": "vector",
+              "z": 1000,
+              "y": -420,
+              "w": 260,
+              "anim": "spin"
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 75,
+            "suffix": " ประเทศ",
+            "label": "ขับชิดซ้าย (ราว)",
+            "sourceRef": "F-01"
+          }
+        },
+        {
+          "id": "S02-02",
+          "kind": "data",
+          "description": "กราฟแท่ง สัดส่วนประเทศชิดซ้าย ~31% vs ชิดขวา ~69%",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "bar",
+            "items": [
+              {
+                "label": "ชิดซ้าย",
+                "value": 31,
+                "highlight": true
+              },
+              {
+                "label": "ชิดขวา",
+                "value": 69
+              }
+            ],
+            "unit": "%",
+            "title": "สัดส่วนประเทศ (โดยประมาณ)",
+            "sourceRef": "F-02"
+          }
+        },
+        {
+          "id": "S02-03",
+          "kind": "data",
+          "description": "แผนที่โลก หมุดประเทศชิดซ้ายที่เคยอยู่ใต้อังกฤษ",
+          "layers": [],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                60,
+                15
+              ],
+              "scale": 260
+            },
+            "to": {
+              "center": [
+                85,
+                10
+              ],
+              "scale": 320
+            },
+            "pins": [
+              {
+                "at": [
+                  -1.5,
+                  52.5
+                ],
+                "label": "อังกฤษ"
+              },
+              {
+                "at": [
+                  78,
+                  22
+                ],
+                "label": "อินเดีย",
+                "delay": 0.3
+              },
+              {
+                "at": [
+                  134,
+                  -25
+                ],
+                "label": "ออสเตรเลีย",
+                "delay": 0.6
+              },
+              {
+                "at": [
+                  101.7,
+                  3.1
+                ],
+                "label": "มาเลเซีย",
+                "delay": 0.9
+              }
+            ],
+            "sourceRef": "F-03"
+          }
+        },
+        {
+          "id": "S02-04",
+          "kind": "parallax",
+          "description": "ถนนไทยเลนซ้าย รถคันเล็กวิ่งผ่าน กล้องแพนข้าง — ไทยเป็นข้อยกเว้น",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:road-left|city",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:keep-left-sign|arrow",
+              "style": "vector",
+              "z": 1600,
+              "x": -300,
+              "y": -120,
+              "w": 300
+            },
+            {
+              "id": "subject",
+              "asset": "img:modern-car|giant-pin",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "slide-left"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -200,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 200,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ข้อยกเว้น",
+              "role": "title",
+              "x": 540,
+              "y": 360,
+              "sourceRef": "F-03"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "beat": "act1",
+      "era": "early-1900s",
+      "vo": "เชื่อกันว่าเพราะรอบตัว [#S03-02] ยุคนั้นมลายูกับพม่า [#S03-03] อยู่ใต้อังกฤษ [#S03-04] ค้าขายคึกคัก [#S03-05] รถรุ่นแรกน่าจะมาจากอังกฤษ",
+      "voEn": "It is believed the reason was all around. [#S03-02] Back then, Malaya and Burma [#S03-03] were under Britain. [#S03-04] Trade was booming, [#S03-05] and the first cars likely came from Britain.",
+      "voTTS": "เชื่อกันว่า… เพราะรอบตัว [#S03-02] ยุคนั้น มลายู กับพม่า [#S03-03] อยู่ใต้อังกฤษ [#S03-04] ค้าขาย คึกคัก [#S03-05] รถรุ่นแรก… น่าจะมาจากอังกฤษ",
+      "voFile": "vo/S03.wav",
+      "shots": [
+        {
+          "id": "S03-01",
+          "kind": "parallax",
+          "description": "ท่าเรือการค้ายุคต้น 1900 ลังสินค้าและกระสอบ กล้องดันเข้า",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:old-port|sea",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "tallship",
+              "style": "vector",
+              "z": 1700,
+              "x": 280,
+              "y": -200,
+              "w": 420
+            },
+            {
+              "id": "subject",
+              "asset": "sacks",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "drop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 200
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "สมมติฐาน",
+              "role": "title",
+              "x": 540,
+              "y": 360
+            }
+          ]
+        },
+        {
+          "id": "S03-02",
+          "kind": "data",
+          "description": "แผนที่อุษาคเนย์ หมุดมลายู พม่า สยาม",
+          "layers": [],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                100,
+                12
+              ],
+              "scale": 1300
+            },
+            "to": {
+              "center": [
+                100,
+                13
+              ],
+              "scale": 1600
+            },
+            "pins": [
+              {
+                "at": [
+                  100.5,
+                  13.75
+                ],
+                "label": "สยาม"
+              },
+              {
+                "at": [
+                  96.2,
+                  19.8
+                ],
+                "label": "พม่า",
+                "delay": 0.3
+              },
+              {
+                "at": [
+                  101.7,
+                  3.6
+                ],
+                "label": "มลายู",
+                "delay": 0.6
+              }
+            ],
+            "sourceRef": "F-04"
+          }
+        },
+        {
+          "id": "S03-03",
+          "kind": "collage",
+          "description": "เอกสารเก่าประทับตราอาณานิคม",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "document",
+              "style": "collage",
+              "z": 1000,
+              "y": -80,
+              "w": 520,
+              "anim": "stop-motion"
+            },
+            {
+              "id": "stamp",
+              "asset": "stamp",
+              "style": "vector",
+              "z": 800,
+              "x": 180,
+              "y": 0,
+              "w": 240,
+              "props": {
+                "at": 0.5
+              }
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -15,
+              "z": 40
+            }
+          },
+          "text": [
+            {
+              "content": "ใต้อังกฤษ",
+              "role": "kicker",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S03-04",
+          "kind": "vector",
+          "description": "เรือสินค้ากับกองเหรียญ — การค้าคึกคัก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "junk-ship",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 520,
+              "anim": "bob"
+            },
+            {
+              "id": "mg",
+              "asset": "coin-stack",
+              "style": "vector",
+              "z": 1400,
+              "x": -260,
+              "y": 40,
+              "w": 260
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "การค้า",
+              "role": "kicker",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S03-05",
+          "kind": "parallax",
+          "description": "รถยนต์โบราณพวงมาลัยขวาจอดที่ท่าเรือ กล้องแพนข้าง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:old-port|sea",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "sacks",
+              "style": "vector",
+              "z": 1600,
+              "x": -320,
+              "y": -60,
+              "w": 320
+            },
+            {
+              "id": "subject",
+              "asset": "img:old-car|giant-pin",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 580,
+              "anim": "slide-left"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -200,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 200,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "พวงมาลัยขวา",
+              "role": "kicker",
+              "x": 540,
+              "y": 340,
+              "sourceRef": "F-05"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "beat": "act2",
+      "era": "present",
+      "vo": "แต่ไม่มีหลักฐานชัด [#S04-02] ว่าเริ่มปีไหน [#S04-03] บ้างว่าชิดซ้ายมาแต่เดิม [#S04-04] ที่แน่ ๆ กฎหมายไทยสั่งชิดซ้าย",
+      "voEn": "But there's no clear evidence [#S04-02] of when it began. [#S04-03] Some say people kept left all along. [#S04-04] What's certain: Thai law requires keeping left.",
+      "voTTS": "แต่… ไม่มีหลักฐานชัด [#S04-02] ว่าเริ่มปีไหน [#S04-03] บ้างว่า ชิดซ้ายมาแต่เดิม [#S04-04] ที่แน่ ๆ… กฎหมายไทย สั่งชิดซ้าย",
+      "voFile": "vo/S04.wav",
+      "shots": [
+        {
+          "id": "S04-01",
+          "kind": "collage",
+          "description": "แว่นขยายส่องเอกสารเก่า หาหลักฐาน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "book",
+              "style": "collage",
+              "z": 1000,
+              "y": -60,
+              "w": 500
+            },
+            {
+              "id": "fg",
+              "asset": "magnifier",
+              "style": "vector",
+              "z": 700,
+              "x": 160,
+              "y": -120,
+              "w": 320,
+              "anim": "slide-left"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -15,
+              "z": 40
+            }
+          },
+          "text": [
+            {
+              "content": "หลักฐาน?",
+              "role": "kicker",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S04-02",
+          "kind": "vector",
+          "description": "ปฏิทินพลิก — ไม่รู้ปีเริ่มแน่ชัด",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "calendar-year",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 460,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ไม่ทราบแน่ชัด",
+              "role": "kicker",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S04-03",
+          "kind": "vector",
+          "description": "ป้ายแยกทาง หลายข้อสันนิษฐาน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 560,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "light-rays",
+              "style": "vector",
+              "z": 1600,
+              "y": -200,
+              "w": 900,
+              "opacity": 0.5
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "หลายข้อสันนิษฐาน",
+              "role": "kicker",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S04-04",
+          "kind": "parallax",
+          "description": "ถนนไทยเลนซ้าย ป้ายชิดซ้ายเด่น กล้องเครนขึ้น",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:road-left|city",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:modern-car|giant-pin",
+              "style": "vector",
+              "z": 1700,
+              "x": 260,
+              "y": -40,
+              "w": 380
+            },
+            {
+              "id": "subject",
+              "asset": "img:keep-left-sign|arrow",
+              "style": "vector",
+              "z": 1000,
+              "y": -100,
+              "w": 440,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "crane",
+            "from": {
+              "x": 0,
+              "y": 150,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -100,
+              "z": 80
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "พ.ร.บ.จราจรทางบก",
+              "role": "kicker",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-07"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "beat": "act3",
+      "era": "present",
+      "vo": "เพื่อนบ้านกลับชิดขวา [#S05-02] ลาว กัมพูชาตามฝรั่งเศส [#S05-03] พม่าเปลี่ยนเป็นขวาปี 2513 [#S05-04] ข้ามสะพานไปลาว [#S05-05] ต้องสลับฝั่ง",
+      "voEn": "Yet our neighbours drive on the right. [#S05-02] Laos and Cambodia followed France. [#S05-03] Myanmar switched to the right in 1970. [#S05-04] Cross the bridge into Laos [#S05-05] you have to switch sides.",
+      "voTTS": "เพื่อนบ้าน… กลับชิดขวา [#S05-02] ลาว กัมพูชา ตามฝรั่งเศส [#S05-03] พม่า เปลี่ยนเป็นขวา ปี สองพันห้าร้อยสิบสาม [#S05-04] ข้ามสะพาน ไปลาว [#S05-05] ต้อง… สลับฝั่ง",
+      "voFile": "vo/S05.wav",
+      "shots": [
+        {
+          "id": "S05-01",
+          "kind": "data",
+          "description": "แผนที่ไทยและเพื่อนบ้าน หมุดลาว กัมพูชา เมียนมา (ชิดขวา)",
+          "layers": [],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                101,
+                15
+              ],
+              "scale": 1500
+            },
+            "to": {
+              "center": [
+                101.5,
+                15.5
+              ],
+              "scale": 1800
+            },
+            "pins": [
+              {
+                "at": [
+                  100.5,
+                  13.75
+                ],
+                "label": "ไทย ชิดซ้าย"
+              },
+              {
+                "at": [
+                  102.6,
+                  18.5
+                ],
+                "label": "ลาว ชิดขวา",
+                "delay": 0.3
+              },
+              {
+                "at": [
+                  104.9,
+                  12.2
+                ],
+                "label": "กัมพูชา ชิดขวา",
+                "delay": 0.6
+              },
+              {
+                "at": [
+                  96.2,
+                  20.5
+                ],
+                "label": "เมียนมา ชิดขวา",
+                "delay": 0.9
+              }
+            ],
+            "sourceRef": "F-08"
+          }
+        },
+        {
+          "id": "S05-02",
+          "kind": "vector",
+          "description": "ลูกศรชี้ขวาใหญ่ — ระบบชิดขวาแบบฝรั่งเศส",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "arrow",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 520,
+              "anim": "slide-right"
+            },
+            {
+              "id": "mg",
+              "asset": "document",
+              "style": "vector",
+              "z": 1500,
+              "x": -280,
+              "y": -200,
+              "w": 280,
+              "opacity": 0.8
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "แบบฝรั่งเศส",
+              "role": "kicker",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-08"
+            }
+          ]
+        },
+        {
+          "id": "S05-03",
+          "kind": "vector",
+          "description": "ปฏิทินปี พ.ศ. 2513 พม่าเปลี่ยนเป็นชิดขวา",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "calendar-year",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 460,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "arrow",
+              "style": "vector",
+              "z": 1500,
+              "x": 260,
+              "y": -260,
+              "w": 260,
+              "opacity": 0.8
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "พ.ศ. 2513",
+              "role": "title",
+              "x": 540,
+              "y": 330,
+              "sourceRef": "F-09"
+            }
+          ]
+        },
+        {
+          "id": "S05-04",
+          "kind": "parallax",
+          "description": "สะพานข้ามแม่น้ำโขงยามเย็น รถเล็กวิ่งบนสะพาน กล้องแพนข้าง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:border-bridge|sea",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:keep-left-sign|arrow",
+              "style": "vector",
+              "z": 1600,
+              "x": 300,
+              "y": -160,
+              "w": 280
+            },
+            {
+              "id": "subject",
+              "asset": "img:modern-car|giant-pin",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 480,
+              "anim": "slide-right"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -200,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 200,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "สะพานมิตรภาพ",
+              "role": "title",
+              "x": 540,
+              "y": 360,
+              "sourceRef": "F-10"
+            }
+          ]
+        },
+        {
+          "id": "S05-05",
+          "kind": "data",
+          "description": "แผนที่ซูมหนองคาย–เวียงจันทน์ เส้นทางข้ามสะพาน จุดสลับฝั่ง",
+          "layers": [],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                102.7,
+                17.9
+              ],
+              "scale": 9000
+            },
+            "to": {
+              "center": [
+                102.7,
+                17.9
+              ],
+              "scale": 14000
+            },
+            "routes": [
+              {
+                "path": [
+                  [
+                    102.73,
+                    17.82
+                  ],
+                  [
+                    102.71,
+                    17.88
+                  ],
+                  [
+                    102.62,
+                    17.96
+                  ]
+                ],
+                "delay": 0.2
+              }
+            ],
+            "pins": [
+              {
+                "at": [
+                  102.74,
+                  17.86
+                ],
+                "label": "หนองคาย"
+              },
+              {
+                "at": [
+                  102.61,
+                  17.97
+                ],
+                "label": "เวียงจันทน์",
+                "delay": 0.5
+              },
+              {
+                "at": [
+                  102.71,
+                  17.89
+                ],
+                "label": "สลับฝั่ง",
+                "delay": 0.9
+              }
+            ],
+            "sourceRef": "F-10"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "beat": "payoff",
+      "era": "present",
+      "vo": "ไทยน่าจะชิดซ้าย [#S06-02] ตามโลกรอบตัว [#S06-03] ไม่ใช่เพราะถูกยึด",
+      "voEn": "Thailand likely kept left [#S06-02] following the world around it, [#S06-03] not because it was conquered.",
+      "voTTS": "ไทย… น่าจะชิดซ้าย [#S06-02] ตามโลกรอบตัว [#S06-03] ไม่ใช่เพราะ… ถูกยึด",
+      "voFile": "vo/S06.wav",
+      "shots": [
+        {
+          "id": "S06-01",
+          "kind": "parallax",
+          "description": "รถคันเล็กวิ่งเลนซ้ายบนถนนไทย กล้องดันเข้า",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:road-left|city",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "sun",
+              "style": "vector",
+              "z": 1800,
+              "y": -560,
+              "w": 300
+            },
+            {
+              "id": "subject",
+              "asset": "img:modern-car|giant-pin",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 540,
+              "anim": "bob"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 180
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "คำตอบ",
+              "role": "title",
+              "x": 540,
+              "y": 360
+            }
+          ]
+        },
+        {
+          "id": "S06-02",
+          "kind": "vector",
+          "description": "ลูกโลกหมุน เพื่อนบ้าน + การค้า",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "earth-globe",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 480,
+              "anim": "spin"
+            },
+            {
+              "id": "mg",
+              "asset": "junk-ship",
+              "style": "vector",
+              "z": 1500,
+              "x": 280,
+              "y": 40,
+              "w": 300
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เพื่อนบ้าน + การค้า",
+              "role": "kicker",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S06-03",
+          "kind": "collage",
+          "description": "เอกสารพร้อมตราประทับ ไม่ใช่อาณานิคม",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "document",
+              "style": "collage",
+              "z": 1000,
+              "y": -80,
+              "w": 500
+            },
+            {
+              "id": "fg",
+              "asset": "marker-circle",
+              "style": "vector",
+              "z": 700,
+              "y": -80,
+              "w": 600
+            },
+            {
+              "id": "stamp",
+              "asset": "stamp",
+              "style": "vector",
+              "z": 800,
+              "x": 200,
+              "y": 0,
+              "w": 240,
+              "props": {
+                "at": 0.4
+              }
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -15,
+              "z": 40
+            }
+          },
+          "text": [
+            {
+              "content": "ไม่ใช่อาณานิคม",
+              "role": "kicker",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-03"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "beat": "outro",
+      "era": "present",
+      "vo": "ไม่เคยถูกยึด… [#S07-02] แต่ถนนยังจำอังกฤษ",
+      "voEn": "Never conquered… [#S07-02] yet the roads still remember Britain.",
+      "voTTS": "ไม่เคยถูกยึด… [#S07-02] แต่ถนน… ยังจำอังกฤษ",
+      "voFile": "vo/S07.wav",
+      "shots": [
+        {
+          "id": "S07-01",
+          "kind": "vector",
+          "description": "รถโบราณพวงมาลัยขวาลอยเด่น",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:old-car|giant-pin",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 560,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "light-rays",
+              "style": "vector",
+              "z": 1600,
+              "y": -200,
+              "w": 900,
+              "opacity": 0.5
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ร่องรอย",
+              "role": "kicker",
+              "x": 540,
+              "y": 320
+            }
+          ]
+        },
+        {
+          "id": "S07-02",
+          "kind": "parallax",
+          "description": "ถนนเลนซ้ายทอดยาว ป้ายชิดซ้าย กล้องถอยออก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:road-left|city",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:modern-car|giant-pin",
+              "style": "vector",
+              "z": 1700,
+              "x": -260,
+              "y": -20,
+              "w": 360
+            },
+            {
+              "id": "subject",
+              "asset": "img:keep-left-sign|arrow",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 440,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 160
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -200
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ชิดซ้ายเสมอ",
+              "role": "title",
+              "x": 540,
+              "y": 360
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "covers": [
+    {
+      "id": "A",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "ไม่ถูกยึด\n*ทำไมชิดซ้าย*",
+      "kicker": "ถนนไทย",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:road-left|city",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "mg",
+          "asset": "sun",
+          "style": "vector",
+          "z": 1800,
+          "y": -640,
+          "w": 300
+        },
+        {
+          "id": "subject",
+          "asset": "img:keep-left-sign|arrow",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 520
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "ข้ามไปลาว\n*ต้องสลับฝั่ง*",
+      "kicker": "เพื่อนบ้านชิดขวา",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:border-bridge|sea",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "img:modern-car|giant-pin",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 560
+        },
+        {
+          "id": "fg",
+          "asset": "dust",
+          "style": "vector",
+          "z": 500,
+          "cover": true,
+          "opacity": 0.35
+        }
+      ]
+    }
+  ]
+}

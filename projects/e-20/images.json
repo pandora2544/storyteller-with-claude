@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "id": "road-left",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "A sunny two-lane tropical road seen from behind the traffic, a few simple compact cars driving in the left lane, dashed center line, palm trees and low shophouses along the roadside, blue sky with soft clouds, no people, no readable signs, no logos"
+    },
+    {
+      "id": "old-port",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "A busy riverside trading port in the early 1900s, old steamships and wooden cargo boats moored at a timber pier, stacks of wooden crates and rice sacks, colonial-style warehouses, warm hazy light, no people faces, no flags, no readable signs"
+    },
+    {
+      "id": "border-bridge",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "A long modern concrete road bridge crossing a wide brown river at golden hour, two traffic lanes on the bridge, lush green riverbanks on both sides, soft sunset sky, no people, no flags, no readable signs"
+    },
+    {
+      "id": "keep-left-sign",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A round blue traffic sign on a short metal pole with a bold white arrow pointing diagonally down to the left, simple clean shapes, no text"
+    },
+    {
+      "id": "old-car",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A vintage open-top motor car from around 1905, dark green body, spoked wheels, brass headlamps, the steering wheel clearly on the right-hand side, empty seats, side three-quarter view, no logo, no badge"
+    },
+    {
+      "id": "modern-car",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A simple friendly compact hatchback car in coral orange, front three-quarter view, driver seat on the right side, empty, rounded shapes, no logo, no badge, no license plate text"
+    }
+  ]
+}
