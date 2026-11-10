@@ -1,0 +1,1272 @@
+{
+ "meta": {
+  "slug": "d-20261111-am",
+  "title": "กระเป๋าต้องรอด ทำไมต้อง 72 ชั่วโมง",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "targetSec": 60
+ },
+ "sources": {
+  "F-01": "ปภ. 2 พ.ย. 69 (Nation / Time Out)",
+  "F-02": "ปภ. · Nation Thailand",
+  "F-03": "กรมการค้าภายใน (กรุงเทพธุรกิจ / เดลินิวส์)",
+  "F-04": "รัฐบาล (เดลินิวส์ 9 พ.ย. 69)",
+  "F-05": "UK Be Ready · Nation Thailand",
+  "F-06": "ปภ. · UK Be Ready",
+  "F-07": "ปภ. · แนวหน้า"
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "beat": "hook",
+   "era": "present",
+   "vo": "กระเป๋าต้องรอด… [#S01-02] ทำไมต้อง 72 ชั่วโมง",
+   "voTTS": "กระเป๋าต้องรอด… [#S01-02] ทำไมต้อง เจ็ดสิบสองชั่วโมง",
+   "voFile": "vo/S01.wav",
+   "shots": [
+    {
+     "id": "S01-01",
+     "kind": "parallax",
+     "description": "บ้านตอนกลางคืน กระเป๋าฉุกเฉินเด้งขึ้นกลางจอ กล้องดันเข้าตั้งแต่เฟรมแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:home-night-plate|paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:emergency-backpack|giant-pin",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "กระเป๋าต้องรอด",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S01-02",
+     "kind": "data",
+     "description": "ตัวเลข 72 ชั่วโมงนับขึ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 72,
+      "suffix": " ชั่วโมง",
+      "label": "ทำไมต้องเท่านี้?",
+      "sourceRef": "F-01"
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "beat": "setup",
+   "era": "present",
+   "vo": "ปภ. ชวนจัดกระเป๋าฉุกเฉิน [#S02-02] ยอดซื้อของขยับ [#S02-03] รัฐบาลย้ำ ของไม่ขาด [#S02-04] ไม่ใช่สัญญาณสงคราม",
+   "voTTS": "ปอภอ… ชวนจัดกระเป๋าฉุกเฉิน [#S02-02] ยอดซื้อของ ขยับ [#S02-03] รัฐบาลย้ำ… ของไม่ขาด [#S02-04] ไม่ใช่… สัญญาณสงคราม",
+   "voFile": "vo/S02.wav",
+   "shots": [
+    {
+     "id": "S02-01",
+     "kind": "vector",
+     "description": "เช็กลิสต์ของจำเป็นจาก ปภ.",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "km-checklist",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ปภ. แนะนำ",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-02",
+     "kind": "vector",
+     "description": "ขวดน้ำดื่มลอยขึ้น ยอดซื้อขยับ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:water-bottles|water-cup",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "slide-up"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ยอดซื้อขยับ",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    },
+    {
+     "id": "S02-03",
+     "kind": "parallax",
+     "description": "ชั้นวางของในห้างเต็มชั้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:store-shelf-plate|paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "price-tag",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "drop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ของไม่ขาด",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    },
+    {
+     "id": "S02-04",
+     "kind": "vector",
+     "description": "ลูกโลกลอยนิ่ง ๆ สงบ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "earth-globe",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "float"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไม่ใช่สัญญาณสงคราม",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "beat": "act1",
+   "era": "present",
+   "vo": "72 ชั่วโมงคือมาตรฐานสากล [#S03-02] อังกฤษ [#S03-03] ญี่ปุ่น อเมริกา [#S03-04] ก็อย่างน้อยสามวัน [#S03-05] สวีเดนเจ็ดวันขึ้นไป",
+   "voTTS": "เจ็ดสิบสองชั่วโมง… คือมาตรฐานสากล [#S03-02] อังกฤษ [#S03-03] ญี่ปุ่น… อเมริกา [#S03-04] ก็อย่างน้อย สามวัน [#S03-05] สวีเดน… เจ็ดวันขึ้นไป",
+   "voFile": "vo/S03.wav",
+   "shots": [
+    {
+     "id": "S03-01",
+     "kind": "vector",
+     "description": "ลูกโลกหมุน มาตรฐานสากล",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "earth-globe",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "spin"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "มาตรฐานสากล",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S03-02",
+     "kind": "data",
+     "description": "แผนที่ยุโรป ปักหมุดอังกฤษ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        0,
+        52
+       ],
+       "scale": 1400
+      },
+      "to": {
+       "center": [
+        -1.5,
+        52.5
+       ],
+       "scale": 1900
+      },
+      "pins": [
+       {
+        "at": [
+         -1.5,
+         52.5
+        ],
+        "label": "อังกฤษ"
+       }
+      ],
+      "sourceRef": "F-05"
+     }
+    },
+    {
+     "id": "S03-03",
+     "kind": "data",
+     "description": "แผนที่โลก ปักหมุดญี่ปุ่นและสหรัฐฯ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        170,
+        30
+       ],
+       "scale": 200
+      },
+      "to": {
+       "center": [
+        180,
+        32
+       ],
+       "scale": 240
+      },
+      "pins": [
+       {
+        "at": [
+         138,
+         36
+        ],
+        "label": "ญี่ปุ่น"
+       },
+       {
+        "at": [
+         -98,
+         39
+        ],
+        "label": "สหรัฐฯ",
+        "delay": 0.4
+       }
+      ],
+      "sourceRef": "F-05"
+     }
+    },
+    {
+     "id": "S03-04",
+     "kind": "vector",
+     "description": "ปฏิทินพลิก 3 วัน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "อย่างน้อย 3 วัน",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S03-05",
+     "kind": "data",
+     "description": "แผนที่ยุโรปเหนือ ปักหมุดสวีเดน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        12,
+        58
+       ],
+       "scale": 1200
+      },
+      "to": {
+       "center": [
+        16,
+        62
+       ],
+       "scale": 1600
+      },
+      "pins": [
+       {
+        "at": [
+         16,
+         62
+        ],
+        "label": "สวีเดน ≥ 7 วัน"
+       }
+      ],
+      "sourceRef": "F-05"
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "beat": "act2",
+   "era": "present",
+   "vo": "เพราะหลังภัยพิบัติ [#S04-02] ไฟดับ น้ำไม่ไหล [#S04-03] ความช่วยเหลือ [#S04-04] อาจยังไปไม่ถึง [#S04-05] สามวันแรก ต้องพึ่งตัวเอง",
+   "voTTS": "เพราะหลังภัยพิบัติ [#S04-02] ไฟดับ… น้ำไม่ไหล [#S04-03] ความช่วยเหลือ [#S04-04] อาจยัง… ไปไม่ถึง [#S04-05] สามวันแรก… ต้องพึ่งตัวเอง",
+   "voFile": "vo/S04.wav",
+   "shots": [
+    {
+     "id": "S04-01",
+     "kind": "parallax",
+     "description": "ถนนหน้าบ้านน้ำท่วมสไตล์การ์ตูน กล้องดึงออก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:flood-street-plate|paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "giant-pin",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "drop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": -20,
+       "z": 200
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -200
+      },
+      "ease": "inOutCubic"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "หลังภัยพิบัติ",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S04-02",
+     "kind": "vector",
+     "description": "ตะเกียงส่องในบ้านมืด ไฟดับ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "lantern",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "sway"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไฟดับ น้ำไม่ไหล",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S04-03",
+     "kind": "vector",
+     "description": "สัญญาณช่วยเหลือกระพริบ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ความช่วยเหลือ…",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S04-04",
+     "kind": "vector",
+     "description": "เมืองกว้าง หลายบ้านรอ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "city",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 620,
+       "anim": "float"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ยังไปไม่ถึง",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S04-05",
+     "kind": "data",
+     "description": "3 ไอคอนแทน 3 วันแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "unit",
+      "count": 3,
+      "perIcon": "1 วัน",
+      "label": "ดูแลตัวเองก่อน",
+      "sourceRef": "F-02"
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "beat": "act3",
+   "era": "present",
+   "vo": "แค่น้ำดื่ม [#S05-02] คนละ 3 ลิตรต่อวัน [#S05-03] สามวันก็ 9 ลิตร [#S05-04] ที่เหลือ ยา อาหาร ไฟฉาย [#S05-05] เอกสาร เงินสด",
+   "voTTS": "แค่น้ำดื่ม [#S05-02] คนละ สามลิตร ต่อวัน [#S05-03] สามวัน… ก็เก้าลิตร [#S05-04] ที่เหลือ… ยา… อาหาร… ไฟฉาย [#S05-05] เอกสาร… เงินสด",
+   "voFile": "vo/S05.wav",
+   "shots": [
+    {
+     "id": "S05-01",
+     "kind": "vector",
+     "description": "ขวดน้ำดื่มเด้งเข้ามา",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:water-bottles|water-cup",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "แค่น้ำดื่ม",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    },
+    {
+     "id": "S05-02",
+     "kind": "data",
+     "description": "ตัวเลข 3 ลิตรนับขึ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 3,
+      "suffix": " ลิตร",
+      "label": "ต่อคน ต่อวัน",
+      "sourceRef": "F-06"
+     }
+    },
+    {
+     "id": "S05-03",
+     "kind": "data",
+     "description": "9 ไอคอนขวดน้ำ เท่ากับ 72 ชั่วโมง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "unit",
+      "count": 9,
+      "perIcon": "1 ลิตร",
+      "label": "72 ชั่วโมง ต่อคน",
+      "sourceRef": "F-06"
+     }
+    },
+    {
+     "id": "S05-04",
+     "kind": "parallax",
+     "description": "ของในกระเป๋ากางออก ยา อาหาร ไฟฉาย",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:home-night-plate|paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:kit-items|km-checklist",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 600,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ยา · อาหาร · ไฟฉาย",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-07"
+      }
+     ]
+    },
+    {
+     "id": "S05-05",
+     "kind": "vector",
+     "description": "กระเป๋าฉุกเฉินปิดฝา ครบ 6 หมวด",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:emergency-backpack|giant-pin",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เอกสาร · เงินสด",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-07"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "beat": "payoff",
+   "era": "present",
+   "vo": "72 ชั่วโมงไม่ใช่นับถอยหลัง [#S06-02] แต่คือช่วงที่เรา [#S06-03] ต้องรอดเองจนความช่วยเหลือมาถึง",
+   "voTTS": "เจ็ดสิบสองชั่วโมง… ไม่ใช่นับถอยหลัง [#S06-02] แต่คือช่วงที่เรา [#S06-03] ต้องรอดเอง… จนความช่วยเหลือมาถึง",
+   "voFile": "vo/S06.wav",
+   "shots": [
+    {
+     "id": "S06-01",
+     "kind": "vector",
+     "description": "นาฬิกาเดิน ไม่ใช่ระเบิดเวลา",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "clock",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "float"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไม่ใช่นับถอยหลัง",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S06-02",
+     "kind": "vector",
+     "description": "กระเป๋าฉุกเฉินลอยกลางจอ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:emergency-backpack|giant-pin",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "bob"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ช่วงที่เรา…",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S06-03",
+     "kind": "parallax",
+     "description": "บ้านยามค่ำ ไฟจากตะเกียง รอความช่วยเหลือ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:home-night-plate|paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "lantern",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "float"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "รอดได้เอง",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "beat": "outro",
+   "era": "present",
+   "vo": "แล้วกระเป๋าของเรา… พร้อมรอดหรือยัง",
+   "voTTS": "แล้วกระเป๋าของเรา… พร้อมรอด… หรือยัง",
+   "voFile": "vo/S07.wav",
+   "shots": [
+    {
+     "id": "S07-01",
+     "kind": "parallax",
+     "description": "กระเป๋าฉุกเฉินในบ้าน กล้องดันเข้าช้า ๆ วนกลับไปช็อตแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:home-night-plate|paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:emergency-backpack|giant-pin",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "พร้อมรอดหรือยัง?",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "covers": [
+  {
+   "id": "A",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "กระเป๋า\n*72 ชม.*",
+   "kicker": "ทำไมต้องเท่านี้",
+   "sourceRef": "F-01",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:home-night-plate|paper-bg",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:emergency-backpack|giant-pin",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "น้ำ *9 ลิตร*\nต่อคน",
+   "kicker": "รอด 3 วันแรก",
+   "sourceRef": "F-06",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:store-shelf-plate|paper-bg",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:water-bottles|water-cup",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  }
+ ]
+}

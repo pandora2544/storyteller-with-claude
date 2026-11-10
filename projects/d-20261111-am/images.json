@@ -1,0 +1,16 @@
+{
+  "images": [
+    {"id": "home-night-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "Cozy Thai home living room at night during a power cut, soft moonlight through a window, warm glow from a small lantern on a wooden table, potted plant, calm and safe mood, no people, no text"},
+    {"id": "flood-street-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "Quiet residential street of Thai townhouses with shallow flood water, light rain, reflections on the water, utility poles, calm mood, no people, no vehicles, no signs, no text"},
+    {"id": "store-shelf-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "Supermarket aisle with fully stocked shelves of plain water bottles, rice bags and canned food, bright and tidy, unbranded packaging, no logos, no labels, no people, no text"},
+    {"id": "emergency-backpack", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A sturdy orange emergency backpack, slightly open, a flashlight and a water bottle sticking out of the top pocket, rounded friendly shapes, no logo, no text"},
+    {"id": "water-bottles", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "Three plain clear drinking water bottles standing together with blue caps, simple shapes, unlabeled, no logo, no text"},
+    {"id": "kit-items", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "Emergency kit items arranged in a neat cluster: a white first aid box with a red cross, a flashlight, two canned food tins, a power bank, a plain document folder and a small bundle of cash, unbranded, no text"}
+  ]
+}
