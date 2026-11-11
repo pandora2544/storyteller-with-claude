@@ -1,0 +1,16 @@
+{
+  "images": [
+    {"id": "river-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "Muddy reddish-brown river winding through a small northern Thai border town with low houses and a simple concrete bridge, green forested hills behind, overcast sky, calm mood, no people, no vehicles, no signs, no flags, no text"},
+    {"id": "mine-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "Remote forested mountains with terraced open-pit mining scars of bare orange earth on the slopes, a muddy brown stream flowing down the valley, distant haze, no people, no machinery, no buildings, no flags, no text"},
+    {"id": "rice-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "Green rice paddy fields beside a slow river in northern Thailand, small irrigation canal, distant misty hills, soft morning light, no people, no text"},
+    {"id": "water-glass", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single clear drinking glass filled with cloudy brownish river water, a few sediment particles floating, rounded friendly shapes, no text"},
+    {"id": "test-tube", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A small laboratory rack holding three glass water sample test tubes, two with clear water and one with murky brown water, a dropper beside them, simple rounded shapes, no labels, no text"},
+    {"id": "rice-bowl", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A simple ceramic bowl of cooked white rice with a small bundle of golden rice stalks leaning beside it, rounded friendly shapes, no text"}
+  ]
+}

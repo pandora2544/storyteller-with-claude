@@ -1,0 +1,1560 @@
+{
+ "meta": {
+  "slug": "d-20261112-am",
+  "title": "ทำไมแม่น้ำเชียงรายมีสารหนู",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "targetSec": 60
+ },
+ "sources": {
+  "F-01": "กปภ. · Bangkok Insight / Lanner 10–11 พ.ย. 69",
+  "F-02": "คพ. ตรวจ 6 พ.ย. 69 (Bangkok Insight / Lanner)",
+  "F-03": "คพ. ผลตรวจต่อเนื่อง (Lanner / Chiang Rai Times)",
+  "F-04": "Mongabay · Chiang Rai Times · Lanner",
+  "F-05": "กรมชลประทาน/พัฒนาที่ดิน (Lanner / Chiang Mai News)",
+  "F-06": "Mongabay · Thai PBS",
+  "F-07": "สยามรัฐ 12 พ.ย. 69 · Bloomberg"
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "beat": "hook",
+   "era": "present",
+   "vo": "แม่น้ำเชียงราย… [#S01-02] ทำไมมีสารหนู",
+   "voTTS": "แม่น้ำเชียงราย… [#S01-02] ทำไม… มีสารหนู",
+   "voFile": "vo/S01.wav",
+   "shots": [
+    {
+     "id": "S01-01",
+     "kind": "parallax",
+     "description": "แม่น้ำสีขุ่นแดงไหลผ่านเมืองชายแดน แก้วน้ำขุ่นเด้งขึ้นกลางจอ กล้องดันเข้าตั้งแต่เฟรมแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:river-plate|paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:water-glass|water-cup",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 260
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "แม่น้ำเชียงราย",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S01-02",
+     "kind": "vector",
+     "description": "หลอดตัวอย่างน้ำ หลอดหนึ่งสีน้ำตาล",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:test-tube|magnifier",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "สารหนู?",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "beat": "setup",
+   "era": "present",
+   "vo": "5 พ.ย. [#S02-02] ประปาแม่สายหยุดชั่วคราว [#S02-03] น้ำขุ่นจนกรองไม่ไหว [#S02-04] กระทบ 14 หมู่บ้าน",
+   "voTTS": "ห้าพฤศจิกา… [#S02-02] ประปาแม่สาย หยุดชั่วคราว [#S02-03] น้ำขุ่น… จนกรองไม่ไหว [#S02-04] กระทบ… สิบสี่หมู่บ้าน",
+   "voFile": "vo/S02.wav",
+   "shots": [
+    {
+     "id": "S02-01",
+     "kind": "data",
+     "description": "แผนที่ภาคเหนือซูมเข้า ปักหมุดแม่สาย",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        100.5,
+        18.5
+       ],
+       "scale": 2200
+      },
+      "to": {
+       "center": [
+        99.9,
+        20.2
+       ],
+       "scale": 5200
+      },
+      "pins": [
+       {
+        "at": [
+         99.88,
+         20.43
+        ],
+        "label": "แม่สาย"
+       }
+      ]
+     },
+     "text": [
+      {
+       "content": "5 พ.ย.",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-02",
+     "kind": "vector",
+     "description": "แก้วน้ำประปาว่างเปล่า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "water-cup",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "drop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ประปาหยุดชั่วคราว",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-03",
+     "kind": "vector",
+     "description": "แก้วน้ำขุ่นสีน้ำตาล",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:water-glass|water-cup",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ขุ่นจนกรองไม่ไหว",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-04",
+     "kind": "data",
+     "description": "ตัวเลข 14 หมู่บ้านนับขึ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 14,
+      "suffix": " หมู่บ้าน",
+      "label": "ได้รับผลกระทบ",
+      "sourceRef": "F-01"
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "beat": "act1",
+   "era": "present",
+   "vo": "น้ำดิบมีสารหนู [#S03-02] เกินมาตรฐานราว 25 เท่า [#S03-03] และไม่ใช่ครั้งแรก [#S03-04] น้ำสายเกินทุกรอบตรวจ [#S03-05] กก รวก ก็เจอ",
+   "voTTS": "น้ำดิบ… มีสารหนู [#S03-02] เกินมาตรฐาน… ราวยี่สิบห้าเท่า [#S03-03] และไม่ใช่ครั้งแรก [#S03-04] น้ำสาย… เกินทุกรอบตรวจ [#S03-05] กก… รวก… ก็เจอ",
+   "voFile": "vo/S03.wav",
+   "shots": [
+    {
+     "id": "S03-01",
+     "kind": "parallax",
+     "description": "แม่น้ำขุ่น หลอดตัวอย่างน้ำดิบลอยขึ้นมา",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:river-plate|paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:test-tube|magnifier",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "crane",
+      "from": {
+       "x": 0,
+       "y": 150,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -150,
+       "z": 60
+      },
+      "ease": "inOutCubic"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "สารหนู",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S03-02",
+     "kind": "data",
+     "description": "กราฟแท่ง มาตรฐาน 0.01 เทียบน้ำดิบ 0.25 แท่งพุ่งสูง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "bar",
+      "items": [
+       {
+        "label": "มาตรฐาน",
+        "value": 0.01
+       },
+       {
+        "label": "น้ำดิบ 6 พ.ย.",
+        "value": 0.25,
+        "highlight": true
+       }
+      ],
+      "unit": "มก./ลิตร",
+      "title": "สารหนู ~25 เท่า",
+      "sourceRef": "F-02"
+     }
+    },
+    {
+     "id": "S03-03",
+     "kind": "collage",
+     "description": "ปฏิทินกระดาษตัดแปะ พลิกย้อนหลัง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "rot": -4,
+       "anim": "slide-up"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไม่ใช่ครั้งแรก",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    },
+    {
+     "id": "S03-04",
+     "kind": "data",
+     "description": "แผนที่แม่น้ำสาย เส้นแม่น้ำวิ่งตามชายแดน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        99.95,
+        20.35
+       ],
+       "scale": 6000
+      },
+      "to": {
+       "center": [
+        99.95,
+        20.38
+       ],
+       "scale": 7000
+      },
+      "routes": [
+       {
+        "path": [
+         [
+          99.8,
+          20.47
+         ],
+         [
+          99.88,
+          20.43
+         ],
+         [
+          99.98,
+          20.4
+         ],
+         [
+          100.08,
+          20.35
+         ]
+        ],
+        "delay": 0.2
+       }
+      ],
+      "pins": [
+       {
+        "at": [
+         99.88,
+         20.43
+        ],
+        "label": "น้ำสาย",
+        "delay": 0.3
+       }
+      ]
+     },
+     "text": [
+      {
+       "content": "เกินทุกครั้งที่ตรวจ",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    },
+    {
+     "id": "S03-05",
+     "kind": "data",
+     "description": "แผนที่ 3 แม่น้ำ กก สาย รวก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        99.8,
+        20.15
+       ],
+       "scale": 5200
+      },
+      "to": {
+       "center": [
+        99.8,
+        20.15
+       ],
+       "scale": 5600
+      },
+      "routes": [
+       {
+        "path": [
+         [
+          99.36,
+          19.98
+         ],
+         [
+          99.6,
+          19.93
+         ],
+         [
+          99.83,
+          19.91
+         ],
+         [
+          100.0,
+          20.05
+         ],
+         [
+          100.14,
+          20.22
+         ]
+        ],
+        "delay": 0.2
+       },
+       {
+        "path": [
+         [
+          100.0,
+          20.4
+         ],
+         [
+          100.08,
+          20.35
+         ]
+        ],
+        "delay": 0.5
+       }
+      ],
+      "pins": [
+       {
+        "at": [
+         99.6,
+         19.93
+        ],
+        "label": "กก",
+        "delay": 0.3
+       },
+       {
+        "at": [
+         99.88,
+         20.43
+        ],
+        "label": "สาย",
+        "delay": 0.5
+       },
+       {
+        "at": [
+         100.03,
+         20.4
+        ],
+        "label": "รวก",
+        "delay": 0.7
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "beat": "act2",
+   "era": "present",
+   "vo": "ต้นน้ำอยู่ในรัฐฉาน เมียนมา [#S04-02] มีเหมืองทองและแร่หลายแห่ง [#S04-03] ไทยสงสัยพิษจากเหมือง [#S04-04] แต่ยังไม่ยืนยัน [#S04-05] ว่าเหมืองไหน",
+   "voTTS": "ต้นน้ำ… อยู่ในรัฐฉาน เมียนมา [#S04-02] มีเหมืองทอง… และแร่หลายแห่ง [#S04-03] ไทยสงสัย… พิษจากเหมือง [#S04-04] แต่ยังไม่ยืนยัน [#S04-05] ว่าเหมืองไหน",
+   "voFile": "vo/S04.wav",
+   "shots": [
+    {
+     "id": "S04-01",
+     "kind": "data",
+     "description": "แผนที่ถอยออก ลากเส้นจากต้นน้ำในรัฐฉานลงมาเชียงราย",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        99.8,
+        20.1
+       ],
+       "scale": 5200
+      },
+      "to": {
+       "center": [
+        99.5,
+        20.6
+       ],
+       "scale": 3200
+      },
+      "routes": [
+       {
+        "path": [
+         [
+          99.4,
+          20.75
+         ],
+         [
+          99.36,
+          20.3
+         ],
+         [
+          99.36,
+          19.98
+         ]
+        ],
+        "delay": 0.3
+       }
+      ],
+      "pins": [
+       {
+        "at": [
+         99.4,
+         20.75
+        ],
+        "label": "ต้นน้ำ · รัฐฉาน",
+        "delay": 0.5
+       },
+       {
+        "at": [
+         99.83,
+         19.91
+        ],
+        "label": "เชียงราย",
+        "delay": 0.2
+       }
+      ]
+     }
+    },
+    {
+     "id": "S04-02",
+     "kind": "parallax",
+     "description": "ภูเขาที่มีรอยเหมืองเปิดหน้าดินสีส้ม เหรียญทองลอย",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:mine-plate|mountains",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "coin",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "float"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": -350
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "เหมืองทอง + แร่",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S04-03",
+     "kind": "vector",
+     "description": "แว่นขยายส่องหาต้นเหตุ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "magnifier",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ต้องสงสัย",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S04-04",
+     "kind": "vector",
+     "description": "เครื่องหมายคำถามแยกสองทาง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ยังไม่ยืนยัน",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S04-05",
+     "kind": "vector",
+     "description": "หมุดยักษ์ลอยหาที่ปัก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "giant-pin",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "float"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เหมืองไหน?",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "beat": "act3",
+   "era": "present",
+   "vo": "พิษไม่ได้อยู่แค่ในน้ำ [#S05-02] ข้าวแม่สาย [#S05-03] 16 ใน 20 ตัวอย่าง [#S05-04] เกินเกณฑ์ [#S05-05] แล้วทั้งหมดไหลลงโขง",
+   "voTTS": "พิษ… ไม่ได้อยู่แค่ในน้ำ [#S05-02] ข้าวแม่สาย [#S05-03] สิบหก… ในยี่สิบตัวอย่าง [#S05-04] เกินเกณฑ์ [#S05-05] แล้วทั้งหมด… ไหลลงโขง",
+   "voFile": "vo/S05.wav",
+   "shots": [
+    {
+     "id": "S05-01",
+     "kind": "parallax",
+     "description": "ทุ่งนาริมแม่น้ำ ชามข้าวลอยขึ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:rice-plate|paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:rice-bowl|buffet-plate",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 220
+      },
+      "ease": "inOutCubic"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ไม่ใช่แค่ในน้ำ",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S05-02",
+     "kind": "vector",
+     "description": "ชามข้าวกับรวงข้าว",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:rice-bowl|buffet-plate",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "drop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ข้าวแม่สาย",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S05-03",
+     "kind": "data",
+     "description": "ตัวเลข 16 จาก 20 ตัวอย่างนับขึ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 16,
+      "suffix": " ใน 20",
+      "label": "ตัวอย่างข้าวเกินเกณฑ์",
+      "sourceRef": "F-05"
+     }
+    },
+    {
+     "id": "S05-04",
+     "kind": "vector",
+     "description": "ตรายางประทับเตือน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "stamp",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เกินเกณฑ์",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S05-05",
+     "kind": "data",
+     "description": "แผนที่ เส้นแม่น้ำวิ่งลงโขง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        100.0,
+        20.2
+       ],
+       "scale": 5200
+      },
+      "to": {
+       "center": [
+        100.6,
+        19.8
+       ],
+       "scale": 2600
+      },
+      "routes": [
+       {
+        "path": [
+         [
+          99.83,
+          19.91
+         ],
+         [
+          100.14,
+          20.22
+         ],
+         [
+          100.4,
+          20.3
+         ],
+         [
+          101.0,
+          19.9
+         ],
+         [
+          102.1,
+          19.9
+         ]
+        ],
+        "delay": 0.2
+       }
+      ],
+      "pins": [
+       {
+        "at": [
+         100.14,
+         20.22
+        ],
+        "label": "แม่น้ำโขง",
+        "delay": 0.6
+       }
+      ]
+     },
+     "text": [
+      {
+       "content": "ไหลลงโขง",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "beat": "payoff",
+   "era": "present",
+   "vo": "คำตอบที่ถูกสงสัยที่สุด [#S06-02] คือเหมืองต้นน้ำนอกพรมแดน [#S06-03] วันนี้ [#S06-04] ไทยนำไปคุยกับเมียนมา",
+   "voTTS": "คำตอบ… ที่ถูกสงสัยที่สุด [#S06-02] คือเหมืองต้นน้ำ… นอกพรมแดน [#S06-03] วันนี้… [#S06-04] ไทยนำ… ไปคุยกับเมียนมา",
+   "voFile": "vo/S06.wav",
+   "shots": [
+    {
+     "id": "S06-01",
+     "kind": "parallax",
+     "description": "แม่น้ำขุ่นกับแว่นขยาย คำตอบใกล้เข้ามา",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:river-plate|paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "magnifier",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "truck",
+      "from": {
+       "x": -200,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 200,
+       "y": -10,
+       "z": 40
+      },
+      "ease": "inOutCubic"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "คำตอบ",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-02",
+     "kind": "vector",
+     "description": "หมุดยักษ์ปักลงที่ต้นน้ำ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "giant-pin",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "drop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เหมืองต้นน้ำ",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S06-03",
+     "kind": "vector",
+     "description": "ปฏิทินวันนี้",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "12 พ.ย.",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-07"
+      }
+     ]
+    },
+    {
+     "id": "S06-04",
+     "kind": "collage",
+     "description": "เอกสารการเจรจาตัดแปะบนกระดาษ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "document",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "rot": -4,
+       "anim": "slide-up"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไทย–เมียนมา",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-07"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "beat": "outro",
+   "era": "present",
+   "vo": "เพราะแม่น้ำ… [#S07-02] ไม่รู้จักพรมแดน",
+   "voTTS": "เพราะแม่น้ำ… [#S07-02] ไม่รู้จัก… พรมแดน",
+   "voFile": "vo/S07.wav",
+   "shots": [
+    {
+     "id": "S07-01",
+     "kind": "parallax",
+     "description": "แม่น้ำไหลผ่านเมืองชายแดน กล้องถอยออกช้า ๆ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:river-plate|paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:water-glass|water-cup",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "float"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -30,
+       "z": -400
+      },
+      "ease": "inOutCubic"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "แม่น้ำ",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S07-02",
+     "kind": "data",
+     "description": "แผนที่ เส้นแม่น้ำลากข้ามเส้นพรมแดนจากเมียนมาเข้าไทย",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        99.7,
+        20.4
+       ],
+       "scale": 3600
+      },
+      "to": {
+       "center": [
+        99.7,
+        20.4
+       ],
+       "scale": 3200
+      },
+      "routes": [
+       {
+        "path": [
+         [
+          99.4,
+          20.75
+         ],
+         [
+          99.36,
+          20.3
+         ],
+         [
+          99.36,
+          19.98
+         ],
+         [
+          99.83,
+          19.91
+         ]
+        ],
+        "delay": 0.1
+       }
+      ]
+     },
+     "text": [
+      {
+       "content": "ไม่รู้จักพรมแดน",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "covers": [
+  {
+   "id": "A",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "แม่น้ำ\n*สารหนู*",
+   "kicker": "เกินเกณฑ์ราว 25 เท่า",
+   "sourceRef": "F-02",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:river-plate|paper-bg",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:water-glass|water-cup",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "พิษมา\n*จากไหน*",
+   "kicker": "แม่น้ำเชียงราย",
+   "sourceRef": "F-04",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:mine-plate|mountains",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:test-tube|magnifier",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  }
+ ]
+}
