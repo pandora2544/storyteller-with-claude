@@ -1,0 +1,16 @@
+{
+  "images": [
+    {"id": "road-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A quiet two-lane rural asphalt road in Thai countryside running straight between golden harvested rice fields, a wide strip of golden unhusked rice grain spread thinly on the road shoulder to dry in the sun, bright clear sky, distant sugar palm trees, no people, no vehicles, no signs, no text"},
+    {"id": "field-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "Wide golden ripe rice paddy fields at harvest time in Thailand, some rows already cut, small earthen dikes, a few sugar palm trees, warm afternoon sun, no people, no machinery, no text"},
+    {"id": "temple-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A wide open concrete courtyard of a simple rural Thai temple with a generic orange tiled roof hall in the background and shady trees, neat rectangles of golden unhusked rice grain spread out to dry across the courtyard, sunny day, no people, no statues, no text"},
+    {"id": "paddy-pile", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A small mound of golden unhusked rice grains (paddy) with a wooden rake leaning on it, a few tiny water droplets on the grains, rounded friendly shapes"},
+    {"id": "rice-sack", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "Two plain woven white sacks full of rice grain standing side by side, a few golden grains spilling at the base, plain sacks with no printing, rounded friendly shapes"},
+    {"id": "pickup-truck", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A simple cute cartoon pickup truck seen from a three-quarter front view, plain light blue paint, no logo, no license plate text, no driver visible, rounded friendly shapes"}
+  ]
+}
