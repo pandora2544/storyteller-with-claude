@@ -1,0 +1,1331 @@
+{
+ "meta": {
+  "slug": "d-20261114-am",
+  "title": "โดรน 800 ลำ บินไม่ชนกันได้ยังไง",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "targetSec": 60
+ },
+ "sources": {
+  "F-01": "ฐานเศรษฐกิจ · คมชัดลึก (พ.ย. 69)",
+  "F-02": "Verge Aero · Skybrush · Pyrotecnico",
+  "F-03": "Skybrush · Verge Aero",
+  "F-04": "Verge Aero · Pyrotecnico",
+  "F-05": "Verge Aero · Skybrush",
+  "F-06": "Verge Aero · Skybrush",
+  "F-07": "Pyrotecnico · PX4"
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "beat": "hook",
+   "era": "present",
+   "vo": "โดรน 800 ลำ… [#S01-02] บินไม่ชนกันได้ยังไง",
+   "voTTS": "โดรน… แปดร้อยลำ… [#S01-02] บินไม่ชนกัน… ได้ยังไง",
+   "voFile": "vo/S01.wav",
+   "shots": [
+    {
+     "id": "S01-01",
+     "kind": "parallax",
+     "description": "ท้องฟ้ากลางคืน โดรนเรืองแสงเด้งขึ้นกลางจอ กล้องดันเข้าตั้งแต่เฟรมแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:night-sky-plate|sky",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:drone-led|star-burst",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 260
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "800 ลำ",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S01-02",
+     "kind": "data",
+     "description": "ตัวเลขนับขึ้น 800 ลำ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 800,
+      "suffix": " ลำ",
+      "label": "ไม่ชนกันเลย?",
+      "sourceRef": "F-01"
+     }
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "beat": "setup",
+   "era": "present",
+   "vo": "วิจิตรเจ้าพระยา [#S02-02] มีโดรนเหนือวัดอรุณ [#S02-03] แต่บนฟ้า… [#S02-04] ไม่มีใครบังคับทีละลำ",
+   "voTTS": "วิจิตรเจ้าพระยา [#S02-02] มีโดรน… เหนือวัดอรุณ [#S02-03] แต่บนฟ้า… [#S02-04] ไม่มีใคร… บังคับทีละลำ",
+   "voFile": "vo/S02.wav",
+   "shots": [
+    {
+     "id": "S02-01",
+     "kind": "parallax",
+     "description": "แม่น้ำยามค่ำ แสงไฟริมฝั่ง โดรนลอยเหนือน้ำ กล้องแพนข้าง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:river-night-plate|city",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:drone-led|star-burst",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "truck",
+      "from": {
+       "x": -220,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 220,
+       "y": 0,
+       "z": 60
+      },
+      "ease": "inOutCubic"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "วิจิตรเจ้าพระยา",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-02",
+     "kind": "data",
+     "description": "แผนที่ซูมเข้ากรุงเทพฯ ปักหมุดวัดอรุณฯ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        100.8,
+        13.6
+       ],
+       "scale": 2600
+      },
+      "to": {
+       "center": [
+        100.49,
+        13.74
+       ],
+       "scale": 5200
+      },
+      "pins": [
+       {
+        "at": [
+         100.4889,
+         13.7437
+        ],
+        "label": "วัดอรุณฯ"
+       }
+      ],
+      "sourceRef": "F-01"
+     },
+     "text": [
+      {
+       "content": "19.50 น.",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-03",
+     "kind": "vector",
+     "description": "สปอตไลต์ส่องขึ้นฟ้า เวทีว่าง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "spotlight-stage",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "บนฟ้า",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S02-04",
+     "kind": "vector",
+     "description": "มือที่ไม่ได้ถืออะไร แทน 'ไม่มีคนบังคับรายลำ'",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "hand-silhouette",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไม่มีคนบังคับ",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "beat": "act1",
+   "era": "present",
+   "vo": "ทุกท่าวางไว้ล่วงหน้า [#S03-02] แต่ละลำมีเส้นทางของตัวเอง [#S03-03] เหมือนนักเต้นจำท่าตัวเอง [#S03-04] ไม่ต้องคุยกัน",
+   "voTTS": "ทุกท่า… วางไว้ล่วงหน้า [#S03-02] แต่ละลำ… มีเส้นทางของตัวเอง [#S03-03] เหมือนนักเต้น… จำท่าตัวเอง [#S03-04] ไม่ต้อง… คุยกัน",
+   "voFile": "vo/S03.wav",
+   "shots": [
+    {
+     "id": "S03-01",
+     "kind": "collage",
+     "description": "ไทม์ไลน์กระดาษ แทนบทการแสดงที่วางไว้ล่วงหน้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "paper-timeline",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "rot": -4,
+       "anim": "slide-up"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "วางไว้ล่วงหน้า",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S03-02",
+     "kind": "data",
+     "description": "ไอคอนโดรน 10 ตัว แต่ละตัว = 1 เส้นทาง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "unit",
+      "count": 10,
+      "icon": "star-burst",
+      "perIcon": "1 ลำ · 1 เส้นทาง",
+      "label": "แต่ละลำมีบทของตัวเอง",
+      "sourceRef": "F-02"
+     }
+    },
+    {
+     "id": "S03-03",
+     "kind": "vector",
+     "description": "สมุดบท แทนนักเต้นที่จำท่าเต้นของตัวเอง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "notebook",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "จำท่าตัวเอง",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S03-04",
+     "kind": "vector",
+     "description": "สัญญาณถูกขีดฆ่า แทนโดรนไม่สื่อสารกัน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไม่คุยกัน",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "beat": "act2",
+   "era": "present",
+   "vo": "แต่ GPS ทั่วไป [#S04-02] คลาดหลายเมตร [#S04-03] สถานีภาคพื้นจึงช่วยแก้ค่า [#S04-04] เรียกว่า RTK [#S04-05] แม่นเหลือไม่กี่เซนติเมตร",
+   "voTTS": "แต่… จีพีเอส ทั่วไป [#S04-02] คลาด… หลายเมตร [#S04-03] สถานีภาคพื้น… จึงช่วยแก้ค่า [#S04-04] เรียกว่า อาร์ทีเค [#S04-05] แม่นเหลือ… ไม่กี่เซนติเมตร",
+   "voFile": "vo/S04.wav",
+   "shots": [
+    {
+     "id": "S04-01",
+     "kind": "parallax",
+     "description": "ดาวเทียม GPS ลอยในฟ้ากลางคืน กล้องเครนขึ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:night-sky-plate|sky",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:gps-satellite|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "crane",
+      "from": {
+       "x": 0,
+       "y": 150,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -150,
+       "z": 60
+      },
+      "ease": "inOutCubic"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "GPS",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S04-02",
+     "kind": "vector",
+     "description": "ไม้บรรทัดยาว แทนระยะคลาดหลายเมตร",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "ruler",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "คลาดหลายเมตร",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S04-03",
+     "kind": "parallax",
+     "description": "เสาอากาศสถานีภาคพื้นบนลานปล่อยโดรน กล้องดันเข้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:launch-field-plate|sky",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:base-station|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 260
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "สถานีภาคพื้น",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S04-04",
+     "kind": "vector",
+     "description": "ไอคอนสัญญาณส่งค่าแก้",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "RTK",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S04-05",
+     "kind": "collage",
+     "description": "แว่นขยายส่องจุดเล็ก แทนความแม่นระดับเซนติเมตร",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "magnifier",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "rot": 3,
+       "anim": "slide-up"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ระดับเซนติเมตร",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "beat": "act3",
+   "era": "present",
+   "vo": "นาฬิกาดาวเทียม [#S05-02] คลาดไม่ถึงหนึ่งในล้านวินาที [#S05-03] ทุกลำจึงขยับพร้อมกัน [#S05-04] ลำไหนแบตอ่อน [#S05-05] จะลงจอดเอง",
+   "voTTS": "นาฬิกาดาวเทียม [#S05-02] คลาดไม่ถึง… หนึ่งในล้านวินาที [#S05-03] ทุกลำ… จึงขยับพร้อมกัน [#S05-04] ลำไหน… แบตอ่อน [#S05-05] จะลงจอดเอง",
+   "voFile": "vo/S05.wav",
+   "shots": [
+    {
+     "id": "S05-01",
+     "kind": "parallax",
+     "description": "ดาวเทียมในฟ้า กล้องดันเข้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:night-sky-plate|sky",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:gps-satellite|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 260
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "นาฬิกาดาวเทียม",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S05-02",
+     "kind": "data",
+     "description": "ตัวเลขนับขึ้น 1,000,000 แทนหนึ่งในล้านวินาที",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 1000000,
+      "suffix": "",
+      "label": "คลาดไม่ถึง 1 ในล้านวินาที",
+      "sourceRef": "F-05"
+     }
+    },
+    {
+     "id": "S05-03",
+     "kind": "vector",
+     "description": "นาฬิกาเดินพร้อมกัน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "clock",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ออกตัวพร้อมกัน",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S05-04",
+     "kind": "vector",
+     "description": "โดรนลำเดียวไฟอ่อนลง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:drone-led|star-burst",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "bob"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "แบตอ่อน",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-07"
+      }
+     ]
+    },
+    {
+     "id": "S05-05",
+     "kind": "parallax",
+     "description": "โดรนค่อย ๆ ลงจอดบนลานปล่อย",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:launch-field-plate|sky",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:drone-led|star-burst",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "drop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "crane",
+      "from": {
+       "x": 0,
+       "y": 150,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -150,
+       "z": 60
+      },
+      "ease": "inOutCubic"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ลงจอดเอง",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-07"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "beat": "payoff",
+   "era": "present",
+   "vo": "คำตอบคือ ความไม่ชนถูกออกแบบไว้ก่อนบิน [#S06-02] เว้นระยะให้ทุกลำ [#S06-03] บนฟ้า… [#S06-04] แค่บินตามบทให้แม่น",
+   "voTTS": "คำตอบคือ… ความไม่ชน… ถูกออกแบบไว้ก่อนบิน [#S06-02] เว้นระยะ… ให้ทุกลำ [#S06-03] บนฟ้า… [#S06-04] แค่บินตามบท… ให้แม่น",
+   "voFile": "vo/S06.wav",
+   "shots": [
+    {
+     "id": "S06-01",
+     "kind": "vector",
+     "description": "หน้าจอแอปออกแบบเส้นทาง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "app-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ออกแบบก่อนบิน",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    },
+    {
+     "id": "S06-02",
+     "kind": "data",
+     "description": "ไอคอนโดรน 16 ตัวเรียงเว้นระยะเท่ากัน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "unit",
+      "count": 16,
+      "icon": "star-burst",
+      "perIcon": "50 ลำ",
+      "label": "เว้นระยะทุกลำ",
+      "sourceRef": "F-01"
+     }
+    },
+    {
+     "id": "S06-03",
+     "kind": "parallax",
+     "description": "แม่น้ำยามค่ำ โดรนเหนือน้ำ กล้องถอยออกให้เห็นฟ้ากว้าง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:river-night-plate|city",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:drone-led|star-burst",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 200
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -300
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "บนฟ้า",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-04",
+     "kind": "vector",
+     "description": "แสงดาวแตก แทนโดรนบินตามบท",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "star-burst",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -25,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 25,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "บินตามบท",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "beat": "outro",
+   "era": "present",
+   "vo": "800 ลำ 800 บท… [#S07-02] ไม่มีใครชนใคร",
+   "voTTS": "แปดร้อยลำ… แปดร้อยบท… [#S07-02] ไม่มีใคร… ชนใคร",
+   "voFile": "vo/S07.wav",
+   "shots": [
+    {
+     "id": "S07-01",
+     "kind": "data",
+     "description": "ตัวเลขนับขึ้น 800 บท",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 800,
+      "suffix": " บท",
+      "label": "800 ลำ",
+      "sourceRef": "F-01"
+     }
+    },
+    {
+     "id": "S07-02",
+     "kind": "parallax",
+     "description": "ฟ้ากลางคืน โดรนเรืองแสง กล้องถอยออก วนกลับภาพแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:night-sky-plate|sky",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:drone-led|star-burst",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 200
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -300
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ไม่ชนกัน",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "covers": [
+  {
+   "id": "A",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "800 ลำ\n*ไม่ชน*",
+   "kicker": "ไม่มีคนบังคับรายลำ",
+   "sourceRef": "F-01",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:river-night-plate|city",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:drone-led|star-burst",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "แม่นระดับ\n*เซนติเมตร*",
+   "kicker": "โดรนโชว์บินยังไง",
+   "sourceRef": "F-04",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:night-sky-plate|sky",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:gps-satellite|signal-icon",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+  "images": [
+    {"id": "night-sky-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "Deep navy night sky over a calm generic city skyline silhouette far below, a few soft stars, a faint constellation-like pattern of small glowing dots floating in the sky, calm and wondrous mood, no landmarks, no people, no text"},
+    {"id": "river-night-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A wide river at night in a Southeast Asian city, warm lights reflecting on the water, a generic tall Thai-style temple spire silhouette on the far riverbank, a long-tail boat with lights, clusters of tiny glowing dots forming a soft shape in the sky above the river, no people, no logos, no text"},
+    {"id": "launch-field-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "An open grass field at dusk with neat rows of many small quadcopter drones sitting on the ground in a grid, each with a tiny glowing light, purple-blue twilight sky, no people, no logos, no text"},
+    {"id": "drone-led", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single small cute quadcopter drone seen from a three-quarter view, four propellers, a bright glowing round LED light underneath shining warm yellow, rounded friendly shapes, no logo"},
+    {"id": "gps-satellite", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A simple cute navigation satellite with two blue solar panel wings and a small dish antenna, soft signal wave arcs coming from it, rounded friendly shapes, no logo, no flag"},
+    {"id": "base-station", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A small GPS ground reference station: a white dome antenna on a tripod with a small grey box at its base and soft signal wave arcs above, rounded friendly shapes, no logo"}
+  ]
+}
