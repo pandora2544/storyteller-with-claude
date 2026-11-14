@@ -1,0 +1,1332 @@
+{
+ "meta": {
+  "slug": "d-20261115-am",
+  "title": "วิทยุขัดข้อง ทำไมเครื่องบินทั้งสหรัฐต้องจอด",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "targetSec": 60
+ },
+ "sources": {
+  "F-01": "Al Jazeera · The Standard (13–14 พ.ย. 69)",
+  "F-02": "PBS NewsHour · Al Jazeera",
+  "F-03": "Al Jazeera · The Standard · เดลินิวส์",
+  "F-04": "The Standard · PBS NewsHour",
+  "F-05": "เดลินิวส์ · PBS NewsHour",
+  "F-06": "Al Jazeera · The Standard · เดลินิวส์",
+  "F-07": "FAA JO 7110.65",
+  "F-08": "บวท. ผ่าน PPTV · ไทยโพสต์"
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "beat": "hook",
+   "era": "present",
+   "vo": "วิทยุขัดข้อง… [#S01-02] ทำไมเครื่องบินทั้งสหรัฐต้องจอด",
+   "voEn": "Radio trouble… [#S01-02] so why was every plane in America grounded?",
+   "voTTS": "วิทยุ… ขัดข้อง… [#S01-02] ทำไม… เครื่องบินทั้งสหรัฐ… ต้องจอด",
+   "voFile": "vo/S01.wav",
+   "shots": [
+    {
+     "id": "S01-01",
+     "kind": "parallax",
+     "description": "ท้องฟ้ามีเส้นทางบินจาง ๆ หูฟังวิทยุนักบินเด้งขึ้นกลางจอ กล้องดันเข้าตั้งแต่เฟรมแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:sky-routes-plate|sky",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:radio-headset|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop",
+       "rot": 0
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 260
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ATC ขัดข้อง",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S01-02",
+     "kind": "vector",
+     "description": "เครื่องบินโดยสารการ์ตูนจอดนิ่ง ป้ายทั้งประเทศ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:airliner|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "drop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ทั้งประเทศ",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "beat": "setup",
+   "era": "present",
+   "vo": "13 พฤศจิกายน [#S02-02] สหรัฐหยุดเที่ยวบินขาออก [#S02-03] ทั้งประเทศ [#S02-04] กว่าสี่ชั่วโมง",
+   "voEn": "November 13… [#S02-02] the US halted departing flights [#S02-03] nationwide [#S02-04] for more than four hours.",
+   "voTTS": "สิบสาม… พฤศจิกายน [#S02-02] สหรัฐ… หยุดเที่ยวบินขาออก [#S02-03] ทั้งประเทศ [#S02-04] กว่า… สี่ชั่วโมง",
+   "voFile": "vo/S02.wav",
+   "shots": [
+    {
+     "id": "S02-01",
+     "kind": "collage",
+     "description": "ปฏิทินกระดาษบนพื้นกระดาษ วันที่ 13 พ.ย. (เวลาสหรัฐฯ)",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "rot": -3,
+       "anim": "stop-motion"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 0,
+       "y": 20,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 80
+      }
+     },
+     "text": [
+      {
+       "content": "13 พ.ย.",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-02",
+     "kind": "parallax",
+     "description": "ลานจอดสนามบินยามเย็น เครื่องบินจอดเรียง กล้องแพนข้าง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:us-airport-plate|city",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:airliner|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop",
+       "rot": 0
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "truck",
+      "from": {
+       "x": -220,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 220,
+       "y": 0,
+       "z": 60
+      },
+      "ease": "inOutCubic"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "GROUND STOP",
+       "role": "label",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-03",
+     "kind": "data",
+     "description": "แผนที่ซูมเข้าสหรัฐฯ ปักหมุดกลางประเทศ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        -98,
+        39
+       ],
+       "scale": 600
+      },
+      "to": {
+       "center": [
+        -98,
+        39
+       ],
+       "scale": 900
+      },
+      "pins": [
+       {
+        "at": [
+         -98,
+         39
+        ],
+        "label": "หยุดทั้งประเทศ"
+       }
+      ]
+     }
+    },
+    {
+     "id": "S02-04",
+     "kind": "data",
+     "description": "ตัวเลขนับขึ้น 4 ชั่วโมง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 4,
+      "suffix": " ชม.+",
+      "label": "เครื่องบินขาออก",
+      "sourceRef": "F-01"
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "beat": "act1",
+   "era": "present",
+   "vo": "บนฟ้าไม่มีเลนถนน [#S03-02] ผู้ควบคุมการบินคอยเว้นระยะ [#S03-03] สั่งนักบินผ่านวิทยุ [#S03-04] ให้ห่างกันหลายกิโล",
+   "voEn": "There are no lanes in the sky. [#S03-02] Air traffic controllers keep planes apart [#S03-03] by radioing pilots [#S03-04] to stay miles away from each other.",
+   "voTTS": "บนฟ้า… ไม่มีเลนถนน [#S03-02] ผู้ควบคุมการบิน… คอยเว้นระยะ [#S03-03] สั่งนักบิน… ผ่านวิทยุ [#S03-04] ให้ห่างกัน… หลายกิโล",
+   "voFile": "vo/S03.wav",
+   "shots": [
+    {
+     "id": "S03-01",
+     "kind": "parallax",
+     "description": "ฟ้ากว้าง เครื่องบินลอยผ่าน เส้นทางบินจาง ๆ ไม่มีเลน กล้องเครนขึ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:sky-routes-plate|sky",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:airliner|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop",
+       "rot": 0
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "crane",
+      "from": {
+       "x": 0,
+       "y": 150,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -150,
+       "z": 80
+      },
+      "ease": "inOutCubic"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ไม่มีไฟแดง",
+       "role": "label",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S03-02",
+     "kind": "vector",
+     "description": "หอบังคับการบินการ์ตูนเด้งขึ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:atc-tower|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 480,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ATC",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S03-03",
+     "kind": "vector",
+     "description": "หูฟังวิทยุนักบิน คลื่นเสียงเต้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:radio-headset|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "float"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "นักบิน ↔ หอบังคับ",
+       "role": "label",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S03-04",
+     "kind": "data",
+     "description": "กราฟแท่งระยะห่างขั้นต่ำตามคู่มือ FAA",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "bar",
+      "items": [
+       {
+        "label": "ใกล้เรดาร์",
+        "value": 5.6
+       },
+       {
+        "label": "ไกลเรดาร์",
+        "value": 9.3,
+        "highlight": true
+       }
+      ],
+      "unit": "กม.",
+      "title": "ระยะห่างขั้นต่ำ",
+      "sourceRef": "F-07"
+     }
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "beat": "act2",
+   "era": "present",
+   "vo": "ศูนย์ควบคุม 22 แห่ง [#S04-02] สื่อสารขัดข้อง [#S04-03] ลำบนฟ้า… ให้ลงจอด [#S04-04] ลำบนพื้น… [#S04-05] ห้ามขึ้น",
+   "voEn": "22 control centers [#S04-02] had communication trouble. [#S04-03] Planes in the air were told to land… [#S04-04] planes on the ground… [#S04-05] stayed put.",
+   "voTTS": "ศูนย์ควบคุม… ยี่สิบสองแห่ง [#S04-02] สื่อสารขัดข้อง [#S04-03] ลำบนฟ้า… ให้ลงจอด [#S04-04] ลำบนพื้น… [#S04-05] ห้ามขึ้น",
+   "voFile": "vo/S04.wav",
+   "shots": [
+    {
+     "id": "S04-01",
+     "kind": "data",
+     "description": "ไอคอนศูนย์ควบคุม 22 จุด",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "unit",
+      "count": 22,
+      "icon": "signal-icon",
+      "perIcon": "1 ศูนย์",
+      "label": "ศูนย์ควบคุมเส้นทางบิน",
+      "sourceRef": "F-02"
+     }
+    },
+    {
+     "id": "S04-02",
+     "kind": "vector",
+     "description": "ไอคอนสัญญาณกระพริบ ไม่เสถียร",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "bob"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "สัญญาณไม่นิ่ง",
+       "role": "note",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S04-03",
+     "kind": "parallax",
+     "description": "เครื่องบินบนฟ้าค่อย ๆ ลดระดับลงจอด กล้องเครนลง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:sky-routes-plate|sky",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:airliner|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop",
+       "rot": 8
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "crane",
+      "from": {
+       "x": 0,
+       "y": -150,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": 150,
+       "z": 80
+      },
+      "ease": "inOutCubic"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ลงก่อน",
+       "role": "label",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S04-04",
+     "kind": "vector",
+     "description": "เครื่องบินจอดนิ่งบนพื้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:airliner|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "drop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "รอบนพื้น",
+       "role": "label",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S04-05",
+     "kind": "vector",
+     "description": "ตรายางประทับ STOP",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "stamp",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "STOP",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "beat": "act3",
+   "era": "present",
+   "vo": "กระทบกว่าหมื่นเที่ยวบิน [#S05-02] ผู้โดยสารหลายแสนคน [#S05-03] สาเหตุยังสอบสวน [#S05-04] ยังไม่พบว่าถูกแฮก",
+   "voEn": "Over ten thousand flights were hit, [#S05-02] hundreds of thousands of passengers. [#S05-03] The cause is still under investigation, [#S05-04] with no sign of a cyberattack so far.",
+   "voTTS": "กระทบ… กว่าหมื่นเที่ยวบิน [#S05-02] ผู้โดยสาร… หลายแสนคน [#S05-03] สาเหตุ… ยังสอบสวน [#S05-04] ยังไม่พบ… ว่าถูกแฮก",
+   "voFile": "vo/S05.wav",
+   "shots": [
+    {
+     "id": "S05-01",
+     "kind": "data",
+     "description": "ตัวเลขนับขึ้นกว่า 10,000 เที่ยวบิน — data moment ใหญ่",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 10000,
+      "suffix": "+ เที่ยว",
+      "label": "ล่าช้า / ยกเลิก",
+      "sourceRef": "F-03"
+     }
+    },
+    {
+     "id": "S05-02",
+     "kind": "vector",
+     "description": "กลุ่มคนเงาเดินเรียงที่สนามบิน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "walking-group-silhouette",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "หลายแสนคน",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S05-03",
+     "kind": "collage",
+     "description": "แว่นขยายบนกระดาษ กำลังสอบสวน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "magnifier",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "rot": -3,
+       "anim": "stop-motion"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 0,
+       "y": 20,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 80
+      }
+     },
+     "text": [
+      {
+       "content": "กำลังสอบสวน",
+       "role": "note",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    },
+    {
+     "id": "S05-04",
+     "kind": "vector",
+     "description": "เอกสารรายงาน ป้ายยังไม่พบหลักฐานไซเบอร์",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "document",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไม่พบหลักฐานไซเบอร์",
+       "role": "label",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "beat": "payoff",
+   "era": "present",
+   "vo": "คำตอบคือ คุยกันไม่ได้ [#S06-02] ก็เว้นระยะไม่ได้ [#S06-03] จอดไว้ปลอดภัยสุด [#S06-04] ฟ้าไทยวันละราว 2,500 เที่ยว [#S06-05] ก็พึ่งวิทยุเช่นกัน",
+   "voEn": "The answer: if they can't talk, [#S06-02] they can't keep planes apart, [#S06-03] so staying on the ground is safest. [#S06-04] Thai skies see about 2,500 flights a day [#S06-05] and rely on radio too.",
+   "voTTS": "คำตอบคือ… คุยกันไม่ได้ [#S06-02] ก็เว้นระยะไม่ได้ [#S06-03] จอดไว้… ปลอดภัยสุด [#S06-04] ฟ้าไทย… วันละราว… สองพันห้าร้อยเที่ยว [#S06-05] ก็พึ่งวิทยุ… เช่นกัน",
+   "voFile": "vo/S06.wav",
+   "shots": [
+    {
+     "id": "S06-01",
+     "kind": "parallax",
+     "description": "ห้องควบคุมการบินมีจอเรดาร์ หูฟังวิทยุลอยกลางจอ กล้องดันเข้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:control-room-plate|city",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:radio-headset|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop",
+       "rot": 0
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 220
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "คำตอบ",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-02",
+     "kind": "vector",
+     "description": "ไม้บรรทัดวัดระยะ มีเครื่องหมายคำถาม",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "ruler",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ระยะห่าง = ?",
+       "role": "label",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-03",
+     "kind": "parallax",
+     "description": "ลานจอดสนามบิน เครื่องบินจอดปลอดภัย กล้องดึงออก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:us-airport-plate|city",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:airliner|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop",
+       "rot": 0
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -300
+      },
+      "ease": "inOutCubic"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ปลอดภัยไว้ก่อน",
+       "role": "label",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S06-04",
+     "kind": "data",
+     "description": "ตัวเลขนับขึ้น 2,500 เที่ยวต่อวันในฟ้าไทย",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 2500,
+      "suffix": " เที่ยว/วัน",
+      "label": "ฟ้าไทย (บวท.)",
+      "sourceRef": "F-08"
+     }
+    },
+    {
+     "id": "S06-05",
+     "kind": "parallax",
+     "description": "หอบังคับการบินใต้ฟ้ามีเส้นทางบิน กล้องแพนข้าง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:sky-routes-plate|sky",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:atc-tower|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 480,
+       "anim": "pop",
+       "rot": 0
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "truck",
+      "from": {
+       "x": 220,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -220,
+       "y": 0,
+       "z": 60
+      },
+      "ease": "inOutCubic"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ไทยก็เช่นกัน",
+       "role": "label",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-08"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "beat": "outro",
+   "era": "present",
+   "vo": "บนฟ้า… [#S07-02] เสียงวิทยุคือเส้นถนน",
+   "voEn": "Up there… [#S07-02] the radio is the road.",
+   "voTTS": "บนฟ้า… [#S07-02] เสียงวิทยุ… คือเส้นถนน",
+   "voFile": "vo/S07.wav",
+   "shots": [
+    {
+     "id": "S07-01",
+     "kind": "parallax",
+     "description": "เครื่องบินลอยกลางฟ้า กล้องดึงออกเห็นฟ้ากว้าง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:sky-routes-plate|sky",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:airliner|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop",
+       "rot": 0
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -350
+      },
+      "ease": "inOutCubic"
+     },
+     "focus": {
+      "target": "subject"
+     }
+    },
+    {
+     "id": "S07-02",
+     "kind": "vector",
+     "description": "หูฟังวิทยุ คลื่นเสียงเป็นเส้นถนนบนฟ้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:radio-headset|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "float"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เส้นถนนบนฟ้า",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "covers": [
+  {
+   "id": "A",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "หยุดบิน\n*ทั้งประเทศ*",
+   "kicker": "แค่วิทยุขัดข้อง",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:us-airport-plate|city",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:airliner|signal-icon",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 600
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "บนฟ้า\n*ไม่มีเลน*",
+   "kicker": "ใครคุมเครื่องบิน?",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:sky-routes-plate|sky",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:radio-headset|signal-icon",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+  "images": [
+    {"id": "sky-routes-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A wide calm sky at dusk seen from high altitude, soft layered clouds, several faint thin dotted curved lines crossing the sky like invisible flight routes, deep blue to warm orange gradient, no aircraft, no people, no text"},
+    {"id": "us-airport-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A large generic airport apron at sunset, several plain white passenger jets parked in a neat row at the gates, a terminal building with big glass windows, long shadows, calm still mood, no airline logos, no liveries, no people, no flags, no text"},
+    {"id": "control-room-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A dim air traffic control room with rows of desks and glowing round radar screens showing small green dots and lines, soft blue light, empty chairs, no people, no logos, no text"},
+    {"id": "airliner", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single cute plain white passenger jet airplane seen from a three-quarter front view, rounded friendly shapes, simple soft shading, no airline logo, no livery, no flag"},
+    {"id": "atc-tower", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single cute airport air traffic control tower with a glass cab on top and a small radar dish, rounded friendly shapes, simple soft shading, no logo"},
+    {"id": "radio-headset", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A pilot's aviation headset with a boom microphone, soft glowing sound wave arcs coming from the microphone, rounded friendly shapes, simple soft shading, no logo"}
+  ]
+}
