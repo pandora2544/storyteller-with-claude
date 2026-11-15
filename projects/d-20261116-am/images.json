@@ -1,0 +1,14 @@
+{
+  "images": [
+    {"id": "arena-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A large empty modern concert arena stage at night, colorful spotlight beams in purple, pink and gold cutting through light haze, glowing LED stage floor, rows of empty seats fading into darkness, festive song contest mood, no people, no logos, no flags, no text"},
+    {"id": "bkk-night-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A modern tropical Asian city skyline at night beside a wide river, generic glass towers with warm window lights, soft purple and blue sky, gentle reflections on the water, no recognizable landmarks, no logos, no people, no text"},
+    {"id": "stage-mic", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single shiny stage microphone on a slim stand with a few colorful music notes floating around it, rounded friendly shapes, simple soft shading, no logo"},
+    {"id": "vote-phone", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A cute smartphone held upright showing a simple screen with a big glowing heart icon and three small star buttons, tiny sparkles around it, rounded friendly shapes, simple soft shading, no logo, no letters"},
+    {"id": "judges-table", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A long judges' table seen from the front with three empty chairs, three small desk lamps and three blank score cards standing on the table, rounded friendly shapes, simple soft shading, no people, no logo, no letters"}
+  ]
+}

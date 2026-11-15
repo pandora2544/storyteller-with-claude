@@ -1,0 +1,1522 @@
+{
+ "meta": {
+  "slug": "d-20261116-am",
+  "title": "ห้ามโหวตให้ตัวเอง แล้วไทยได้ที่สองมาจากไหน",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "targetSec": 60
+ },
+ "sources": {
+  "F-01": "Thai Examiner · Eurovoix (14–15 พ.ย. 69)",
+  "F-02": "Thai Examiner · Wikipedia",
+  "F-03": "Eurovoix · Malay Mail (AFP)",
+  "F-04": "Aussievision · Thai Examiner",
+  "F-05": "Malay Mail (AFP) · Thai Examiner",
+  "F-06": "Eurovoix · ESCXTRA · Thai Examiner",
+  "F-07": "Eurovoix · Thai Examiner"
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "beat": "hook",
+   "era": "present",
+   "vo": "ห้ามโหวตให้ตัวเอง… [#S01-02] แล้วไทยได้ที่สองมาจากไหน",
+   "voEn": "You can't vote for your own country… [#S01-02] so where did Thailand's second place come from?",
+   "voTTS": "ห้ามโหวต… ให้ตัวเอง… [#S01-02] แล้วไทย… ได้ที่สอง… มาจากไหน",
+   "voFile": "vo/S01.wav",
+   "shots": [
+    {
+     "id": "S01-01",
+     "kind": "parallax",
+     "description": "เวทีคอนเสิร์ตแสงสี มือถือโหวตเด้งขึ้นกลางจอ กล้องดันเข้าตั้งแต่เฟรมแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:arena-plate|spotlight-stage",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:vote-phone|phone-feed",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ห้ามโหวตตัวเอง",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S01-02",
+     "kind": "vector",
+     "description": "ถ้วยรางวัลการ์ตูน ป้าย ไทย อันดับ 2",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "trophy",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "drop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไทย อันดับ 2",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "beat": "setup",
+   "era": "present",
+   "vo": "ยูโรวิชันเอเชีย [#S02-02] ครั้งแรก [#S02-03] จัดที่กรุงเทพฯ 14 พฤศจิกายน [#S02-04] 11 ประเทศแข่งกัน",
+   "voEn": "Eurovision Asia… [#S02-02] the very first one, [#S02-03] held in Bangkok on November 14, [#S02-04] with 11 countries competing.",
+   "voTTS": "ยูโรวิชั่น… เอเชีย [#S02-02] ครั้งแรก [#S02-03] จัดที่… กรุงเทพ… สิบสี่… พฤศจิกายน [#S02-04] สิบเอ็ดประเทศ… แข่งกัน",
+   "voFile": "vo/S02.wav",
+   "shots": [
+    {
+     "id": "S02-01",
+     "kind": "parallax",
+     "description": "เวทีว่างแสงไฟ ไมโครโฟนเวทีกลางจอ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:arena-plate|spotlight-stage",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:stage-mic|spotlight-stage",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "EUROVISION ASIA",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S02-02",
+     "kind": "vector",
+     "description": "ดาวระเบิดแสง ป้าย ครั้งแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "star-burst",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ครั้งแรก",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-03",
+     "kind": "parallax",
+     "description": "เมืองกลางคืนริมแม่น้ำ หมุดยักษ์ปักลง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:bkk-night-plate|city",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "giant-pin",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 360,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "กรุงเทพฯ · 14 พ.ย.",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-04",
+     "kind": "data",
+     "description": "ไอคอนหมุด 11 อัน = 11 ประเทศ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "unit",
+      "count": 11,
+      "icon": "giant-pin",
+      "perIcon": "1 ประเทศ",
+      "label": "ประเทศที่แข่ง",
+      "sourceRef": "F-02"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "beat": "act1",
+   "era": "present",
+   "vo": "คะแนนครึ่งหนึ่งจากกรรมการ [#S03-02] อีกครึ่งจากคนดู [#S03-03] คนดูต้องโหวต [#S03-04] อย่างน้อยสามประเทศ [#S03-05] และห้ามโหวตให้ประเทศตัวเอง",
+   "voEn": "Half the score comes from juries, [#S03-02] half from viewers. [#S03-03] Viewers must vote [#S03-04] for at least three countries, [#S03-05] and never for their own.",
+   "voTTS": "คะแนน… ครึ่งหนึ่ง… จากกรรมการ [#S03-02] อีกครึ่ง… จากคนดู [#S03-03] คนดู… ต้องโหวต [#S03-04] อย่างน้อย… สามประเทศ [#S03-05] และห้ามโหวต… ให้ประเทศตัวเอง",
+   "voFile": "vo/S03.wav",
+   "shots": [
+    {
+     "id": "S03-01",
+     "kind": "vector",
+     "description": "โต๊ะกรรมการว่าง ป้าย กรรมการ 50%",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:judges-table|balance-scale",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "กรรมการ 50%",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    },
+    {
+     "id": "S03-02",
+     "kind": "vector",
+     "description": "มือถือโหวต ป้าย คนดู 50%",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:vote-phone|phone-feed",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "คนดู 50%",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    },
+    {
+     "id": "S03-03",
+     "kind": "vector",
+     "description": "มือหลายมือยกโหวต",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "vote-hands",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "โหวตแบบกระจาย",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S03-04",
+     "kind": "data",
+     "description": "หมุด 3 อัน = ขั้นต่ำ 3 ประเทศ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "unit",
+      "count": 3,
+      "icon": "giant-pin",
+      "perIcon": "1 ประเทศ",
+      "label": "โหวตขั้นต่ำต่อคน",
+      "sourceRef": "F-04"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     }
+    },
+    {
+     "id": "S03-05",
+     "kind": "collage",
+     "description": "ตรายางกระดาษ ป้าย ไทย ✕ ไทย",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "stamp",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 480,
+       "rot": -4,
+       "anim": "stop-motion"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไทย ✕ ไทย",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "beat": "act2",
+   "era": "present",
+   "vo": "ฝั่งกรรมการ [#S04-02] ไทยได้ 62 คะแนน อยู่อันดับสี่ [#S04-03] แต่ฝั่งคนดู [#S04-04] ไทยได้ 108 คะแนน [#S04-05] มากเป็นอันดับสอง",
+   "voEn": "From the juries, [#S04-02] Thailand got 62 points, fourth place. [#S04-03] But from viewers, [#S04-04] Thailand got 108, [#S04-05] the second highest.",
+   "voTTS": "ฝั่งกรรมการ [#S04-02] ไทยได้… หกสิบสองคะแนน… อยู่อันดับสี่ [#S04-03] แต่ฝั่งคนดู [#S04-04] ไทยได้… หนึ่งร้อยแปดคะแนน [#S04-05] มากเป็น… อันดับสอง",
+   "voFile": "vo/S04.wav",
+   "shots": [
+    {
+     "id": "S04-01",
+     "kind": "vector",
+     "description": "โต๊ะกรรมการ ป้าย กรรมการ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:judges-table|balance-scale",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "กรรมการ",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S04-02",
+     "kind": "data",
+     "description": "ตัวเลขนับขึ้น 62",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 62,
+      "suffix": " คะแนน",
+      "label": "กรรมการ · อันดับ 4",
+      "sourceRef": "F-06"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     }
+    },
+    {
+     "id": "S04-03",
+     "kind": "parallax",
+     "description": "เวทีแสงสี มือถือโหวตลอยขึ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:arena-plate|spotlight-stage",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:vote-phone|phone-feed",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "คนดู",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S04-04",
+     "kind": "data",
+     "description": "ตัวเลขนับขึ้น 108",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 108,
+      "suffix": " คะแนน",
+      "label": "คะแนนคนดู",
+      "sourceRef": "F-06"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     }
+    },
+    {
+     "id": "S04-05",
+     "kind": "data",
+     "description": "กราฟแท่งคะแนนคนดู 4 อันดับแรก ไทยไฮไลต์",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "bar",
+      "items": [
+       {
+        "label": "ฟิลิปปินส์",
+        "value": 118
+       },
+       {
+        "label": "ไทย",
+        "value": 108,
+        "highlight": true
+       },
+       {
+        "label": "เวียดนาม",
+        "value": 81
+       },
+       {
+        "label": "ลาว",
+        "value": 78
+       }
+      ],
+      "unit": "คะแนน",
+      "title": "คะแนนคนดู",
+      "sourceRef": "F-06"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "beat": "act3",
+   "era": "present",
+   "vo": "รวมไทยได้ 170 คะแนน [#S05-02] ฟิลิปปินส์ชนะที่ 211 [#S05-03] ไทยนำเวียดนาม [#S05-04] แค่หกคะแนน",
+   "voEn": "In total, Thailand scored 170. [#S05-02] The Philippines won with 211. [#S05-03] Thailand edged Vietnam [#S05-04] by just six points.",
+   "voTTS": "รวม… ไทยได้… หนึ่งร้อยเจ็ดสิบคะแนน [#S05-02] ฟิลิปปินส์… ชนะที่… สองร้อยสิบเอ็ด [#S05-03] ไทย… นำเวียดนาม [#S05-04] แค่… หกคะแนน",
+   "voFile": "vo/S05.wav",
+   "shots": [
+    {
+     "id": "S05-01",
+     "kind": "data",
+     "description": "กราฟแท่งคะแนนรวม 3 อันดับแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "bar",
+      "items": [
+       {
+        "label": "ฟิลิปปินส์",
+        "value": 211
+       },
+       {
+        "label": "ไทย",
+        "value": 170,
+        "highlight": true
+       },
+       {
+        "label": "เวียดนาม",
+        "value": 164
+       }
+      ],
+      "unit": "คะแนน",
+      "title": "คะแนนรวม",
+      "sourceRef": "F-06"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     }
+    },
+    {
+     "id": "S05-02",
+     "kind": "collage",
+     "description": "ถ้วยรางวัลบนกระดาษ ป้าย 211",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "trophy",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 480,
+       "rot": -4,
+       "anim": "stop-motion"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ฟิลิปปินส์ 211",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    },
+    {
+     "id": "S05-03",
+     "kind": "vector",
+     "description": "ตาชั่งเกือบเท่ากัน ป้าย 170 vs 164",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "balance-scale",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "170 vs 164",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    },
+    {
+     "id": "S05-04",
+     "kind": "data",
+     "description": "ตัวเลขนับขึ้น 6",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 6,
+      "suffix": " คะแนน",
+      "label": "ไทยนำเวียดนาม",
+      "sourceRef": "F-06"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "beat": "payoff",
+   "era": "present",
+   "vo": "คำตอบคือ [#S06-02] คะแนนคนดูของไทย [#S06-03] มาจากคนดูอีกสิบประเทศ [#S06-04] กับคนทั่วโลกที่โหวตเข้ามา",
+   "voEn": "The answer: [#S06-02] every viewer point Thailand got [#S06-03] came from the other ten countries [#S06-04] and from voters around the world.",
+   "voTTS": "คำตอบคือ… [#S06-02] คะแนนคนดู… ของไทย [#S06-03] มาจากคนดู… อีกสิบประเทศ [#S06-04] กับคนทั่วโลก… ที่โหวตเข้ามา",
+   "voFile": "vo/S06.wav",
+   "shots": [
+    {
+     "id": "S06-01",
+     "kind": "parallax",
+     "description": "เวที ไมโครโฟน ป้าย คำตอบ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:arena-plate|spotlight-stage",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:stage-mic|spotlight-stage",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "คำตอบ",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-02",
+     "kind": "vector",
+     "description": "มือถือโหวต ป้าย 108 จากคนดู",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:vote-phone|phone-feed",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "108 = ไม่ใช่คนไทย",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S06-03",
+     "kind": "data",
+     "description": "แผนที่เอเชีย เส้นโหวตจาก 10 ประเทศพุ่งเข้ากรุงเทพฯ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        104,
+        24
+       ],
+       "scale": 900
+      },
+      "to": {
+       "center": [
+        104,
+        24
+       ],
+       "scale": 1100
+      },
+      "routes": [
+       {
+        "path": [
+         [
+          121.0,
+          14.6
+         ],
+         [
+          100.5,
+          13.75
+         ]
+        ],
+        "delay": 0.0
+       },
+       {
+        "path": [
+         [
+          105.8,
+          21.0
+         ],
+         [
+          100.5,
+          13.75
+         ]
+        ],
+        "delay": 0.08
+       },
+       {
+        "path": [
+         [
+          101.7,
+          3.1
+         ],
+         [
+          100.5,
+          13.75
+         ]
+        ],
+        "delay": 0.16
+       },
+       {
+        "path": [
+         [
+          102.6,
+          17.97
+         ],
+         [
+          100.5,
+          13.75
+         ]
+        ],
+        "delay": 0.24
+       },
+       {
+        "path": [
+         [
+          104.9,
+          11.55
+         ],
+         [
+          100.5,
+          13.75
+         ]
+        ],
+        "delay": 0.32
+       },
+       {
+        "path": [
+         [
+          127.0,
+          37.57
+         ],
+         [
+          100.5,
+          13.75
+         ]
+        ],
+        "delay": 0.4
+       },
+       {
+        "path": [
+         [
+          106.9,
+          47.9
+         ],
+         [
+          100.5,
+          13.75
+         ]
+        ],
+        "delay": 0.48
+       },
+       {
+        "path": [
+         [
+          85.3,
+          27.7
+         ],
+         [
+          100.5,
+          13.75
+         ]
+        ],
+        "delay": 0.56
+       },
+       {
+        "path": [
+         [
+          89.6,
+          27.47
+         ],
+         [
+          100.5,
+          13.75
+         ]
+        ],
+        "delay": 0.64
+       },
+       {
+        "path": [
+         [
+          90.4,
+          23.8
+         ],
+         [
+          100.5,
+          13.75
+         ]
+        ],
+        "delay": 0.72
+       }
+      ],
+      "pins": [
+       {
+        "at": [
+         100.5,
+         13.75
+        ],
+        "label": "ไทย"
+       }
+      ]
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "อีก 10 ประเทศ",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S06-04",
+     "kind": "vector",
+     "description": "ลูกโลก ป้าย ทั่วโลก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "earth-globe",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "+ ทั่วโลก",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-07"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "beat": "outro",
+   "era": "present",
+   "vo": "เพลงไทยได้ใจคนดู… [#S07-02] ที่ไม่ใช่คนไทยเลย",
+   "voEn": "A Thai song won the hearts of viewers… [#S07-02] none of them Thai.",
+   "voTTS": "เพลงไทย… ได้ใจคนดู… [#S07-02] ที่ไม่ใช่… คนไทยเลย",
+   "voFile": "vo/S07.wav",
+   "shots": [
+    {
+     "id": "S07-01",
+     "kind": "parallax",
+     "description": "เวทีแสงสี ไมโครโฟน กล้องถอยออก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:arena-plate|spotlight-stage",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:stage-mic|spotlight-stage",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 200
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -200
+      },
+      "ease": "inOutCubic"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": []
+    },
+    {
+     "id": "S07-02",
+     "kind": "vector",
+     "description": "หัวใจกับดาว ป้าย ใจคนดู",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "heart-star",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ใจคนดู",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "covers": [
+  {
+   "id": "A",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "ไทยที่ 2\n*ยูโรวิชัน*",
+   "kicker": "โหวตตัวเองไม่ได้",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:arena-plate|spotlight-stage",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:stage-mic|spotlight-stage",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ],
+   "sourceRef": "F-06"
+  },
+  {
+   "id": "B",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "108 คะแนน\n*ใครโหวต?*",
+   "kicker": "ยูโรวิชันเอเชีย",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:arena-plate|spotlight-stage",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:vote-phone|phone-feed",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ],
+   "sourceRef": "F-06"
+  }
+ ]
+}
