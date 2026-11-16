@@ -1,0 +1,1492 @@
+{
+ "meta": {
+  "slug": "d-20261117-am",
+  "title": "เศรษฐกิจไทยโต 2.9% แต่ทำไมเรายังไม่รู้สึก",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "targetSec": 60
+ },
+ "sources": {
+  "F-01": "สภาพัฒน์ ผ่าน กรุงเทพธุรกิจ · Spacebar (16 พ.ย. 69)",
+  "F-02": "สภาพัฒน์ ผ่าน กรุงเทพธุรกิจ · The Standard",
+  "F-03": "สภาพัฒน์ ผ่าน กรุงเทพธุรกิจ · Thai Examiner",
+  "F-04": "KResearch (ฐานเศรษฐกิจ) · Spacebar",
+  "F-05": "สภาพัฒน์ ผ่าน กรุงเทพธุรกิจ · KResearch",
+  "F-06": "สภาพัฒน์ ผ่าน กรุงเทพธุรกิจ · The Standard",
+  "F-07": "KResearch (ฐานเศรษฐกิจ) · Spacebar"
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "beat": "hook",
+   "era": "present",
+   "vo": "เศรษฐกิจไทยโตขึ้น… [#S01-02] แต่ทำไมเราไม่รู้สึก",
+   "voEn": "Thailand's economy just grew… [#S01-02] so why don't we feel it?",
+   "voTTS": "เศรษฐกิจไทย… โตขึ้น… [#S01-02] แต่ทำไม… เราไม่รู้สึก",
+   "voFile": "vo/S01.wav",
+   "shots": [
+    {
+     "id": "S01-01",
+     "kind": "parallax",
+     "description": "โรงงานอิเล็กทรอนิกส์สว่างไสว กองเหรียญเด้งขึ้นกลางจอ กล้องดันเข้าตั้งแต่เฟรมแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:factory-plate|earth-globe",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "coin-stack",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "เศรษฐกิจโต",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S01-02",
+     "kind": "vector",
+     "description": "ป้ายคำถามแยกสองทาง — ตัวเลขดี แต่ชีวิตเหมือนเดิม",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ทำไมไม่รู้สึก?",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "beat": "setup",
+   "era": "present",
+   "vo": "สภาพัฒน์เพิ่งประกาศ [#S02-02] ไตรมาสสามปีนี้ [#S02-03] เศรษฐกิจไทยโต 2.9%",
+   "voEn": "The national planning agency just announced: [#S02-02] in the third quarter this year, [#S02-03] Thailand's economy grew 2.9%.",
+   "voTTS": "สภาพัฒน์… เพิ่งประกาศ [#S02-02] ไตรมาสสาม… ปีนี้ [#S02-03] เศรษฐกิจไทย… โตสองจุดเก้าเปอร์เซ็นต์",
+   "voFile": "vo/S02.wav",
+   "shots": [
+    {
+     "id": "S02-01",
+     "kind": "vector",
+     "description": "สัญญาณประกาศ ป้าย ประกาศ 16 พ.ย.",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ประกาศ 16 พ.ย.",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-02",
+     "kind": "vector",
+     "description": "ปฏิทินพลิกไปไตรมาส 3",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "drop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไตรมาส 3/2569",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-03",
+     "kind": "data",
+     "description": "แผนที่ซูมเข้าไทย หมุดไทย ตัวเลข 2.9% ใหญ่ด้านบน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        105,
+        14
+       ],
+       "scale": 1300
+      },
+      "to": {
+       "center": [
+        101,
+        13.5
+       ],
+       "scale": 2400
+      },
+      "pins": [
+       {
+        "at": [
+         100.5,
+         13.75
+        ],
+        "label": "ไทย",
+        "delay": 0.3
+       }
+      ],
+      "sourceRef": "F-01"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "GDP +2.9%",
+       "role": "number",
+       "x": 540,
+       "y": 280,
+       "sourceRef": "F-01"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "beat": "act1",
+   "era": "present",
+   "vo": "ตัวดันหลักคือส่งออก [#S03-02] โต 23.6% [#S03-03] แรงสุดในรอบกว่าห้าปี [#S03-04] ส่วนใหญ่คือชิป [#S03-05] ที่โลกซื้อไปทำ AI",
+   "voEn": "The main driver was exports, [#S03-02] up 23.6%, [#S03-03] the strongest in over five years. [#S03-04] Mostly chips, [#S03-05] bought by the world for AI.",
+   "voTTS": "ตัวดันหลัก… คือส่งออก [#S03-02] โตยี่สิบสามจุดหกเปอร์เซ็นต์ [#S03-03] แรงสุด… ในรอบกว่าห้าปี [#S03-04] ส่วนใหญ่… คือชิป [#S03-05] ที่โลก… ซื้อไปทำ… เอไอ",
+   "voFile": "vo/S03.wav",
+   "shots": [
+    {
+     "id": "S03-01",
+     "kind": "parallax",
+     "description": "โรงงานอิเล็กทรอนิกส์ ลูกโลกหมุนเด้งขึ้น ป้าย ส่งออก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:factory-plate|earth-globe",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "earth-globe",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ส่งออก",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S03-02",
+     "kind": "data",
+     "description": "แผนที่ เส้นทางส่งออกจากไทยไปสหรัฐฯ ยุโรป เอเชียตะวันออก ตัวเลข +23.6%",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        105,
+        15
+       ],
+       "scale": 700
+      },
+      "to": {
+       "center": [
+        110,
+        20
+       ],
+       "scale": 420
+      },
+      "routes": [
+       {
+        "path": [
+         [
+          100.5,
+          13.75
+         ],
+         [
+          139.7,
+          35.7
+         ]
+        ]
+       },
+       {
+        "path": [
+         [
+          100.5,
+          13.75
+         ],
+         [
+          -118.2,
+          34.0
+         ]
+        ],
+        "delay": 0.3
+       },
+       {
+        "path": [
+         [
+          100.5,
+          13.75
+         ],
+         [
+          4.9,
+          52.4
+         ]
+        ],
+        "delay": 0.6
+       }
+      ],
+      "pins": [
+       {
+        "at": [
+         100.5,
+         13.75
+        ],
+        "label": "ไทย"
+       }
+      ],
+      "sourceRef": "F-02"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "+23.6%",
+       "role": "number",
+       "x": 540,
+       "y": 280,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S03-03",
+     "kind": "data",
+     "description": "ตัวเลขนับขึ้น 5 ปี — แรงสุดในรอบกว่าห้าปี",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 5,
+      "suffix": " ปีกว่า",
+      "label": "ส่งออกโตแรงสุดในรอบ",
+      "sourceRef": "F-02"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     }
+    },
+    {
+     "id": "S03-04",
+     "kind": "vector",
+     "description": "ชิปเรืองแสงเด้งขึ้นกลางจอ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:chip|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ชิป",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S03-05",
+     "kind": "parallax",
+     "description": "โรงงานอิเล็กทรอนิกส์ แขนกล ชิปลอยหน้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:factory-plate|earth-globe",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:chip|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 480,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "AI · ดาต้าเซ็นเตอร์",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "beat": "act2",
+   "era": "present",
+   "vo": "ลงทุนเครื่องจักรก็พุ่ง 20.5% [#S04-02] แต่พึ่งของนำเข้าเป็นหลัก [#S04-03] นักวิเคราะห์มองว่า [#S04-04] เงินส่วนหนึ่ง [#S04-05] จึงไหลออกนอกประเทศ",
+   "voEn": "Machinery investment jumped 20.5%… [#S04-02] but it relies mostly on imports. [#S04-03] Analysts say [#S04-04] part of that money [#S04-05] flows out of the country.",
+   "voTTS": "ลงทุน… เครื่องจักร… ก็พุ่ง… ยี่สิบจุดห้าเปอร์เซ็นต์ [#S04-02] แต่พึ่ง… ของนำเข้า… เป็นหลัก [#S04-03] นักวิเคราะห์… มองว่า [#S04-04] เงินส่วนหนึ่ง… [#S04-05] จึงไหลออก… นอกประเทศ",
+   "voFile": "vo/S04.wav",
+   "shots": [
+    {
+     "id": "S04-01",
+     "kind": "vector",
+     "description": "แขนกลเครื่องจักรเด้งขึ้น ตัวเลข +20.5%",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:robot-arm|balance-scale",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เครื่องจักร +20.5%",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    },
+    {
+     "id": "S04-02",
+     "kind": "collage",
+     "description": "กล่องพัสดุติดป้ายนำเข้า ตรายางประทับ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "stamp",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 480,
+       "rot": -4,
+       "anim": "stop-motion"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "นำเข้า",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S04-03",
+     "kind": "vector",
+     "description": "แว่นขยายส่องตัวเลข — มุมมองนักวิเคราะห์",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "magnifier",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "นักวิเคราะห์มองว่า",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S04-04",
+     "kind": "vector",
+     "description": "กองเหรียญ — เงินลงทุนก้อนหนึ่ง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "coin-stack",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "drop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เงินลงทุน",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S04-05",
+     "kind": "data",
+     "description": "แผนที่ เส้นเงินไหลจากไทยออกไปต่างประเทศ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        110,
+        20
+       ],
+       "scale": 600
+      },
+      "to": {
+       "center": [
+        115,
+        25
+       ],
+       "scale": 450
+      },
+      "routes": [
+       {
+        "path": [
+         [
+          100.5,
+          13.75
+         ],
+         [
+          139.7,
+          35.7
+         ]
+        ]
+       },
+       {
+        "path": [
+         [
+          100.5,
+          13.75
+         ],
+         [
+          121.5,
+          25.0
+         ]
+        ],
+        "delay": 0.3
+       },
+       {
+        "path": [
+         [
+          100.5,
+          13.75
+         ],
+         [
+          -118.2,
+          34.0
+         ]
+        ],
+        "delay": 0.6
+       }
+      ],
+      "pins": [
+       {
+        "at": [
+         100.5,
+         13.75
+        ],
+        "label": "ไทย"
+       }
+      ],
+      "sourceRef": "F-04"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เงินไหลออก",
+       "role": "kicker",
+       "x": 540,
+       "y": 280,
+       "sourceRef": "F-04"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "beat": "act3",
+   "era": "present",
+   "vo": "ส่วนฝั่งครัวเรือน [#S05-02] ใช้จ่ายโตแค่ 2.5% [#S05-03] นักท่องเที่ยวต่างชาติ [#S05-04] ยังลดลง 5%",
+   "voEn": "Meanwhile, households… [#S05-02] spending grew just 2.5%. [#S05-03] Foreign tourists… [#S05-04] actually fell 5%.",
+   "voTTS": "ส่วนฝั่ง… ครัวเรือน [#S05-02] ใช้จ่าย… โตแค่… สองจุดห้าเปอร์เซ็นต์ [#S05-03] นักท่องเที่ยว… ต่างชาติ [#S05-04] ยังลดลง… ห้าเปอร์เซ็นต์",
+   "voFile": "vo/S05.wav",
+   "shots": [
+    {
+     "id": "S05-01",
+     "kind": "parallax",
+     "description": "ตลาดเช้าเงียบ ๆ ตะกร้าจ่ายตลาดกลางจอ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:market-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:basket|price-tag",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ครัวเรือน",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S05-02",
+     "kind": "vector",
+     "description": "เหรียญกองเล็กขยับนิดเดียว ตัวเลข +2.5%",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "coin-stack",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ใช้จ่าย +2.5%",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S05-03",
+     "kind": "parallax",
+     "description": "ตลาดว่าง กระเป๋าเดินทางลอยเข้ามา",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:market-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:suitcase|price-tag",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "slide-left"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "นักท่องเที่ยวต่างชาติ",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S05-04",
+     "kind": "data",
+     "description": "ตัวเลขนับขึ้น 5% ลดลง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 5,
+      "suffix": "% ลดลง",
+      "label": "นักท่องเที่ยวต่างชาติ ไตรมาส 3",
+      "sourceRef": "F-06"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "beat": "payoff",
+   "era": "present",
+   "vo": "คำตอบคือ [#S06-02] นักวิเคราะห์เรียกว่าโตแบบรูปตัว K [#S06-03] สายเทคพุ่งขึ้น [#S06-04] แต่ครัวเรือนยังฟื้นช้า",
+   "voEn": "The answer: [#S06-02] analysts call it a K-shaped recovery. [#S06-03] Tech shoots up, [#S06-04] while households recover slowly.",
+   "voTTS": "คำตอบคือ… [#S06-02] นักวิเคราะห์… เรียกว่า… โตแบบรูปตัวเค [#S06-03] สายเทค… พุ่งขึ้น [#S06-04] แต่ครัวเรือน… ยังฟื้นช้า",
+   "voFile": "vo/S06.wav",
+   "shots": [
+    {
+     "id": "S06-01",
+     "kind": "vector",
+     "description": "ดาวระเบิดแสง ป้าย คำตอบ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "star-burst",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "คำตอบคือ",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-02",
+     "kind": "collage",
+     "description": "ลูกศรกระดาษสองเส้นแยกทางเป็นรูปตัว K",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "arrow",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 480,
+       "rot": 0,
+       "anim": "stop-motion"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "รูปตัว K",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-07"
+      }
+     ]
+    },
+    {
+     "id": "S06-03",
+     "kind": "vector",
+     "description": "ชิปพุ่งขึ้น ลูกศรขึ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:chip|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "slide-up"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "สายเทค ↑",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-07"
+      }
+     ]
+    },
+    {
+     "id": "S06-04",
+     "kind": "vector",
+     "description": "ตะกร้าจ่ายตลาดลอยต่ำ ลูกศรช้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:basket|price-tag",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "float"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ครัวเรือน → ช้า",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-07"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "beat": "outro",
+   "era": "present",
+   "vo": "ตัวเลขโตแล้ว… [#S07-02] แต่ยังมาไม่ถึงเรา",
+   "voEn": "The numbers have grown… [#S07-02] they just haven't reached us yet.",
+   "voTTS": "ตัวเลข… โตแล้ว… [#S07-02] แต่ยัง… มาไม่ถึงเรา",
+   "voFile": "vo/S07.wav",
+   "shots": [
+    {
+     "id": "S07-01",
+     "kind": "vector",
+     "description": "กองเหรียญสูงขึ้นไกล ๆ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "coin-stack",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ตัวเลขโตแล้ว",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S07-02",
+     "kind": "parallax",
+     "description": "ตลาดเช้า ตะกร้าลอยอยู่กลางจอ กล้องดันเข้า วนกลับประโยคแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:market-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:basket|price-tag",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ถึงเราเมื่อไร?",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "covers": [
+  {
+   "id": "A",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "โต 2.9%\n*ไม่รู้สึก?*",
+   "kicker": "GDP ไตรมาส 3",
+   "sourceRef": "F-01",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:market-plate|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:basket|price-tag",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "ชิปโต\n*เราโตช้า*",
+   "kicker": "เศรษฐกิจรูปตัว K",
+   "sourceRef": "F-07",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:factory-plate|earth-globe",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:chip|signal-icon",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  }
+ ]
+}

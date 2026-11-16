@@ -1,0 +1,16 @@
+{
+  "images": [
+    {"id": "factory-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A bright clean modern electronics factory interior, long assembly lines with small robotic arms placing tiny components on green circuit boards, soft blue and teal lighting, glowing indicator lights, depth fading into the background, no people, no logos, no text"},
+    {"id": "market-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A quiet tropical Southeast Asian morning street market, rows of simple stalls with colorful awnings, baskets of vegetables and fruit, warm soft morning light, gentle haze, calm and slightly empty mood, no people, no logos, no flags, no text"},
+    {"id": "chip", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single square computer microchip seen at a slight angle, dark body with shiny metal pins on all sides, glowing teal circuit lines on top, small sparkles, rounded friendly shapes, simple soft shading, no logo, no letters"},
+    {"id": "robot-arm", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single orange industrial robotic arm on a round base, bent elegantly holding a small circuit board, rounded friendly shapes, simple soft shading, no logo, no letters"},
+    {"id": "basket", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A woven market shopping basket with a few vegetables, a bunch of bananas and a small paper bag inside, rounded friendly shapes, simple soft shading, no logo, no letters"},
+    {"id": "suitcase", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single rolling travel suitcase in turquoise with a few blank luggage tags and a sun hat resting on top, rounded friendly shapes, simple soft shading, no logo, no letters"}
+  ]
+}
