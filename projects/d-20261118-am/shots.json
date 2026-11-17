@@ -1,0 +1,1443 @@
+{
+ "meta": {
+  "slug": "d-20261118-am",
+  "title": "ชิป AI จะมาไทย ทำไมต้องรอสหรัฐฯ อนุญาต",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "targetSec": 60
+ },
+ "sources": {
+  "F-01": "กระทรวงพาณิชย์สหรัฐฯ (BIS) ผ่าน Nixon Peabody · สยามรัฐ (16–17 พ.ย. 69)",
+  "F-02": "BIS ผ่าน Nixon Peabody · Reuters/Business Today",
+  "F-03": "BIS ผ่าน Nixon Peabody · สยามรัฐ · โพสต์ทูเดย์",
+  "F-04": "BIS ผ่าน Nixon Peabody · Reuters/Business Today",
+  "F-05": "BOI ผ่าน InfoQuest (26 ต.ค. 69) · Business Today",
+  "F-06": "Reuters/Business Today · โพสต์ทูเดย์"
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "beat": "hook",
+   "era": "present",
+   "vo": "ชิป AI จะมาไทย… [#S01-02] ทำไมต้องรอสหรัฐฯ อนุญาต",
+   "voEn": "AI chips headed to Thailand… [#S01-02] why do they need America's permission?",
+   "voTTS": "ชิป… เอไอ… จะมาไทย… [#S01-02] ทำไมต้องรอ… สหรัฐ… อนุญาต",
+   "voFile": "vo/S01.wav",
+   "shots": [
+    {
+     "id": "S01-01",
+     "kind": "parallax",
+     "description": "ดาต้าเซ็นเตอร์ ชิป AI เด้งขึ้นกลางจอ กล้องดันเข้าตั้งแต่เฟรมแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:datacenter-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:ai-chip|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ชิป AI → ไทย",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S01-02",
+     "kind": "vector",
+     "description": "ป้ายคำถามแยกสองทาง — ต้องรอใครอนุญาต",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "รอใครอนุญาต?",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "beat": "setup",
+   "era": "present",
+   "vo": "สหรัฐฯ เพิ่งออกกฎใหม่ [#S02-02] ไทยติด 1 ใน 5 ประเทศ [#S02-03] ต้องขออนุญาตก่อน",
+   "voEn": "The US just issued a new rule. [#S02-02] Thailand is one of five countries [#S02-03] that now need a license first.",
+   "voTTS": "สหรัฐ… เพิ่งออกกฎใหม่ [#S02-02] ไทยติด… หนึ่งในห้าประเทศ [#S02-03] ต้องขออนุญาต… ก่อน",
+   "voFile": "vo/S02.wav",
+   "shots": [
+    {
+     "id": "S02-01",
+     "kind": "vector",
+     "description": "สัญญาณประกาศ กฎใหม่จากสหรัฐฯ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "กฎใหม่ 16 พ.ย.",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-02",
+     "kind": "data",
+     "description": "แผนที่อาเซียน หมุด 4 ประเทศเด้งทีละจุด (บราซิลบอกด้วยข้อความ)",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        104,
+        8
+       ],
+       "scale": 1400
+      },
+      "to": {
+       "center": [
+        104,
+        6
+       ],
+       "scale": 1700
+      },
+      "pins": [
+       {
+        "at": [
+         100.5,
+         13.75
+        ],
+        "label": "ไทย",
+        "delay": 0.0
+       },
+       {
+        "at": [
+         101.7,
+         3.1
+        ],
+        "label": "มาเลเซีย",
+        "delay": 0.15
+       },
+       {
+        "at": [
+         103.8,
+         1.35
+        ],
+        "label": "สิงคโปร์",
+        "delay": 0.3
+       },
+       {
+        "at": [
+         106.8,
+         -6.2
+        ],
+        "label": "อินโดนีเซีย",
+        "delay": 0.44999999999999996
+       }
+      ],
+      "sourceRef": "F-02"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "5 ประเทศ (+บราซิล)",
+       "role": "number",
+       "x": 540,
+       "y": 280,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S02-03",
+     "kind": "collage",
+     "description": "เอกสารใบอนุญาตแปะบนกระดาษ ตรายางกระแทก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:license-doc|balance-scale",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "rot": -3,
+       "anim": "stop-motion"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ต้องขออนุญาต",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "beat": "act1",
+   "era": "present",
+   "vo": "จีนถูกจำกัดซื้อชิปรุ่นแรงอยู่แล้ว [#S03-02] ทว่าชิปไม่ต้องไปจีน [#S03-03] แค่อยู่ดาต้าเซ็นเตอร์ประเทศอื่น [#S03-04] แล้วเช่าผ่านเน็ต",
+   "voEn": "China is already restricted from buying top AI chips. [#S03-02] But the chips don't have to go to China. [#S03-03] They can sit in a data center elsewhere [#S03-04] and be rented over the internet.",
+   "voTTS": "จีน… ถูกจำกัด… ซื้อชิปรุ่นแรง… อยู่แล้ว [#S03-02] ทว่า… ชิปไม่ต้องไปจีน [#S03-03] แค่อยู่… ดาต้าเซ็นเตอร์… ประเทศอื่น [#S03-04] แล้วเช่า… ผ่านเน็ต",
+   "voFile": "vo/S03.wav",
+   "shots": [
+    {
+     "id": "S03-01",
+     "kind": "vector",
+     "description": "ชิป AI ลอยอยู่ ป้าย จีนถูกจำกัด",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:ai-chip|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "จีน: ถูกจำกัดซื้อ",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    },
+    {
+     "id": "S03-02",
+     "kind": "data",
+     "description": "แผนที่เอเชีย หมุดจีนกับไทย ไม่มีเส้นส่งของ — ชิปอยู่ที่เดิม",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        108,
+        22
+       ],
+       "scale": 700
+      },
+      "to": {
+       "center": [
+        106,
+        20
+       ],
+       "scale": 800
+      },
+      "pins": [
+       {
+        "at": [
+         116.4,
+         39.9
+        ],
+        "label": "จีน"
+       },
+       {
+        "at": [
+         100.5,
+         13.75
+        ],
+        "label": "ไทย",
+        "delay": 0.3
+       }
+      ],
+      "sourceRef": "F-03"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ชิปไม่ต้องย้าย",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    },
+    {
+     "id": "S03-03",
+     "kind": "parallax",
+     "description": "ทางเดินดาต้าเซ็นเตอร์ ตู้เซิร์ฟเวอร์ลอยเด่น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:datacenter-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:server-rack|phone-feed",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ดาต้าเซ็นเตอร์",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S03-04",
+     "kind": "vector",
+     "description": "สัญญาณเน็ตส่งออกไปไกล — เช่าใช้ระยะไกล",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เช่าผ่านเน็ต",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "beat": "act2",
+   "era": "present",
+   "vo": "เหมือนห้ามขายรถ… [#S04-02] แต่ยังเช่าได้ [#S04-03] กฎใหม่จึงให้ดาต้าเซ็นเตอร์ [#S04-04] ที่บริษัทจีนเช่าเยอะ [#S04-05] ขอใบอนุญาตใน 90 วัน",
+   "voEn": "Like banning car sales… [#S04-02] but still allowing rentals. [#S04-03] So the new rule says data centers [#S04-04] renting heavily to Chinese firms [#S04-05] must get a license within 90 days.",
+   "voTTS": "เหมือน… ห้ามขายรถ… [#S04-02] แต่ยัง… เช่าได้ [#S04-03] กฎใหม่… จึงให้ดาต้าเซ็นเตอร์ [#S04-04] ที่บริษัทจีน… เช่าเยอะ [#S04-05] ขอใบอนุญาต… ในเก้าสิบวัน",
+   "voFile": "vo/S04.wav",
+   "shots": [
+    {
+     "id": "S04-01",
+     "kind": "vector",
+     "description": "รถการ์ตูนกับป้ายราคาขีดฆ่า — ห้ามขาย",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:rental-car|price-tag",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "drop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ห้ามขาย",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S04-02",
+     "kind": "vector",
+     "description": "รถคันเดิมเด้งเบา ๆ — แต่เช่าได้",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:rental-car|price-tag",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "bob"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "แต่เช่าได้",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S04-03",
+     "kind": "parallax",
+     "description": "ดาต้าเซ็นเตอร์ ตู้เซิร์ฟเวอร์ กล้องถอยออก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:datacenter-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:server-rack|phone-feed",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": -20,
+       "z": 200
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -200
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "กฎใหม่",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S04-04",
+     "kind": "collage",
+     "description": "ตู้เซิร์ฟเวอร์แปะบนกระดาษ ปากกาแดงวง — ลูกค้าจีนจำนวนมาก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:server-rack|phone-feed",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "rot": -3,
+       "anim": "stop-motion"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ลูกค้าจีนจำนวนมาก",
+       "role": "label",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S04-05",
+     "kind": "data",
+     "description": "ตัวนับวันขึ้นถึง 90",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 90,
+      "suffix": " วัน",
+      "label": "ต้องขอใบอนุญาตภายใน",
+      "sourceRef": "F-04"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": []
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "beat": "act3",
+   "era": "present",
+   "vo": "ไทยเกี่ยวยังไง [#S05-02] ปีนี้ธุรกิจดิจิทัล [#S05-03] ยื่น BOI แล้ว [#S05-04] กว่า 1.17 ล้านล้านบาท [#S05-05] แต่ต้นทุนอาจเพิ่ม",
+   "voEn": "Why does Thailand care? [#S05-02] This year, digital businesses [#S05-03] have filed BOI applications [#S05-04] worth over 1.17 trillion baht. [#S05-05] Now their costs may rise.",
+   "voTTS": "ไทย… เกี่ยวยังไง [#S05-02] ปีนี้… ธุรกิจดิจิทัล [#S05-03] ยื่นบีโอไอแล้ว [#S05-04] กว่า… หนึ่งจุดหนึ่งเจ็ด… ล้านล้านบาท [#S05-05] แต่ต้นทุน… อาจเพิ่ม",
+   "voFile": "vo/S05.wav",
+   "shots": [
+    {
+     "id": "S05-01",
+     "kind": "data",
+     "description": "แผนที่ซูมเข้าไทย หมุดไทย",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        104,
+        10
+       ],
+       "scale": 1400
+      },
+      "to": {
+       "center": [
+        101,
+        13.5
+       ],
+       "scale": 2600
+      },
+      "pins": [
+       {
+        "at": [
+         100.5,
+         13.75
+        ],
+        "label": "ไทย",
+        "delay": 0.2
+       }
+      ],
+      "sourceRef": "F-05"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไทยล่ะ?",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S05-02",
+     "kind": "parallax",
+     "description": "เมืองยามค่ำ ตู้เซิร์ฟเวอร์ลอยหน้าเมือง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:city-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:server-rack|phone-feed",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ธุรกิจดิจิทัล",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S05-03",
+     "kind": "collage",
+     "description": "กองเหรียญแปะบนกระดาษ ป้ายยื่น BOI",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "coin-stack",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "rot": -3,
+       "anim": "stop-motion"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ยื่น BOI ม.ค.–ก.ย.",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S05-04",
+     "kind": "data",
+     "description": "ตัวนับมูลค่ายื่นขอส่งเสริม 1,170,000 ล้านบาท",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 1170000,
+      "suffix": " ล้านบาท",
+      "label": "ยอดยื่นขอ ไม่ใช่เงินลงทุนจริง",
+      "sourceRef": "F-05"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": []
+    },
+    {
+     "id": "S05-05",
+     "kind": "vector",
+     "description": "ป้ายราคาเด้งขึ้น — ต้นทุนอาจเพิ่ม",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "price-tag",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ต้นทุนอาจเพิ่ม",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "beat": "payoff",
+   "era": "present",
+   "vo": "คำตอบคือ [#S06-02] สหรัฐฯ ไม่ได้ห้ามขาย [#S06-03] แต่อยากรู้… [#S06-04] ว่าใครใช้ชิป",
+   "voEn": "The answer: [#S06-02] the US isn't banning sales. [#S06-03] It wants to know… [#S06-04] who is using the chips.",
+   "voTTS": "คำตอบคือ… [#S06-02] สหรัฐ… ไม่ได้ห้ามขาย [#S06-03] แต่อยากรู้… [#S06-04] ว่าใคร… ใช้ชิป",
+   "voFile": "vo/S06.wav",
+   "shots": [
+    {
+     "id": "S06-01",
+     "kind": "vector",
+     "description": "ตาชั่ง — คำตอบ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "balance-scale",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "คำตอบคือ…",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-02",
+     "kind": "vector",
+     "description": "ชิป AI เด้งขึ้น ไม่ได้ห้ามขาย",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:ai-chip|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไม่ได้ห้ามขาย",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S06-03",
+     "kind": "vector",
+     "description": "สปอตไลต์ส่องเวทีว่าง — อยากรู้",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "spotlight-stage",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "อยากรู้…",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-04",
+     "kind": "parallax",
+     "description": "ดาต้าเซ็นเตอร์ ชิปกลางจอ กล้องดันเข้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:datacenter-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:ai-chip|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ใครใช้ชิป?",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "beat": "outro",
+   "era": "present",
+   "vo": "ที่ถูกจับตาไม่ใช่ชิป… [#S07-02] แต่คือคนเช่า",
+   "voEn": "What's being watched isn't the chip… [#S07-02] it's who rents it.",
+   "voTTS": "ที่ถูกจับตา… ไม่ใช่ชิป… [#S07-02] แต่คือ… คนเช่า",
+   "voFile": "vo/S07.wav",
+   "shots": [
+    {
+     "id": "S07-01",
+     "kind": "vector",
+     "description": "ชิปเดี่ยวกลางจอ หมุนเบา ๆ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:ai-chip|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "float"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไม่ใช่ชิป…",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S07-02",
+     "kind": "parallax",
+     "description": "เมืองยามค่ำ รถเช่าลอยหน้าเมือง กล้องถอยออก ปิดเรื่อง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:city-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:rental-car|price-tag",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": -20,
+       "z": 200
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -200
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "แต่คือคนเช่า",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "covers": [
+  {
+   "id": "A",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "ไทยติด\n*1 ใน 5*",
+   "kicker": "ชิป AI ต้องขออนุญาต",
+   "sourceRef": "F-02",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:datacenter-plate|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:ai-chip|signal-icon",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "ห้ามขาย\n*แต่เช่าได้?*",
+   "kicker": "กฎชิปสหรัฐฯ",
+   "sourceRef": "F-03",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:city-plate|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:rental-car|price-tag",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  }
+ ]
+}

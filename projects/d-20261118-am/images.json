@@ -1,0 +1,16 @@
+{
+  "images": [
+    {"id": "datacenter-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A long clean data center aisle seen in perspective, tall rows of server racks on both sides with small glowing teal and blue indicator lights, cool dark blue lighting, soft haze fading into the distance, no people, no logos, no text"},
+    {"id": "city-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A generic tropical Southeast Asian city skyline at dusk, simple modern towers with warm lit windows, a few palm trees in the foreground, deep blue sky with soft purple glow, calm mood, no famous landmarks, no people, no logos, no flags, no text"},
+    {"id": "ai-chip", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single large square AI processor chip seen at a slight angle, dark body with shiny metal pins on all sides, glowing yellow and teal circuit lines on top, small sparkles, rounded friendly shapes, simple soft shading, no logo, no letters"},
+    {"id": "server-rack", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single tall dark blue server rack cabinet with stacked server units, small glowing teal indicator lights and tidy cables, rounded friendly shapes, simple soft shading, no logo, no letters"},
+    {"id": "rental-car", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A small cute rounded orange hatchback car seen from a three-quarter front angle, with a large blank key tag hanging from a key ring floating above its roof, rounded friendly shapes, simple soft shading, no logo, no letters, no license plate text"},
+    {"id": "license-doc", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single official-looking paper document with blank lines, a round red rubber stamp mark and a small ribbon seal in the corner, slightly tilted, rounded friendly shapes, simple soft shading, no letters, no symbols, no flag"}
+  ]
+}

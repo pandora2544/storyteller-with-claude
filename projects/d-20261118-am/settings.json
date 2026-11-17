@@ -1,0 +1,13 @@
+{
+  "format": "portrait-9x16",
+  "style": "shorts-punch",
+  "voice": "doc-narrator-female",
+  "targetSec": 60,
+  "subtitles": "th",
+  "overrides": {
+    "voice": {
+      "charsPerSec": 7.6,
+      "calibrated": "วัดจากคลิปเขาเหมน 2026-09-30: บท 563 ตัวอักษร → คลิปจริง 1:18"
+    }
+  }
+}
