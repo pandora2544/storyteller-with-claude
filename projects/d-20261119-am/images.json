@@ -1,0 +1,16 @@
+{
+  "images": [
+    {"id": "office-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A cozy generic open office at early evening, simple desks with laptops and potted plants, large windows showing a soft blue city sky, warm desk lamps, calm mood, no people, no logos, no text"},
+    {"id": "chamber-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A generic modern parliament meeting hall seen from the back rows, curved rows of empty seats with small desk microphones facing a raised podium, warm wood and deep blue tones, soft light, no people, no flags, no emblems, no logos, no text"},
+    {"id": "flood-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A gentle cartoon small town street partly covered by calm flood water after heavy rain, simple low houses, rain clouds clearing with a hint of sunlight, muted blue and teal tones, hopeful mood, no people, no animals, no logos, no text"},
+    {"id": "savings-jar", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single large clear glass savings jar filled with shiny gold coins, a few coins dropping in from above, a small round clock tag tied to its neck with a ribbon, rounded friendly shapes, simple soft shading, no logo, no letters"},
+    {"id": "payslip", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single paper pay slip with blank lines, a small stack of gold coins next to it with one coin being lifted away by a little arrow, slightly tilted, rounded friendly shapes, simple soft shading, no letters, no numbers, no logo"},
+    {"id": "umbrella", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single big open teal umbrella sheltering a small glass jar of gold coins underneath, a few rain drops bouncing off the top, rounded friendly shapes, simple soft shading, no logo, no letters"}
+  ]
+}

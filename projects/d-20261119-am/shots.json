@@ -1,0 +1,1404 @@
+{
+ "meta": {
+  "slug": "d-20261119-am",
+  "title": "เงินประกันสังคม ดึงมาใช้ก่อนได้ไหม",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "targetSec": 60
+ },
+ "sources": {
+  "F-01": "สภาผู้แทนฯ 18 พ.ย. 69 ผ่าน Thai PBS · สยามรัฐ",
+  "F-02": "ครม./สปส. ผ่าน InfoQuest · ไทยรัฐ",
+  "F-03": "The Standard · สยามรัฐ (18 พ.ย. 69)",
+  "F-04": "สยามรัฐ · ผู้จัดการออนไลน์",
+  "F-05": "ร่าง ครม. ผ่าน The Standard · ผู้จัดการ · สยามรัฐ",
+  "F-06": "Thai PBS · สยามรัฐ (18 พ.ย. 69)"
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "beat": "hook",
+   "era": "present",
+   "vo": "เงินประกันสังคมที่โดนหัก… [#S01-02] ดึงมาใช้ก่อนได้ไหม",
+   "voEn": "The social security money taken from our pay… [#S01-02] can we use it early?",
+   "voTTS": "เงินประกันสังคม… ที่โดนหัก… [#S01-02] ดึงมาใช้ก่อน… ได้ไหม",
+   "voFile": "vo/S01.wav",
+   "shots": [
+    {
+     "id": "S01-01",
+     "kind": "parallax",
+     "description": "โถเก็บเงินออม เหรียญหล่นลงตั้งแต่เฟรมแรก บนฉากออฟฟิศ กล้องดันเข้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:office-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:savings-jar|coin-stack",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "หักทุกเดือน",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S01-02",
+     "kind": "vector",
+     "description": "ป้ายคำถามแยกสองทาง — ใช้ก่อนได้ไหม",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ใช้ก่อนได้ไหม?",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "beat": "setup",
+   "era": "present",
+   "vo": "สภาเพิ่งรับหลักการ [#S02-02] ร่างประกันสังคม 4 ฉบับ [#S02-03] ไม่มีเสียงค้าน [#S02-04] แตะเงินเราด้วย",
+   "voEn": "Parliament just passed in principle [#S02-02] four social security bills [#S02-03] with no votes against. [#S02-04] And they touch our money.",
+   "voTTS": "สภา… เพิ่งรับหลักการ [#S02-02] ร่างประกันสังคม… สี่ฉบับ [#S02-03] ไม่มีเสียงค้าน [#S02-04] แตะเงินเรา… ด้วย",
+   "voFile": "vo/S02.wav",
+   "shots": [
+    {
+     "id": "S02-01",
+     "kind": "parallax",
+     "description": "ห้องประชุมสภาแบบการ์ตูน มือโหวตชูขึ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:chamber-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "vote-hands",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "สภารับหลักการ",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-02",
+     "kind": "data",
+     "description": "ตัวนับร่างกฎหมาย 4 ฉบับ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 4,
+      "suffix": " ฉบับ",
+      "label": "ร่าง พ.ร.บ.ประกันสังคม",
+      "sourceRef": "F-01"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": []
+    },
+    {
+     "id": "S02-03",
+     "kind": "data",
+     "description": "กราฟแท่งผลโหวตร่างรัฐบาล: เห็นชอบ 436 ไม่เห็นชอบ 0",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "bar",
+      "items": [
+       {
+        "label": "เห็นชอบ",
+        "value": 436,
+        "highlight": true
+       },
+       {
+        "label": "ไม่เห็นชอบ",
+        "value": 0
+       }
+      ],
+      "unit": "เสียง",
+      "title": "ร่างของรัฐบาล",
+      "sourceRef": "F-01"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "0 เสียงค้าน",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-04",
+     "kind": "vector",
+     "description": "กองเหรียญ — เงินของเรา",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "coin-stack",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เงินเรา",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "beat": "act1",
+   "era": "present",
+   "vo": "ทุกเดือนเราจ่ายสมทบ [#S03-02] สูงสุด 875 บาท [#S03-03] รวมทั้งประเทศ [#S03-04] กองทุนโตกว่า 3 ล้านล้านบาท",
+   "voEn": "Every month we pay in, [#S03-02] up to 875 baht. [#S03-03] Add up the whole country, [#S03-04] and the fund tops 3 trillion baht.",
+   "voTTS": "ทุกเดือน… เราจ่ายสมทบ [#S03-02] สูงสุด… แปดร้อยเจ็ดสิบห้าบาท [#S03-03] รวม… ทั้งประเทศ [#S03-04] กองทุนโต… กว่าสามล้านล้านบาท",
+   "voFile": "vo/S03.wav",
+   "shots": [
+    {
+     "id": "S03-01",
+     "kind": "collage",
+     "description": "สลิปเงินเดือนแปะบนกระดาษ มีเหรียญถูกหักออก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:payslip|price-tag",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "rot": -3,
+       "anim": "stop-motion"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "จ่ายสมทบทุกเดือน",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S03-02",
+     "kind": "data",
+     "description": "ตัวนับเงินสมทบสูงสุดต่อเดือน 875 บาท",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 875,
+      "suffix": " บาท",
+      "label": "สมทบสูงสุด/เดือน (ปี 2569)",
+      "sourceRef": "F-02"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": []
+    },
+    {
+     "id": "S03-03",
+     "kind": "data",
+     "description": "แผนที่ไทย หมุดหลายเมืองเด้งขึ้น — รวมทั้งประเทศ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        101,
+        13
+       ],
+       "scale": 2200
+      },
+      "to": {
+       "center": [
+        101,
+        13.5
+       ],
+       "scale": 2500
+      },
+      "pins": [
+       {
+        "at": [
+         100.5,
+         13.75
+        ],
+        "label": "กรุงเทพฯ"
+       },
+       {
+        "at": [
+         98.98,
+         18.79
+        ],
+        "label": "เชียงใหม่",
+        "delay": 0.2
+       },
+       {
+        "at": [
+         102.83,
+         16.43
+        ],
+        "label": "ขอนแก่น",
+        "delay": 0.4
+       },
+       {
+        "at": [
+         100.47,
+         7.0
+        ],
+        "label": "หาดใหญ่",
+        "delay": 0.6
+       }
+      ],
+      "sourceRef": "F-03"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ทั้งประเทศ",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    },
+    {
+     "id": "S03-04",
+     "kind": "data",
+     "description": "ตัวนับขนาดกองทุน กว่า 3 ล้านล้านบาท",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 3,
+      "suffix": " ล้านล้านบาท",
+      "label": "กองทุนประกันสังคม (กว่า)",
+      "sourceRef": "F-03"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": []
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "beat": "act2",
+   "era": "present",
+   "vo": "ส่วนหนึ่งคือเงินชราภาพ [#S04-02] ปกติรอถึง 55 [#S04-03] ร่างรัฐบาลเสนอ 3 ขอ [#S04-04] เลือก… คืน… ค้ำสินเชื่อ",
+   "voEn": "Part of it is old-age savings, [#S04-02] normally paid out at 55. [#S04-03] So the government's bill proposes three options: [#S04-04] choose… withdraw… pledge as collateral.",
+   "voTTS": "ส่วนหนึ่ง… คือเงินชราภาพ [#S04-02] ปกติ… รอถึง… ห้าสิบห้า [#S04-03] ร่างรัฐบาล… เสนอ… สามขอ [#S04-04] เลือก… คืน… ค้ำสินเชื่อ",
+   "voFile": "vo/S04.wav",
+   "shots": [
+    {
+     "id": "S04-01",
+     "kind": "parallax",
+     "description": "โถออมเงินชราภาพ มีนาฬิกาเล็ก ๆ — เงินที่เก็บไว้ยามแก่",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:office-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:savings-jar|coin-stack",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": -20,
+       "z": 200
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -200
+      },
+      "ease": "inOutCubic"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "เงินชราภาพ",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S04-02",
+     "kind": "vector",
+     "description": "ปฏิทินพลิกไปถึงอายุ 55",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "อายุ 55 ปี",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S04-03",
+     "kind": "vector",
+     "description": "ตาชั่ง — ข้อเสนอใหม่ของร่างรัฐบาล",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "balance-scale",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "3 ขอ",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S04-04",
+     "kind": "vector",
+     "description": "สามคำโผล่ทีละคำ เลือก คืน ค้ำ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เลือก · คืน · ค้ำ",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "beat": "act3",
+   "era": "present",
+   "vo": "ขอเลือก… รับก้อนหรือรายเดือน [#S05-02] ขอคืน… ถอนได้ไม่เกิน 30% [#S05-03] ยามภัยพิบัติร้ายแรง [#S05-04] และใช้ค้ำสินเชื่อ",
+   "voEn": "Choose… a lump sum or a monthly pension. [#S05-02] Withdraw… up to 30% [#S05-03] after a severe disaster. [#S05-04] And… use it as loan collateral.",
+   "voTTS": "ขอเลือก… รับก้อน… หรือรายเดือน [#S05-02] ขอคืน… ถอนได้ไม่เกิน… สามสิบเปอร์เซ็นต์ [#S05-03] ยามภัยพิบัติ… ร้ายแรง [#S05-04] และ… ใช้ค้ำ… สินเชื่อ",
+   "voFile": "vo/S05.wav",
+   "shots": [
+    {
+     "id": "S05-01",
+     "kind": "vector",
+     "description": "โถเงินแยกเป็นก้อนเดียว กับรายเดือน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:savings-jar|coin-stack",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ขอเลือก: ก้อน/รายเดือน",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S05-02",
+     "kind": "data",
+     "description": "กราฟแท่ง ถอนได้ 30% ที่เหลือเก็บไว้",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "bar",
+      "items": [
+       {
+        "label": "ถอนได้สูงสุด",
+        "value": 30,
+        "highlight": true
+       },
+       {
+        "label": "ยังเก็บไว้",
+        "value": 70
+       }
+      ],
+      "unit": "%",
+      "title": "ขอคืน",
+      "sourceRef": "F-05"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไม่เกิน 30%",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S05-03",
+     "kind": "parallax",
+     "description": "ฉากเมืองน้ำท่วมแบบการ์ตูน ร่มคุ้มกันลอยเด่น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:flood-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:umbrella|giant-pin",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ภัยพิบัติร้ายแรง",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S05-04",
+     "kind": "vector",
+     "description": "กองเหรียญกับป้ายราคา — ใช้เงินชราภาพค้ำสินเชื่อ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "price-tag",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ค้ำสินเชื่อ",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "beat": "payoff",
+   "era": "present",
+   "vo": "คำตอบคือ… [#S06-02] ยังไม่ใช่ตอนนี้ [#S06-03] ต้องผ่านกรรมาธิการ [#S06-04] โหวตอีกหลายด่าน [#S06-05] ก่อนเป็นกฎหมาย",
+   "voEn": "The answer… [#S06-02] not yet. [#S06-03] The bills go to a committee first, [#S06-04] then several more votes [#S06-05] before becoming law.",
+   "voTTS": "คำตอบคือ… [#S06-02] ยังไม่ใช่… ตอนนี้ [#S06-03] ต้องผ่าน… กรรมาธิการ [#S06-04] โหวต… อีกหลายด่าน [#S06-05] ก่อนเป็น… กฎหมาย",
+   "voFile": "vo/S06.wav",
+   "shots": [
+    {
+     "id": "S06-01",
+     "kind": "vector",
+     "description": "ป้ายคำถาม — คำตอบคือ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "คำตอบ?",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-02",
+     "kind": "vector",
+     "description": "ปฏิทิน — ยังไม่ใช่ตอนนี้",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ยังไม่ใช่ตอนนี้",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-03",
+     "kind": "parallax",
+     "description": "ห้องประชุมสภา มือโหวต — ส่งต่อกรรมาธิการ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:chamber-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "vote-hands",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": -20,
+       "z": 200
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -200
+      },
+      "ease": "inOutCubic"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "กรรมาธิการ",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    },
+    {
+     "id": "S06-04",
+     "kind": "collage",
+     "description": "ไทม์ไลน์กระดาษหลายขั้น — โหวตอีกหลายด่าน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "paper-timeline",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "rot": -3,
+       "anim": "stop-motion"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "อีกหลายด่าน",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    },
+    {
+     "id": "S06-05",
+     "kind": "vector",
+     "description": "ตาชั่งกฎหมาย",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "balance-scale",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "→ กฎหมาย",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "beat": "outro",
+   "era": "present",
+   "vo": "เงินที่โดนหัก… [#S07-02] วันหนึ่งอาจดึงมาใช้ได้",
+   "voEn": "The money taken from our pay… [#S07-02] one day, we might use it early.",
+   "voTTS": "เงินที่โดนหัก… [#S07-02] วันหนึ่ง… อาจดึงมาใช้ได้",
+   "voFile": "vo/S07.wav",
+   "shots": [
+    {
+     "id": "S07-01",
+     "kind": "parallax",
+     "description": "กลับมาที่โถออม เหรียญหล่น กล้องดันเข้า (วนกลับภาพแรก)",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:office-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:savings-jar|coin-stack",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "โดนหักทุกเดือน",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S07-02",
+     "kind": "vector",
+     "description": "กองเหรียญ — วันหนึ่งอาจดึงมาใช้ได้",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "coin-stack",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "อาจใช้ก่อนได้",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "covers": [
+  {
+   "id": "A",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "ใช้ก่อน\n*ได้ไหม?*",
+   "kicker": "เงินประกันสังคม",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:office-plate|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:savings-jar|coin-stack",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "ถอนได้\n*30%*",
+   "kicker": "เงินชราภาพ ยามภัยพิบัติ",
+   "sourceRef": "F-05",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:flood-plate|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:umbrella|giant-pin",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  }
+ ]
+}
