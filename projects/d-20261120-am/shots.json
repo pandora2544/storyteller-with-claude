@@ -1,0 +1,1397 @@
+{
+ "meta": {
+  "slug": "d-20261120-am",
+  "title": "ค่าไฟปีหน้า บ้านเราจะขึ้นไหม",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "targetSec": 60
+ },
+ "sources": {
+  "F-01": "กกพ. ผ่าน The Standard · ไทยรัฐ (18–19 พ.ย. 69)",
+  "F-02": "กกพ. ผ่าน The Standard · Thaiger",
+  "F-03": "กกพ. ผ่าน เดลินิวส์ · The Standard",
+  "F-04": "กกพ. ผ่าน The Standard · Thaiger",
+  "F-05": "กกพ. ผ่าน เดลินิวส์ · ไทยรัฐ · Thaiger",
+  "F-06": "มติ กพช. 13 พ.ย. 69 ผ่าน The Standard · ไทยรัฐ"
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "beat": "hook",
+   "era": "present",
+   "vo": "ค่าไฟปีหน้า… [#S01-02] บ้านเราจะขึ้นไหม",
+   "voEn": "Next year's power bill… [#S01-02] will ours go up?",
+   "voTTS": "ค่าไฟ… ปีหน้า… [#S01-02] บ้านเรา… จะขึ้นไหม",
+   "voFile": "vo/S01.wav",
+   "shots": [
+    {
+     "id": "S01-01",
+     "kind": "parallax",
+     "description": "บ้านตอนค่ำ ไฟเปิดทุกห้อง มิเตอร์ไฟหมุนตั้งแต่เฟรมแรก กล้องดันเข้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:home-night-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:electric-meter|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ค่าไฟปีหน้า",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S01-02",
+     "kind": "vector",
+     "description": "ป้ายคำถามแยกสองทาง ขึ้นหรือไม่ขึ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ขึ้นไหม?",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "beat": "setup",
+   "era": "present",
+   "vo": "กกพ.เปิดสองทางเลือก [#S02-02] ค่าไฟงวดต้นปีหน้า [#S02-03] ยังฟังความเห็นอยู่",
+   "voEn": "The energy regulator just put out two options [#S02-02] for early next year's power rate, [#S02-03] and it's still taking public comment.",
+   "voTTS": "กอ… กอ… พอ… เปิด… สองทางเลือก [#S02-02] ค่าไฟ… งวดต้นปีหน้า [#S02-03] ยัง… ฟังความเห็นอยู่",
+   "voFile": "vo/S02.wav",
+   "shots": [
+    {
+     "id": "S02-01",
+     "kind": "vector",
+     "description": "ตาชั่งสองข้าง — สองทางเลือก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "balance-scale",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "2 ทางเลือก",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-02",
+     "kind": "vector",
+     "description": "ปฏิทิน ม.ค.–เม.ย. 2570",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ม.ค.–เม.ย. 70",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-03",
+     "kind": "vector",
+     "description": "มือถือมีฟีดความเห็นเด้งขึ้น — รับฟังถึง 24 พ.ย.",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "phone-feed",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ฟังความเห็นถึง 24 พ.ย.",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "beat": "act1",
+   "era": "present",
+   "vo": "ตอนนี้เราจ่ายเฉลี่ย [#S03-02] 3.86 บาท [#S03-03] แต่ถ้าคิดตามสูตรปกติ [#S03-04] ทุกคนจ่าย 5.02 บาท",
+   "voEn": "Right now we pay on average [#S03-02] 3.86 baht per unit. [#S03-03] But under the normal formula, [#S03-04] everyone would pay 5.02 baht.",
+   "voTTS": "ตอนนี้… เราจ่ายเฉลี่ย… [#S03-02] สามจุดแปดหกบาท [#S03-03] แต่ถ้าคิด… ตามสูตรปกติ [#S03-04] ทุกคน… จ่าย… ห้าจุดศูนย์สองบาท",
+   "voFile": "vo/S03.wav",
+   "shots": [
+    {
+     "id": "S03-01",
+     "kind": "vector",
+     "description": "มิเตอร์ไฟฟ้าหน้าบ้านหมุนเบา ๆ — ตอนนี้เราจ่ายเท่าไร",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ตอนนี้",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S03-02",
+     "kind": "collage",
+     "description": "บิลค่าไฟแปะบนกระดาษ ตัวเลข 3.86 บาท",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:power-bill|price-tag",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "rot": -3,
+       "anim": "stop-motion"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "3.86 บาท",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S03-03",
+     "kind": "vector",
+     "description": "มิเตอร์ไฟฟ้าหมุนเร็วขึ้น — สูตรปกติ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "สูตรปกติ",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    },
+    {
+     "id": "S03-04",
+     "kind": "parallax",
+     "description": "ป้ายราคาเด้งขึ้นเป็น 5.02 บาท บนฉากบ้านตอนค่ำ — reveal 1",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:home-night-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "price-tag",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "5.02 บาท",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "beat": "act2",
+   "era": "present",
+   "vo": "ส่วนเกินมาจากค่าเชื้อเพลิง [#S04-02] และเงินที่ กฟผ.แบกไว้ก่อน [#S04-03] ค้างกว่า 3.6 หมื่นล้านบาท",
+   "voEn": "The extra comes from fuel costs [#S04-02] and money the state power utility covered for us earlier, [#S04-03] still over 36 billion baht outstanding.",
+   "voTTS": "ส่วนเกิน… มาจาก… ค่าเชื้อเพลิง [#S04-02] และเงินที่… กอฟอผอ… แบกไว้ก่อน [#S04-03] ค้าง… กว่าสามหมื่นหกพันล้านบาท",
+   "voFile": "vo/S04.wav",
+   "shots": [
+    {
+     "id": "S04-01",
+     "kind": "parallax",
+     "description": "โรงไฟฟ้าก๊าซกับเสาส่งไฟ ควันไอน้ำลอย กล้องดันเข้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:power-plant-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:gas-platform|giant-pin",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ค่าเชื้อเพลิง",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S04-02",
+     "kind": "vector",
+     "description": "กองเหรียญถูกแบกไว้ — ภาระที่ กฟผ. รับไว้ก่อน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "coin-stack",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "กฟผ. แบกไว้ก่อน",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S04-03",
+     "kind": "data",
+     "description": "ตัวนับภาระคงค้าง 36,433 ล้านบาท — reveal 2",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 36433,
+      "suffix": " ล้านบาท",
+      "label": "ภาระคงค้าง กฟผ. (ส.ค. 69)",
+      "sourceRef": "F-04"
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": []
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "beat": "act3",
+   "era": "present",
+   "vo": "ทางที่สองแยกจ่าย [#S05-02] บ้าน ร้านเล็ก สูบน้ำเกษตร [#S05-03] คงเดิม 3.86 [#S05-04] รายอื่นจ่าย 4.73 บาท [#S05-05] ก๊าซอ่าวไทยให้กลุ่มแรกก่อน",
+   "voEn": "So option two splits the bill: [#S05-02] homes, small shops and farm pumps [#S05-03] stay at 3.86, [#S05-04] all other users pay 4.73 baht, [#S05-05] because Gulf of Thailand gas goes to the first group first.",
+   "voTTS": "ทางที่สอง… แยกจ่าย [#S05-02] บ้าน… ร้านเล็ก… สูบน้ำเกษตร… [#S05-03] คงเดิม… สามจุดแปดหก [#S05-04] รายอื่น… จ่าย… สี่จุดเจ็ดสามบาท [#S05-05] ก๊าซอ่าวไทย… ให้กลุ่มแรก… ก่อน",
+   "voFile": "vo/S05.wav",
+   "shots": [
+    {
+     "id": "S05-01",
+     "kind": "vector",
+     "description": "บิลสองใบวางคู่กัน ราคาไม่เท่ากัน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "แยก 2 อัตรา",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S05-02",
+     "kind": "vector",
+     "description": "หมุด 3 จุด: บ้าน ร้านเล็ก ปั๊มน้ำนา — กลุ่มแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "giant-pin",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "บ้าน·ร้านเล็ก·เกษตร",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S05-03",
+     "kind": "collage",
+     "description": "บิลค่าไฟบ้านแปะกระดาษ ป้าย 3.86 บาท — คงเดิม",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:power-bill|price-tag",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "rot": -3,
+       "anim": "stop-motion"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "คงเดิม 3.86",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S05-04",
+     "kind": "parallax",
+     "description": "ร้านค้าและโรงงานแบบการ์ตูน ป้าย 4.73 บาท — reveal 3",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:business-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "price-tag",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ธุรกิจอื่น 4.73",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S05-05",
+     "kind": "data",
+     "description": "แผนที่ไทย หมุดอ่าวไทย — ก๊าซจัดให้กลุ่มแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        101,
+        11
+       ],
+       "scale": 2200
+      },
+      "to": {
+       "center": [
+        101,
+        10
+       ],
+       "scale": 2600
+      },
+      "pins": [
+       {
+        "at": [
+         101.5,
+         9.0
+        ],
+        "label": "ก๊าซอ่าวไทย"
+       },
+       {
+        "at": [
+         100.5,
+         13.75
+        ],
+        "label": "กรุงเทพฯ"
+       }
+      ]
+     },
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ก๊าซอ่าวไทย",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "beat": "payoff",
+   "era": "present",
+   "vo": "คำตอบคือ… [#S06-02] ถ้าใช้ทางที่สอง [#S06-03] บิลบ้านเท่าเดิม [#S06-04] แต่ธุรกิจจ่ายเพิ่ม [#S06-05] และ กกพ.ยังไม่ตัดสิน",
+   "voEn": "The answer… [#S06-02] if option two is chosen, [#S06-03] our home bill stays the same, [#S06-04] but businesses pay more, [#S06-05] and the regulator hasn't decided yet.",
+   "voTTS": "คำตอบคือ… [#S06-02] ถ้าใช้… ทางที่สอง [#S06-03] บิลบ้าน… เท่าเดิม [#S06-04] แต่ธุรกิจ… จ่ายเพิ่ม [#S06-05] และ… กอ… กอ… พอ… ยังไม่ตัดสิน",
+   "voFile": "vo/S06.wav",
+   "shots": [
+    {
+     "id": "S06-01",
+     "kind": "vector",
+     "description": "สปอตไลต์ส่องลงเวที — คำตอบ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "spotlight-stage",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "คำตอบคือ",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-02",
+     "kind": "vector",
+     "description": "ตาชั่งเอียงไปข้างทางที่สอง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "balance-scale",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ถ้าใช้ทางที่ 2",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S06-03",
+     "kind": "collage",
+     "description": "บิลค่าไฟบ้านแปะกระดาษ ตราประทับ 'เท่าเดิม'",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:power-bill|price-tag",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "rot": -3,
+       "anim": "stop-motion"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "บ้านเท่าเดิม",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S06-04",
+     "kind": "parallax",
+     "description": "ร้านค้าและโรงงาน มิเตอร์หมุนเร็ว — ต้นทุนธุรกิจขึ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:business-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:electric-meter|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ธุรกิจจ่ายเพิ่ม",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S06-05",
+     "kind": "vector",
+     "description": "ป้ายคำถามสองทาง — ยังไม่ตัดสิน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "sway"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ยังไม่ตัดสิน",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "beat": "outro",
+   "era": "present",
+   "vo": "บิลบ้านอาจไม่ขึ้น… [#S07-02] แต่เรื่องค่าไฟปีหน้า [#S07-03] ยังไม่จบ",
+   "voEn": "Our home bill may not rise… [#S07-02] but next year's power bill story [#S07-03] isn't over yet.",
+   "voTTS": "บิลบ้าน… อาจไม่ขึ้น… [#S07-02] แต่เรื่องค่าไฟปีหน้า… [#S07-03] ยังไม่จบ",
+   "voFile": "vo/S07.wav",
+   "shots": [
+    {
+     "id": "S07-01",
+     "kind": "parallax",
+     "description": "บ้านตอนค่ำ ไฟเปิด มิเตอร์หมุนช้า ๆ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:home-night-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:electric-meter|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "float"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "อาจไม่ขึ้น",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S07-02",
+     "kind": "vector",
+     "description": "ปฏิทินปีหน้าพลิกหน้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ค่าไฟปีหน้า",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S07-03",
+     "kind": "vector",
+     "description": "ป้ายคำถามสองทาง — ยังไม่จบ วนกลับคำถามแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ยังไม่จบ",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "covers": [
+  {
+   "id": "A",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "ค่าไฟบ้าน\n*ขึ้นไหม?*",
+   "kicker": "งวด ม.ค.–เม.ย. 70",
+   "sourceRef": "F-01",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:home-night-plate|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:electric-meter|signal-icon",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "ต้นทุนจริง\n*5.02*",
+   "kicker": "ค่าไฟต่อหน่วย",
+   "sourceRef": "F-03",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:power-plant-plate|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:power-bill|price-tag",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  }
+ ]
+}

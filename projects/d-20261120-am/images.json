@@ -1,0 +1,16 @@
+{
+  "images": [
+    {"id": "home-night-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A cozy small tropical two-storey house at dusk on a quiet residential street, warm lights glowing in every window, a ceiling fan and air conditioner unit visible, power lines along the street, soft deep blue evening sky, calm mood, no people, no logos, no text"},
+    {"id": "power-plant-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A generic natural gas power plant beside the sea at sunset, simple rounded turbine buildings with white steam rising, tall electricity transmission towers stretching into the distance, warm orange and deep blue tones, no people, no logos, no text"},
+    {"id": "business-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A gentle cartoon scene of a row of mid-sized shops, a small shopping mall and a simple factory with a sawtooth roof at dusk, bright interior lights and glowing signs without any letters, power lines overhead, teal and deep blue tones, no people, no logos, no text"},
+    {"id": "electric-meter", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single round old-style household electricity meter in a grey box with a spinning disc and small dial gauges, a little lightning bolt symbol on the glass, rounded friendly shapes, simple soft shading, no letters, no numbers, no logo"},
+    {"id": "power-bill", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single paper utility bill with blank lines and a small yellow lightning bolt icon at the top, slightly tilted, a light bulb leaning against it, rounded friendly shapes, simple soft shading, no letters, no numbers, no logo"},
+    {"id": "gas-platform", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single small offshore natural gas platform standing on legs above a few stylized waves, a little flame on top, rounded friendly shapes, simple soft shading, no logo, no letters"}
+  ]
+}
