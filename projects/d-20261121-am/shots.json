@@ -1,0 +1,1352 @@
+{
+ "meta": {
+  "slug": "d-20261121-am",
+  "title": "ปล่อยโคมยี่เป็ง ทำไมเครื่องบินต้องหลบ",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "targetSec": 60
+ },
+ "sources": {
+  "F-01": "ท่าอากาศยานเชียงใหม่ ผ่าน ไทยรัฐ · สยามรัฐ (3 พ.ย. 69)",
+  "F-02": "ท่าอากาศยานเชียงใหม่ ผ่าน ไทยรัฐ · กรุงเทพธุรกิจ",
+  "F-03": "ท่าอากาศยานเชียงใหม่ ผ่าน สยามรัฐ · กรุงเทพธุรกิจ",
+  "F-04": "ท่าอากาศยานเชียงใหม่ ผ่าน ไทยรัฐ · สยามรัฐ (19 พ.ย. 69)",
+  "F-05": "AFP ผ่าน Malay Mail (2 ม.ค. 2558)"
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "beat": "hook",
+   "era": "present",
+   "vo": "ปล่อยโคมยี่เป็ง… [#S01-02] ทำไมเครื่องบินต้องหลบ",
+   "voEn": "Yi Peng lanterns go up… [#S01-02] so why do planes have to stay away?",
+   "voTTS": "ปล่อยโคม… ยี่เป็ง… [#S01-02] ทำไม… เครื่องบินต้องหลบ",
+   "voFile": "vo/S01.wav",
+   "shots": [
+    {
+     "id": "S01-01",
+     "kind": "parallax",
+     "description": "ฟ้าคืนยี่เป็งเต็มไปด้วยโคม โคมลูกหนึ่งลอยขึ้นตั้งแต่เฟรมแรก กล้องดันเข้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:lantern-sky-plate|sky",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:sky-lantern|lantern",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ยี่เป็ง",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S01-02",
+     "kind": "parallax",
+     "description": "เครื่องบินบินผ่านฟ้าที่มีโคมลอย — คำถาม",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:runway-night-plate|city",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:airplane|arrow",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "crane",
+      "from": {
+       "x": 0,
+       "y": 160,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -160,
+       "z": 80
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ทำไมต้องหลบ?",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "beat": "setup",
+   "era": "present",
+   "vo": "24–25 พ.ย. [#S02-02] คาดมีโคมกว่าสองแสนลูก [#S02-03] รอบสนามบินเชียงใหม่",
+   "voEn": "On November 24–25, [#S02-02] over 200,000 lanterns are expected [#S02-03] around Chiang Mai airport.",
+   "voTTS": "ยี่สิบสี่… ถึงยี่สิบห้า… พฤศจิกายนนี้ [#S02-02] คาดมีโคม… กว่าสองแสนลูก [#S02-03] รอบ… สนามบินเชียงใหม่",
+   "voFile": "vo/S02.wav",
+   "shots": [
+    {
+     "id": "S02-01",
+     "kind": "vector",
+     "description": "ปฏิทินวงวันที่ 24–25 พ.ย.",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "24–25 พ.ย.",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-02",
+     "kind": "data",
+     "description": "ตัวนับโคมขึ้นถึง 200,000 ลูก — reveal 1",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 200000,
+      "suffix": " ลูก",
+      "label": "โคมกว่า",
+      "sourceRef": "F-01"
+     }
+    },
+    {
+     "id": "S02-03",
+     "kind": "data",
+     "description": "แผนที่ไทย ซูมเข้าเชียงใหม่ ปักหมุดสนามบิน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        101,
+        14
+       ],
+       "scale": 1500
+      },
+      "to": {
+       "center": [
+        99.2,
+        18.6
+       ],
+       "scale": 5200
+      },
+      "pins": [
+       {
+        "at": [
+         98.96,
+         18.77
+        ],
+        "label": "สนามบินเชียงใหม่"
+       }
+      ],
+      "sourceRef": "F-01"
+     },
+     "text": [
+      {
+       "content": "เขตปลอดภัยการบิน",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "beat": "act1",
+   "era": "present",
+   "vo": "โคมไม่มีคนคุม [#S03-02] ลมพาไปไหนก็ไป [#S03-03] ถ้าลอยเข้าแนวบิน [#S03-04] อาจอันตรายต่อเครื่องยนต์",
+   "voEn": "Nobody steers a lantern. [#S03-02] It goes wherever the wind takes it. [#S03-03] If it drifts into the flight path, [#S03-04] it can endanger the engines.",
+   "voTTS": "โคม… ไม่มีคนคุม [#S03-02] ลมพาไปไหน… ก็ไป [#S03-03] ถ้าลอยเข้า… แนวบิน [#S03-04] อาจอันตราย… ต่อเครื่องยนต์",
+   "voFile": "vo/S03.wav",
+   "shots": [
+    {
+     "id": "S03-01",
+     "kind": "vector",
+     "description": "โคมลอยเดี่ยว ๆ ไม่มีเชือก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:sky-lantern|lantern",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "float"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไม่มีคนคุม",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S03-02",
+     "kind": "vector",
+     "description": "ลูกศรลมพัดโคมเฉไปทางข้าง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "arrow",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "slide-right"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ลมพาไป",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S03-03",
+     "kind": "parallax",
+     "description": "รันเวย์ตอนกลางคืน โคมลอยเข้าแนวไฟรันเวย์",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:runway-night-plate|city",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:sky-lantern|lantern",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "แนวบิน",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    },
+    {
+     "id": "S03-04",
+     "kind": "vector",
+     "description": "เครื่องยนต์ไอพ่นหมุน — จุดอันตราย",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:jet-engine|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "spin"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "อันตรายต่อเครื่องยนต์",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "beat": "act2",
+   "era": "present",
+   "vo": "เคยเกิดจริง [#S04-02] ปี 2558 พบโคมติดในเครื่องยนต์ [#S04-03] ที่เชียงใหม่ [#S04-04] เที่ยวบินขากลับ [#S04-05] ถูกยกเลิก",
+   "voEn": "It has happened before. [#S04-02] In 2015, a lantern was found stuck in a jet engine [#S04-03] at Chiang Mai airport. [#S04-04] The return flight [#S04-05] was cancelled.",
+   "voTTS": "เคย… เกิดจริง [#S04-02] ปี… สองพันห้าร้อยห้าสิบแปด… พบโคม… ติดในเครื่องยนต์ [#S04-03] ที่… เชียงใหม่ [#S04-04] เที่ยวบินขากลับ… [#S04-05] ถูกยกเลิก",
+   "voFile": "vo/S04.wav",
+   "shots": [
+    {
+     "id": "S04-01",
+     "kind": "collage",
+     "description": "ข่าวหนังสือพิมพ์เก่าแปะบนกระดาษ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "newspaper",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "rot": -3,
+       "anim": "stop-motion"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เคยเกิดขึ้นจริง",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S04-02",
+     "kind": "collage",
+     "description": "เครื่องยนต์ไอพ่นแปะกระดาษ วงปากกาแดงตรงโคมที่ติดอยู่ — reveal 2",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:jet-engine|signal-icon",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "rot": 3,
+       "anim": "stop-motion"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ปี 2558",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S04-03",
+     "kind": "data",
+     "description": "แผนที่ภาคเหนือ ปักหมุดสนามบินเชียงใหม่",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        99.5,
+        18.5
+       ],
+       "scale": 4000
+      },
+      "to": {
+       "center": [
+        99.0,
+        18.8
+       ],
+       "scale": 6000
+      },
+      "pins": [
+       {
+        "at": [
+         98.96,
+         18.77
+        ],
+        "label": "เชียงใหม่"
+       }
+      ]
+     },
+     "text": [
+      {
+       "content": "สนามบินเชียงใหม่",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S04-04",
+     "kind": "vector",
+     "description": "เครื่องบินจอดรอ — เที่ยวบินขากลับ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:airplane|arrow",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ขากลับ",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S04-05",
+     "kind": "collage",
+     "description": "ตรายาง ยกเลิก ประทับบนบัตรขึ้นเครื่อง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "stamp",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "rot": -3,
+       "anim": "stop-motion"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เที่ยวบินยกเลิก",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "beat": "act3",
+   "era": "present",
+   "vo": "ปีนี้จึงงดบินช่วงปล่อยโคม [#S05-02] หนึ่งทุ่มถึงตีหนึ่ง [#S05-03] เวลาบินจาก 20 เหลือราว 12 ชั่วโมง [#S05-04] ยกเลิกและเลื่อน [#S05-05] นับร้อยเที่ยว",
+   "voEn": "So this year flights pause while lanterns go up, [#S05-02] from 7 PM to 1 AM. [#S05-03] Flying time drops from about 20 hours a day to about 12. [#S05-04] Flights are cancelled or moved, [#S05-05] hundreds of them.",
+   "voTTS": "ปีนี้… จึงงดบิน… ช่วงปล่อยโคม [#S05-02] หนึ่งทุ่ม… ถึงตีหนึ่ง [#S05-03] เวลาบิน… จากยี่สิบ… เหลือราวสิบสองชั่วโมง [#S05-04] ยกเลิก… และเลื่อน… [#S05-05] นับร้อยเที่ยว",
+   "voFile": "vo/S05.wav",
+   "shots": [
+    {
+     "id": "S05-01",
+     "kind": "parallax",
+     "description": "ฟ้าโคมเต็ม เครื่องบินถอยออกจากเฟรม — งดบิน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:lantern-sky-plate|sky",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:airplane|arrow",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": -20,
+       "z": 200
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -300
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "งดบิน",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S05-02",
+     "kind": "vector",
+     "description": "นาฬิกาเข็มหมุนจาก 19.00 ไป 01.00",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "clock",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "19.00–01.00 น.",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S05-03",
+     "kind": "data",
+     "description": "แท่งเทียบเวลาบินต่อวัน 20 vs 12 ชม. — data moment / reveal 3",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "bar",
+      "items": [
+       {
+        "label": "ปกติ",
+        "value": 20
+       },
+       {
+        "label": "ช่วงยี่เป็ง",
+        "value": 12,
+        "highlight": true
+       }
+      ],
+      "unit": "ชม.",
+      "title": "เวลาบินต่อวัน",
+      "sourceRef": "F-02"
+     }
+    },
+    {
+     "id": "S05-04",
+     "kind": "vector",
+     "description": "จอตารางบินเด้ง ยกเลิก/เลื่อน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "phone-feed",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ยกเลิก / เลื่อน",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S05-05",
+     "kind": "collage",
+     "description": "ตรายางประทับซ้ำหลายใบ — นับร้อยเที่ยว",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "collage",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "stamp",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "rot": 4,
+       "anim": "stop-motion"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "นับร้อยเที่ยว",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "beat": "payoff",
+   "era": "present",
+   "vo": "คำตอบคือ… [#S06-02] โคมกับเครื่องบินใช้ฟ้าเดียวกัน [#S06-03] แนวบินจึงห้ามปล่อย [#S06-04] เครื่องบินต้องหลีกทาง",
+   "voEn": "The answer… [#S06-02] lanterns and planes share the same sky. [#S06-03] Releases are banned along the flight path, [#S06-04] and the planes step aside.",
+   "voTTS": "คำตอบคือ… [#S06-02] โคม… กับเครื่องบิน… ใช้ฟ้าเดียวกัน [#S06-03] แนวบิน… จึงห้ามปล่อย [#S06-04] เครื่องบิน… ต้องหลีกทาง",
+   "voFile": "vo/S06.wav",
+   "shots": [
+    {
+     "id": "S06-01",
+     "kind": "vector",
+     "description": "ป้ายคำถามแยกสองทาง — คำตอบ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "คำตอบ",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-02",
+     "kind": "parallax",
+     "description": "ฟ้าเดียวกัน โคมลอยข้างล่าง เครื่องบินไกล ๆ ข้างบน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:lantern-sky-plate|sky",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:sky-lantern|lantern",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "crane",
+      "from": {
+       "x": 0,
+       "y": 160,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -160,
+       "z": 80
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ฟ้าเดียวกัน",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-03",
+     "kind": "vector",
+     "description": "หมุดยักษ์สีแดงบนแนวรันเวย์ — โซนสีแดงห้ามปล่อย",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "giant-pin",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "drop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "โซนแดง ห้ามปล่อย",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    },
+    {
+     "id": "S06-04",
+     "kind": "vector",
+     "description": "เครื่องบินเลี้ยวหลบ โคมลอยผ่าน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:airplane|arrow",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "slide-left"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "หลีกทาง",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "beat": "outro",
+   "era": "present",
+   "vo": "โคมขึ้นเมื่อไร… [#S07-02] เครื่องบินก็ต้องหลบ",
+   "voEn": "Whenever the lanterns rise… [#S07-02] the planes have to stay away.",
+   "voTTS": "โคม… ขึ้นเมื่อไร… [#S07-02] เครื่องบิน… ก็ต้องหลบ",
+   "voFile": "vo/S07.wav",
+   "shots": [
+    {
+     "id": "S07-01",
+     "kind": "parallax",
+     "description": "โคมนับพันลอยขึ้นฟ้า กล้องถอยออก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:lantern-sky-plate|sky",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:sky-lantern|lantern",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": -20,
+       "z": 200
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -300
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     }
+    },
+    {
+     "id": "S07-02",
+     "kind": "parallax",
+     "description": "เครื่องบินเล็ก ๆ ไกลออกไปหลังโคม — วนกลับประโยคแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:runway-night-plate|city",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:airplane|arrow",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ต้องหลบ",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "covers": [
+  {
+   "id": "A",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "โคมขึ้น\n*เครื่องหลบ*",
+   "kicker": "ยี่เป็ง 24–25 พ.ย.",
+   "sourceRef": "F-01",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:lantern-sky-plate|sky",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:sky-lantern|lantern",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "งดบิน\n*6 ชม.*",
+   "kicker": "ช่วงปล่อยโคม",
+   "sourceRef": "F-02",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:runway-night-plate|city",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:airplane|arrow",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 560
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+  "images": [
+    {"id": "lantern-sky-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A calm night sky over gentle northern Thai mountain silhouettes, hundreds of small glowing paper sky lanterns floating upward, warm orange glow against deep navy blue, a full moon, soft stars, peaceful festive mood, no people, no buildings with logos, no text"},
+    {"id": "runway-night-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "An airport runway at night seen from a low angle, rows of blue and white runway lights leading into the distance, a simple control tower silhouette, dark mountains on the horizon, a few small glowing paper lanterns drifting high in the deep blue sky, no aircraft, no people, no logos, no text"},
+    {"id": "sky-lantern", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single traditional Thai paper sky lantern floating, tall rounded cylinder shape of thin cream paper glowing warm orange from a small flame inside, thin bamboo ring at the bottom, rounded friendly shapes, simple soft shading, no text, no logo"},
+    {"id": "airplane", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single generic white twin-engine passenger jet airplane flying, seen from a three-quarter front view, plain white body with a simple teal stripe, no airline livery, no logo, no letters, rounded friendly shapes, simple soft shading"},
+    {"id": "jet-engine", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single large round jet engine seen from the front, spiral fan blades inside a grey metal ring, a small crumpled paper lantern caught near the intake edge, rounded friendly shapes, simple soft shading, no text, no logo"}
+  ]
+}
