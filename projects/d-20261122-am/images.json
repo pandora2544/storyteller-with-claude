@@ -1,0 +1,14 @@
+{
+  "images": [
+    {"id": "show-field-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A wide open grassy show field in northeastern Thailand on a bright morning, many Asian elephants standing in long rows across the field in the distance, simple grandstand silhouette far behind, soft dust in golden sunlight, clear blue sky, no people visible, no flags, no banners, no text"},
+    {"id": "village-plate", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A peaceful rural Isan village at the edge of a dry dipterocarp forest, traditional wooden stilt houses, a few Asian elephants resting in the shade of large trees, a dirt path, warm late-morning light, no people, no text"},
+    {"id": "elephant", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single friendly adult Asian elephant standing in three-quarter view, gentle smiling expression, small rounded ears, trunk slightly raised, grey body with soft shading, rounded friendly shapes, no saddle, no chains, no rider, no text"},
+    {"id": "elephant-family", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "An adult Asian elephant and a small baby elephant standing side by side, the mother's trunk gently touching the calf, warm caring mood, rounded friendly shapes, simple soft shading, no chains, no rider, no text"},
+    {"id": "rope-lasso", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A thick traditional braided brown rope coiled into a large loop lasso with a slip knot, natural fiber texture, rounded friendly shapes, simple soft shading, no hands, no text"}
+  ]
+}

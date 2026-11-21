@@ -1,0 +1,1479 @@
+{
+ "meta": {
+  "slug": "d-20261122-am",
+  "title": "ช้าง 200 เชือก ทำไมมารวมที่สุรินทร์",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "targetSec": 60
+ },
+ "sources": {
+  "F-01": "สยามรัฐ (21 พ.ย. 69) · Khaosod English (19 พ.ย. 69)",
+  "F-02": "Khaosod English · สยามรัฐ",
+  "F-03": "ผู้จัดการออนไลน์ (2555, 2562) · Wikipedia",
+  "F-04": "ผู้จัดการออนไลน์ (2555) · Thai Airways",
+  "F-05": "ผู้จัดการออนไลน์ (2555)",
+  "F-06": "ผู้จัดการออนไลน์ (2562) · ISAN Insight มข. (2569)"
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "beat": "hook",
+   "era": "present",
+   "vo": "ช้างกว่าสองร้อยเชือก… [#S01-02] ทำไมมารวมที่สุรินทร์",
+   "voEn": "Over two hundred elephants… [#S01-02] why do they gather in Surin?",
+   "voTTS": "ช้าง… กว่าสองร้อยเชือก… [#S01-02] ทำไม… มารวมที่สุรินทร์",
+   "voFile": "vo/S01.wav",
+   "shots": [
+    {
+     "id": "S01-01",
+     "kind": "parallax",
+     "description": "ทุ่งสนามแสดงช้างยามเช้า ช้างตัวหนึ่งเดินเข้าเฟรมตั้งแต่เฟรมแรก กล้องดันเข้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:show-field-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:elephant|tp-elephant",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "200+ เชือก",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S01-02",
+     "kind": "parallax",
+     "description": "ช้างหันมา คำถาม — ทำไมต้องสุรินทร์",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:show-field-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:elephant|tp-elephant",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "crane",
+      "from": {
+       "x": 0,
+       "y": 160,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -160,
+       "z": 80
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ทำไมสุรินทร์?",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "beat": "setup",
+   "era": "present",
+   "vo": "21–22 พ.ย. [#S02-02] งานช้างสุรินทร์ [#S02-03] ช้างเต็มสนาม [#S02-04] เรียกว่าทะเลช้าง",
+   "voEn": "This November 21–22, [#S02-02] the Surin elephant show. [#S02-03] Elephants fill the field, [#S02-04] a sea of elephants.",
+   "voTTS": "ยี่สิบเอ็ด… ถึงยี่สิบสอง… พฤศจิกายนนี้ [#S02-02] งานช้าง… สุรินทร์ [#S02-03] ช้าง… เต็มสนาม [#S02-04] เรียกว่า… ทะเลช้าง",
+   "voFile": "vo/S02.wav",
+   "shots": [
+    {
+     "id": "S02-01",
+     "kind": "vector",
+     "description": "ปฏิทินขึ้นวันที่แสดงช้าง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "21–22 พ.ย.",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-02",
+     "kind": "data",
+     "description": "แผนที่ไทย ซูมเข้าสุรินทร์ ปักหมุด",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        101,
+        14
+       ],
+       "scale": 1500
+      },
+      "to": {
+       "center": [
+        103.6,
+        15.0
+       ],
+       "scale": 5200
+      },
+      "pins": [
+       {
+        "at": [
+         103.49,
+         14.88
+        ],
+        "label": "สุรินทร์"
+       }
+      ]
+     },
+     "text": [
+      {
+       "content": "งานช้างสุรินทร์",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S02-03",
+     "kind": "vector",
+     "description": "ช้างเดินเข้ามาเต็มจอ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:show-field-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:elephant|tp-elephant",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "slide-left"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เต็มสนาม",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-04",
+     "kind": "data",
+     "description": "ตัวนับช้างขึ้นถึง 200 — reveal 1",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 200,
+      "suffix": " เชือก",
+      "label": "ทะเลช้าง กว่า",
+      "sourceRef": "F-01"
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "beat": "act1",
+   "era": "present",
+   "vo": "เริ่มจากชาวกวย [#S03-02] จับช้างป่าเก่ง [#S03-03] มาแต่บรรพบุรุษ [#S03-04] เลี้ยงช้างเหมือนคนในบ้าน [#S03-05] หลายรุ่น",
+   "voEn": "It starts with the Kuy people, [#S03-02] skilled at catching wild elephants [#S03-03] since their ancestors' time. [#S03-04] They raise elephants like family, [#S03-05] generation after generation.",
+   "voTTS": "เริ่มจาก… ชาวกวย [#S03-02] จับช้างป่า… เก่ง [#S03-03] มาแต่… บรรพบุรุษ [#S03-04] เลี้ยงช้าง… เหมือนคนในบ้าน [#S03-05] หลาย… รุ่น",
+   "voFile": "vo/S03.wav",
+   "shots": [
+    {
+     "id": "S03-01",
+     "kind": "parallax",
+     "description": "หมู่บ้านอีสานริมป่า ช้างเดินผ่าน — โลกของชาวกูย",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:village-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:elephant|tp-elephant",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ชาวกวย (กูย)",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    },
+    {
+     "id": "S03-02",
+     "kind": "vector",
+     "description": "เชือกคล้องช้างขดเป็นวง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:rope-lasso|tp-elephant",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "drop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "จับช้างป่า",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    },
+    {
+     "id": "S03-03",
+     "kind": "vector",
+     "description": "เชือกค่อย ๆ หมุน — ความรู้จากบรรพบุรุษ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:rope-lasso|tp-elephant",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "spin"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ตั้งแต่บรรพบุรุษ",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    },
+    {
+     "id": "S03-04",
+     "kind": "parallax",
+     "description": "ช้างแม่ลูกในหมู่บ้าน — ครอบครัว",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:village-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:elephant-family|tp-elephant",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "float"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "crane",
+      "from": {
+       "x": 0,
+       "y": 160,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -160,
+       "z": 80
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "เหมือนครอบครัว",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    },
+    {
+     "id": "S03-05",
+     "kind": "vector",
+     "description": "ช้างแม่ลูกลอยเบา ๆ บนพื้นเรียบ — หลายรุ่น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:elephant-family|tp-elephant",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "bob"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "หลายรุ่น",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "beat": "act2",
+   "era": "present",
+   "vo": "งานแรกเล็กมาก [#S04-02] 19 พ.ย. 2503 ที่ท่าตูม [#S04-03] แค่ฉลองอำเภอใหม่ [#S04-04] มีขบวนช้าง แข่งช้าง [#S04-05] คล้องช้าง",
+   "voEn": "The first elephant fair was tiny. [#S04-02] November 19, 1960, in Tha Tum, [#S04-03] just a party for a new district office, [#S04-04] with an elephant parade, races, [#S04-05] and a lasso show.",
+   "voTTS": "งานแรก… เล็กมาก [#S04-02] สิบเก้า… พฤศจิกายน… สองพันห้าร้อยสาม… ที่ท่าตูม [#S04-03] แค่ฉลอง… อำเภอใหม่ [#S04-04] มีขบวนช้าง… แข่งช้าง [#S04-05] คล้อง… ช้าง",
+   "voFile": "vo/S04.wav",
+   "shots": [
+    {
+     "id": "S04-01",
+     "kind": "vector",
+     "description": "ป้ายปฏิทินย้อนกลับ — ครั้งแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ครั้งแรก",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S04-02",
+     "kind": "data",
+     "description": "แผนที่สุรินทร์ ซูมเข้าอำเภอท่าตูม",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        103.6,
+        15.0
+       ],
+       "scale": 5200
+      },
+      "to": {
+       "center": [
+        103.68,
+        15.3
+       ],
+       "scale": 9000
+      },
+      "pins": [
+       {
+        "at": [
+         103.68,
+         15.32
+        ],
+        "label": "ท่าตูม"
+       }
+      ]
+     },
+     "text": [
+      {
+       "content": "19 พ.ย. 2503",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S04-03",
+     "kind": "vector",
+     "description": "เวทีเล็ก ๆ งานอำเภอ ไฟส่อง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "spotlight-stage",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "งานฉลองอำเภอ",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S04-04",
+     "kind": "parallax",
+     "description": "ช้างวิ่งแข่งผ่านทุ่ง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:village-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:elephant|tp-elephant",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "slide-right"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "truck",
+      "from": {
+       "x": -260,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 260,
+       "y": 0,
+       "z": 60
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ขบวน · แข่งช้าง",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S04-05",
+     "kind": "vector",
+     "description": "เชือกคล้องเหวี่ยงลง — สาธิต",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:rope-lasso|tp-elephant",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "drop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "คล้องช้าง",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "beat": "act3",
+   "era": "present",
+   "vo": "พอเป็นข่าว [#S05-02] คนแห่มาดู [#S05-03] งานย้ายเข้าเมือง [#S05-04] ส่วนบ้านตากลาง [#S05-05] วันนี้มีช้างกว่า 200 เชือก",
+   "voEn": "Once it made the news, [#S05-02] crowds poured in, [#S05-03] so the fair moved into town. [#S05-04] Meanwhile Ban Ta Klang village [#S05-05] is home to over 200 elephants today.",
+   "voTTS": "พอ… เป็นข่าว [#S05-02] คน… แห่มาดู [#S05-03] งาน… ย้ายเข้าเมือง [#S05-04] ส่วน… บ้านตากลาง [#S05-05] วันนี้… มีช้างกว่าสองร้อยเชือก",
+   "voFile": "vo/S05.wav",
+   "shots": [
+    {
+     "id": "S05-01",
+     "kind": "vector",
+     "description": "จอมือถือ/ข่าวเด้งขึ้น — กระจายข่าว",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "phone-feed",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เป็นข่าว",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S05-02",
+     "kind": "vector",
+     "description": "สัญญาณกระจาย คนแห่มา",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "คนแห่มาดู",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S05-03",
+     "kind": "data",
+     "description": "แผนที่ ลูกศรจากท่าตูมเข้าเมืองสุรินทร์",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        103.6,
+        15.1
+       ],
+       "scale": 7000
+      },
+      "routes": [
+       {
+        "path": [
+         [
+          103.68,
+          15.32
+         ],
+         [
+          103.49,
+          14.88
+         ]
+        ]
+       }
+      ],
+      "pins": [
+       {
+        "at": [
+         103.68,
+         15.32
+        ],
+        "label": "ท่าตูม"
+       },
+       {
+        "at": [
+         103.49,
+         14.88
+        ],
+        "label": "เมืองสุรินทร์"
+       }
+      ]
+     },
+     "text": [
+      {
+       "content": "ย้ายเข้าเมือง",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S05-04",
+     "kind": "parallax",
+     "description": "หมู่บ้านช้างบ้านตากลาง ดึงกล้องออกให้เห็นทั้งหมู่บ้าน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:village-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:elephant-family|tp-elephant",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 200
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -200
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "บ้านตากลาง",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    },
+    {
+     "id": "S05-05",
+     "kind": "data",
+     "description": "ตัวนับช้างในหมู่บ้าน 200+ — data moment / reveal 3",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 200,
+      "suffix": " เชือก",
+      "label": "บ้านตากลาง กว่า",
+      "sourceRef": "F-06"
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "beat": "payoff",
+   "era": "present",
+   "vo": "คำตอบคือ… [#S06-02] ช้างไม่ได้มาเพราะงาน [#S06-03] งานเกิดขึ้น [#S06-04] เพราะที่นี่เลี้ยงช้างอยู่แล้ว",
+   "voEn": "So the answer… [#S06-02] the elephants didn't come for the fair. [#S06-03] The fair happened [#S06-04] because people here already raised elephants.",
+   "voTTS": "คำตอบคือ… [#S06-02] ช้าง… ไม่ได้มาเพราะงาน [#S06-03] งาน… เกิดขึ้น [#S06-04] เพราะที่นี่… เลี้ยงช้างอยู่แล้ว",
+   "voFile": "vo/S06.wav",
+   "shots": [
+    {
+     "id": "S06-01",
+     "kind": "vector",
+     "description": "เครื่องหมายคำถามแยกสองทาง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "คำตอบ",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-02",
+     "kind": "vector",
+     "description": "ช้างเดี่ยว ไม่ใช่ตามงาน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:elephant|tp-elephant",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": 20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": -20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไม่ใช่เพราะงาน",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-03",
+     "kind": "vector",
+     "description": "เวทีงาน เกิดทีหลัง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "spotlight-stage",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "งานมาทีหลัง",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-04",
+     "kind": "parallax",
+     "description": "หมู่บ้าน คนเลี้ยงช้าง — ต้นเรื่องจริง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:village-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:elephant-family|tp-elephant",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "float"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "คนเลี้ยงช้าง",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "beat": "outro",
+   "era": "present",
+   "vo": "ปีนี้จึงมีช้างกว่าสองร้อยเชือก… [#S07-02] มารวมที่สุรินทร์",
+   "voEn": "That's why this year, over two hundred elephants… [#S07-02] gather in Surin.",
+   "voTTS": "ปีนี้… จึงมีช้าง… กว่าสองร้อยเชือก… [#S07-02] มารวม… ที่สุรินทร์",
+   "voFile": "vo/S07.wav",
+   "shots": [
+    {
+     "id": "S07-01",
+     "kind": "parallax",
+     "description": "สนามแสดงช้าง กล้องดึงออก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:show-field-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:elephant|tp-elephant",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 200
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -200
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "200+ เชือก",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S07-02",
+     "kind": "parallax",
+     "description": "ช้างยืนกลางสนาม แสงเช้า — วนกลับ hook",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:show-field-plate|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:elephant|tp-elephant",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "float"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "crane",
+      "from": {
+       "x": 0,
+       "y": 160,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -160,
+       "z": 80
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "สุรินทร์",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "covers": [
+  {
+   "id": "A",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "ช้าง 200+\n*มาจากไหน*",
+   "kicker": "งานช้างสุรินทร์",
+   "sourceRef": "F-01",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:show-field-plate|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:elephant|tp-elephant",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 620
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "ช้างมาก่อน\n*งานมาทีหลัง*",
+   "kicker": "เริ่มปี 2503",
+   "sourceRef": "F-04",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:village-plate|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:elephant-family|tp-elephant",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 620
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  }
+ ]
+}
