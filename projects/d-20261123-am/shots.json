@@ -1,0 +1,1516 @@
+{
+ "meta": {
+  "slug": "d-20261123-am",
+  "title": "กระทงขนมปัง ปลากินได้ ทำไม กทม. ขอให้งด",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "targetSec": 60
+ },
+ "sources": {
+  "F-01": "Sanook · ฐานเศรษฐกิจ (ต.ค.–พ.ย. 69)",
+  "F-02": "ไทยรัฐ (21 พ.ย. 69) · PPTV · Amarin TV (22 พ.ย. 69)",
+  "F-03": "ฐานเศรษฐกิจ (16 พ.ย. 69) · The Thaiger (22 พ.ย. 69)",
+  "F-04": "ฐานเศรษฐกิจ · The Thaiger · ข่าวสด/สผ.",
+  "F-05": "The Thaiger (22 พ.ย. 69) · Sanook (12 พ.ย. 69)",
+  "F-06": "สำนักสิ่งแวดล้อม กทม. ผ่าน Sanook · The Thaiger",
+  "F-07": "สำนักสิ่งแวดล้อม กทม. ผ่าน Sanook (12 พ.ย. 69)",
+  "F-08": "ข่าวสด/สผ. (2567) · Sanook · The Thaiger"
+ },
+ "covers": [
+  {
+   "id": "A",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "ขนมปัง\n*ให้ปลา?*",
+   "kicker": "กทม. ขอให้งด",
+   "sourceRef": "F-02",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:park-pond-night|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:bread-krathong|lantern",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 620
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "ลอย 1 คืน\n*ฟื้น 4 เดือน*",
+   "kicker": "สวนสันติภาพ 2566",
+   "sourceRef": "F-08",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:underwater-pond|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:fish|bubble",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 620
+    },
+    {
+     "id": "fg",
+     "asset": "bubble",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "id": "S01",
+   "beat": "hook",
+   "era": "present",
+   "vo": "กระทงขนมปัง ปลากินได้… [#S01-02] ทำไม กทม. ขอให้งด",
+   "voEn": "A bread krathong, fish can eat it… [#S01-02] so why is Bangkok asking us not to float one?",
+   "voTTS": "กระทง… ขนมปัง… ปลากินได้… [#S01-02] ทำไม… กอ ทอ มอ… ขอให้งด",
+   "voFile": "vo/S01.wav",
+   "shots": [
+    {
+     "id": "S01-01",
+     "kind": "parallax",
+     "description": "สระในสวนยามคืนเพ็ญ กระทงขนมปังลอยเด้งเข้ามาตั้งแต่เฟรมแรก กล้องดันเข้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:park-pond-night|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:bread-krathong|lantern",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "กระทงขนมปัง",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S01-02",
+     "kind": "parallax",
+     "description": "ปลาโผล่มาใต้กระทง คำถามขึ้นจอ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:park-pond-night|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "mg",
+       "asset": "img:bread-krathong|lantern",
+       "style": "vector",
+       "z": 1600,
+       "x": 180,
+       "y": -260,
+       "w": 300,
+       "anim": "float"
+      },
+      {
+       "id": "subject",
+       "asset": "img:fish|bubble",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 520,
+       "anim": "bob"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "crane",
+      "from": {
+       "x": 0,
+       "y": 160,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -160,
+       "z": 80
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ทำไมต้องงด?",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "beat": "setup",
+   "era": "present",
+   "vo": "ลอยกระทง 24 พ.ย. นี้ [#S02-02] กทม. เปิด 35 สวน [#S02-03] แต่ขอให้สระในสวน [#S02-04] งดกระทงขนมปัง",
+   "voEn": "Loy Krathong is this November 24. [#S02-02] Bangkok opens 35 parks, [#S02-03] but asks that in park ponds [#S02-04] we skip bread krathong.",
+   "voTTS": "ลอยกระทง… ยี่สิบสี่… พฤศจิกายนนี้ [#S02-02] กอ ทอ มอ… เปิด… สามสิบห้าสวน [#S02-03] แต่ขอให้… สระในสวน [#S02-04] งด… กระทงขนมปัง",
+   "voFile": "vo/S02.wav",
+   "shots": [
+    {
+     "id": "S02-01",
+     "kind": "vector",
+     "description": "ปฏิทินขึ้นวันลอยกระทง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "24 พ.ย.",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-02",
+     "kind": "data",
+     "description": "ตัวนับ 35 สวน — reveal 1",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 35,
+      "suffix": " สวน",
+      "label": "กทม. เปิดให้ลอยกระทง",
+      "sourceRef": "F-03"
+     }
+    },
+    {
+     "id": "S02-03",
+     "kind": "vector",
+     "description": "กระทงใบตองลอยในสระสวนสาธารณะ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:park-pond-night|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:banana-krathong|leaves-fg",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "slide-up"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "สระในสวน",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S02-04",
+     "kind": "collage",
+     "description": "กระทงขนมปังแปะบนกระดาษ ปากกาแดงวง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:bread-krathong|lantern",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "stop-motion",
+       "rot": -4
+      },
+      {
+       "id": "mark",
+       "asset": "marker-circle",
+       "style": "collage",
+       "z": 990,
+       "x": 0,
+       "y": -80,
+       "w": 640,
+       "delay": 0.3
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "งดกระทงขนมปัง",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "beat": "act1",
+   "era": "present",
+   "vo": "ปลากินไม่หมด [#S03-02] ขนมปังที่เหลือยุ่ย [#S03-03] จมก้นสระ [#S03-04] เก็บก็ยาก [#S03-05] จุลินทรีย์จึงมาย่อยแทน",
+   "voEn": "The fish can't eat it all. [#S03-02] The leftover bread goes soggy, [#S03-03] sinks to the bottom, [#S03-04] and is hard to collect. [#S03-05] So microbes move in to break it down.",
+   "voTTS": "ปลา… กินไม่หมด [#S03-02] ขนมปังที่เหลือ… ยุ่ย [#S03-03] จม… ก้นสระ [#S03-04] เก็บ… ก็ยาก [#S03-05] จุลินทรีย์… จึงมาย่อยแทน",
+   "voFile": "vo/S03.wav",
+   "shots": [
+    {
+     "id": "S03-01",
+     "kind": "vector",
+     "description": "ปลาตัวเดียวกับกระทงใบใหญ่ อิ่มแล้ว",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:park-pond-night|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "mg",
+       "asset": "img:bread-krathong|lantern",
+       "style": "vector",
+       "z": 1600,
+       "x": 160,
+       "y": -240,
+       "w": 320,
+       "anim": "float"
+      },
+      {
+       "id": "subject",
+       "asset": "img:fish|bubble",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -20,
+       "w": 480,
+       "anim": "bob"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "กินไม่หมด",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S03-02",
+     "kind": "parallax",
+     "description": "ใต้น้ำ เศษขนมปังยุ่ยค่อย ๆ ตก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:underwater-pond|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:bread-krathong|lantern",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 480,
+       "anim": "drop"
+      },
+      {
+       "id": "fg",
+       "asset": "bubble",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.35
+      }
+     ],
+     "camera": {
+      "move": "crane",
+      "from": {
+       "x": 0,
+       "y": -200,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": 120,
+       "z": 120
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ยุ่ย",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S03-03",
+     "kind": "parallax",
+     "description": "กล้องลงตามไปถึงก้นสระ ขนมปังนอนนิ่งบนเลน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:underwater-pond|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:bread-krathong|lantern",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": 0,
+       "w": 460,
+       "anim": "none",
+       "rot": 12
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.35
+      }
+     ],
+     "camera": {
+      "move": "crane",
+      "from": {
+       "x": 0,
+       "y": -150,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": 150,
+       "z": 100
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "จมก้นสระ",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S03-04",
+     "kind": "vector",
+     "description": "ตาข่ายเก็บไม่ถึง — กระทงจมอยู่ลึก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:underwater-pond|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:bread-krathong|lantern",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": 0,
+       "w": 420,
+       "anim": "sway"
+      },
+      {
+       "id": "q",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1100,
+       "x": 0,
+       "y": -420,
+       "w": 260,
+       "anim": "pop",
+       "delay": 0.3
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เก็บยาก",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S03-05",
+     "kind": "vector",
+     "description": "จุลินทรีย์เด้งออกมารุมขนมปัง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:underwater-pond|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "mg",
+       "asset": "img:bread-krathong|lantern",
+       "style": "vector",
+       "z": 1600,
+       "x": 0,
+       "y": 40,
+       "w": 360,
+       "anim": "none"
+      },
+      {
+       "id": "subject",
+       "asset": "img:microbe|bubble",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -120,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "จุลินทรีย์",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "beat": "act2",
+   "era": "present",
+   "vo": "การย่อยใช้ออกซิเจนในน้ำ [#S04-02] ออกซิเจนลดลง [#S04-03] ปลาหายใจไม่ทัน [#S04-04] สระในสวนเป็นน้ำปิด [#S04-05] ไม่มีน้ำใหม่มาช่วย",
+   "voEn": "Breaking it down uses the oxygen in the water. [#S04-02] Oxygen drops. [#S04-03] Fish struggle to breathe. [#S04-04] A park pond is closed water, [#S04-05] with no fresh water coming in.",
+   "voTTS": "การย่อย… ใช้ออกซิเจนในน้ำ [#S04-02] ออกซิเจน… ลดลง [#S04-03] ปลา… หายใจไม่ทัน [#S04-04] สระในสวน… เป็นน้ำปิด [#S04-05] ไม่มีน้ำใหม่… มาช่วย",
+   "voFile": "vo/S04.wav",
+   "shots": [
+    {
+     "id": "S04-01",
+     "kind": "vector",
+     "description": "จุลินทรีย์ดูดฟองอากาศ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:underwater-pond|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "mg",
+       "asset": "bubble",
+       "style": "vector",
+       "z": 1600,
+       "x": -200,
+       "y": -200,
+       "w": 260,
+       "anim": "float"
+      },
+      {
+       "id": "subject",
+       "asset": "img:microbe|bubble",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 500,
+       "anim": "bob"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ใช้ออกซิเจน",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S04-02",
+     "kind": "vector",
+     "description": "ฟองอากาศเหลือน้อยลง ลอยหายไป",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "bubble",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -120,
+       "w": 420,
+       "anim": "float",
+       "opacity": 0.7
+      }
+     ],
+     "camera": {
+      "move": "crane",
+      "from": {
+       "x": 0,
+       "y": 100,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -200,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ออกซิเจนลดลง",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S04-03",
+     "kind": "parallax",
+     "description": "ปลาอ้าปากขึ้นมาหายใจใกล้ผิวน้ำ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:underwater-pond|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:fish|bubble",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 540,
+       "anim": "sway"
+      },
+      {
+       "id": "fg",
+       "asset": "bubble",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -40,
+       "z": 220
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "หายใจไม่ทัน",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S04-04",
+     "kind": "collage",
+     "description": "สระในสวนเหมือนอ่างปิด ปากกาแดงวงขอบสระ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:park-pond-night|water-cup",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 600,
+       "anim": "stop-motion",
+       "rot": 3
+      },
+      {
+       "id": "mark",
+       "asset": "marker-circle",
+       "style": "collage",
+       "z": 990,
+       "x": 0,
+       "y": -80,
+       "w": 680,
+       "delay": 0.3
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "น้ำปิด",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S04-05",
+     "kind": "vector",
+     "description": "ไม่มีน้ำใหม่ไหลเข้า ใบไม้ลอยนิ่ง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:park-pond-night|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:fish|bubble",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 440,
+       "anim": "bob",
+       "opacity": 0.85
+      },
+      {
+       "id": "fg",
+       "asset": "leaves-fg",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.5
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไม่มีน้ำใหม่",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "beat": "act3",
+   "era": "present",
+   "vo": "ปี 2566 สวนสันติภาพ [#S05-02] เจอกระทงขนมปังราว 4,000 ใบ [#S05-03] น้ำเน่า ปลาตายจำนวนมาก [#S05-04] ฟื้นฟูเกือบ 4 เดือน",
+   "voEn": "In 2023, at Santi Phap Park, [#S05-02] about 4,000 bread krathong were floated. [#S05-03] The water rotted and many fish died. [#S05-04] Restoring the pond took almost 4 months.",
+   "voTTS": "ปี… สองพันห้าร้อยหกสิบหก… สวนสันติภาพ [#S05-02] เจอกระทงขนมปัง… ราวสี่พันใบ [#S05-03] น้ำเน่า… ปลาตายจำนวนมาก [#S05-04] ฟื้นฟู… เกือบสี่เดือน",
+   "voFile": "vo/S05.wav",
+   "shots": [
+    {
+     "id": "S05-01",
+     "kind": "collage",
+     "description": "ปฏิทินปี 2566 กับหมุดสวนสันติภาพ แปะบนกระดาษ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "collage",
+       "z": 1000,
+       "x": -120,
+       "y": -80,
+       "w": 420,
+       "anim": "stop-motion",
+       "rot": -3
+      },
+      {
+       "id": "pin",
+       "asset": "giant-pin",
+       "style": "collage",
+       "z": 1000,
+       "x": 200,
+       "y": -160,
+       "w": 260,
+       "anim": "drop",
+       "delay": 0.3
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "2566 · สวนสันติภาพ",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    },
+    {
+     "id": "S05-02",
+     "kind": "data",
+     "description": "ตัวนับกระทงขนมปังราว 4,000 ใบ — reveal 3",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 4000,
+      "suffix": " ใบ",
+      "label": "กระทงขนมปัง ราว",
+      "sourceRef": "F-07"
+     }
+    },
+    {
+     "id": "S05-03",
+     "kind": "parallax",
+     "description": "สระขุ่นเขียว ปลาลอยนิ่ง แสงมืดลง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:underwater-pond|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:fish|bubble",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 500,
+       "anim": "sway",
+       "opacity": 0.6,
+       "rot": -15
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.45
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 200
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -200
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "น้ำเน่า ปลาตาย",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    },
+    {
+     "id": "S05-04",
+     "kind": "data",
+     "description": "ตัวนับ เกือบ 4 เดือน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 4,
+      "suffix": " เดือน",
+      "label": "ฟื้นฟูสระ เกือบ",
+      "sourceRef": "F-08"
+     }
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "beat": "payoff",
+   "era": "present",
+   "vo": "คำตอบคือ… [#S06-02] ปลากินได้ แต่กินไม่หมด [#S06-03] ที่เหลือกลับ [#S06-04] แย่งอากาศของปลา",
+   "voEn": "So the answer… [#S06-02] fish can eat it, but not all of it. [#S06-03] What's left [#S06-04] steals the fish's air.",
+   "voTTS": "คำตอบคือ… [#S06-02] ปลากินได้… แต่กินไม่หมด [#S06-03] ที่เหลือ… กลับ [#S06-04] แย่งอากาศ… ของปลา",
+   "voFile": "vo/S06.wav",
+   "shots": [
+    {
+     "id": "S06-01",
+     "kind": "vector",
+     "description": "ป้ายคำถามแตกเป็นคำตอบ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 480,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "คำตอบคือ",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-02",
+     "kind": "vector",
+     "description": "ปลากับกระทงขนมปังใบใหญ่กว่าตัว",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:park-pond-night|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "mg",
+       "asset": "img:bread-krathong|lantern",
+       "style": "vector",
+       "z": 1600,
+       "x": 0,
+       "y": -280,
+       "w": 420,
+       "anim": "float"
+      },
+      {
+       "id": "subject",
+       "asset": "img:fish|bubble",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -20,
+       "w": 380,
+       "anim": "bob"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "กินได้ แต่ไม่หมด",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S06-03",
+     "kind": "parallax",
+     "description": "ใต้น้ำ ขนมปังที่เหลือกับจุลินทรีย์",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:underwater-pond|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:microbe|bubble",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 480,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "bubble",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "truck",
+      "from": {
+       "x": -200,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 200,
+       "y": 0,
+       "z": 60
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ที่เหลือ…",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S06-04",
+     "kind": "vector",
+     "description": "จุลินทรีย์ดึงฟองอากาศไปจากปลา",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:underwater-pond|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "mg",
+       "asset": "img:microbe|bubble",
+       "style": "vector",
+       "z": 1600,
+       "x": -200,
+       "y": -200,
+       "w": 300,
+       "anim": "bob"
+      },
+      {
+       "id": "subject",
+       "asset": "img:fish|bubble",
+       "style": "vector",
+       "z": 1000,
+       "x": 120,
+       "y": -20,
+       "w": 420,
+       "anim": "sway"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "แย่งอากาศปลา",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "beat": "outro",
+   "era": "present",
+   "vo": "ขนมปังที่ตั้งใจให้ปลา… [#S07-02] อาจทำให้ปลาหายใจไม่ออก",
+   "voEn": "Bread we meant for the fish… [#S07-02] may leave them unable to breathe.",
+   "voTTS": "ขนมปัง… ที่ตั้งใจให้ปลา… [#S07-02] อาจทำให้ปลา… หายใจไม่ออก",
+   "voFile": "vo/S07.wav",
+   "shots": [
+    {
+     "id": "S07-01",
+     "kind": "parallax",
+     "description": "กระทงขนมปังลอยใต้พระจันทร์ กล้องถอยช้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:park-pond-night|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:bread-krathong|lantern",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "float"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 150
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -250
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ให้ปลา…",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S07-02",
+     "kind": "parallax",
+     "description": "ปลามองขึ้นไปที่กระทง ภาพวนกลับต้นคลิป",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:park-pond-night|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "mg",
+       "asset": "img:bread-krathong|lantern",
+       "style": "vector",
+       "z": 1600,
+       "x": 160,
+       "y": -280,
+       "w": 300,
+       "anim": "float"
+      },
+      {
+       "id": "subject",
+       "asset": "img:fish|bubble",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -40,
+       "w": 500,
+       "anim": "bob"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -30,
+       "z": 220
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "หายใจไม่ออก",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

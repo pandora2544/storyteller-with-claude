@@ -1,0 +1,16 @@
+{
+  "images": [
+    {"id": "park-pond-night", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A calm pond in a city public park at night under a big full moon, a few small glowing floating lotus-shaped lanterns with candles on the dark water, tropical trees and a simple wooden pier at the edge, distant generic high-rise silhouettes, soft moonlight reflections, no people, no text"},
+    {"id": "underwater-pond", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "Underwater side view inside a still freshwater pond, greenish murky water, soft muddy bottom with a few water plants, faint light rays coming down from the surface, small floating particles, calm and slightly gloomy mood, no fish, no text"},
+    {"id": "bread-krathong", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A traditional Thai floating krathong made entirely of baked bread, round bread base with petal shapes made of bread dyed soft pink and green, a small lit candle and three incense sticks in the center, rounded friendly shapes, simple soft shading, no text"},
+    {"id": "banana-krathong", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A traditional Thai floating krathong made from a slice of banana tree trunk decorated with folded green banana leaves, orange marigold and purple orchid flowers, a small lit candle and incense sticks in the center, rounded friendly shapes, simple soft shading, no text"},
+    {"id": "fish", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single friendly freshwater fish like a tilapia seen from the side, silver grey body with soft orange fins, big round eye, mouth slightly open, rounded friendly shapes, simple soft shading, no text"},
+    {"id": "microbe", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A small cluster of cute round cartoon microbes, simple bean and blob shapes in soft green and yellow, tiny dot eyes, playful busy expressions, rounded friendly shapes, simple soft shading, no text"}
+  ]
+}
