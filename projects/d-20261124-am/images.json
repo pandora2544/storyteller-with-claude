@@ -1,0 +1,14 @@
+{
+  "images": [
+    {"id": "club-hall", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A grand elegant meeting hall of an exclusive international club, a large round wooden conference table with many empty chairs, tall arched windows with warm golden light, polished floor, calm and prestigious mood, no people, no flags, no logos, no text"},
+    {"id": "thai-street", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A lively generic Thai city street in daytime, rows of colorful shophouses and a few modern office towers, a small food cart, motorbikes and a tuk-tuk, tropical trees and tangled overhead power lines, bright sky, no people faces in detail, no shop signs with readable text, no logos, no text"},
+    {"id": "club-door", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A large ornate wooden double door standing slightly open with warm golden light glowing through the gap, brass handles, rounded friendly shapes, simple soft shading, no text"},
+    {"id": "exam-clipboard", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A clipboard holding an exam checklist sheet with simple grey lines instead of words and several green check marks, a yellow pencil leaning on it, rounded friendly shapes, simple soft shading, no text"},
+    {"id": "gears", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A cluster of three interlocking cogwheel gears in orange, teal and yellow, one small gear slightly worn, rounded friendly shapes, simple soft shading, no text"}
+  ]
+}

@@ -1,0 +1,1369 @@
+{
+ "meta": {
+  "slug": "d-20261124-am",
+  "title": "ไทยอยากเข้าคลับ 38 ประเทศ แล้วเราได้อะไร",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "targetSec": 60
+ },
+ "sources": {
+  "F-01": "OECD · ไทยรัฐ · ฐานเศรษฐกิจ (23 พ.ย. 69)",
+  "F-02": "ประชาชาติธุรกิจ · Thai PBS · Thai Examiner",
+  "F-03": "ไทยรัฐ · ฐานเศรษฐกิจ (23 พ.ย. 69)",
+  "F-04": "ประชาชาติธุรกิจ · Thai PBS Policy Watch",
+  "F-05": "Thai PBS · ไทยรัฐ (23 พ.ย. 69)",
+  "F-06": "สศช. (ต.ค. 69) · Thai Examiner",
+  "F-07": "คำแถลงรัฐบาล ผ่านไทยรัฐ · ฐานเศรษฐกิจ",
+  "F-08": "OECD ผ่านไทยรัฐ · ฐานเศรษฐกิจ · สศช.",
+  "F-09": "สศช. · ฐานเศรษฐกิจ",
+  "F-10": "Thai Examiner (20 พ.ย. 69) · ประชาชาติธุรกิจ"
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "beat": "hook",
+   "era": "present",
+   "vo": "ไทยอยากเข้าคลับ 38 ประเทศ… [#S01-02] เราได้อะไร",
+   "voEn": "Thailand wants to join a club of 38 countries… [#S01-02] so what do we get?",
+   "voTTS": "ไทย… อยากเข้าคลับ… สามสิบแปดประเทศ… [#S01-02] เราได้อะไร",
+   "voFile": "vo/S01.wav",
+   "shots": [
+    {
+     "id": "S01-01",
+     "kind": "parallax",
+     "description": "ห้องประชุมหรูของคลับ ประตูใหญ่เด้งเข้ามาตั้งแต่เฟรมแรก กล้องดันเข้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:club-hall|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:club-door|spotlight-stage",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "คลับ 38 ประเทศ",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    },
+    {
+     "id": "S01-02",
+     "kind": "parallax",
+     "description": "ถนนเมืองไทย ป้ายคำถามลอยขึ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:thai-street|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 440,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "crane",
+      "from": {
+       "x": 0,
+       "y": 160,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -160,
+       "z": 80
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "เราได้อะไร?",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "beat": "setup",
+   "era": "present",
+   "vo": "เลขาฯ OECD เพิ่งมาไทย [#S02-02] รัฐบาลตั้งเป้า [#S02-03] เข้าให้ได้ปี 2571",
+   "voEn": "The OECD Secretary-General just visited Thailand. [#S02-02] The government has set a goal [#S02-03] to join by 2028.",
+   "voTTS": "เลขาธิการ… โอ อี ซี ดี… เพิ่งมาไทย [#S02-02] รัฐบาล… ตั้งเป้า [#S02-03] เข้าให้ได้… ปีสองพันห้าร้อยเจ็ดสิบเอ็ด",
+   "voFile": "vo/S02.wav",
+   "shots": [
+    {
+     "id": "S02-01",
+     "kind": "data",
+     "description": "แผนที่ซูมเข้าไทย หมุดกรุงเทพฯ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        105,
+        15
+       ],
+       "scale": 900
+      },
+      "to": {
+       "center": [
+        100.5,
+        13.8
+       ],
+       "scale": 1600
+      },
+      "pins": [
+       {
+        "at": [
+         100.5,
+         13.75
+        ],
+        "label": "กรุงเทพฯ"
+       }
+      ],
+      "sourceRef": "F-01"
+     },
+     "text": [
+      {
+       "content": "23–24 พ.ย.",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-02",
+     "kind": "vector",
+     "description": "ปฏิทินพลิกไปข้างหน้า — ตั้งเป้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ตั้งเป้า",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    },
+    {
+     "id": "S02-03",
+     "kind": "collage",
+     "description": "ปฏิทินแปะกระดาษ ปากกาแดงวงปี 2571",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "stop-motion",
+       "rot": -4
+      },
+      {
+       "id": "mark",
+       "asset": "marker-circle",
+       "style": "collage",
+       "z": 990,
+       "x": 0,
+       "y": -80,
+       "w": 620,
+       "delay": 0.3
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ปี 2571",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-03"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "beat": "act1",
+   "era": "present",
+   "vo": "OECD คือกลุ่ม 38 ประเทศ [#S03-02] ที่ใช้มาตรฐานร่วมกัน [#S03-03] ไม่ใช่ข้อตกลงการค้า [#S03-04] สมัครแล้ว [#S03-05] ต้องสอบให้ผ่าน",
+   "voEn": "The OECD is a group of 38 countries [#S03-02] that share common standards. [#S03-03] It's not a trade deal. [#S03-04] Once you apply, [#S03-05] you have to pass the test.",
+   "voTTS": "โอ อี ซี ดี… คือกลุ่ม… สามสิบแปดประเทศ [#S03-02] ที่ใช้มาตรฐาน… ร่วมกัน [#S03-03] ไม่ใช่… ข้อตกลงการค้า [#S03-04] สมัครแล้ว… [#S03-05] ต้องสอบให้ผ่าน",
+   "voFile": "vo/S03.wav",
+   "shots": [
+    {
+     "id": "S03-01",
+     "kind": "data",
+     "description": "ไอคอน 38 ชิ้นเรียงเต็มจอ — reveal 1",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "unit",
+      "count": 38,
+      "perIcon": "1 ประเทศ",
+      "label": "สมาชิก OECD",
+      "sourceRef": "F-02"
+     }
+    },
+    {
+     "id": "S03-02",
+     "kind": "vector",
+     "description": "ตาชั่งสมดุล = มาตรฐานเดียวกัน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "balance-scale",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "มาตรฐานร่วมกัน",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S03-03",
+     "kind": "collage",
+     "description": "เอกสารสัญญาการค้าโดนขีดฆ่า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "document",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "stop-motion",
+       "rot": 3
+      },
+      {
+       "id": "mark",
+       "asset": "marker-circle",
+       "style": "collage",
+       "z": 990,
+       "x": 0,
+       "y": -80,
+       "w": 600,
+       "delay": 0.3
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไม่ใช่ FTA",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S03-04",
+     "kind": "parallax",
+     "description": "ประตูคลับเปิดแง้ม แสงลอดออกมา",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:club-hall|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:club-door|spotlight-stage",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "float"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": 200
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "สมัครแล้ว…",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S03-05",
+     "kind": "vector",
+     "description": "คลิปบอร์ดข้อสอบเด้งขึ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:exam-clipboard|notebook",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 480,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ต้องสอบ",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "beat": "act2",
+   "era": "present",
+   "vo": "ไทยต้องผ่าน 25 คณะกรรมการ [#S04-02] ทั้งภาษี การแข่งขัน [#S04-03] ไปจนถึงต้านสินบน [#S04-04] รัฐบาลบอกว่าผ่านรอบแรก [#S04-05] บางคนมองว่าอาจช้ากว่าเป้า",
+   "voEn": "Thailand must pass 25 committees, [#S04-02] covering tax and competition [#S04-03] all the way to anti-bribery. [#S04-04] The government says it passed the first round. [#S04-05] Some think it may take longer than planned.",
+   "voTTS": "ไทยต้องผ่าน… ยี่สิบห้าคณะกรรมการ [#S04-02] ทั้งภาษี… การแข่งขัน [#S04-03] ไปจนถึง… ต้านสินบน [#S04-04] รัฐบาลบอกว่า… ผ่านรอบแรก [#S04-05] บางคนมองว่า… อาจช้ากว่าเป้า",
+   "voFile": "vo/S04.wav",
+   "shots": [
+    {
+     "id": "S04-01",
+     "kind": "data",
+     "description": "ตัวนับ 25 คณะกรรมการ — reveal 2",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 25,
+      "suffix": " คณะ",
+      "label": "คณะกรรมการ OECD",
+      "sourceRef": "F-05"
+     }
+    },
+    {
+     "id": "S04-02",
+     "kind": "vector",
+     "description": "กองเหรียญ = ภาษี/การแข่งขัน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "coin-stack",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 480,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ภาษี · การแข่งขัน",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    },
+    {
+     "id": "S04-03",
+     "kind": "vector",
+     "description": "แว่นขยายส่องหาสินบน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "magnifier",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 480,
+       "anim": "sway"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ต้านสินบน",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    },
+    {
+     "id": "S04-04",
+     "kind": "collage",
+     "description": "คลิปบอร์ดแปะกระดาษ ตรายางประทับ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:exam-clipboard|notebook",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 460,
+       "anim": "stop-motion",
+       "rot": -3
+      },
+      {
+       "id": "stamp",
+       "asset": "stamp",
+       "style": "collage",
+       "z": 900,
+       "x": 150,
+       "y": 60,
+       "w": 280,
+       "anim": "drop",
+       "props": {
+        "at": 0.5
+       }
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "รัฐบาล: ผ่านรอบแรก",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-07"
+      }
+     ]
+    },
+    {
+     "id": "S04-05",
+     "kind": "vector",
+     "description": "ปฏิทินกับป้ายคำถาม — อาจนานกว่าเป้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 440,
+       "anim": "sway"
+      },
+      {
+       "id": "q",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1100,
+       "x": 180,
+       "y": -400,
+       "w": 220,
+       "anim": "pop",
+       "delay": 0.3
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "อาจช้ากว่าเป้า",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-10"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "beat": "act3",
+   "era": "present",
+   "vo": "ทำไมต้องรีบ [#S05-02] ผลิตภาพไทยเคยโตปีละ 4.8% [#S05-03] ช่วงหลังเหลือ 2.1% [#S05-04] คนวัยทำงานก็ลดลง",
+   "voEn": "Why the rush? [#S05-02] Thai productivity used to grow 4.8% a year. [#S05-03] Lately it's down to 2.1%. [#S05-04] And the working-age population is shrinking.",
+   "voTTS": "ทำไม… ต้องรีบ [#S05-02] ผลิตภาพไทย… เคยโตปีละ… สี่จุดแปดเปอร์เซ็นต์ [#S05-03] ช่วงหลัง… เหลือสองจุดหนึ่งเปอร์เซ็นต์ [#S05-04] คนวัยทำงาน… ก็ลดลง",
+   "voFile": "vo/S05.wav",
+   "shots": [
+    {
+     "id": "S05-01",
+     "kind": "parallax",
+     "description": "เมืองไทย เฟืองหมุนช้า กล้องไต่ขึ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:thai-street|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:gears|coin-stack",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 520,
+       "anim": "spin"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "crane",
+      "from": {
+       "x": 0,
+       "y": 150,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -150,
+       "z": 100
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ทำไมต้องรีบ?",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S05-02",
+     "kind": "data",
+     "description": "แท่งผลิตภาพ 4.8% ต่อปี",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "bar",
+      "items": [
+       {
+        "label": "2553–58",
+        "value": 4.8
+       }
+      ],
+      "unit": "%",
+      "title": "ผลิตภาพไทยโตต่อปี",
+      "sourceRef": "F-08"
+     }
+    },
+    {
+     "id": "S05-03",
+     "kind": "data",
+     "description": "แท่งที่สองหดเหลือ 2.1% — data moment",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "bar",
+      "items": [
+       {
+        "label": "2553–58",
+        "value": 4.8
+       },
+       {
+        "label": "2558–66",
+        "value": 2.1,
+        "highlight": true
+       }
+      ],
+      "unit": "%",
+      "title": "ผลิตภาพไทยโตต่อปี",
+      "sourceRef": "F-08"
+     }
+    },
+    {
+     "id": "S05-04",
+     "kind": "vector",
+     "description": "กลุ่มคนเดินบางลง = วัยทำงานลดลง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "walking-group-silhouette",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "slide-left"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "วัยทำงานลดลง",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-08"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "beat": "payoff",
+   "era": "present",
+   "vo": "คำตอบคือ… [#S06-02] ไม่ได้เงินก้อน [#S06-03] แต่ได้กติกาที่เข้มขึ้น [#S06-04] หวังดึงเงินลงทุน",
+   "voEn": "So the answer… [#S06-02] no lump sum of money, [#S06-03] but stricter rules, [#S06-04] in the hope of drawing investment.",
+   "voTTS": "คำตอบคือ… [#S06-02] ไม่ได้… เงินก้อน [#S06-03] แต่ได้กติกา… ที่เข้มขึ้น [#S06-04] หวังดึง… เงินลงทุน",
+   "voFile": "vo/S06.wav",
+   "shots": [
+    {
+     "id": "S06-01",
+     "kind": "vector",
+     "description": "ป้ายคำถามแตกเป็นคำตอบ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 460,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "คำตอบคือ",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-02",
+     "kind": "collage",
+     "description": "กองเหรียญแปะกระดาษ ปากกาแดงวงขีดฆ่า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "coin-stack",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 460,
+       "anim": "stop-motion",
+       "rot": 4
+      },
+      {
+       "id": "mark",
+       "asset": "marker-circle",
+       "style": "collage",
+       "z": 990,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "delay": 0.3
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไม่ใช่เงินก้อน",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S06-03",
+     "kind": "vector",
+     "description": "คลิปบอร์ดกติกา",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:exam-clipboard|notebook",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 480,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "กติกาเข้มขึ้น",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-09"
+      }
+     ]
+    },
+    {
+     "id": "S06-04",
+     "kind": "parallax",
+     "description": "เมืองไทย เฟืองหมุนเร็วขึ้น กล้องถอยออก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:thai-street|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:gears|coin-stack",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -60,
+       "w": 500,
+       "anim": "spin"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 150
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -250
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ดึงการลงทุน",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-09"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "beat": "outro",
+   "era": "present",
+   "vo": "เข้าคลับได้ไหม… [#S07-02] อยู่ที่การบ้านของเรา",
+   "voEn": "Whether we get into the club… [#S07-02] depends on our own homework.",
+   "voTTS": "เข้าคลับ… ได้ไหม… [#S07-02] อยู่ที่… การบ้านของเรา",
+   "voFile": "vo/S07.wav",
+   "shots": [
+    {
+     "id": "S07-01",
+     "kind": "vector",
+     "description": "ประตูคลับตั้งเด่น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:club-door|spotlight-stage",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "float"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เข้าคลับได้ไหม…",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S07-02",
+     "kind": "parallax",
+     "description": "ห้องประชุมคลับ คลิปบอร์ดข้อสอบลอยหน้าประตู กล้องถอย วนกลับต้นคลิป",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:club-hall|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "mg",
+       "asset": "img:club-door|spotlight-stage",
+       "style": "vector",
+       "z": 1600,
+       "x": 0,
+       "y": -260,
+       "w": 360,
+       "anim": "float"
+      },
+      {
+       "id": "subject",
+       "asset": "img:exam-clipboard|notebook",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -20,
+       "w": 420,
+       "anim": "bob"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 150
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -250
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "การบ้านของเรา",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "covers": [
+  {
+   "id": "A",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "เข้าคลับ\n*38 ประเทศ*",
+   "kicker": "ไทยตั้งเป้า 2571",
+   "sourceRef": "F-02",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:club-hall|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:club-door|spotlight-stage",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 620
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "เข้า OECD\n*ได้อะไร?*",
+   "kicker": "ไม่ใช่เงินก้อน",
+   "sourceRef": "F-04",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:thai-street|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:exam-clipboard|notebook",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 620
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  }
+ ]
+}
