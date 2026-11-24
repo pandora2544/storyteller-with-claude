@@ -1,0 +1,1402 @@
+{
+ "meta": {
+  "slug": "d-20261125-am",
+  "title": "รอ 7 ปี กฎหมายอากาศสะอาด ช่วยเราได้ไหม",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "targetSec": 60
+ },
+ "sources": {
+  "F-01": "Nation · ประชาไท · ไทยรัฐ · สยามรัฐ (พ.ย. 69)",
+  "F-02": "Nation · ฐานเศรษฐกิจ (24 พ.ย. 69)",
+  "F-03": "ฐานเศรษฐกิจ · Wikipedia",
+  "F-04": "Nation · ประชาไท · ฐานเศรษฐกิจ",
+  "F-05": "Nation · Thai PBS Policy Watch",
+  "F-06": "ประชาไท · ไทยรัฐ",
+  "F-07": "Nation · ไทยรัฐ",
+  "F-08": "Nation · ฐานเศรษฐกิจ",
+  "F-09": "Nation · ฐานเศรษฐกิจ",
+  "F-10": "Thai PBS (3 ก.ย. 69) · ไทยรัฐ (3 พ.ย. 69)",
+  "F-11": "ประชาไท · ไทยรัฐ (18 พ.ย. 69)",
+  "F-12": "Air4Thai ผ่าน Nation · ฐานเศรษฐกิจ (24 พ.ย. 69)",
+  "F-13": "Nation · ประชาไท · ฐานเศรษฐกิจ"
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "beat": "hook",
+   "era": "present",
+   "vo": "ฝุ่นกลับมาอีกแล้ว… [#S01-02] กฎหมายที่รอ 7 ปี ช่วยได้ไหม",
+   "voEn": "The haze is back… [#S01-02] can a law 7 years in the making help?",
+   "voTTS": "ฝุ่น… กลับมาอีกแล้ว… [#S01-02] กฎหมายที่รอ… เจ็ดปี… ช่วยได้ไหม",
+   "voFile": "vo/S01.wav",
+   "shots": [
+    {
+     "id": "S01-01",
+     "kind": "parallax",
+     "description": "เมืองจมหมอกฝุ่น หน้ากากกันฝุ่นเด้งเข้ามาตั้งแต่เฟรมแรก กล้องดันเข้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:smoggy-city|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:dust-mask|heart-star",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 540,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.5
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ฝุ่นกลับมา",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S01-02",
+     "kind": "vector",
+     "description": "หนังสือกฎหมายเด้งขึ้น ป้ายรอ 7 ปี",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:law-book|book",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "รอ 7 ปี",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-02"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "beat": "setup",
+   "era": "present",
+   "vo": "เมื่อวานฝุ่นเกินมาตรฐาน 6 สถานี [#S02-02] วันนี้ [#S02-03] สภานัดถกกฎหมายอากาศสะอาด",
+   "voEn": "Yesterday, PM2.5 broke the standard at 6 stations. [#S02-02] Today, [#S02-03] the House is set to debate the Clean Air bill.",
+   "voTTS": "เมื่อวาน… ฝุ่นเกินมาตรฐาน… หกสถานี [#S02-02] วันนี้… [#S02-03] สภานัดถก… กฎหมายอากาศสะอาด",
+   "voFile": "vo/S02.wav",
+   "shots": [
+    {
+     "id": "S02-01",
+     "kind": "data",
+     "description": "ตัวเลขนับขึ้น 6 สถานีที่ฝุ่นเกินมาตรฐาน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "text": [
+      {
+       "content": "เช้า 24 พ.ย.",
+       "role": "kicker",
+       "x": 540,
+       "y": 260,
+       "sourceRef": "F-12"
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 6,
+      "suffix": " สถานี",
+      "label": "PM2.5 เกินมาตรฐาน",
+      "sourceRef": "F-12"
+     }
+    },
+    {
+     "id": "S02-02",
+     "kind": "vector",
+     "description": "ปฏิทินพลิกมาวันนี้",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "25 พ.ย.",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-03",
+     "kind": "parallax",
+     "description": "ห้องประชุมสภา (ทั่วไป) หนังสือกฎหมายลอยกลางห้อง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:assembly-hall|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:law-book|book",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 480,
+       "anim": "float"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -10,
+       "z": 200
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "พ.ร.บ.อากาศสะอาด",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "beat": "act1",
+   "era": "present",
+   "vo": "รับรองสิทธิหายใจอากาศสะอาด [#S03-02] ใครปล่อยมลพิษ คนนั้นจ่าย [#S03-03] ฝุ่นข้ามแดน [#S03-04] ให้ กต. นำคุย",
+   "voEn": "It recognises our right to breathe clean air. [#S03-02] The polluter pays. [#S03-03] For cross-border haze, [#S03-04] the Foreign Ministry leads the talks.",
+   "voTTS": "รับรองสิทธิ… หายใจอากาศสะอาด [#S03-02] ใครปล่อยมลพิษ… คนนั้นจ่าย [#S03-03] ฝุ่นข้ามแดน… [#S03-04] ให้กระทรวงต่างประเทศ… นำคุย",
+   "voFile": "vo/S03.wav",
+   "shots": [
+    {
+     "id": "S03-01",
+     "kind": "vector",
+     "description": "หน้ากากลอยขึ้นพร้อมแสง = สิทธิหายใจ — reveal 1",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "mg",
+       "asset": "light-rays",
+       "style": "vector",
+       "z": 1600,
+       "x": 0,
+       "y": -120,
+       "w": 900,
+       "opacity": 0.6
+      },
+      {
+       "id": "subject",
+       "asset": "img:dust-mask|heart-star",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 480,
+       "anim": "float"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "สิทธิหายใจ",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S03-02",
+     "kind": "collage",
+     "description": "โรงงานปล่อยควันแปะกระดาษ ปากกาแดงวง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:factory|city",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "stop-motion",
+       "rot": -3
+      },
+      {
+       "id": "mark",
+       "asset": "marker-circle",
+       "style": "collage",
+       "z": 990,
+       "x": 0,
+       "y": -80,
+       "w": 640,
+       "delay": 0.3
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ปล่อยมลพิษ = จ่าย",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S03-03",
+     "kind": "data",
+     "description": "แผนที่ไทยกับเพื่อนบ้าน ลูกศรฝุ่นเข้ามาจากนอกพรมแดน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "text": [
+      {
+       "content": "ฝุ่นข้ามแดน",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-07"
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        101,
+        15
+       ],
+       "scale": 1100
+      },
+      "to": {
+       "center": [
+        100.5,
+        16
+       ],
+       "scale": 1500
+      },
+      "routes": [
+       {
+        "path": [
+         [
+          96.5,
+          20.5
+         ],
+         [
+          98.9,
+          18.8
+         ]
+        ]
+       },
+       {
+        "path": [
+         [
+          104.5,
+          19.5
+         ],
+         [
+          101.5,
+          17.5
+         ]
+        ],
+        "delay": 0.3
+       },
+       {
+        "path": [
+         [
+          104.0,
+          12.8
+         ],
+         [
+          101.5,
+          13.8
+         ]
+        ],
+        "delay": 0.6
+       }
+      ],
+      "pins": [
+       {
+        "at": [
+         100.5,
+         13.75
+        ],
+        "label": "ไทย"
+       }
+      ]
+     }
+    },
+    {
+     "id": "S03-04",
+     "kind": "vector",
+     "description": "ลูกโลกหมุน = ต่างประเทศ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "earth-globe",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 480,
+       "anim": "spin"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "กระทรวงต่างประเทศ",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-07"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "beat": "act2",
+   "era": "present",
+   "vo": "ทำไมนาน [#S04-02] ร่าง 7 ฉบับ ตั้งแต่ปี 2562 [#S04-03] สภาโหวตรับ 443 เสียง [#S04-04] แล้วยุบสภา [#S04-05] งานสะดุด",
+   "voEn": "Why so long? [#S04-02] 7 drafts, starting in 2019. [#S04-03] The House voted 443 in favour. [#S04-04] Then the House was dissolved, [#S04-05] and work stalled.",
+   "voTTS": "ทำไม… นาน [#S04-02] ร่างเจ็ดฉบับ… ตั้งแต่ปีสองพันห้าร้อยหกสิบสอง [#S04-03] สภาโหวตรับ… สี่ร้อยสี่สิบสามเสียง [#S04-04] แล้ว… ยุบสภา [#S04-05] งานสะดุด",
+   "voFile": "vo/S04.wav",
+   "shots": [
+    {
+     "id": "S04-01",
+     "kind": "vector",
+     "description": "นาฬิกาเดินเร็ว — ทำไมนาน",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "clock",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 460,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ทำไมนาน?",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S04-02",
+     "kind": "data",
+     "description": "ไอคอน 7 ชิ้น = ร่าง 7 ฉบับ — reveal 2",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "text": [
+      {
+       "content": "ปี 2562",
+       "role": "number",
+       "x": 540,
+       "y": 260,
+       "sourceRef": "F-02"
+      }
+     ],
+     "data": {
+      "chart": "unit",
+      "count": 7,
+      "perIcon": "1 ร่าง",
+      "label": "ร่างกฎหมาย 7 ฉบับ · เริ่มปี 2562",
+      "sourceRef": "F-03"
+     }
+    },
+    {
+     "id": "S04-03",
+     "kind": "data",
+     "description": "ตัวเลขนับขึ้น 443 เสียง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 443,
+      "suffix": " เสียง",
+      "label": "สภารับหลักการ (เอกฉันท์)",
+      "sourceRef": "F-08"
+     }
+    },
+    {
+     "id": "S04-04",
+     "kind": "collage",
+     "description": "เอกสารประทับตรา ยุบสภา",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "document",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "stop-motion",
+       "rot": 4
+      },
+      {
+       "id": "stamp",
+       "asset": "stamp",
+       "style": "collage",
+       "z": 980,
+       "x": 60,
+       "y": -40,
+       "w": 300,
+       "delay": 0.4,
+       "props": {
+        "at": 0.4
+       }
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ยุบสภา ธ.ค. 68",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-09"
+      }
+     ]
+    },
+    {
+     "id": "S04-05",
+     "kind": "parallax",
+     "description": "ห้องประชุมว่าง นาฬิกาลอยช้า ๆ — งานสะดุด",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:assembly-hall|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "clock",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 420,
+       "anim": "float"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -300
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "งานสะดุด",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-09"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "beat": "act3",
+   "era": "present",
+   "vo": "ที่ยื้อคือ… [#S05-02] โทษปรับโรงงาน [#S05-03] สภาให้สูงสุด 50 ล้าน [#S05-04] วุฒิสภาเคยขอเหลือ 5 ล้าน [#S05-05] ล่าสุดตกลงได้แล้ว",
+   "voEn": "The sticking point… [#S05-02] fines for factories. [#S05-03] The House set a 50-million-baht maximum. [#S05-04] The Senate once wanted just 5 million. [#S05-05] Now they've reached a deal.",
+   "voTTS": "ที่ยื้อ… คือ… [#S05-02] โทษปรับโรงงาน [#S05-03] สภาให้… สูงสุด… ห้าสิบล้าน [#S05-04] วุฒิสภา… เคยขอเหลือ… ห้าล้าน [#S05-05] ล่าสุด… ตกลงได้แล้ว",
+   "voFile": "vo/S05.wav",
+   "shots": [
+    {
+     "id": "S05-01",
+     "kind": "vector",
+     "description": "แว่นขยายส่อง — จุดที่ยื้อ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "magnifier",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 460,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "จุดที่ยื้อ",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S05-02",
+     "kind": "parallax",
+     "description": "เมืองฝุ่น โรงงานพ่นควันกลางเฟรม",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:smoggy-city|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:factory|city",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.45
+      }
+     ],
+     "camera": {
+      "move": "truck",
+      "from": {
+       "x": -160,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 160,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "โทษปรับโรงงาน",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-10"
+      }
+     ]
+    },
+    {
+     "id": "S05-03",
+     "kind": "data",
+     "description": "ตัวเลขนับขึ้น 50 ล้านบาท — data moment",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 50,
+      "suffix": " ล้านบาท",
+      "label": "ร่างของสภา: ปรับสูงสุด",
+      "sourceRef": "F-10"
+     }
+    },
+    {
+     "id": "S05-04",
+     "kind": "data",
+     "description": "กราฟแท่ง 50 vs 5 — reveal 3",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "bar",
+      "items": [
+       {
+        "label": "ร่างสภา",
+        "value": 50
+       },
+       {
+        "label": "วุฒิสภาขอ",
+        "value": 5,
+        "highlight": true
+       }
+      ],
+      "unit": "ล้านบาท",
+      "title": "โทษปรับสูงสุด",
+      "sourceRef": "F-10"
+     }
+    },
+    {
+     "id": "S05-05",
+     "kind": "collage",
+     "description": "เอกสารประทับตรา ตกลงครบ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:law-book|book",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "stop-motion",
+       "rot": -3
+      },
+      {
+       "id": "stamp",
+       "asset": "stamp",
+       "style": "collage",
+       "z": 980,
+       "x": 60,
+       "y": -40,
+       "w": 300,
+       "delay": 0.5,
+       "props": {
+        "at": 0.5
+       }
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ตกลงครบแล้ว",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-11"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "beat": "payoff",
+   "era": "present",
+   "vo": "คำตอบคือ… [#S06-02] กฎหมายไม่กรองฝุ่นให้เรา [#S06-03] แต่ทำให้คนปล่อยต้องจ่าย [#S06-04] ถ้าผ่านสองสภา ก็รอประกาศใช้",
+   "voEn": "So the answer… [#S06-02] the law won't filter the air for us, [#S06-03] but it makes polluters pay. [#S06-04] If both chambers pass it, it awaits enactment.",
+   "voTTS": "คำตอบคือ… [#S06-02] กฎหมาย… ไม่กรองฝุ่นให้เรา [#S06-03] แต่ทำให้… คนปล่อย… ต้องจ่าย [#S06-04] ถ้าผ่านสองสภา… ก็รอประกาศใช้",
+   "voFile": "vo/S06.wav",
+   "shots": [
+    {
+     "id": "S06-01",
+     "kind": "vector",
+     "description": "ป้ายคำถามแยกทาง — คำตอบ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 440,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "คำตอบ",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-02",
+     "kind": "vector",
+     "description": "หน้ากากลอยนิ่ง ๆ — กฎหมายไม่ใช่ไส้กรอง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:dust-mask|heart-star",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 460,
+       "anim": "float"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไม่ได้กรองฝุ่น",
+       "role": "kicker",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-03",
+     "kind": "collage",
+     "description": "โรงงานแปะกระดาษ เหรียญไหลออก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:factory|city",
+       "style": "collage",
+       "z": 1000,
+       "x": -120,
+       "y": -80,
+       "w": 420,
+       "anim": "stop-motion",
+       "rot": 3
+      },
+      {
+       "id": "coin",
+       "asset": "coin-stack",
+       "style": "collage",
+       "z": 990,
+       "x": 200,
+       "y": -20,
+       "w": 260,
+       "anim": "drop",
+       "delay": 0.4
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "คนปล่อยต้องจ่าย",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S06-04",
+     "kind": "parallax",
+     "description": "ห้องประชุม หนังสือกฎหมายลอย รอประกาศใช้",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:assembly-hall|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:law-book|book",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 480,
+       "anim": "float"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.3
+      }
+     ],
+     "camera": {
+      "move": "crane",
+      "from": {
+       "x": 0,
+       "y": 140,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -140,
+       "z": 80
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "รอผ่าน 2 สภา",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-13"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "beat": "outro",
+   "era": "present",
+   "vo": "ปีหน้าฝุ่นมาอีก… [#S07-02] เราจะมีกฎหมายช่วยหรือยัง",
+   "voEn": "Next year the haze returns… [#S07-02] will we have a law on our side?",
+   "voTTS": "ปีหน้า… ฝุ่นมาอีก… [#S07-02] เราจะมีกฎหมายช่วย… หรือยัง",
+   "voFile": "vo/S07.wav",
+   "shots": [
+    {
+     "id": "S07-01",
+     "kind": "vector",
+     "description": "ปฏิทินพลิกไปปีหน้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ปีหน้า",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S07-02",
+     "kind": "parallax",
+     "description": "เมืองจมฝุ่น หน้ากากกับหนังสือกฎหมายลอยคู่กัน — วนกลับช็อตแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:smoggy-city|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:dust-mask|heart-star",
+       "style": "vector",
+       "z": 1000,
+       "x": -150,
+       "y": -60,
+       "w": 380,
+       "anim": "float"
+      },
+      {
+       "id": "mg2",
+       "asset": "img:law-book|book",
+       "style": "vector",
+       "z": 1000,
+       "x": 170,
+       "y": -40,
+       "w": 340,
+       "anim": "pop",
+       "delay": 0.3
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.5
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -300
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "มีกฎหมายช่วย?",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "covers": [
+  {
+   "id": "A",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "ฝุ่นมาอีก\n*รอ 7 ปี*",
+   "kicker": "กฎหมายอากาศสะอาด",
+   "sourceRef": "F-02",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:smoggy-city|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:dust-mask|heart-star",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 620
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.4
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "กฎหมาย\n*ช่วยได้ไหม*",
+   "kicker": "สภาถก 25 พ.ย.",
+   "sourceRef": "F-01",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:assembly-hall|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:law-book|book",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 620
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  }
+ ]
+}

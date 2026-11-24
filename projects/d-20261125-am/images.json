@@ -1,0 +1,14 @@
+{
+  "images": [
+    {"id": "smoggy-city", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A generic tropical Asian city skyline covered in thick grey-orange haze and smog, tall buildings fading into the dusty air, a pale hidden sun, an elevated train line and trees in the foreground, muted gloomy mood, no people, no logos, no text"},
+    {"id": "assembly-hall", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A generic modern legislative assembly hall interior, curved rows of empty wooden desks with small microphones facing a central podium, warm ceiling lights, calm formal mood, no people, no flags, no emblems, no logos, no text"},
+    {"id": "dust-mask", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single white disposable protective face mask with ear loops, slightly grey dust stains on the outside, floating on its own with no person wearing it, rounded friendly shapes, simple soft shading, no text"},
+    {"id": "factory", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A small cartoon factory building with two tall chimneys puffing thick dark grey smoke clouds, rounded friendly shapes, simple soft shading, no logos, no text"},
+    {"id": "law-book", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A thick closed hardcover law book in deep blue with a gold bookmark ribbon, a fresh green leaf and a small swirl of clean light-blue air drawn rising from its top, rounded friendly shapes, simple soft shading, no text"}
+  ]
+}
