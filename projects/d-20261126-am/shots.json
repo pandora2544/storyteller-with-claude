@@ -1,0 +1,1365 @@
+{
+ "meta": {
+  "slug": "d-20261126-am",
+  "title": "ไม่ได้ลงนัดชิง แต่ทำไม \"วิว\" ขึ้นมือ 1 โลก",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "targetSec": 60
+ },
+ "sources": {
+  "F-01": "BWF อันดับโลก 24 พ.ย. 69 ผ่าน Nation · PPTV",
+  "F-02": "Nation · บ้านกีฬา (24 พ.ย. 69)",
+  "F-04": "BWF How Ranking Works · GCR App.6",
+  "F-05": "BWF How Ranking Works · GCR App.6",
+  "F-06": "Nation · PPTV · บ้านกีฬา (24 พ.ย. 69)",
+  "F-07": "BWF GCR App.6 · Nation",
+  "F-08": "BWF ผ่าน Nation · PPTV (24 พ.ย. 69)",
+  "F-09": "คำนวณจาก BWF ผ่าน Nation · PPTV"
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "beat": "hook",
+   "era": "present",
+   "vo": "ไม่ได้ลงนัดชิง… [#S01-02] แต่ทำไมวิวขึ้นมือ 1 โลก",
+   "voEn": "He never played the final… [#S01-02] so how did View become world No. 1?",
+   "voTTS": "ไม่ได้ลง… นัดชิง… [#S01-02] แต่ทำไม… วิว… ขึ้นมือหนึ่งโลก",
+   "voFile": "vo/S01.wav",
+   "shots": [
+    {
+     "id": "S01-01",
+     "kind": "parallax",
+     "description": "สนามแบดว่างเปล่า ไม้แบดวางพื้น เด้งเข้าตั้งแต่เฟรมแรก กล้องดันเข้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:court|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:racket|trophy",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.35
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "นัดชิง = ว่าง",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S01-02",
+     "kind": "parallax",
+     "description": "สนามใหญ่ เหรียญทองลอยขึ้นกลางแสง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:arena|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:gold-medal|trophy",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "float"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.35
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": -20,
+       "z": 200
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -200
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "มือ 1 โลก?",
+       "role": "number",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "beat": "setup",
+   "era": "present",
+   "vo": "24 พ.ย. BWF ประกาศอันดับ [#S02-02] วิว กุลวุฒิ ขึ้นมือ 1 ชายเดี่ยว [#S02-03] ครั้งที่ 4",
+   "voEn": "On Nov 24, the BWF released new rankings. [#S02-02] Kunlavut Vitidsarn is back at No. 1 in men's singles, [#S02-03] for the fourth time.",
+   "voTTS": "ยี่สิบสี่ พฤศจิกา… บีดับเบิลยูเอฟ… ประกาศอันดับ [#S02-02] วิว… กุลวุฒิ… ขึ้นมือหนึ่ง… ชายเดี่ยว [#S02-03] ครั้งที่สี่",
+   "voFile": "vo/S02.wav",
+   "shots": [
+    {
+     "id": "S02-01",
+     "kind": "vector",
+     "description": "ปฏิทินพลิกมา 24 พ.ย.",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "24 พ.ย.",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-02",
+     "kind": "vector",
+     "description": "ถ้วยรางวัลเด้งขึ้น มีแสงหลัง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "mg",
+       "asset": "light-rays",
+       "style": "vector",
+       "z": 1600,
+       "x": 0,
+       "y": -120,
+       "w": 900,
+       "opacity": 0.6
+      },
+      {
+       "id": "subject",
+       "asset": "trophy",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "มือ 1 ชายเดี่ยว",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-03",
+     "kind": "data",
+     "description": "ตัวนับครั้งที่ขึ้นมือ 1",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 4,
+      "suffix": " ครั้ง",
+      "label": "ขึ้นมือ 1 โลก",
+      "sourceRef": "F-02"
+     }
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "beat": "act1",
+   "era": "present",
+   "vo": "อันดับโลก… [#S03-02] ไม่ได้ดูนัดเดียว [#S03-03] นับย้อนหลัง 52 สัปดาห์ [#S03-04] เอา 10 รายการดีสุด [#S03-05] มารวมกัน",
+   "voEn": "World rankings… [#S03-02] don't judge a single match. [#S03-03] They count the past 52 weeks, [#S03-04] take the best 10 tournaments, [#S03-05] and add them up.",
+   "voTTS": "อันดับโลก… [#S03-02] ไม่ได้ดู… นัดเดียว [#S03-03] นับย้อนหลัง… ห้าสิบสองสัปดาห์ [#S03-04] เอา… สิบรายการ… ดีสุด [#S03-05] มารวมกัน",
+   "voFile": "vo/S03.wav",
+   "shots": [
+    {
+     "id": "S03-01",
+     "kind": "vector",
+     "description": "ลูกโลก = อันดับโลก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "earth-globe",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "spin"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "อันดับโลก",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S03-02",
+     "kind": "vector",
+     "description": "แว่นขยายส่อง — ไม่ใช่แค่นัดเดียว",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "magnifier",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไม่ใช่นัดเดียว",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S03-03",
+     "kind": "data",
+     "description": "ตัวนับ 52 สัปดาห์ — reveal 1",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 52,
+      "suffix": " สัปดาห์",
+      "label": "ย้อนหลัง 1 ปี",
+      "sourceRef": "F-04"
+     }
+    },
+    {
+     "id": "S03-04",
+     "kind": "data",
+     "description": "ไอคอน 10 ลูกขนไก่ = 10 รายการดีสุด",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "unit",
+      "count": 10,
+      "perIcon": "1 รายการ",
+      "label": "10 รายการที่ดีที่สุด",
+      "sourceRef": "F-05"
+     }
+    },
+    {
+     "id": "S03-05",
+     "kind": "parallax",
+     "description": "ขวดสะสมแต้มลอยในสนาม เหรียญหล่นลงไป",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:arena|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:points-jar|coin-stack",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "drop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.35
+      }
+     ],
+     "camera": {
+      "move": "truck",
+      "from": {
+       "x": -160,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 160,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "รวมเป็นคะแนน",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "beat": "act2",
+   "era": "present",
+   "vo": "ฮ่องกงโอเพ่น [#S04-02] วิวถึงนัดชิง [#S04-03] แต่เจ็บหลัง ถอนตัว [#S04-04] ได้รองแชมป์ [#S04-05] แต้มรอบชิงยังนับ",
+   "voEn": "The Hong Kong Open: [#S04-02] View reached the final, [#S04-03] but a back injury forced him out. [#S04-04] He finished runner-up, [#S04-05] and reaching the final still counts.",
+   "voTTS": "ฮ่องกง… โอเพ่น [#S04-02] วิว… ถึงนัดชิง [#S04-03] แต่เจ็บหลัง… ถอนตัว [#S04-04] ได้… รองแชมป์ [#S04-05] แต้มรอบชิง… ยังนับ",
+   "voFile": "vo/S04.wav",
+   "shots": [
+    {
+     "id": "S04-01",
+     "kind": "data",
+     "description": "แผนที่ไทย → ฮ่องกง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "map",
+      "from": {
+       "center": [
+        106,
+        17
+       ],
+       "scale": 900
+      },
+      "to": {
+       "center": [
+        110,
+        19
+       ],
+       "scale": 1200
+      },
+      "routes": [
+       {
+        "path": [
+         [
+          100.5,
+          13.75
+         ],
+         [
+          114.17,
+          22.32
+         ]
+        ]
+       }
+      ],
+      "pins": [
+       {
+        "at": [
+         114.17,
+         22.32
+        ],
+        "label": "ฮ่องกง"
+       }
+      ]
+     },
+     "text": [
+      {
+       "content": "ฮ่องกงโอเพ่น",
+       "role": "kicker",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    },
+    {
+     "id": "S04-02",
+     "kind": "parallax",
+     "description": "สนามแบด ลูกขนไก่พุ่งข้ามตาข่าย = ถึงนัดชิง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:arena|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:shuttlecock|trophy",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "slide-left"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.35
+      }
+     ],
+     "camera": {
+      "move": "truck",
+      "from": {
+       "x": -160,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 160,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ถึงนัดชิง",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    },
+    {
+     "id": "S04-03",
+     "kind": "collage",
+     "description": "ไม้แบดแปะกระดาษ ปากกาแดงวง = เจ็บหลัง ถอนตัว",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:racket|trophy",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "stop-motion",
+       "rot": -3
+      },
+      {
+       "id": "mark",
+       "asset": "marker-circle",
+       "style": "collage",
+       "z": 990,
+       "x": 0,
+       "y": -80,
+       "w": 640,
+       "delay": 0.3
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เจ็บหลัง ถอนตัว",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    },
+    {
+     "id": "S04-04",
+     "kind": "collage",
+     "description": "เหรียญแปะกระดาษ ประทับตรา รองแชมป์ — reveal 2",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:gold-medal|trophy",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "stop-motion",
+       "rot": -3
+      },
+      {
+       "id": "stamp",
+       "asset": "stamp",
+       "style": "collage",
+       "z": 980,
+       "x": 60,
+       "y": -40,
+       "w": 300,
+       "delay": 0.5,
+       "props": {
+        "at": 0.5
+       }
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "รองแชมป์",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    },
+    {
+     "id": "S04-05",
+     "kind": "vector",
+     "description": "ขวดสะสมแต้ม เหรียญหล่นลง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:points-jar|coin-stack",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "drop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "แต้มยังนับ",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-07"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "beat": "act3",
+   "era": "present",
+   "vo": "วิว 91,585 คะแนน [#S05-02] ป็อปอฟ ฝรั่งเศส 89,932 [#S05-03] ห่างแค่ 1,653 [#S05-04] พอให้แซงขึ้นมา",
+   "voEn": "View: 91,585 points. [#S05-02] France's Christo Popov: 89,932. [#S05-03] A gap of just 1,653, [#S05-04] enough to move ahead.",
+   "voTTS": "วิว… เก้าหมื่นหนึ่งพันห้าร้อยแปดสิบห้า… คะแนน [#S05-02] ป็อปอฟ… ฝรั่งเศส… แปดหมื่นเก้าพันเก้าร้อยสามสิบสอง [#S05-03] ห่างแค่… หนึ่งพันหกร้อยห้าสิบสาม [#S05-04] พอให้… แซงขึ้นมา",
+   "voFile": "vo/S05.wav",
+   "shots": [
+    {
+     "id": "S05-01",
+     "kind": "data",
+     "description": "ตัวนับคะแนนวิว — data moment",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 91585,
+      "suffix": " คะแนน",
+      "label": "วิว กุลวุฒิ",
+      "sourceRef": "F-01"
+     }
+    },
+    {
+     "id": "S05-02",
+     "kind": "data",
+     "description": "กราฟแท่ง อันดับ 1–3",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "bar",
+      "items": [
+       {
+        "label": "วิว (ไทย)",
+        "value": 91585,
+        "highlight": true
+       },
+       {
+        "label": "ป็อปอฟ (ฝรั่งเศส)",
+        "value": 89932
+       },
+       {
+        "label": "อันโตนเซน (เดนมาร์ก)",
+        "value": 88305
+       }
+      ],
+      "unit": "คะแนน",
+      "title": "อันดับโลก 24 พ.ย.",
+      "sourceRef": "F-08"
+     }
+    },
+    {
+     "id": "S05-03",
+     "kind": "data",
+     "description": "ตัวนับส่วนต่าง 1,653 — reveal 3",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 1653,
+      "suffix": " คะแนน",
+      "label": "ส่วนต่างอันดับ 1–2",
+      "sourceRef": "F-09"
+     }
+    },
+    {
+     "id": "S05-04",
+     "kind": "parallax",
+     "description": "สนามใหญ่ เหรียญทองดันขึ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:arena|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:gold-medal|trophy",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.35
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "แซงขึ้นมา",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "beat": "payoff",
+   "era": "present",
+   "vo": "คำตอบคือ… [#S06-02] มือ 1 ไม่ได้มาจากนัดเดียว [#S06-03] แต่มาจากทั้งปี [#S06-04] ส่วนอาการเจ็บหลัง [#S06-05] ต้องลุ้นต่อ",
+   "voEn": "So the answer… [#S06-02] No. 1 isn't won in one match, [#S06-03] it's built over a whole year. [#S06-04] As for his back injury, [#S06-05] we'll have to wait and see.",
+   "voTTS": "คำตอบคือ… [#S06-02] มือหนึ่ง… ไม่ได้มาจาก… นัดเดียว [#S06-03] แต่มาจาก… ทั้งปี [#S06-04] ส่วนอาการเจ็บหลัง… [#S06-05] ต้องลุ้นต่อ",
+   "voFile": "vo/S06.wav",
+   "shots": [
+    {
+     "id": "S06-01",
+     "kind": "vector",
+     "description": "เครื่องหมายคำถามแยกทาง → คำตอบ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "คำตอบ",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-02",
+     "kind": "vector",
+     "description": "ลูกขนไก่ลูกเดียว ไม่พอ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:shuttlecock|trophy",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 420,
+       "anim": "float"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ไม่ใช่นัดเดียว",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S06-03",
+     "kind": "vector",
+     "description": "ปฏิทินทั้งปี + ขวดแต้มเต็ม",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:points-jar|coin-stack",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ผลงานทั้งปี",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-04"
+      }
+     ]
+    },
+    {
+     "id": "S06-04",
+     "kind": "collage",
+     "description": "ไม้แบดแปะกระดาษ วงแดง = เจ็บหลัง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:racket|trophy",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "stop-motion",
+       "rot": 4
+      },
+      {
+       "id": "mark",
+       "asset": "marker-circle",
+       "style": "collage",
+       "z": 990,
+       "x": 0,
+       "y": -80,
+       "w": 640,
+       "delay": 0.3
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "เจ็บหลัง",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    },
+    {
+     "id": "S06-05",
+     "kind": "parallax",
+     "description": "สนามว่าง ไม้แบดวางรอ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:court|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:racket|trophy",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "float"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.35
+      }
+     ],
+     "camera": {
+      "move": "truck",
+      "from": {
+       "x": -160,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 160,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ลุ้นต่อ",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "beat": "outro",
+   "era": "present",
+   "vo": "บางครั้ง… [#S07-02] ไม่ลงนัดชิง ก็ขึ้นมือ 1 ได้",
+   "voEn": "Sometimes… [#S07-02] you reach No. 1 without playing the final.",
+   "voTTS": "บางครั้ง… [#S07-02] ไม่ลงนัดชิง… ก็ขึ้นมือหนึ่งได้",
+   "voFile": "vo/S07.wav",
+   "shots": [
+    {
+     "id": "S07-01",
+     "kind": "vector",
+     "description": "สปอตไลต์บนเวที",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "spotlight-stage",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 560,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "บางครั้ง…",
+       "role": "title",
+       "x": 540,
+       "y": 300
+      }
+     ]
+    },
+    {
+     "id": "S07-02",
+     "kind": "parallax",
+     "description": "สนามแบดว่าง เหรียญทองลอย วนกลับช็อตแรก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:court|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:gold-medal|trophy",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "float"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.35
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": -20,
+       "z": 200
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -200
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "มือ 1 โลก",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "covers": [
+  {
+   "id": "A",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "ไม่ลงชิง\n*มือ 1 โลก*",
+   "kicker": "วิว กุลวุฒิ",
+   "sourceRef": "F-01",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:court|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:gold-medal|trophy",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 620
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "ห่างแค่\n*1,653*",
+   "kicker": "แต้มทั้งปี",
+   "sourceRef": "F-09",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:arena|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:shuttlecock|trophy",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 620
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  }
+ ]
+}

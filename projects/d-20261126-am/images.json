@@ -1,0 +1,16 @@
+{
+  "images": [
+    {"id": "arena", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A large empty indoor badminton arena seen from the stands, a green badminton court with white lines and a net glowing under bright spotlights, dark blue tiered seats fading into shadow, dramatic hopeful mood, no people, no logos, no flags, no text"},
+    {"id": "court", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "Low angle close view across an empty green badminton court floor toward the white net, soft warm overhead lights and gentle lens glow, quiet calm mood, no people, no logos, no text"},
+    {"id": "shuttlecock", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single white feather badminton shuttlecock with a rounded cork base, tilted slightly as if flying, rounded friendly shapes, simple soft shading, no logos, no text"},
+    {"id": "racket", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A single badminton racket with a dark blue frame and white strings, standing diagonally, rounded friendly shapes, simple soft shading, no logos, no text"},
+    {"id": "gold-medal", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A shiny round gold medal with a plain star in the middle and a deep blue ribbon, small sparkles around it, rounded friendly shapes, simple soft shading, no numbers, no logos, no text"},
+    {"id": "points-jar", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A large clear glass jar filled with glowing golden star-shaped tokens, a few tokens falling into the open top, rounded friendly shapes, simple soft shading, no labels, no text"}
+  ]
+}
