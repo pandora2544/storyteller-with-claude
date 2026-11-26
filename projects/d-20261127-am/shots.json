@@ -1,0 +1,1277 @@
+{
+  "meta": {
+    "slug": "d-20261127-am",
+    "title": "ภาษีสหรัฐ 18% ของไทยแพงขึ้น 18% จริงไหม",
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "targetSec": 60
+  },
+  "sources": {
+    "F-01": "USTR 25 พ.ย. 69 · Thai PBS · The Standard",
+    "F-02": "Nation · กรุงเทพธุรกิจ (26 พ.ย. 69)",
+    "F-03": "USTR · Nation · The Standard",
+    "F-04": "Nation · The Standard (26 พ.ย. 69)",
+    "F-05": "The Standard · Nation",
+    "F-06": "ก.พาณิชย์ ผ่าน Nation · กรุงเทพธุรกิจ",
+    "F-07": "ก.พาณิชย์ ผ่าน Nation · กรุงเทพธุรกิจ",
+    "F-08": "Nation · กรุงเทพธุรกิจ · The Standard",
+    "F-09": "USTR · The Standard",
+    "F-10": "USTR · Spacebar"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "era": "present",
+      "vo": "ภาษีสหรัฐ 18%… [#S01-02] ของไทยแพงขึ้น 18% จริงไหม",
+      "voEn": "A US tariff of 18%… [#S01-02] does that really mean 18% more on Thai goods?",
+      "voTTS": "ภาษีสหรัฐ… สิบแปดเปอร์เซ็นต์… [#S01-02] ของไทย… แพงขึ้นสิบแปดเปอร์เซ็นต์… จริงไหม",
+      "voFile": "vo/S01.wav",
+      "shots": [
+        {
+          "id": "S01-01",
+          "kind": "parallax",
+          "description": "ท่าเรือ เรือสินค้าแล่นเข้า เด้งตั้งแต่เฟรมแรก กล้องดันเข้า",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:port|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:cargo-ship|earth-globe",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 520,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 240
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "18%",
+              "role": "number",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S01-02",
+          "kind": "parallax",
+          "description": "ป้ายราคาเด้งขึ้นเหนือกองตู้สินค้า เครื่องหมายคำถาม",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:warehouse|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:price-tag-big|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 520,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": -20,
+              "z": 200
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -200
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "แพงขึ้น 18%?",
+              "role": "number",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "beat": "setup",
+      "era": "present",
+      "vo": "25 พ.ย. สหรัฐฯ เสนอภาษี 14 ประเทศ [#S02-02] ไทยโดนสูงสุด 18% [#S02-03] อ้างว่าผลิตล้นเกิน",
+      "voEn": "On Nov 25, the US proposed new tariffs on 14 economies. [#S02-02] Thailand faces up to 18%, [#S02-03] over claims of excess production.",
+      "voTTS": "ยี่สิบห้า พฤศจิกา… สหรัฐฯ เสนอภาษี… สิบสี่ประเทศ [#S02-02] ไทย… โดนสูงสุด… สิบแปดเปอร์เซ็นต์ [#S02-03] อ้างว่า… ผลิตล้นเกิน",
+      "voFile": "vo/S02.wav",
+      "shots": [
+        {
+          "id": "S02-01",
+          "kind": "vector",
+          "description": "ปฏิทิน 25 พ.ย. + เอกสารประกาศ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "calendar-year",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 500,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -20,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 20,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "25 พ.ย.",
+              "role": "number",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S02-02",
+          "kind": "data",
+          "description": "ตัวนับ 18% อัตราสูงสุดที่เสนอให้ไทย",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 18,
+            "suffix": "%",
+            "label": "อัตราสูงสุดที่เสนอให้ไทย",
+            "sourceRef": "F-01"
+          }
+        },
+        {
+          "id": "S02-03",
+          "kind": "collage",
+          "description": "เอกสารแปะกระดาษ ปากกาแดงวงคำว่าผลิตล้นเกิน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "document",
+              "style": "collage",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 500,
+              "rot": -4,
+              "anim": "stop-motion"
+            },
+            {
+              "id": "mark",
+              "asset": "marker-circle",
+              "style": "collage",
+              "z": 990,
+              "x": 0,
+              "y": -80,
+              "w": 600,
+              "delay": 0.4,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -20,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 20,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ผลิตล้นเกิน",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "beat": "act1",
+      "era": "present",
+      "vo": "สหรัฐฯ คือตลาดส่งออกอันดับ 1 [#S03-02] ปีก่อนส่งไป 2.37 ล้านล้าน [#S03-03] ราวหนึ่งในสี่ [#S03-04] ผูกกับงาน [#S03-05] กว่าล้านคน",
+      "voEn": "The US is Thailand's No. 1 export market. [#S03-02] Last year we shipped 2.37 trillion baht there, [#S03-03] about a quarter of all exports, [#S03-04] tied to jobs [#S03-05] for over a million people.",
+      "voTTS": "สหรัฐฯ… คือตลาดส่งออก… อันดับหนึ่ง [#S03-02] ปีก่อน… ส่งไป… สองจุดสามเจ็ด… ล้านล้านบาท [#S03-03] ราว… หนึ่งในสี่ [#S03-04] ผูกกับงาน… [#S03-05] กว่าล้านคน",
+      "voFile": "vo/S03.wav",
+      "shots": [
+        {
+          "id": "S03-01",
+          "kind": "data",
+          "description": "แผนที่ เส้นทางเรือ ไทย → สหรัฐฯ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "map",
+            "from": {
+              "center": [
+                150,
+                25
+              ],
+              "scale": 260
+            },
+            "to": {
+              "center": [
+                170,
+                28
+              ],
+              "scale": 220
+            },
+            "routes": [
+              {
+                "path": [
+                  [
+                    100.9,
+                    13.1
+                  ],
+                  [
+                    140,
+                    30
+                  ],
+                  [
+                    -118.2,
+                    33.7
+                  ]
+                ]
+              }
+            ],
+            "pins": [
+              {
+                "at": [
+                  100.9,
+                  13.1
+                ],
+                "label": "ไทย"
+              },
+              {
+                "at": [
+                  -118.2,
+                  33.7
+                ],
+                "label": "สหรัฐฯ"
+              }
+            ]
+          },
+          "text": [
+            {
+              "content": "ตลาดอันดับ 1",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S03-02",
+          "kind": "data",
+          "description": "ตัวนับมูลค่าส่งออก — reveal 1",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 2.37,
+            "suffix": " ล้านล้านบาท",
+            "label": "ส่งออกไปสหรัฐฯ ปี 2568",
+            "sourceRef": "F-06"
+          }
+        },
+        {
+          "id": "S03-03",
+          "kind": "data",
+          "description": "ไอคอน 4 ตู้ 1 ตู้ไฮไลต์ = 1 ใน 4",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "unit",
+            "count": 4,
+            "perIcon": "1 ส่วน",
+            "label": "1 ใน 4 ของการส่งออก",
+            "sourceRef": "F-06"
+          }
+        },
+        {
+          "id": "S03-04",
+          "kind": "parallax",
+          "description": "โกดังสินค้า กองตู้คอนเทนเนอร์ กล้องแพนข้าง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:warehouse|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:containers|coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 520,
+              "anim": "drop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -160,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 160,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "งานส่งออก",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S03-05",
+          "kind": "data",
+          "description": "ตัวนับ 1.25 ล้านตำแหน่งงาน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 1.25,
+            "suffix": " ล้านตำแหน่ง",
+            "label": "ตำแหน่งงานที่เกี่ยวข้อง",
+            "sourceRef": "F-07"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "beat": "act2",
+      "era": "present",
+      "vo": "แต่ 18% ไม่ได้บวกเพิ่ม [#S04-02] ตอนนี้ของไทยเสียอยู่ 12.5% [#S04-03] 18% คือยอดรวมใหม่ [#S04-04] เพิ่มจริง… [#S04-05] แค่ 5.5",
+      "voEn": "But the 18% isn't added on top. [#S04-02] Thai goods already pay 12.5% today. [#S04-03] 18% is the new total, [#S04-04] the real increase… [#S04-05] is just 5.5 points.",
+      "voTTS": "แต่… สิบแปดเปอร์เซ็นต์… ไม่ได้บวกเพิ่ม [#S04-02] ตอนนี้… ของไทยเสียอยู่… สิบสองจุดห้าเปอร์เซ็นต์ [#S04-03] สิบแปด… คือยอดรวมใหม่ [#S04-04] เพิ่มจริง… [#S04-05] แค่… ห้าจุดห้า",
+      "voFile": "vo/S04.wav",
+      "shots": [
+        {
+          "id": "S04-01",
+          "kind": "vector",
+          "description": "ตาชั่ง ไม่ได้ซ้อนกัน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 500,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -20,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 20,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ไม่ได้บวกเพิ่ม",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-03"
+            }
+          ]
+        },
+        {
+          "id": "S04-02",
+          "kind": "data",
+          "description": "ตัวนับ 12.5% ที่จ่ายอยู่",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 12.5,
+            "suffix": "%",
+            "label": "ภาษีที่จ่ายอยู่ตอนนี้",
+            "sourceRef": "F-02"
+          }
+        },
+        {
+          "id": "S04-03",
+          "kind": "data",
+          "description": "แท่ง 12.5 → 18",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "bar",
+            "items": [
+              {
+                "label": "ตอนนี้",
+                "value": 12.5
+              },
+              {
+                "label": "ข้อเสนอใหม่",
+                "value": 18,
+                "highlight": true
+              }
+            ],
+            "unit": "%",
+            "title": "อัตรารวม",
+            "sourceRef": "F-03"
+          }
+        },
+        {
+          "id": "S04-04",
+          "kind": "collage",
+          "description": "ป้ายราคาแปะกระดาษ ปากกาแดงวง = เพิ่มจริงเท่าไร",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "price-tag",
+              "style": "collage",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 500,
+              "rot": -4,
+              "anim": "stop-motion"
+            },
+            {
+              "id": "mark",
+              "asset": "marker-circle",
+              "style": "collage",
+              "z": 990,
+              "x": 0,
+              "y": -80,
+              "w": 600,
+              "delay": 0.4,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -20,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 20,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ไม่ใช่ +18",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-03"
+            }
+          ]
+        },
+        {
+          "id": "S04-05",
+          "kind": "data",
+          "description": "ตัวนับ +5.5 จุด — reveal 2 data moment",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 5.5,
+            "suffix": " จุด",
+            "label": "ส่วนที่เพิ่มจริง",
+            "sourceRef": "F-03"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "beat": "act3",
+      "era": "present",
+      "vo": "สินค้ากว่า 2,100 รายการ [#S05-02] ได้ยกเว้น [#S05-03] แต่ข้าว กุ้ง ทูน่ากระป๋อง [#S05-04] ยังไม่รอด",
+      "voEn": "More than 2,100 product lines [#S05-02] are exempt. [#S05-03] But rice, shrimp and canned tuna [#S05-04] aren't spared yet.",
+      "voTTS": "สินค้า… กว่าสองพันหนึ่งร้อยรายการ [#S05-02] ได้ยกเว้น [#S05-03] แต่ข้าว… กุ้ง… ทูน่ากระป๋อง [#S05-04] ยังไม่รอด",
+      "voFile": "vo/S05.wav",
+      "shots": [
+        {
+          "id": "S05-01",
+          "kind": "data",
+          "description": "ตัวนับ 2,121 รายการ — reveal 3",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 2121,
+            "suffix": " รายการ",
+            "label": "สินค้าได้รับยกเว้น",
+            "sourceRef": "F-04"
+          }
+        },
+        {
+          "id": "S05-02",
+          "kind": "collage",
+          "description": "ตรายางประทับ ยกเว้น บนกระดาษ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "stamp",
+              "style": "collage",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 500,
+              "rot": -4,
+              "anim": "stop-motion"
+            },
+            {
+              "id": "mark",
+              "asset": "marker-circle",
+              "style": "collage",
+              "z": 990,
+              "x": 0,
+              "y": -80,
+              "w": 600,
+              "delay": 0.4,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -20,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 20,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ยกเว้น",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S05-03",
+          "kind": "parallax",
+          "description": "ตะกร้าข้าว กุ้ง ปลากระป๋อง ลอยหน้าท่าเรือ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:port|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:food-basket|sacks",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 520,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 240
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ข้าว · กุ้ง · ทูน่า",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S05-04",
+          "kind": "vector",
+          "description": "แว่นขยายส่องรายการ ไม่เจอ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "magnifier",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 500,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -20,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 20,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ยังไม่ได้ยกเว้น",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-05"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "beat": "payoff",
+      "era": "present",
+      "vo": "คำตอบคือ… ไม่ใช่ [#S06-02] ของที่โดนจริง ขยับจาก 12.5 เป็น 18 [#S06-03] และยังเป็นแค่ข้อเสนอ [#S06-04] ยังไม่ใช่ผลสุดท้าย",
+      "voEn": "So the answer… no. [#S06-02] For goods actually hit, the rate moves from 12.5 to 18. [#S06-03] And it's still only a proposal. [#S06-04] not the final decision.",
+      "voTTS": "คำตอบคือ… ไม่ใช่ [#S06-02] ของที่โดนจริง… ขยับจาก… สิบสองจุดห้า… เป็นสิบแปด [#S06-03] และ… ยังเป็นแค่ข้อเสนอ [#S06-04] ยังไม่ใช่… ผลสุดท้าย",
+      "voFile": "vo/S06.wav",
+      "shots": [
+        {
+          "id": "S06-01",
+          "kind": "vector",
+          "description": "เครื่องหมายคำถามแยกทาง → คำตอบ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 500,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -20,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 20,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ไม่ใช่ +18%",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-03"
+            }
+          ]
+        },
+        {
+          "id": "S06-02",
+          "kind": "parallax",
+          "description": "ป้ายราคาลอยในโกดัง กล้องดึงออก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:warehouse|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:price-tag-big|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 520,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": -20,
+              "z": 200
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -200
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "12.5 → 18",
+              "role": "number",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-03"
+            }
+          ]
+        },
+        {
+          "id": "S06-03",
+          "kind": "collage",
+          "description": "เอกสารร่าง แปะกระดาษ วงแดงคำว่าร่าง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "document",
+              "style": "collage",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 500,
+              "rot": -4,
+              "anim": "stop-motion"
+            },
+            {
+              "id": "mark",
+              "asset": "marker-circle",
+              "style": "collage",
+              "z": 990,
+              "x": 0,
+              "y": -80,
+              "w": 600,
+              "delay": 0.4,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -20,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 20,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "แค่ข้อเสนอ",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-08"
+            }
+          ]
+        },
+        {
+          "id": "S06-04",
+          "kind": "vector",
+          "description": "ปฏิทิน = ยังอยู่ช่วงรับฟังความเห็น",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "calendar-year",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 500,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -20,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 20,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ยังไม่สรุป",
+              "role": "title",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-08"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "beat": "outro",
+      "era": "present",
+      "vo": "เห็นภาษี 18% ครั้งหน้า… [#S07-02] ถามก่อนว่าบวกจากเท่าไร",
+      "voEn": "Next time you see an 18% tariff… [#S07-02] first ask: up from what?",
+      "voTTS": "เห็นภาษี… สิบแปดเปอร์เซ็นต์… ครั้งหน้า… [#S07-02] ถามก่อนว่า… บวกจากเท่าไร",
+      "voFile": "vo/S07.wav",
+      "shots": [
+        {
+          "id": "S07-01",
+          "kind": "vector",
+          "description": "ป้ายราคาเด้ง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "price-tag",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 500,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -20,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 20,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "18%",
+              "role": "number",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S07-02",
+          "kind": "parallax",
+          "description": "ท่าเรือ เรือสินค้า วนกลับช็อตแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:port|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:cargo-ship|earth-globe",
+              "style": "vector",
+              "z": 1000,
+              "x": 0,
+              "y": -80,
+              "w": 520,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.35
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": -20,
+              "z": 200
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -200
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "บวกจากเท่าไร?",
+              "role": "title",
+              "x": 540,
+              "y": 300
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "covers": [
+    {
+      "id": "A",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "ภาษี 18%\n*ไม่ได้บวก*",
+      "kicker": "ภาษีสหรัฐฯ",
+      "sourceRef": "F-03",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:port|bg-color",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "img:cargo-ship|earth-globe",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 620
+        },
+        {
+          "id": "fg",
+          "asset": "dust",
+          "style": "vector",
+          "z": 500,
+          "cover": true,
+          "opacity": 0.3
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "เพิ่มจริง\n*5.5 จุด*",
+      "kicker": "ไม่ใช่ 18%",
+      "sourceRef": "F-03",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:warehouse|bg-color",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "img:price-tag-big|price-tag",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 620
+        },
+        {
+          "id": "fg",
+          "asset": "dust",
+          "style": "vector",
+          "z": 500,
+          "cover": true,
+          "opacity": 0.3
+        }
+      ]
+    }
+  ]
+}

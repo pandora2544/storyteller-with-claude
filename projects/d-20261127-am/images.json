@@ -1,0 +1,16 @@
+{
+  "images": [
+    {"id": "port", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A busy seaport at sunrise seen from above, rows of colorful stacked shipping containers, big cranes, calm blue water, soft warm light, wide open sky at the top, no people, no logos, no flags, no text"},
+    {"id": "warehouse", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "Inside a large export warehouse, tall shelves of cardboard boxes and wooden pallets fading into soft depth, warm overhead lights, calm mood, no people, no logos, no labels, no text"},
+    {"id": "cargo-ship", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A friendly cargo container ship loaded with colorful stacked containers, seen from a three-quarter side view, rounded shapes, simple soft shading, no flags, no logos, no text"},
+    {"id": "containers", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A neat pyramid stack of colorful shipping containers in orange, teal and yellow, rounded friendly shapes, simple soft shading, no logos, no labels, no text"},
+    {"id": "price-tag-big", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A large blank paper price tag with a string, tilted slightly, warm yellow paper color, rounded friendly shapes, simple soft shading, completely blank with no numbers, no symbols, no text"},
+    {"id": "food-basket", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A woven basket holding a small sack of white rice, a few pink cooked shrimp and two plain unlabeled tin cans of fish, rounded friendly shapes, simple soft shading, no logos, no labels, no text"}
+  ]
+}
