@@ -1,0 +1,1359 @@
+{
+ "meta": {
+  "slug": "d-20261128-am",
+  "title": "ปีหน้า ผู้ชายไทยยังต้องลุ้นใบแดงไหม",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "targetSec": 60
+ },
+ "sources": {
+  "F-01": "สยามรัฐ 25 พ.ย. 69 · The Thaiger",
+  "F-02": "ทบ. ผ่าน The Standard · สยามรัฐ",
+  "F-04": "The Standard · เดลินิวส์",
+  "F-05": "The Standard · ทบ.",
+  "F-06": "ทบ. ผ่านเชียงใหม่นิวส์ · สยามรัฐ",
+  "F-07": "ทบ. ผ่านสยามรัฐ · ผู้จัดการ (25 พ.ย. 69)",
+  "F-08": "สยามรัฐ · The Thaiger",
+  "F-09": "กองทัพ ผ่าน The Thaiger (25 พ.ย. 69)"
+ },
+ "scenes": [
+  {
+   "id": "S01",
+   "beat": "hook",
+   "era": "present",
+   "vo": "ปีหน้า… ผู้ชายไทย [#S01-02] ยังต้องลุ้นใบแดงไหม",
+   "voEn": "Next year… will Thai men [#S01-02] still sweat over the red card?",
+   "voTTS": "ปีหน้า… ผู้ชายไทย [#S01-02] ยังต้องลุ้น… ใบแดงไหม",
+   "voFile": "vo/S01.wav",
+   "shots": [
+    {
+     "id": "S01-01",
+     "kind": "parallax",
+     "description": "โหลแก้วใส่ใบดำใบแดง ลานหน้าค่าย เด้งตั้งแต่เฟรมแรก กล้องดันเข้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:parade-ground|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:lottery-jar|question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.35
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ปีหน้า?",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-09"
+      }
+     ]
+    },
+    {
+     "id": "S01-02",
+     "kind": "parallax",
+     "description": "ใบแดงกับใบดำลอยขึ้นมา",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:registration-hall|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:red-black-cards|question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "float"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.35
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": -20,
+       "z": 200
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -200
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ใบแดง?",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-09"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S02",
+   "beat": "setup",
+   "era": "present",
+   "vo": "วันนี้ 28 พ.ย. [#S02-02] กองทัพบกเริ่มคัดเลือกพลทหารอาสา [#S02-03] คนที่สมัครเอง",
+   "voEn": "Today, Nov 28, [#S02-02] the army begins selecting volunteer privates, [#S02-03] men who signed up on their own.",
+   "voTTS": "วันนี้… ยี่สิบแปด พฤศจิกา [#S02-02] กองทัพบก… เริ่มคัดเลือก… พลทหารอาสา [#S02-03] คนที่… สมัครเอง",
+   "voFile": "vo/S02.wav",
+   "shots": [
+    {
+     "id": "S02-01",
+     "kind": "vector",
+     "description": "ปฏิทิน 28 พ.ย.",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "28 พ.ย.",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-02",
+     "kind": "parallax",
+     "description": "หมวกทหารเรียบ ๆ กับรองเท้าบูต ในห้องรับสมัคร",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:registration-hall|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:army-helmet|signal-icon",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "drop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.35
+      }
+     ],
+     "camera": {
+      "move": "truck",
+      "from": {
+       "x": -160,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 160,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "พลทหารอาสา",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-01"
+      }
+     ]
+    },
+    {
+     "id": "S02-03",
+     "kind": "vector",
+     "description": "มือยกขึ้นอาสา",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "vote-hands",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "สมัครเอง",
+       "role": "label",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S03",
+   "beat": "act1",
+   "era": "present",
+   "vo": "เปิด 18,784 อัตรา [#S03-02] เงินเดือนเกือบ 15,000 [#S03-03] สัญญา 4 ปี [#S03-04] ชาย 18 ถึง 26 [#S03-05] ไม่จำกัดวุฒิ",
+   "voEn": "There are 18,784 places. [#S03-02] Pay is almost 15,000 baht. [#S03-03] A 4-year contract, [#S03-04] for men aged 18 to 26, [#S03-05] any education level.",
+   "voTTS": "เปิด… หนึ่งหมื่นแปดพันเจ็ดร้อยแปดสิบสี่อัตรา [#S03-02] เงินเดือน… เกือบหนึ่งหมื่นห้าพัน [#S03-03] สัญญา… สี่ปี [#S03-04] ชาย… สิบแปด ถึง ยี่สิบหก [#S03-05] ไม่จำกัดวุฒิ",
+   "voFile": "vo/S03.wav",
+   "shots": [
+    {
+     "id": "S03-01",
+     "kind": "data",
+     "description": "ตัวนับ 18,784 อัตรา — reveal 1",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 18784,
+      "suffix": " อัตรา",
+      "label": "กองทัพบก ปี 2570",
+      "sourceRef": "F-02"
+     }
+    },
+    {
+     "id": "S03-02",
+     "kind": "data",
+     "description": "ตัวนับเงินเดือนรวม 14,970",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 14970,
+      "suffix": " บาท/เดือน",
+      "label": "เงินเดือน + ค่าตอบแทนพิเศษ",
+      "sourceRef": "F-04"
+     }
+    },
+    {
+     "id": "S03-03",
+     "kind": "vector",
+     "description": "ปฏิทิน 4 ปี",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "สัญญา 4 ปี",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-05"
+      }
+     ]
+    },
+    {
+     "id": "S03-04",
+     "kind": "collage",
+     "description": "ใบสมัครแปะกระดาษ ปากกาแดงวงช่วงอายุ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "document",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "rot": -4,
+       "anim": "stop-motion"
+      },
+      {
+       "id": "mark",
+       "asset": "marker-circle",
+       "style": "collage",
+       "z": 990,
+       "x": 0,
+       "y": -80,
+       "w": 600,
+       "delay": 0.4,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "18–26 ปี",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    },
+    {
+     "id": "S03-05",
+     "kind": "parallax",
+     "description": "ห้องรับสมัคร โต๊ะ เอกสาร กล้องแพนข้าง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:registration-hall|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:application-forms|price-tag",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "drop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.35
+      }
+     ],
+     "camera": {
+      "move": "truck",
+      "from": {
+       "x": -160,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 160,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ไม่จำกัดวุฒิ",
+       "role": "label",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-06"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S04",
+   "beat": "act2",
+   "era": "present",
+   "vo": "สนใจไหม [#S04-02] ถึง 25 พ.ย. สมัครแล้ว 17,851 คน [#S04-03] ราว 95% ของที่นั่ง [#S04-04] ยังรับถึง 24 ม.ค.",
+   "voEn": "Any takers? [#S04-02] By Nov 25, 17,851 had applied, [#S04-03] about 95% of the places, [#S04-04] with applications open until Jan 24.",
+   "voTTS": "สนใจไหม [#S04-02] ถึงยี่สิบห้า พฤศจิกา… สมัครแล้ว… หนึ่งหมื่นเจ็ดพันแปดร้อยห้าสิบเอ็ดคน [#S04-03] ราว… เก้าสิบห้าเปอร์เซ็นต์… ของที่นั่ง [#S04-04] ยังรับ… ถึงยี่สิบสี่ มกรา",
+   "voFile": "vo/S04.wav",
+   "shots": [
+    {
+     "id": "S04-01",
+     "kind": "vector",
+     "description": "เครื่องหมายคำถาม สนใจไหม",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "สนใจไหม?",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-07"
+      }
+     ]
+    },
+    {
+     "id": "S04-02",
+     "kind": "data",
+     "description": "ตัวนับผู้สมัคร 17,851",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "counter",
+      "to": 17851,
+      "suffix": " คน",
+      "label": "สมัครแล้ว ถึง 25 พ.ย.",
+      "sourceRef": "F-07"
+     }
+    },
+    {
+     "id": "S04-03",
+     "kind": "data",
+     "description": "แท่ง ที่นั่ง vs ผู้สมัคร — reveal 2",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      }
+     ],
+     "data": {
+      "chart": "bar",
+      "items": [
+       {
+        "label": "ที่นั่ง",
+        "value": 18784
+       },
+       {
+        "label": "สมัครแล้ว",
+        "value": 17851,
+        "highlight": true
+       }
+      ],
+      "unit": "คน",
+      "title": "ราว 95%",
+      "sourceRef": "F-07"
+     }
+    },
+    {
+     "id": "S04-04",
+     "kind": "vector",
+     "description": "ปฏิทิน ปิดรับ 24 ม.ค.",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "calendar-year",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ถึง 24 ม.ค.",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-08"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S05",
+   "beat": "act3",
+   "era": "present",
+   "vo": "ตรงนี้คือกุญแจ [#S05-02] กองทัพบอก ยิ่งอาสามาก [#S05-03] ยิ่งเรียกจากการจับสลากน้อยลง [#S05-04] ถ้าอาสาไม่ครบ [#S05-05] ที่ขาดก็กลับไปจับสลาก",
+   "voEn": "Here's the key. [#S05-02] The military says the more volunteers, [#S05-03] the fewer called through the lottery. [#S05-04] If volunteers fall short, [#S05-05] the gap goes back to the lottery.",
+   "voTTS": "ตรงนี้… คือกุญแจ [#S05-02] กองทัพบอก… ยิ่งอาสามาก [#S05-03] ยิ่งเรียก… จากการจับสลาก… น้อยลง [#S05-04] ถ้าอาสา… ไม่ครบ [#S05-05] ที่ขาด… ก็กลับไปจับสลาก",
+   "voFile": "vo/S05.wav",
+   "shots": [
+    {
+     "id": "S05-01",
+     "kind": "parallax",
+     "description": "กุญแจ/ไฮไลต์ ลานหน้าค่าย กล้องดันเข้า",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:parade-ground|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:army-helmet|spotlight-stage",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "pop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.35
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "กุญแจ",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-09"
+      }
+     ]
+    },
+    {
+     "id": "S05-02",
+     "kind": "vector",
+     "description": "มือยกขึ้นจำนวนมาก",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "vote-hands",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "อาสามาก",
+       "role": "label",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-09"
+      }
+     ]
+    },
+    {
+     "id": "S05-03",
+     "kind": "collage",
+     "description": "ใบแดงแปะกระดาษ ปากกาแดงวง = น้อยลง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "document",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "rot": -4,
+       "anim": "stop-motion"
+      },
+      {
+       "id": "mark",
+       "asset": "marker-circle",
+       "style": "collage",
+       "z": 990,
+       "x": 0,
+       "y": -80,
+       "w": 600,
+       "delay": 0.4,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ใบแดงน้อยลง",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-09"
+      }
+     ]
+    },
+    {
+     "id": "S05-04",
+     "kind": "vector",
+     "description": "ตาชั่ง อาสาไม่ครบ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "balance-scale",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "อาสาไม่ครบ?",
+       "role": "label",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-09"
+      }
+     ]
+    },
+    {
+     "id": "S05-05",
+     "kind": "parallax",
+     "description": "โหลจับสลาก ที่นั่งที่ขาดกลับไปอยู่ในโหล",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:parade-ground|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:lottery-jar|question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "drop"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.35
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": -20,
+       "z": 200
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -200
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "กลับไปที่โหล",
+       "role": "label",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-09"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S06",
+   "beat": "payoff",
+   "era": "present",
+   "vo": "คำตอบคือ… ยังต้องลุ้น [#S06-02] ตรวจเลือกยังมี [#S06-03] แต่ทุกคนที่อาสา [#S06-04] คือหนึ่งที่นั่งที่ไม่ต้องจับสลาก",
+   "voEn": "So the answer… yes, we still wait on the draw. [#S06-02] The draft selection is still on. [#S06-03] But every volunteer [#S06-04] is one place that skips the lottery.",
+   "voTTS": "คำตอบคือ… ยังต้องลุ้น [#S06-02] ตรวจเลือก… ยังมี [#S06-03] แต่ทุกคน… ที่อาสา [#S06-04] คือหนึ่งที่นั่ง… ที่ไม่ต้อง… จับสลาก",
+   "voFile": "vo/S06.wav",
+   "shots": [
+    {
+     "id": "S06-01",
+     "kind": "vector",
+     "description": "คำตอบ ยังต้องลุ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ยังต้องลุ้น",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-09"
+      }
+     ]
+    },
+    {
+     "id": "S06-02",
+     "kind": "parallax",
+     "description": "ใบแดงใบดำ การตรวจเลือกยังมี",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:parade-ground|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:red-black-cards|question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "float"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.35
+      }
+     ],
+     "camera": {
+      "move": "push-in",
+      "from": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 0,
+       "y": -20,
+       "z": 240
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "ตรวจเลือกยังมี",
+       "role": "label",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-09"
+      }
+     ]
+    },
+    {
+     "id": "S06-03",
+     "kind": "vector",
+     "description": "มือยกขึ้น 1 มือ",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "vote-hands",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "อาสา 1 คน",
+       "role": "label",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-09"
+      }
+     ]
+    },
+    {
+     "id": "S06-04",
+     "kind": "collage",
+     "description": "ใบสมัครแปะกระดาษ วงแดง = 1 ที่นั่ง",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "paper-bg",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "document",
+       "style": "collage",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "rot": -4,
+       "anim": "stop-motion"
+      },
+      {
+       "id": "mark",
+       "asset": "marker-circle",
+       "style": "collage",
+       "z": 990,
+       "x": 0,
+       "y": -80,
+       "w": 600,
+       "delay": 0.4,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "= 1 ที่นั่ง",
+       "role": "number",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-09"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "S07",
+   "beat": "outro",
+   "era": "present",
+   "vo": "ใบแดงจะเหลือกี่ใบ… [#S07-02] ขึ้นกับว่ามีคนยกมือเท่าไร",
+   "voEn": "How many red cards are left… [#S07-02] depends on how many hands go up.",
+   "voTTS": "ใบแดง… จะเหลือกี่ใบ… [#S07-02] ขึ้นกับว่า… มีคนยกมือ… เท่าไร",
+   "voFile": "vo/S07.wav",
+   "shots": [
+    {
+     "id": "S07-01",
+     "kind": "parallax",
+     "description": "โหลจับสลาก ใบแดงเหลือในโหล",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "img:parade-ground|bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "img:lottery-jar|question-split",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 520,
+       "anim": "float"
+      },
+      {
+       "id": "fg",
+       "asset": "dust",
+       "style": "vector",
+       "z": 500,
+       "cover": true,
+       "opacity": 0.35
+      }
+     ],
+     "camera": {
+      "move": "pull-out",
+      "from": {
+       "x": 0,
+       "y": -20,
+       "z": 200
+      },
+      "to": {
+       "x": 0,
+       "y": 0,
+       "z": -200
+      },
+      "ease": "outExpo"
+     },
+     "focus": {
+      "target": "subject"
+     },
+     "text": [
+      {
+       "content": "เหลือกี่ใบ?",
+       "role": "title",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-09"
+      }
+     ]
+    },
+    {
+     "id": "S07-02",
+     "kind": "vector",
+     "description": "มือยกขึ้น",
+     "layers": [
+      {
+       "id": "bg",
+       "asset": "bg-color",
+       "style": "vector",
+       "z": 3000,
+       "cover": true
+      },
+      {
+       "id": "subject",
+       "asset": "vote-hands",
+       "style": "vector",
+       "z": 1000,
+       "x": 0,
+       "y": -80,
+       "w": 500,
+       "anim": "pop"
+      }
+     ],
+     "camera": {
+      "move": "drift",
+      "from": {
+       "x": -20,
+       "y": 0,
+       "z": 0
+      },
+      "to": {
+       "x": 20,
+       "y": -10,
+       "z": 60
+      }
+     },
+     "text": [
+      {
+       "content": "ยกมือ",
+       "role": "label",
+       "x": 540,
+       "y": 300,
+       "sourceRef": "F-09"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "covers": [
+  {
+   "id": "A",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "ใบแดง\n*ยังอยู่*",
+   "kicker": "พลทหารอาสา",
+   "sourceRef": "F-09",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:parade-ground|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:lottery-jar|question-split",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 620
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "era": "present",
+   "kind": "parallax",
+   "focus": "subject",
+   "title": "สมัครแล้ว\n*95%*",
+   "kicker": "ทหารอาสา 2570",
+   "sourceRef": "F-07",
+   "layers": [
+    {
+     "id": "bg",
+     "asset": "img:registration-hall|bg-color",
+     "style": "vector",
+     "z": 3000,
+     "cover": true
+    },
+    {
+     "id": "subject",
+     "asset": "img:red-black-cards|question-split",
+     "style": "vector",
+     "z": 1000,
+     "y": 560,
+     "w": 620
+    },
+    {
+     "id": "fg",
+     "asset": "dust",
+     "style": "vector",
+     "z": 500,
+     "cover": true,
+     "opacity": 0.3
+    }
+   ]
+  }
+ ]
+}

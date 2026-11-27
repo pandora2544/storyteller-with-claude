@@ -1,0 +1,16 @@
+{
+  "images": [
+    {"id": "parade-ground", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A wide empty parade ground in front of a simple low cream-colored building with a red tiled roof, big shady trees on the sides, soft morning light, wide open pale sky at the top, no people, no flags, no insignia, no vehicles, no weapons, no text"},
+    {"id": "registration-hall", "kind": "plate", "aspect": "9:16", "variants": 1,
+     "prompt": "A bright tidy registration hall with rows of simple tables and plastic chairs, stacks of blank paper forms and pens, ceiling fans, soft depth fading into the back, calm mood, no people, no flags, no insignia, no logos, no text"},
+    {"id": "lottery-jar", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A large round clear glass jar filled with many folded paper cards, some bright red and some black, rounded friendly shapes, simple soft shading, no labels, no symbols, no text"},
+    {"id": "red-black-cards", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "Two plain playing-card sized paper cards floating side by side and slightly tilted, one bright red and one black, completely blank, rounded corners, simple soft shading, no symbols, no numbers, no text"},
+    {"id": "army-helmet", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A plain olive green soldier helmet resting on a pair of neat black lace-up boots, rounded friendly shapes, simple soft shading, no insignia, no badges, no flags, no weapons, no text"},
+    {"id": "application-forms", "kind": "cutout", "aspect": "1:1", "variants": 1,
+     "prompt": "A small neat stack of blank paper application forms with a clipboard and a blue pen on top, rounded friendly shapes, simple soft shading, the paper is blank with only faint grey lines, no logos, no symbols, no text"}
+  ]
+}
