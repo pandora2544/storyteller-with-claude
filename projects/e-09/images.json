@@ -1,0 +1,39 @@
+{
+  "images": [
+    {
+      "id": "night-nightstand",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Cozy bedroom at night seen beside the bed: a small wooden nightstand with a plain generic smartphone lying face-up connected to a white charging cable, a switched-off bedside lamp, soft blue moonlight through a window with curtains, empty room with no people, no brand logos, no text on any screen"
+    },
+    {
+      "id": "battery-inside",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Abstract cutaway view inside a lithium-ion battery: stacked thin layered sheets in copper and silver tones receding into depth, small glowing teal dots (lithium ions) drifting between the layers, deep navy blue glow, simple rounded shapes, no people, no text"
+    },
+    {
+      "id": "phone-charging",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A plain generic smartphone standing upright, simple rounded rectangle body with no camera bump details and no buttons, dark screen showing one large green battery icon with a lightning bolt, a white charging cable plugged into the bottom, rounded cartoon shapes, no brand logo, no lettering"
+    },
+    {
+      "id": "battery-cell",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A chunky cartoon rechargeable battery cell standing upright with a small terminal cap on top, its body showing four rounded green energy level bars, a small plus symbol on the cap, rounded shapes, no lettering, no logos"
+    },
+    {
+      "id": "hot-thermometer",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A red cartoon thermometer with the red level near the top, wavy heat lines rising around it and a small bright sun beside it, rounded shapes, no numbers, no lettering"
+    }
+  ]
+}

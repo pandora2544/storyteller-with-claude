@@ -1,0 +1,39 @@
+{
+  "images": [
+    {
+      "id": "cabin",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Interior of an empty passenger airplane cabin seen down the aisle, rows of identical economy seats on both sides, small oval windows with soft daylight, overhead bins, calm and tidy, no people, no signs with lettering, no airline logos or branding"
+    },
+    {
+      "id": "departures",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Empty airport departure lounge with a tall glass window, a generic white passenger airplane parked outside on the tarmac at warm sunset, rows of empty waiting chairs, no people, no signs with lettering, no airline logos, no markings on the plane"
+    },
+    {
+      "id": "seat-row",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A row of three identical empty airplane economy seats joined together, soft blue upholstery with headrest covers, seen from a slight front three-quarter angle, rounded cartoon shapes, no people, no lettering, no logos"
+    },
+    {
+      "id": "bucket",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A shiny metal bucket overflowing with blank paper travel tickets, a few tickets fluttering above it, rounded cartoon shapes, no lettering, no logos"
+    },
+    {
+      "id": "ticket",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A single blank airline boarding pass ticket with a tear-off stub and a small simple airplane icon, slightly tilted, rounded cartoon shapes, no lettering, no numbers, no barcodes, no logos"
+    }
+  ]
+}

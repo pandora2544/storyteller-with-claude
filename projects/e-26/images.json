@@ -1,0 +1,46 @@
+{
+  "images": [
+    {
+      "id": "brown-river-plate",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "A wide calm muddy brown tropical river flowing through flat green rice-field plains, banana trees and simple wooden stilt houses on the banks, a small empty wooden long-tail boat, soft afternoon sky, no people, no temples, no palaces, no landmarks, no signs, no logos"
+    },
+    {
+      "id": "north-hills-plate",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "Rolling green forested hills of northern Thailand during a rain shower, terraced farm fields on the slopes, small muddy brown streams running down the hillsides into a winding brown river in the valley, gray rain clouds, no people, no buildings with signs"
+    },
+    {
+      "id": "estuary-plate",
+      "kind": "plate",
+      "aspect": "9:16",
+      "variants": 1,
+      "prompt": "A river mouth seen from above meeting the sea, a plume of light brown muddy river water swirling and mixing into blue-green sea water, gentle tidal ripples, low flat coastline with mangroves, no ships with text, no people, no buildings"
+    },
+    {
+      "id": "silt-jar",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A clear glass jar filled with cloudy light-brown river water, tiny suspended particles floating inside, a thin layer of fine brown mud settled at the bottom, rounded cartoon shapes, no label, no lettering"
+    },
+    {
+      "id": "soil-clump",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A clump of reddish-brown soil crumbling apart into many tiny grains of silt and clay, a few small pebbles, rounded cartoon shapes, no lettering"
+    },
+    {
+      "id": "water-test",
+      "kind": "cutout",
+      "aspect": "1:1",
+      "variants": 1,
+      "prompt": "A laboratory test tube of river water with small rising oxygen bubbles next to a simple petri dish with a few dots of bacteria colonies, clean science illustration, rounded cartoon shapes, no lettering, no logos"
+    }
+  ]
+}

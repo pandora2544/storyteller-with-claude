@@ -1,0 +1,1627 @@
+{
+  "meta": {
+    "slug": "e-09",
+    "title": "ชาร์จมือถือถึง 100% ทุกคืน แบตเสื่อมจริงไหม",
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "targetSec": 60
+  },
+  "sources": {
+    "F-01": "Apple: Why Lithium-ion? · TechRadar 2025",
+    "F-02": "Apple Support (iPhone battery) · MacRumors 2024",
+    "F-03": "Apple: Why Lithium-ion? · Apple Support (cycle count)",
+    "F-04": "Battery University BU-808 · Google Pixel Help",
+    "F-05": "Battery University BU-808 (ประมาณการ เก็บ 1 ปี)",
+    "F-06": "Apple Support · Google Pixel Help · Samsung Support",
+    "F-07": "Apple: Maximizing Battery Life · Google Pixel Help"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "era": "present",
+      "vo": "ชาร์จเต็มทุกคืน… [#S01-02] แบตเสื่อมจริงไหม",
+      "voEn": "Charging to full every night… [#S01-02] does it really wear out the battery?",
+      "voTTS": "ชาร์จเต็ม… ทุกคืน… [#S01-02] แบตเสื่อม… จริงไหม",
+      "voFile": "vo/S01.wav",
+      "shots": [
+        {
+          "id": "S01-01",
+          "kind": "parallax",
+          "description": "หัวเตียงกลางคืน มือถือทั่วไปเสียบสายชาร์จเด้งขึ้นกลางจอ พระจันทร์ด้านหลัง กล้องดันเข้าตั้งแต่เฟรมแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:night-nightstand|bedroom",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "moon",
+              "style": "vector",
+              "z": 1600,
+              "x": 260,
+              "y": -380,
+              "w": 240,
+              "anim": "float"
+            },
+            {
+              "id": "subject",
+              "asset": "img:phone-charging|phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 520,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 260
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "100% ทุกคืน",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S01-02",
+          "kind": "vector",
+          "description": "แบตเตอรี่การ์ตูน + ป้ายแยกทาง — เสื่อมจริงไหม",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1300,
+              "x": 0,
+              "y": -380,
+              "w": 300,
+              "anim": "pop",
+              "delay": 0
+            },
+            {
+              "id": "subject",
+              "asset": "img:battery-cell|signal-icon",
+              "style": "vector",
+              "z": 1000,
+              "y": -20,
+              "w": 460,
+              "anim": "sway"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เสื่อมจริงไหม?",
+              "role": "kicker",
+              "x": 540,
+              "y": 300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "beat": "setup",
+      "era": "present",
+      "vo": "แบตลิเทียมไอออน [#S02-02] ออกแบบให้เหลือ 80% [#S02-03] หลังครบ 500 [#S02-04] ถึง 1,000 รอบ",
+      "voEn": "Lithium-ion phone batteries [#S02-02] are designed to keep 80% of their capacity [#S02-03] after 500 [#S02-04] to 1,000 cycles.",
+      "voTTS": "แบต ลิเทียมไอออน [#S02-02] ออกแบบให้เหลือ… แปดสิบเปอร์เซ็นต์ [#S02-03] หลังครบ ห้าร้อย [#S02-04] ถึงหนึ่งพันรอบ",
+      "voFile": "vo/S02.wav",
+      "shots": [
+        {
+          "id": "S02-01",
+          "kind": "vector",
+          "description": "แบตเตอรี่การ์ตูนเด้งขึ้น — แบตลิเทียมไอออน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:battery-cell|signal-icon",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ลิเทียมไอออน",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S02-02",
+          "kind": "data",
+          "description": "ตัวนับความจุขึ้นถึง 80% — ค่าที่ผู้ผลิตออกแบบไว้",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 80,
+            "suffix": "%",
+            "label": "ความจุที่ออกแบบให้เหลือ",
+            "sourceRef": "F-02"
+          }
+        },
+        {
+          "id": "S02-03",
+          "kind": "parallax",
+          "description": "ภายในแบตเตอรี่ ไอออนเรืองแสงลอย แบตเตอรี่กลางจอ — 500 รอบ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:battery-inside|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "light-rays",
+              "style": "vector",
+              "z": 1700,
+              "y": -200,
+              "w": 600,
+              "opacity": 0.6
+            },
+            {
+              "id": "subject",
+              "asset": "img:battery-cell|signal-icon",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 480,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -200,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 200,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "500 รอบ",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-02"
+            }
+          ]
+        },
+        {
+          "id": "S02-04",
+          "kind": "data",
+          "description": "แท่งเทียบรอบชาร์จจนเหลือ 80%: รุ่นเก่า 500 vs รุ่นใหม่ 1,000 (ตามผู้ผลิต สภาพเหมาะสม)",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "bar",
+            "items": [
+              {
+                "label": "รุ่นเก่า",
+                "value": 500
+              },
+              {
+                "label": "รุ่นใหม่",
+                "value": 1000,
+                "highlight": true
+              }
+            ],
+            "unit": "รอบ",
+            "title": "รอบจนเหลือ 80% (ตามผู้ผลิต)",
+            "sourceRef": "F-02"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "beat": "act1",
+      "era": "present",
+      "vo": "หนึ่งรอบคือใช้รวมครบ 100% [#S03-02] วันละครึ่ง สองวัน [#S03-03] ก็นับหนึ่งรอบ [#S03-04] ตัวร้ายจริงคือ… [#S03-05] เต็มค้างนาน [#S03-06] กับความร้อน",
+      "voEn": "One cycle means using 100% in total. [#S03-02] Half a day, two days in a row, [#S03-03] still counts as one cycle. [#S03-04] The real villain is… [#S03-05] sitting full for too long [#S03-06] and heat.",
+      "voTTS": "หนึ่งรอบ… คือใช้รวมครบ ร้อยเปอร์เซ็นต์ [#S03-02] วันละครึ่ง… สองวัน [#S03-03] ก็นับ หนึ่งรอบ [#S03-04] ตัวร้ายจริง… คือ… [#S03-05] เต็มค้างนาน [#S03-06] กับความร้อน",
+      "voFile": "vo/S03.wav",
+      "shots": [
+        {
+          "id": "S03-01",
+          "kind": "collage",
+          "description": "กระดาษ collage แบตเตอรี่ + วงปากกาแดง — นิยามหนึ่งรอบ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:battery-cell|signal-icon",
+              "style": "collage",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "stop-motion",
+              "rot": -3
+            },
+            {
+              "id": "mark",
+              "asset": "marker-circle",
+              "style": "collage",
+              "z": 900,
+              "y": -40,
+              "w": 580
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "1 รอบ = 100%",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-03"
+            }
+          ]
+        },
+        {
+          "id": "S03-02",
+          "kind": "data",
+          "description": "ไอคอนครึ่งรอบ 2 ชิ้น — วันละครึ่ง สองวัน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "unit",
+            "count": 2,
+            "perIcon": "ครึ่งรอบ",
+            "label": "วันละครึ่ง × 2 วัน",
+            "sourceRef": "F-03"
+          }
+        },
+        {
+          "id": "S03-03",
+          "kind": "vector",
+          "description": "แบตเตอรี่ + ตราประทับ — รวมกันนับหนึ่งรอบ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:battery-cell|signal-icon",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 480,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "stamp",
+              "style": "vector",
+              "z": 900,
+              "x": 180,
+              "y": -260,
+              "w": 280,
+              "anim": "pop",
+              "delay": 0.3,
+              "rot": -8
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "= 1 รอบ",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-03"
+            }
+          ]
+        },
+        {
+          "id": "S03-04",
+          "kind": "vector",
+          "description": "เวทีสปอตไลต์ มือถือกลางเวที — ใครคือตัวร้ายจริง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "spotlight-stage",
+              "style": "vector",
+              "z": 1400,
+              "x": 0,
+              "y": -100,
+              "w": 620,
+              "anim": "none",
+              "delay": 0
+            },
+            {
+              "id": "subject",
+              "asset": "img:phone-charging|phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 400,
+              "anim": "drop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ตัวร้ายจริง…",
+              "role": "kicker",
+              "x": 540,
+              "y": 300
+            }
+          ]
+        },
+        {
+          "id": "S03-05",
+          "kind": "parallax",
+          "description": "หัวเตียงกลางคืน นาฬิกาเดินด้านหลัง มือถือเต็มค้างทั้งคืน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:night-nightstand|bedroom",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "clock",
+              "style": "vector",
+              "z": 1600,
+              "x": -240,
+              "y": -380,
+              "w": 260,
+              "anim": "sway"
+            },
+            {
+              "id": "subject",
+              "asset": "img:phone-charging|phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 500,
+              "anim": "bob"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": 200,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": -200,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "เต็มค้างทั้งคืน",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S03-06",
+          "kind": "vector",
+          "description": "เทอร์โมมิเตอร์ร้อนจัดเด้งขึ้น — ความร้อน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:hot-thermometer|sun",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 500,
+              "anim": "sway"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ความร้อน",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-04"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "beat": "act2",
+      "era": "present",
+      "vo": "เก็บแบตไว้หนึ่งปี [#S04-02] ค้าง 40% เหลือราว 96% [#S04-03] ค้างเต็มเหลือ 80% [#S04-04] ถ้าร้อน 40 องศา [#S04-05] ค้างเต็ม [#S04-06] เหลือแค่ 65%",
+      "voEn": "Store a battery for a year at room temperature: [#S04-02] kept at 40%, it holds about 96%; [#S04-03] kept full, 80%. [#S04-04] At 40°C, [#S04-05] kept full, [#S04-06] just 65%.",
+      "voTTS": "เก็บแบตไว้… หนึ่งปี [#S04-02] ค้างสี่สิบเปอร์เซ็นต์ เหลือราว เก้าสิบหก [#S04-03] ค้างเต็ม… เหลือแปดสิบ [#S04-04] ถ้าร้อน… สี่สิบองศา [#S04-05] ค้างเต็ม [#S04-06] เหลือแค่… หกสิบห้าเปอร์เซ็นต์",
+      "voFile": "vo/S04.wav",
+      "shots": [
+        {
+          "id": "S04-01",
+          "kind": "parallax",
+          "description": "ภายในแบตเตอรี่ ปฏิทินลอยด้านหลัง — การทดลองเก็บแบต 1 ปี",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:battery-inside|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "calendar-year",
+              "style": "vector",
+              "z": 1600,
+              "x": 240,
+              "y": -380,
+              "w": 260,
+              "anim": "float"
+            },
+            {
+              "id": "subject",
+              "asset": "img:battery-cell|signal-icon",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 500,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 200
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "1 ปี · 25°C",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S04-02",
+          "kind": "data",
+          "description": "ตัวนับความจุถึง 96% — ค้างไว้ 40% ที่ 25°C (ประมาณการ)",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 96,
+            "suffix": "%",
+            "label": "ค้าง 40% · 25°C (ประมาณการ)",
+            "sourceRef": "F-05"
+          }
+        },
+        {
+          "id": "S04-03",
+          "kind": "data",
+          "description": "แท่งเทียบที่ 25°C: ค้าง 40% เหลือ 96 vs ค้างเต็มเหลือ 80",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "bar",
+            "items": [
+              {
+                "label": "ค้าง 40%",
+                "value": 96
+              },
+              {
+                "label": "ค้างเต็ม",
+                "value": 80,
+                "highlight": true
+              }
+            ],
+            "unit": "%",
+            "title": "เหลือหลัง 1 ปี · 25°C (ประมาณการ)",
+            "sourceRef": "F-05"
+          }
+        },
+        {
+          "id": "S04-04",
+          "kind": "vector",
+          "description": "เทอร์โมมิเตอร์ร้อนขึ้น + พระอาทิตย์ — 40 องศา",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "sun",
+              "style": "vector",
+              "z": 1300,
+              "x": 220,
+              "y": -360,
+              "w": 240,
+              "anim": "spin",
+              "delay": 0
+            },
+            {
+              "id": "subject",
+              "asset": "img:hot-thermometer|sun",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "pop",
+              "x": -60
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "40°C",
+              "role": "number",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S04-05",
+          "kind": "collage",
+          "description": "กระดาษ collage มือถือเต็ม + ตราประทับ — เต็มบวกร้อน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:phone-charging|phone-feed",
+              "style": "collage",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "stop-motion",
+              "rot": -3
+            },
+            {
+              "id": "mg",
+              "asset": "stamp",
+              "style": "collage",
+              "z": 900,
+              "x": 180,
+              "y": -280,
+              "w": 260,
+              "anim": "pop",
+              "delay": 0.3,
+              "rot": -8
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เต็ม + ร้อน",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S04-06",
+          "kind": "data",
+          "description": "แท่งเทียบค้างเต็ม 1 ปี: 25°C เหลือ 80 vs 40°C เหลือ 65",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "bar",
+            "items": [
+              {
+                "label": "ค้างเต็ม 25°C",
+                "value": 80
+              },
+              {
+                "label": "ค้างเต็ม 40°C",
+                "value": 65,
+                "highlight": true
+              }
+            ],
+            "unit": "%",
+            "title": "เหลือหลัง 1 ปี (ประมาณการ)",
+            "sourceRef": "F-05"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "beat": "act3",
+      "era": "present",
+      "vo": "มือถือหลายรุ่นมีโหมดถนอมแบต [#S05-02] จำเวลาที่เราถอดสาย [#S05-03] ค้างไว้ราว 80% [#S05-04] แล้วเติมเต็ม [#S05-05] ก่อนเราหยิบ",
+      "voEn": "Many phones have a battery-saving charging mode. [#S05-02] It learns when we usually unplug, [#S05-03] holds at around 80%, [#S05-04] then tops up to full [#S05-05] just before we pick it up.",
+      "voTTS": "มือถือหลายรุ่น มีโหมด… ถนอมแบต [#S05-02] จำเวลาที่เรา ถอดสาย [#S05-03] ค้างไว้ราว… แปดสิบเปอร์เซ็นต์ [#S05-04] แล้วเติมเต็ม [#S05-05] ก่อนเราหยิบ",
+      "voFile": "vo/S05.wav",
+      "shots": [
+        {
+          "id": "S05-01",
+          "kind": "vector",
+          "description": "มือถือเด้งขึ้น หัวใจดาวลอยข้าง ๆ — โหมดถนอมแบต",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "heart-star",
+              "style": "vector",
+              "z": 1300,
+              "x": 220,
+              "y": -340,
+              "w": 260,
+              "anim": "pop",
+              "delay": 0.2
+            },
+            {
+              "id": "subject",
+              "asset": "img:phone-charging|phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "pop",
+              "x": -40
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "โหมดถนอมแบต",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S05-02",
+          "kind": "parallax",
+          "description": "หัวเตียงกลางคืน นาฬิกาด้านหลัง มือถือชาร์จอยู่ — จำเวลาถอดสาย",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:night-nightstand|bedroom",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "clock",
+              "style": "vector",
+              "z": 1600,
+              "x": 240,
+              "y": -380,
+              "w": 260,
+              "anim": "pop"
+            },
+            {
+              "id": "subject",
+              "asset": "img:phone-charging|phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 500,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "crane",
+            "from": {
+              "x": 0,
+              "y": -200,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 120
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "จำเวลาถอดสาย",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S05-03",
+          "kind": "data",
+          "description": "ตัวนับขึ้นถึง 80% แล้วหยุดค้าง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 80,
+            "suffix": "%",
+            "label": "ชาร์จค้างไว้ราว",
+            "sourceRef": "F-06"
+          }
+        },
+        {
+          "id": "S05-04",
+          "kind": "vector",
+          "description": "แบตเตอรี่ + ลูกศรชี้ขึ้น — เติมเต็มทีหลัง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:battery-cell|signal-icon",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 440,
+              "anim": "float",
+              "x": -80
+            },
+            {
+              "id": "mg",
+              "asset": "arrow",
+              "style": "vector",
+              "z": 1100,
+              "x": 220,
+              "y": -260,
+              "w": 300,
+              "rot": -90,
+              "anim": "slide-up"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เติมเต็มทีหลัง",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S05-05",
+          "kind": "vector",
+          "description": "มือถือเต็ม พระอาทิตย์ขึ้นด้านหลัง — พอดีตอนหยิบ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "sun",
+              "style": "vector",
+              "z": 1300,
+              "x": 240,
+              "y": -380,
+              "w": 260,
+              "anim": "slide-up",
+              "delay": 0
+            },
+            {
+              "id": "subject",
+              "asset": "img:phone-charging|phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "bob"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "พอดีตอนเช้า",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-06"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "beat": "payoff",
+      "era": "present",
+      "vo": "เสื่อมเร็วขึ้นจริง [#S06-02] ถ้าเต็มนานและร้อน [#S06-03] เปิดโหมดถนอมแบต [#S06-04] ร้อนนักก็ถอดเคส",
+      "voEn": "Yes, it wears faster [#S06-02] when it sits full and hot. [#S06-03] Turn on the battery-saving mode, [#S06-04] and if it gets hot, take off the case.",
+      "voTTS": "เสื่อมเร็วขึ้น… จริง [#S06-02] ถ้าเต็มนาน… และร้อน [#S06-03] เปิดโหมด ถนอมแบต [#S06-04] ร้อนนัก… ก็ถอดเคส",
+      "voFile": "vo/S06.wav",
+      "shots": [
+        {
+          "id": "S06-01",
+          "kind": "parallax",
+          "description": "ภายในแบตเตอรี่ แสงส่อง แบตเตอรี่กลางจอ — คำตอบ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:battery-inside|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "light-rays",
+              "style": "vector",
+              "z": 1700,
+              "y": -220,
+              "w": 620,
+              "opacity": 0.6
+            },
+            {
+              "id": "subject",
+              "asset": "img:battery-cell|signal-icon",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 520,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 160
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "เสื่อมเร็วขึ้นจริง",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S06-02",
+          "kind": "vector",
+          "description": "ตาชั่ง: เต็มนาน + ร้อน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 540,
+              "anim": "sway"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เต็มนาน + ร้อน",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S06-03",
+          "kind": "collage",
+          "description": "กระดาษ collage มือถือ + หัวใจดาว — เปิดโหมดถนอมแบต",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:phone-charging|phone-feed",
+              "style": "collage",
+              "z": 1000,
+              "y": -40,
+              "w": 460,
+              "anim": "stop-motion",
+              "rot": -3
+            },
+            {
+              "id": "mg",
+              "asset": "heart-star",
+              "style": "collage",
+              "z": 900,
+              "x": 200,
+              "y": -300,
+              "w": 240,
+              "anim": "pop",
+              "delay": 0.3
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เปิดโหมดถนอม",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S06-04",
+          "kind": "vector",
+          "description": "เทอร์โมมิเตอร์ + ลูกศร — ร้อนแล้วถอดเคส",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:hot-thermometer|sun",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 420,
+              "anim": "pop",
+              "x": -100
+            },
+            {
+              "id": "mg",
+              "asset": "arrow",
+              "style": "vector",
+              "z": 1100,
+              "x": 220,
+              "y": -260,
+              "w": 280,
+              "anim": "slide-right"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ร้อน → ถอดเคส",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-07"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "beat": "outro",
+      "era": "present",
+      "vo": "แล้วคืนนี้… [#S07-02] จะชาร์จถึงเท่าไร",
+      "voEn": "So tonight… [#S07-02] how far will we charge?",
+      "voTTS": "แล้วคืนนี้… [#S07-02] จะชาร์จถึง… เท่าไร",
+      "voFile": "vo/S07.wav",
+      "shots": [
+        {
+          "id": "S07-01",
+          "kind": "parallax",
+          "description": "กลับมาที่หัวเตียงกลางคืน มือถือเสียบสาย พระจันทร์ กล้องถอยออก — วนกลับฉากเปิด",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:night-nightstand|bedroom",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "moon",
+              "style": "vector",
+              "z": 1600,
+              "x": 260,
+              "y": -380,
+              "w": 240
+            },
+            {
+              "id": "subject",
+              "asset": "img:phone-charging|phone-feed",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 520,
+              "anim": "drop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 120
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -200
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "คืนนี้…",
+              "role": "title",
+              "x": 540,
+              "y": 330
+            }
+          ]
+        },
+        {
+          "id": "S07-02",
+          "kind": "vector",
+          "description": "แบตเตอรี่ + ป้ายแยกทาง — วนกลับคำถามแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:battery-cell|signal-icon",
+              "style": "vector",
+              "z": 1000,
+              "y": -40,
+              "w": 480,
+              "anim": "pop"
+            },
+            {
+              "id": "mg",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1300,
+              "x": 0,
+              "y": -380,
+              "w": 280,
+              "anim": "pop",
+              "delay": 0.2
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "กี่ %?",
+              "role": "kicker",
+              "x": 540,
+              "y": 320
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "covers": [
+    {
+      "id": "A",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "เต็มค้าง\n*ตัวร้าย*",
+      "kicker": "ชาร์จทุกคืน",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:night-nightstand|bedroom",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "mg",
+          "asset": "moon",
+          "style": "vector",
+          "z": 1600,
+          "x": 260,
+          "y": 420,
+          "w": 300
+        },
+        {
+          "id": "subject",
+          "asset": "img:phone-charging|phone-feed",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 580
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "ร้อน+เต็ม\n*เหลือ 65%*",
+      "kicker": "ประมาณการ 1 ปี",
+      "sourceRef": "F-05",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:battery-inside|bg-color",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "mg",
+          "asset": "img:hot-thermometer|sun",
+          "style": "vector",
+          "z": 1600,
+          "x": 260,
+          "y": 420,
+          "w": 300
+        },
+        {
+          "id": "subject",
+          "asset": "img:battery-cell|signal-icon",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 560
+        },
+        {
+          "id": "fg",
+          "asset": "dust",
+          "style": "vector",
+          "z": 500,
+          "cover": true,
+          "opacity": 0.3
+        }
+      ]
+    }
+  ]
+}

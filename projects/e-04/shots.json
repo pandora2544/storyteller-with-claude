@@ -1,0 +1,1657 @@
+{
+  "meta": {
+    "slug": "e-04",
+    "title": "ทำไมตั๋วเครื่องบินที่นั่งติดกันราคาไม่เท่ากัน",
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "targetSec": 60
+  },
+  "sources": {
+    "F-01": "The Points Guy 2026 · ไทยพีบีเอส 2567",
+    "F-02": "Executive Traveller 2017 · The Points Guy 2026",
+    "F-03": "MiGFlug 2026 · The Points Guy 2026",
+    "F-04": "MiGFlug 2026 · Wikipedia (Yield management)",
+    "F-05": "ไทยพีบีเอส 2567 · OAG 2024",
+    "F-06": "Wikipedia (Yield management) · OAG 2024",
+    "F-07": "The Points Guy 2026 · Executive Traveller 2017",
+    "F-08": "KAYAK 2026 · CBS News 2018"
+  },
+  "covers": [
+    {
+      "id": "A",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "ติดกัน\n*คนละราคา*",
+      "kicker": "ตั๋วเครื่องบิน",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:cabin|bg-color",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "mg",
+          "asset": "img:ticket|price-tag",
+          "style": "vector",
+          "z": 1600,
+          "x": 260,
+          "y": 420,
+          "w": 300
+        },
+        {
+          "id": "subject",
+          "asset": "img:seat-row|balance-scale",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 600
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "era": "present",
+      "kind": "parallax",
+      "focus": "subject",
+      "title": "ถังถูก\n*หมดก่อน*",
+      "kicker": "ชั้นราคา",
+      "layers": [
+        {
+          "id": "bg",
+          "asset": "img:departures|city",
+          "style": "vector",
+          "z": 3000,
+          "cover": true
+        },
+        {
+          "id": "subject",
+          "asset": "img:bucket|coin-stack",
+          "style": "vector",
+          "z": 1000,
+          "y": 560,
+          "w": 560
+        },
+        {
+          "id": "fg",
+          "asset": "dust",
+          "style": "vector",
+          "z": 500,
+          "cover": true,
+          "opacity": 0.3
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "id": "S01",
+      "beat": "hook",
+      "era": "present",
+      "vo": "นั่งติดกัน… [#S01-02] ทำไมจ่ายไม่เท่ากัน",
+      "voEn": "Sitting side by side… [#S01-02] so why did we pay different prices?",
+      "voTTS": "นั่งติดกัน… [#S01-02] ทำไม… จ่ายไม่เท่ากัน",
+      "voFile": "vo/S01.wav",
+      "shots": [
+        {
+          "id": "S01-01",
+          "kind": "parallax",
+          "description": "ห้องโดยสารว่าง แถวที่นั่ง 3 ที่เด้งขึ้นกลางจอ ตั๋วสองใบลอยอยู่ด้านหลัง กล้องดันเข้าตั้งแต่เฟรมแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:cabin|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:ticket|price-tag",
+              "style": "vector",
+              "z": 1600,
+              "x": 260,
+              "y": -380,
+              "w": 260,
+              "anim": "sway"
+            },
+            {
+              "id": "subject",
+              "asset": "img:seat-row|balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 520,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 240
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ที่นั่งติดกัน",
+              "role": "title",
+              "x": 540,
+              "y": 320
+            }
+          ]
+        },
+        {
+          "id": "S01-02",
+          "kind": "vector",
+          "description": "ตั๋วกับป้ายแยกทาง — คำถามว่าทำไมราคาไม่เท่ากัน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1600,
+              "x": 0,
+              "y": -400,
+              "w": 280,
+              "anim": "pop"
+            },
+            {
+              "id": "subject",
+              "asset": "img:ticket|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 460,
+              "anim": "sway"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "คนละราคา?",
+              "role": "kicker",
+              "x": 540,
+              "y": 300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "beat": "setup",
+      "era": "present",
+      "vo": "เที่ยวบินเดียว [#S02-02] ชั้นประหยัด [#S02-03] มีได้นับสิบราคา",
+      "voEn": "One flight, [#S02-02] one economy cabin, [#S02-03] can carry ten-plus different fares.",
+      "voTTS": "เที่ยวบินเดียว [#S02-02] ชั้นประหยัด [#S02-03] มีได้… นับสิบราคา",
+      "voFile": "vo/S02.wav",
+      "shots": [
+        {
+          "id": "S02-01",
+          "kind": "parallax",
+          "description": "อาคารผู้โดยสาร เครื่องบินจอดหลังกระจก ตั๋วลอยหน้ากล้อง — เที่ยวบินเดียวกัน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:departures|city",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "signal-icon",
+              "style": "vector",
+              "z": 1600,
+              "x": -260,
+              "y": -380,
+              "w": 200,
+              "anim": "pop"
+            },
+            {
+              "id": "subject",
+              "asset": "img:ticket|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 440,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -200,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 200,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "เที่ยวบินเดียว",
+              "role": "kicker",
+              "x": 540,
+              "y": 300
+            }
+          ]
+        },
+        {
+          "id": "S02-02",
+          "kind": "vector",
+          "description": "แถวที่นั่งชั้นประหยัดเหมือนกันทุกตัว",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:seat-row|balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 500,
+              "anim": "slide-left"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ชั้นประหยัด",
+              "role": "title",
+              "x": 540,
+              "y": 320
+            }
+          ]
+        },
+        {
+          "id": "S02-03",
+          "kind": "data",
+          "description": "ตัวนับขึ้นถึง 10+ ราคา ในชั้นประหยัดเที่ยวเดียว (ตัวอย่างจริง 12)",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            }
+          ],
+          "data": {
+            "chart": "counter",
+            "to": 10,
+            "suffix": "+ ราคา",
+            "label": "ชั้นประหยัด · เที่ยวบินเดียว",
+            "sourceRef": "F-02"
+          }
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "beat": "act1",
+      "era": "present",
+      "vo": "สายการบินแบ่งที่นั่ง [#S03-02] เป็นถังราคา [#S03-03] ติดรหัสตัวอักษร [#S03-04] ถังถูกขายหมดก่อน [#S03-05] ถังถัดไปจึงเปิด [#S03-06] ราคาขยับขึ้น",
+      "voEn": "Airlines split the seats [#S03-02] into fare buckets, [#S03-03] each with a letter code. [#S03-04] The cheapest bucket sells out first, [#S03-05] then the next one opens [#S03-06] and the price steps up.",
+      "voTTS": "สายการบิน แบ่งที่นั่ง [#S03-02] เป็นถังราคา [#S03-03] ติดรหัส… ตัวอักษร [#S03-04] ถังถูก ขายหมดก่อน [#S03-05] ถังถัดไป จึงเปิด [#S03-06] ราคา… ขยับขึ้น",
+      "voFile": "vo/S03.wav",
+      "shots": [
+        {
+          "id": "S03-01",
+          "kind": "collage",
+          "description": "กระดาษ collage แถวที่นั่งถูกวงด้วยปากกาแดง — แบ่งที่นั่ง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:seat-row|balance-scale",
+              "style": "collage",
+              "z": 1000,
+              "y": -80,
+              "w": 460,
+              "anim": "stop-motion",
+              "rot": -3
+            },
+            {
+              "id": "mark",
+              "asset": "marker-circle",
+              "style": "collage",
+              "z": 900,
+              "y": -80,
+              "w": 580
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "แบ่งที่นั่ง",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S03-02",
+          "kind": "parallax",
+          "description": "ห้องโดยสาร ถังใส่ตั๋วเด้งขึ้นกลางจอ — ถังราคา (fare bucket)",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:cabin|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:ticket|price-tag",
+              "style": "vector",
+              "z": 1600,
+              "x": -260,
+              "y": -380,
+              "w": 240,
+              "anim": "float"
+            },
+            {
+              "id": "subject",
+              "asset": "img:bucket|coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 500,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 220
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ถังราคา",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S03-03",
+          "kind": "vector",
+          "description": "ตั๋วเด้งขึ้น รหัสตัวอักษรบนจอ — Y · M · Q",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:ticket|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 460,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "Y · M · Q …",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-01"
+            }
+          ]
+        },
+        {
+          "id": "S03-04",
+          "kind": "vector",
+          "description": "ถังแรกส่ายแล้วหายไป — ถังถูกขายหมด",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "stamp",
+              "style": "vector",
+              "z": 1600,
+              "x": 240,
+              "y": -380,
+              "w": 220,
+              "anim": "pop",
+              "delay": 0.4
+            },
+            {
+              "id": "subject",
+              "asset": "img:bucket|coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 460,
+              "anim": "sway",
+              "x": -40
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ถังถูก = หมดก่อน",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-03"
+            }
+          ]
+        },
+        {
+          "id": "S03-05",
+          "kind": "vector",
+          "description": "ถังใบใหม่เลื่อนเข้ามาแทน — ถังถัดไปเปิด",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:bucket|coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 480,
+              "anim": "slide-right"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ถังถัดไป",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-03"
+            }
+          ]
+        },
+        {
+          "id": "S03-06",
+          "kind": "parallax",
+          "description": "ห้องโดยสาร ป้ายราคาลอยสูงขึ้น ถังอยู่กลาง — ราคาขยับขึ้นทีละขั้น",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:cabin|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "price-tag",
+              "style": "vector",
+              "z": 1600,
+              "x": 240,
+              "y": -400,
+              "w": 240,
+              "anim": "slide-up"
+            },
+            {
+              "id": "subject",
+              "asset": "img:bucket|coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 480,
+              "anim": "bob"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "crane",
+            "from": {
+              "x": 0,
+              "y": 200,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": 120
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ราคา ↑",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-03"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "beat": "act2",
+      "era": "present",
+      "vo": "ระบบเดาว่าคนจะซื้อแค่ไหน [#S04-02] จองเร็ว มักทันถังถูก [#S04-03] จองช้า มักเหลือแต่ถังแพง [#S04-04] ช่วงเทศกาล [#S04-05] ถังถูกยิ่งหมดไว",
+      "voEn": "A system forecasts how many people will buy. [#S04-02] Book early and we often catch a cheap bucket. [#S04-03] Book late and often only pricey ones are left. [#S04-04] In holiday season, [#S04-05] cheap buckets vanish even faster.",
+      "voTTS": "ระบบ… เดาว่าคนจะซื้อแค่ไหน [#S04-02] จองเร็ว… มักทันถังถูก [#S04-03] จองช้า… มักเหลือแต่ถังแพง [#S04-04] ช่วงเทศกาล [#S04-05] ถังถูก ยิ่งหมดไว",
+      "voFile": "vo/S04.wav",
+      "shots": [
+        {
+          "id": "S04-01",
+          "kind": "vector",
+          "description": "สัญลักษณ์สัญญาณ/กราฟพยากรณ์กะพริบ — ระบบเดาดีมานด์",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "signal-icon",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 440,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ระบบพยากรณ์",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S04-02",
+          "kind": "vector",
+          "description": "ปฏิทินเลื่อนเข้ามา ตั๋วเด้งข้าง ๆ — จองล่วงหน้า",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:ticket|price-tag",
+              "style": "vector",
+              "z": 1600,
+              "x": 240,
+              "y": -380,
+              "w": 220,
+              "anim": "pop",
+              "delay": 0.3
+            },
+            {
+              "id": "subject",
+              "asset": "calendar-year",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 460,
+              "anim": "slide-left",
+              "x": -40
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "จองเร็ว",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S04-03",
+          "kind": "collage",
+          "description": "กระดาษ collage นาฬิกาเดินเร็ว วงแดง — จองใกล้วันบิน",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "clock",
+              "style": "collage",
+              "z": 1000,
+              "y": -80,
+              "w": 460,
+              "anim": "stop-motion",
+              "rot": 4
+            },
+            {
+              "id": "mark",
+              "asset": "marker-circle",
+              "style": "collage",
+              "z": 900,
+              "y": -80,
+              "w": 580
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "จองช้า",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-04"
+            }
+          ]
+        },
+        {
+          "id": "S04-04",
+          "kind": "parallax",
+          "description": "อาคารผู้โดยสารยามเย็น ถังตั๋วกลางจอ ป้ายราคาด้านหลัง — ช่วงเทศกาลคนแห่จอง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:departures|city",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "price-tag",
+              "style": "vector",
+              "z": 1600,
+              "x": -250,
+              "y": -390,
+              "w": 230,
+              "anim": "sway"
+            },
+            {
+              "id": "subject",
+              "asset": "img:bucket|coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 480,
+              "anim": "bob"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": 200,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": -200,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ช่วงเทศกาล",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-05"
+            }
+          ]
+        },
+        {
+          "id": "S04-05",
+          "kind": "vector",
+          "description": "ถังเด้งแล้วหมุนหาย ดาวแตก — ถังถูกหมดไว",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "star-burst",
+              "style": "vector",
+              "z": 1600,
+              "x": 0,
+              "y": -120,
+              "w": 560,
+              "anim": "spin",
+              "opacity": 0.6
+            },
+            {
+              "id": "subject",
+              "asset": "img:bucket|coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 440,
+              "anim": "drop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "หมดไว",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-05"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "beat": "act3",
+      "era": "present",
+      "vo": "ที่นั่งว่างตอนเครื่องขึ้น [#S05-02] คือรายได้ศูนย์ [#S05-03] ราคาจึงขยับ [#S05-04] ตั๋วถูกมักเปลี่ยนวันยาก [#S05-05] อยากเลือกที่นั่ง [#S05-06] ก็อาจจ่ายเพิ่ม",
+      "voEn": "An empty seat at takeoff [#S05-02] earns zero. [#S05-03] So prices keep moving. [#S05-04] Cheap tickets are often hard to change. [#S05-05] And picking a seat [#S05-06] may cost extra.",
+      "voTTS": "ที่นั่งว่าง… ตอนเครื่องขึ้น [#S05-02] คือรายได้… ศูนย์ [#S05-03] ราคาจึงขยับ [#S05-04] ตั๋วถูก มักเปลี่ยนวันยาก [#S05-05] อยากเลือกที่นั่ง [#S05-06] ก็อาจ… จ่ายเพิ่ม",
+      "voFile": "vo/S05.wav",
+      "shots": [
+        {
+          "id": "S05-01",
+          "kind": "parallax",
+          "description": "ห้องโดยสารว่างเปล่า แถวที่นั่งว่างกลางจอ — เครื่องกำลังออก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:cabin|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "light-rays",
+              "style": "vector",
+              "z": 1600,
+              "x": 0,
+              "y": -260,
+              "w": 600,
+              "anim": "none",
+              "opacity": 0.5
+            },
+            {
+              "id": "subject",
+              "asset": "img:seat-row|balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 520,
+              "anim": "float"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 260
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ที่นั่งว่าง",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S05-02",
+          "kind": "vector",
+          "description": "แถวที่นั่งว่าง ตัวเลข 0 บาทเด้งขึ้น — รายได้ศูนย์",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:seat-row|balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 460,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "0 บาท",
+              "role": "number",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S05-03",
+          "kind": "vector",
+          "description": "ป้ายราคาแกว่งขึ้นลง — ราคาขยับตามดีมานด์",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 440,
+              "anim": "sway"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ราคาขยับ",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-06"
+            }
+          ]
+        },
+        {
+          "id": "S05-04",
+          "kind": "collage",
+          "description": "ตั๋วบนกระดาษ collage ถูกตีตรา — เงื่อนไขเปลี่ยนวันยาก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "paper-bg",
+              "style": "collage",
+              "z": 2800,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:ticket|price-tag",
+              "style": "collage",
+              "z": 1000,
+              "y": -80,
+              "w": 460,
+              "anim": "stop-motion",
+              "rot": -4
+            },
+            {
+              "id": "mark",
+              "asset": "marker-circle",
+              "style": "collage",
+              "z": 900,
+              "y": -80,
+              "w": 580
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "เปลี่ยนวันยาก",
+              "role": "label",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-07"
+            }
+          ]
+        },
+        {
+          "id": "S05-05",
+          "kind": "parallax",
+          "description": "ห้องโดยสาร ป้ายราคาห้อยเหนือแถวที่นั่ง — เลือกที่นั่ง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:cabin|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "price-tag",
+              "style": "vector",
+              "z": 1600,
+              "x": 250,
+              "y": -400,
+              "w": 220,
+              "anim": "sway"
+            },
+            {
+              "id": "subject",
+              "asset": "img:seat-row|balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 500,
+              "anim": "bob"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "truck",
+            "from": {
+              "x": -200,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 200,
+              "y": 0,
+              "z": 60
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "เลือกที่นั่ง",
+              "role": "kicker",
+              "x": 540,
+              "y": 300,
+              "sourceRef": "F-08"
+            }
+          ]
+        },
+        {
+          "id": "S05-06",
+          "kind": "vector",
+          "description": "กองเหรียญเด้งขึ้นข้างตั๋ว — จ่ายเพิ่ม",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:ticket|price-tag",
+              "style": "vector",
+              "z": 1600,
+              "x": -230,
+              "y": -380,
+              "w": 220,
+              "anim": "pop",
+              "delay": 0.2
+            },
+            {
+              "id": "subject",
+              "asset": "coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 420,
+              "anim": "pop",
+              "x": 40
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "+ ค่าที่นั่ง",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-08"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "beat": "payoff",
+      "era": "present",
+      "vo": "นั่งติดกัน [#S06-02] แต่หยิบตั๋ว [#S06-03] จากคนละถัง",
+      "voEn": "Sitting side by side, [#S06-02] but our tickets came [#S06-03] from different buckets.",
+      "voTTS": "นั่งติดกัน [#S06-02] แต่หยิบตั๋ว [#S06-03] จากคนละถัง",
+      "voFile": "vo/S06.wav",
+      "shots": [
+        {
+          "id": "S06-01",
+          "kind": "parallax",
+          "description": "ห้องโดยสาร แถวที่นั่งเดิมจากช็อตแรก กล้องดึงกลับ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:cabin|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:ticket|price-tag",
+              "style": "vector",
+              "z": 1600,
+              "x": -250,
+              "y": -390,
+              "w": 230,
+              "anim": "float"
+            },
+            {
+              "id": "subject",
+              "asset": "img:seat-row|balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 520,
+              "anim": "pop"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "pull-out",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 200
+            },
+            "to": {
+              "x": 0,
+              "y": 0,
+              "z": -200
+            },
+            "ease": "outExpo"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ที่นั่งติดกัน",
+              "role": "kicker",
+              "x": 540,
+              "y": 300
+            }
+          ]
+        },
+        {
+          "id": "S06-02",
+          "kind": "vector",
+          "description": "ตั๋วเด้งขึ้นกลางจอ",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "subject",
+              "asset": "img:ticket|price-tag",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 460,
+              "anim": "pop"
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "ตั๋วของเรา",
+              "role": "title",
+              "x": 540,
+              "y": 320
+            }
+          ]
+        },
+        {
+          "id": "S06-03",
+          "kind": "vector",
+          "description": "ถังสองใบซ้ายขวา — คนละถัง",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:bucket|coin-stack",
+              "style": "vector",
+              "z": 1600,
+              "x": 240,
+              "y": -300,
+              "w": 300,
+              "anim": "pop",
+              "delay": 0.3
+            },
+            {
+              "id": "subject",
+              "asset": "img:bucket|coin-stack",
+              "style": "vector",
+              "z": 1000,
+              "y": -60,
+              "w": 380,
+              "anim": "pop",
+              "x": -180
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "คนละถัง",
+              "role": "title",
+              "x": 540,
+              "y": 320,
+              "sourceRef": "F-03"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "beat": "outro",
+      "era": "present",
+      "vo": "ลองถามคนข้าง ๆ ดูไหม… [#S07-02] ว่าหยิบจากถังไหน",
+      "voEn": "Maybe ask the person next to us… [#S07-02] which bucket theirs came from.",
+      "voTTS": "ลองถามคนข้าง ๆ ดูไหม… [#S07-02] ว่าหยิบจากถังไหน",
+      "voFile": "vo/S07.wav",
+      "shots": [
+        {
+          "id": "S07-01",
+          "kind": "vector",
+          "description": "ป้ายแยกทางกับแถวที่นั่ง — ชวนสงสัย",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "question-split",
+              "style": "vector",
+              "z": 1600,
+              "x": 230,
+              "y": -390,
+              "w": 240,
+              "anim": "pop"
+            },
+            {
+              "id": "subject",
+              "asset": "img:seat-row|balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 480,
+              "anim": "sway",
+              "x": -30
+            }
+          ],
+          "camera": {
+            "move": "drift",
+            "from": {
+              "x": -25,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 25,
+              "y": -10,
+              "z": 60
+            }
+          },
+          "text": [
+            {
+              "content": "คนข้าง ๆ?",
+              "role": "kicker",
+              "x": 540,
+              "y": 300
+            }
+          ]
+        },
+        {
+          "id": "S07-02",
+          "kind": "parallax",
+          "description": "ห้องโดยสาร ถังลอยเหนือแถวที่นั่ง กล้องดันเข้า — วนกลับไปช็อตแรก",
+          "layers": [
+            {
+              "id": "bg",
+              "asset": "img:cabin|bg-color",
+              "style": "vector",
+              "z": 3000,
+              "cover": true
+            },
+            {
+              "id": "mg",
+              "asset": "img:bucket|coin-stack",
+              "style": "vector",
+              "z": 1600,
+              "x": 0,
+              "y": -420,
+              "w": 260,
+              "anim": "float"
+            },
+            {
+              "id": "subject",
+              "asset": "img:seat-row|balance-scale",
+              "style": "vector",
+              "z": 1000,
+              "y": -80,
+              "w": 520,
+              "anim": "bob"
+            },
+            {
+              "id": "fg",
+              "asset": "dust",
+              "style": "vector",
+              "z": 500,
+              "cover": true,
+              "opacity": 0.3
+            }
+          ],
+          "camera": {
+            "move": "push-in",
+            "from": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "to": {
+              "x": 0,
+              "y": -20,
+              "z": 200
+            },
+            "ease": "inOutCubic"
+          },
+          "focus": {
+            "target": "subject"
+          },
+          "text": [
+            {
+              "content": "ถังไหน?",
+              "role": "title",
+              "x": 540,
+              "y": 320
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
